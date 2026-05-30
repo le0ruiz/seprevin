@@ -7,7 +7,7 @@
   <meta name="keywords" content="seguridad ocupacional, gestión ambiental, SEIA, ISO, consultora prevención riesgos Chile">
   <meta name="author" content="SEGPREV">
   
-  <title>SEGPREV | Seguridad, Salud Ocupacional y Gestión Ambiental Integral</title>
+  <title>SEGPREV | Seguridad, salud ocupacional y gestión ambiental integral</title>
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,10 +71,21 @@
     }
 
     .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+    }
+
+    .logo img {
+      height: 45px;
+      width: auto;
+    }
+
+    .logo-text {
       font-size: 1.5rem;
       font-weight: 800;
       color: var(--primary);
-      text-decoration: none;
       letter-spacing: -0.5px;
     }
 
@@ -142,6 +153,16 @@
       z-index: 1;
     }
 
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(10px);
+    }
+
     .hero h1 {
       font-size: 3rem;
       font-weight: 800;
@@ -159,20 +180,24 @@
     }
 
     .hero-stats {
-      display: flex;
-      gap: 3rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
       margin: 3rem 0;
-      flex-wrap: wrap;
     }
 
     .stat {
-      text-align: center;
+      background: rgba(255,255,255,0.1);
+      padding: 1.5rem;
+      border-radius: var(--radius);
+      backdrop-filter: blur(10px);
     }
 
     .stat-number {
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-weight: 800;
       display: block;
+      margin-bottom: 0.5rem;
     }
 
     .stat-label {
@@ -434,6 +459,29 @@
       color: var(--text-light);
     }
 
+    /* Stats Section */
+    .stats-section {
+      background: var(--primary);
+      color: var(--white);
+      padding: 4rem 2rem;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .stat-item h3 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-item p {
+      opacity: 0.9;
+    }
+
     /* Team */
     .team {
       background: var(--white);
@@ -576,6 +624,14 @@
       min-height: 120px;
     }
 
+    .contact-buttons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
     .whatsapp-box {
       margin-top: 2rem;
       padding: 2rem;
@@ -679,11 +735,7 @@
       }
 
       .hero-stats {
-        gap: 2rem;
-      }
-
-      .stat-number {
-        font-size: 2rem;
+        grid-template-columns: 1fr;
       }
 
       .section-header h2 {
@@ -714,7 +766,10 @@
   <!-- Header -->
   <header>
     <nav>
-      <a href="#" class="logo">SEGPREV</a>
+      <a href="#" class="logo">
+        <img src="img/logo.svg" alt="SEGPREV">
+        <span class="logo-text">SEGPREV</span>
+      </a>
       <ul class="nav-links">
         <li><a href="#servicios">Servicios</a></li>
         <li><a href="#propuesta">Propuesta</a></li>
@@ -732,25 +787,27 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-container">
-      <h1>Consultora técnica integral en Seguridad, Salud Ocupacional y Gestión Ambiental</h1>
+      <div class="hero-badge">Consultora técnica integral</div>
+      <h1>Seguridad, salud ocupacional y gestión ambiental integral</h1>
       <p class="hero-subtitle">
-        Integramos seguridad, salud ocupacional, gestión documental, sistemas de gestión 
-        e ingeniería ambiental. Acompañamos a empresas para que operen con respaldo técnico, 
-        menor exposición al riesgo y mayor claridad frente a inspecciones y auditorías.
+        SEGPREV integra seguridad, salud ocupacional, gestión documental, sistemas de gestión 
+        e ingeniería ambiental. Acompañamos a empresas, contratistas, comunidades y proyectos 
+        para que operen con respaldo técnico, menor exposición al riesgo y mayor claridad 
+        frente a inspecciones y auditorías, con cobertura nacional desde Santiago.
       </p>
       
       <div class="hero-stats">
         <div class="stat">
-          <span class="stat-number">20+</span>
-          <span class="stat-label">Años de experiencia</span>
+          <span class="stat-number">20+ años</span>
+          <span class="stat-label">Experiencia en seguridad, salud ocupacional y gestión documental</span>
         </div>
         <div class="stat">
-          <span class="stat-number">100%</span>
-          <span class="stat-label">Cobertura nacional</span>
+          <span class="stat-number">20+ años</span>
+          <span class="stat-label">Trayectoria en consultoría ambiental, SEIA, RCA y sistemas integrados ISO</span>
         </div>
         <div class="stat">
-          <span class="stat-number">ISO</span>
-          <span class="stat-label">9001, 14001, 45001</span>
+          <span class="stat-number">Cobertura CL</span>
+          <span class="stat-label">Base en Santiago, servicios remotos y presenciales en todo Chile</span>
         </div>
       </div>
 
@@ -781,7 +838,7 @@
           <div class="feature-icon">
             <i class="fas fa-bullseye"></i>
           </div>
-          <h3>Enfoque integral</h3>
+          <h3>Enfoque</h3>
           <p>Combinamos gestión documental, sistemas ISO, SEIA, SIG e inteligencia aplicada 
           para decisiones con más contexto y menos incertidumbre.</p>
         </div>
@@ -813,7 +870,9 @@
       <div class="section-header">
         <h2>Servicios</h2>
         <p>Consultoría integral en seguridad, salud ocupacional y gestión ambiental. 
-        Nuestra oferta está organizada en dominios técnicos complementarios.</p>
+        Nuestra oferta está organizada en dominios técnicos complementarios que se pueden 
+        contratar de forma independiente o articulada, según la madurez y el contexto 
+        de cada organización.</p>
       </div>
 
       <div class="services-grid">
@@ -821,8 +880,9 @@
           <span class="service-letter">A</span>
           <h3>Seguridad y salud ocupacional</h3>
           <p>Diseño e implementación de sistemas de seguridad y salud ocupacional, 
-          matrices de riesgos, planes de emergencia, procedimientos de trabajo seguro 
-          y programas de capacitación.</p>
+          matrices de riesgos, planes de emergencia, procedimientos de trabajo 
+          seguro y programas de capacitación, orientados a ambientes de trabajo 
+          seguros y saludables.</p>
         </div>
 
         <div class="service-card">
@@ -830,7 +890,7 @@
           <h3>Gestión ambiental y SEIA</h3>
           <p>Consultoría ambiental integral: líneas base, evaluación de impacto, 
           seguimiento de RCA, monitoreos y apoyo técnico en SEIA para proyectos 
-          de minería, infraestructura, energía e industria.</p>
+          de minería, infraestructura, energía, industria y servicios.</p>
         </div>
 
         <div class="service-card">
@@ -838,28 +898,32 @@
           <h3>Sistemas de gestión y documentación</h3>
           <p>Diseño y mejora de sistemas ISO 9001, 14001 y 45001; gestión documental 
           completa (reglamentos internos, manuales, procedimientos, registros, 
-          carpetas de arranque).</p>
+          carpetas de arranque), incluyendo actualización conforme a la normativa 
+          vigente en seguridad y salud en el trabajo.</p>
         </div>
 
         <div class="service-card">
           <span class="service-letter">D</span>
           <h3>SIG, teledetección e IA aplicada</h3>
-          <p>Uso de QGIS, ArcGIS, Google Earth Engine, teledetección y Python para 
-          análisis territorial, monitoreo y automatización de tareas analíticas.</p>
+          <p>Uso de QGIS, ArcGIS, Google Earth Engine, teledetección, Google Colab 
+          y Python para análisis territorial, monitoreo, estudios de ambientes 
+          de complejidad y automatización de tareas analíticas.</p>
         </div>
 
         <div class="service-card">
           <span class="service-letter">E</span>
           <h3>Asesoría y acompañamiento continuo</h3>
           <p>Acompañamiento técnico para administraciones, empresas y proyectos, 
-          combinando soporte preventivo, ambiental y de sistemas de gestión.</p>
+          combinando soporte preventivo, ambiental y de sistemas de gestión, 
+          en modalidad puntual o continua.</p>
         </div>
 
         <div class="service-card">
           <span class="service-letter">F</span>
           <h3>Capacitación y transferencia</h3>
           <p>Programas de capacitación para equipos de prevención, operación, 
-          administración y gestión ambiental, con foco en aplicación práctica.</p>
+          administración y gestión ambiental, con foco en aplicación práctica 
+          y actualización normativa.</p>
         </div>
       </div>
     </div>
@@ -909,7 +973,9 @@
     <div class="container">
       <div class="section-header">
         <h2>Cómo trabajamos</h2>
-        <p>Proceso claro para ordenar tu cumplimiento integral.</p>
+        <p>Proceso claro para ordenar tu cumplimiento integral. 
+        Definimos un flujo simple y transparente, pensado para organizaciones 
+        que necesitan avanzar rápido sin perder la prolijidad técnica.</p>
       </div>
 
       <div class="process-steps">
@@ -944,12 +1010,52 @@
     </div>
   </section>
 
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 style="color: white; margin-bottom: 3rem;">Confianza y experiencia</h2>
+        <p style="color: rgba(255,255,255,0.9);">Más de 20 años integrando seguridad, salud ocupacional y ambiente. 
+        Hemos trabajado en minería, infraestructura, energía, industria, servicios 
+        y comunidades, combinando terreno, análisis de datos y gestión normativa.</p>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h3>20+</h3>
+          <p>Años en seguridad, salud ocupacional y gestión documental</p>
+        </div>
+        <div class="stat-item">
+          <h3>20+</h3>
+          <p>Años en consultoría ambiental, SEIA, RCA y monitoreo</p>
+        </div>
+        <div class="stat-item">
+          <h3>ISO</h3>
+          <p>Experiencia con ISO 9001, 14001 y 45001 en contextos exigentes</p>
+        </div>
+        <div class="stat-item">
+          <h3>SIG</h3>
+          <p>Uso avanzado de SIG, teledetección e IA aplicada a proyectos reales</p>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; margin-top: 3rem; opacity: 0.9;">
+        <span><i class="fas fa-industry"></i> Minería y recursos naturales</span>
+        <span><i class="fas fa-building"></i> Construcción e infraestructura</span>
+        <span><i class="fas fa-cogs"></i> Industria y servicios</span>
+        <span><i class="fas fa-users"></i> Comunidades y edificios</span>
+      </div>
+    </div>
+  </section>
+
   <!-- Equipo -->
   <section id="equipo" class="team">
     <div class="container">
       <div class="section-header">
         <h2>Equipo principal</h2>
-        <p>Perfiles senior en prevención, ambiente y sistemas integrados.</p>
+        <p>Perfiles senior en prevención, ambiente y sistemas integrados. 
+        SEGPREV se construye sobre trayectorias profesionales extensas y complementarias, 
+        capaces de abordar proyectos complejos con rigor técnico y visión sistémica.</p>
       </div>
 
       <div class="team-grid">
@@ -959,7 +1065,7 @@
           <p class="member-role">Seguridad, salud ocupacional y gestión documental</p>
           <p>Especialista con más de 20 años en sistemas de seguridad y salud ocupacional, 
           programas preventivos, matrices de riesgos, planes de emergencia, reglamentos 
-          internos y gestión documental para contratistas y empresas.</p>
+          internos, carpetas de arranque y gestión documental para contratistas y empresas.</p>
         </div>
 
         <div class="team-member">
@@ -968,7 +1074,8 @@
           <p class="member-role">Consultoría ambiental, SEIA, SIG e IA aplicada</p>
           <p>Biólogo y Magíster en Ingeniería de Gestión de Recursos Naturales y Medio Ambiente, 
           con más de 20 años en consultoría ambiental, evaluación de impacto, seguimiento RCA, 
-          monitoreo, SIG, teledetección y sistemas integrados ISO.</p>
+          monitoreo, SIG, teledetección y sistemas integrados ISO, integrando además 
+          herramientas de inteligencia artificial y análisis de datos para proyectos complejos.</p>
         </div>
       </div>
     </div>
@@ -979,7 +1086,9 @@
     <div class="container">
       <div class="section-header">
         <h2>Preguntas frecuentes</h2>
-        <p>Resolvemos dudas clave antes de que tomes la decisión.</p>
+        <p>Resolvemos dudas clave antes de que tomes la decisión. 
+        Una parte importante de nuestra labor es clarificar alcance, plazos y cobertura, 
+        para que el trabajo se diseñe con expectativas alineadas desde el inicio.</p>
       </div>
 
       <div class="faq-grid">
@@ -1017,11 +1126,26 @@
     <div class="container">
       <div class="section-header">
         <h2>Contacto</h2>
-        <p>Solicita un diagnóstico integral sin costo.</p>
+        <p>Solicita un diagnóstico integral sin costo. 
+        Si quieres evaluar cómo estás hoy en seguridad, salud ocupacional, documentación, 
+        sistemas de gestión y ambiente, podemos comenzar con un diagnóstico integral acotado. 
+        Desde ahí definimos un plan realista y un ritmo de trabajo que haga sentido 
+        a tu organización.</p>
       </div>
 
       <div class="contact-container">
-        <form action="https://formspree.io/f/mykvvljy" method="POST">
+        <div class="contact-buttons">
+          <a href="#formulario" class="btn btn-secondary btn-large">
+            <i class="fas fa-file-alt"></i>
+            Completar formulario
+          </a>
+          <a href="https://wa.me/56954025756" target="_blank" class="btn btn-primary btn-large">
+            <i class="fab fa-whatsapp"></i>
+            Escribir por WhatsApp
+          </a>
+        </div>
+
+        <form id="formulario" action="https://formspree.io/f/mykvvljy" method="POST" style="margin-top: 2rem;">
           <div class="form-grid">
             <div class="form-group">
               <label for="nombre">Nombre completo *</label>
@@ -1046,7 +1170,7 @@
                 <option value="ambiental">Gestión ambiental / SEIA / RCA</option>
                 <option value="iso">Sistemas de gestión e ISO</option>
                 <option value="sig">SIG, teledetección e IA aplicada</option>
-                <option value="diagnostico">Diagnóstico integral (todas)</option>
+                <option value="diagnostico">Diagnóstico integral (todas las anteriores)</option>
                 <option value="otro">Otro / no estoy seguro</option>
               </select>
             </div>
@@ -1066,12 +1190,12 @@
         </form>
 
         <div class="whatsapp-box">
-          <p>O también puedes escribirnos directamente a:</p>
+          <p>También puedes escribirnos directamente a:</p>
           <a href="https://wa.me/56954025756" target="_blank" class="whatsapp-link">
             <i class="fab fa-whatsapp"></i>
             +56 9 5402 5756
           </a>
-          <p style="margin-top: 1rem; font-size: 0.9rem;">o al +56 9 8430 9798</p>
+          <p style="margin-top: 0.5rem; font-size: 0.9rem;">o al +56 9 8430 9798</p>
         </div>
       </div>
     </div>
@@ -1096,12 +1220,8 @@
     <i class="fab fa-whatsapp"></i>
   </a>
 
-  <!-- Simple Mobile Menu Script -->
+  <!-- Scripts -->
   <script>
-    document.querySelector('.mobile-menu').addEventListener('click', function() {
-      alert('Menú móvil: Usa los enlaces del header para navegar');
-    });
-
     // Smooth scroll para navegación
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
@@ -1114,6 +1234,11 @@
           });
         }
       });
+    });
+
+    // Mobile menu toggle (básico)
+    document.querySelector('.mobile-menu').addEventListener('click', function() {
+      alert('Menú móvil: Usa los enlaces del header para navegar');
     });
   </script>
 
