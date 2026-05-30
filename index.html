@@ -1,1228 +1,1121 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SEGPREV | Seguridad, salud ocupacional y gestión ambiental integral</title>
-  <meta name="description"
-    content="SEGPREV es una consultora técnica integral en seguridad, salud ocupacional y gestión ambiental. Integramos gestión documental, sistemas ISO, SEIA, SIG e IA con cobertura nacional desde Santiago." />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SEGPREV - Consultora técnica integral en seguridad, salud ocupacional y gestión ambiental. Más de 20 años de experiencia en Chile.">
+  <meta name="keywords" content="seguridad ocupacional, gestión ambiental, SEIA, ISO, consultora prevención riesgos Chile">
+  <meta name="author" content="SEGPREV">
+  
+  <title>SEGPREV | Seguridad, Salud Ocupacional y Gestión Ambiental Integral</title>
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-
-  <!-- Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "SEGPREV",
-    "description": "Consultora técnica integral en seguridad, salud ocupacional y gestión ambiental en Chile.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Santiago",
-      "addressRegion": "Región Metropolitana",
-      "addressCountry": "CL"
-    },
-    "telephone": "+56-9-5402-5756",
-    "url": "https://segprev.cl",
-    "serviceType": [
-      "Seguridad laboral",
-      "Salud ocupacional",
-      "Gestión ambiental",
-      "Gestión documental y normativa",
-      "SEIA",
-      "Sistemas ISO",
-      "SIG e inteligencia aplicada"
-    ],
-    "founder": [
-      {
-        "@type": "Person",
-        "name": "Juan Carlos Delgado",
-        "jobTitle": "Especialista en seguridad, salud ocupacional y gestión documental"
-      },
-      {
-        "@type": "Person",
-        "name": "Leonardo Ruiz",
-        "jobTitle": "Consultor ambiental, SEIA, SIG y sistemas integrados"
-      }
-    ]
-  }
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
     :root {
-      --bg: #f4f7fc;
-      --bg-deep: #020b1f;
-      --surface: rgba(255,255,255,0.9);
-      --surface-solid: #ffffff;
-      --surface-soft: #ebf1fb;
-      --line: rgba(17, 40, 86, 0.10);
-      --text: #0b1426;
-      --muted: #61718d;
-      --muted-on-dark: #c8d5ff;
-      --text-on-dark: #f5f7ff;
-      --primary: #0d3f99;
-      --primary-2: #0b2f72;
-      --primary-3: #081c42;
-      --gold: #d8a52a;
-      --success: #0f766e;
-      --shadow-sm: 0 10px 30px rgba(11, 20, 38, 0.06);
-      --shadow-md: 0 24px 70px rgba(11, 20, 38, 0.10);
-      --shadow-lg: 0 35px 100px rgba(13, 63, 153, 0.18);
-      --radius-sm: 18px;
-      --radius-md: 28px;
-      --radius-lg: 40px;
-      --max: 1240px;
+      --primary: #0B3D91;
+      --primary-dark: #082d6b;
+      --secondary: #1E7A46;
+      --secondary-dark: #155a33;
+      --accent: #0EA5E9;
+      --bg: #F8FAFC;
+      --white: #FFFFFF;
+      --text: #1E293B;
+      --text-light: #64748B;
+      --border: #E2E8F0;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      --radius: 8px;
+      --radius-lg: 12px;
     }
 
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
+    * {
       margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Manrope', sans-serif;
-      line-height: 1.6;
-      overflow-x: hidden;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    a { color: inherit; text-decoration: none; }
-    img, svg { display: block; max-width: 100%; }
-    *::selection { background: rgba(13,63,153,.16); color: var(--text); }
+    html {
+      scroll-behavior: smooth;
+    }
 
-    .container { width: min(calc(100% - 32px), var(--max)); margin: 0 auto; }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background: var(--bg);
+    }
 
-    /* TOPBAR */
-    .topbar {
+    /* Navigation */
+    header {
+      background: var(--white);
+      box-shadow: var(--shadow);
       position: sticky;
       top: 0;
-      z-index: 50;
-      backdrop-filter: blur(18px);
-      background: rgba(248,251,255,.85);
-      border-bottom: 1px solid rgba(17,40,86,.08);
+      z-index: 1000;
     }
 
-    .nav {
+    nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      gap: 22px;
-      padding: 14px 0;
+      align-items: center;
     }
 
-    .brand { display: flex; align-items: center; gap: 14px; min-width: 0; }
-
-    .brand-mark {
-      width: 52px;
-      height: 52px;
-      border-radius: 16px;
-      background: transparent;
-      display: grid;
-      place-items: center;
-      overflow: hidden;
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--primary);
+      text-decoration: none;
+      letter-spacing: -0.5px;
     }
 
-    .brand-mark img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      list-style: none;
     }
 
-    .brand-copy strong { display: block; font-size: 0.95rem; letter-spacing: .14em; }
-    .brand-copy span { color: var(--muted); font-size: .82rem; }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
 
-    .nav-links { display: flex; gap: 22px; color: var(--muted); font-size: .9rem; }
-    .nav-links a { transition: color .2s; }
-    .nav-links a:hover { color: var(--text); }
+    .nav-links a:hover {
+      color: var(--primary);
+    }
 
     .nav-cta {
-      padding: 10px 20px;
-      border-radius: 999px;
       background: var(--primary);
-      color: white;
-      font-weight: 800;
-      font-size: .88rem;
-      box-shadow: var(--shadow-sm);
-      transition: transform .2s, box-shadow .2s;
-    }
-    .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 12px 30px rgba(13,63,153,.25); }
-
-    /* GENERIC SECTIONS */
-    section { padding: 42px 0; }
-
-    .section-light { background: transparent; color: var(--text); }
-    .section-dark {
-      background: radial-gradient(circle at top, #102552 0%, #020b1f 62%, #020712 100%);
-      color: var(--text-on-dark);
+      color: var(--white) !important;
+      padding: 0.6rem 1.2rem;
+      border-radius: var(--radius);
+      transition: background 0.2s !important;
     }
 
-    .section-head {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      gap: 16px;
-      margin-bottom: 24px;
+    .nav-cta:hover {
+      background: var(--primary-dark);
     }
 
-    .section-kicker {
-      color: var(--primary);
-      font-size: .82rem;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-      margin-bottom: 8px;
+    .mobile-menu {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
     }
 
-    .section-dark .section-kicker { color: var(--muted-on-dark); }
-
-    h2 {
-      margin: 0 0 10px;
-      font-size: clamp(2rem, 3vw, 3.2rem);
-      line-height: 1.06;
-      letter-spacing: -0.045em;
-      max-width: 16ch;
-    }
-
-    .section-copy {
-      max-width: 64ch;
-      color: var(--muted);
-      margin: 0;
-    }
-
-    .section-dark .section-copy { color: var(--muted-on-dark); }
-
-    /* HERO */
-    .hero { padding: 48px 0 40px; }
-
-    .hero-shell {
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      color: var(--white);
+      padding: 6rem 2rem 4rem;
       position: relative;
       overflow: hidden;
-      border-radius: 40px;
-      background: linear-gradient(135deg, #ffffff 0%, #f3f7ff 40%, #f9fbff 100%);
-      box-shadow: var(--shadow-lg);
-      padding: 32px;
-      border: 1px solid rgba(17,40,86,.08);
-      isolation: isolate;
     }
 
-    .hero-shell::before,
-    .hero-shell::after {
-      content: "";
+    .hero::before {
+      content: '';
       position: absolute;
-      border-radius: 999px;
-      z-index: -1;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      opacity: 0.1;
     }
 
-    .hero-shell::before {
-      width: 380px;
-      height: 380px;
-      background: radial-gradient(circle, rgba(51,107,255,.16), transparent 65%);
-      top: -90px;
-      right: -70px;
+    .hero-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
     }
 
-    .hero-shell::after {
-      width: 320px;
-      height: 320px;
-      background: radial-gradient(circle, rgba(216,165,42,.10), transparent 70%);
-      bottom: -130px;
-      left: -90px;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 28px;
-      align-items: stretch;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: rgba(13,63,153,.06);
-      border: 1px solid rgba(13,63,153,.10);
-      color: var(--primary);
-      text-transform: uppercase;
-      letter-spacing: .08em;
-      font-size: .8rem;
+    .hero h1 {
+      font-size: 3rem;
       font-weight: 800;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+      max-width: 800px;
     }
 
-    h1 {
-      margin: 18px 0 18px;
-      font-size: clamp(2.6rem, 5.5vw, 5.1rem);
-      line-height: 0.98;
-      letter-spacing: -0.06em;
-      max-width: 13ch;
+    .hero-subtitle {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      opacity: 0.95;
+      max-width: 700px;
+      line-height: 1.7;
     }
 
-    .lead {
-      margin: 0 0 22px;
-      max-width: 64ch;
-      color: var(--muted);
-      font-size: 1.02rem;
-    }
-
-    .cta-row {
+    .hero-stats {
       display: flex;
+      gap: 3rem;
+      margin: 3rem 0;
       flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 22px;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 800;
+      display: block;
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
     }
 
     .btn {
       display: inline-flex;
       align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 14px 22px;
-      border-radius: 999px;
-      font-weight: 800;
-      font-size: .9rem;
-      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
-      min-height: 46px;
-      cursor: pointer;
+      gap: 0.5rem;
+      padding: 1rem 2rem;
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.2s;
       border: none;
+      cursor: pointer;
     }
 
-    .btn:hover { transform: translateY(-1px); }
     .btn-primary {
-      background: linear-gradient(135deg, var(--primary) 0%, #1a57c7 100%);
-      color: white;
-      box-shadow: 0 16px 36px rgba(13,63,153,.22);
+      background: var(--white);
+      color: var(--primary);
     }
-    .btn-primary:hover { box-shadow: 0 20px 46px rgba(13,63,153,.30); }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid var(--white);
+    }
+
+    .btn-outline:hover {
+      background: var(--white);
+      color: var(--primary);
+    }
 
     .btn-secondary {
-      background: #ffffff;
-      color: var(--text);
-      border: 1px solid rgba(17,40,86,.12);
-      box-shadow: var(--shadow-sm);
+      background: var(--secondary);
+      color: var(--white);
     }
 
-    /* HERO PROOF */
-    .proof-row {
+    .btn-secondary:hover {
+      background: var(--secondary-dark);
+    }
+
+    .btn-large {
+      padding: 1.2rem 2.5rem;
+      font-size: 1.1rem;
+    }
+
+    /* Sections */
+    section {
+      padding: 5rem 2rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-header h2 {
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    .section-header p {
+      font-size: 1.1rem;
+      color: var(--text-light);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* Features Grid */
+    .features-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0,1fr));
-      gap: 12px;
-      margin-top: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
     }
 
-    .proof-card {
-      background: rgba(255,255,255,.9);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(17,40,86,.08);
-      border-radius: 18px;
-      padding: 14px;
-      box-shadow: var(--shadow-sm);
-      font-size: .9rem;
+    .feature-card {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+      transition: transform 0.3s, box-shadow 0.3s;
     }
 
-    .proof-card strong { display: block; font-size: 1.05rem; margin-bottom: 3px; }
-
-    /* HERO VISUAL */
-    .hero-visual {
-      position: relative;
-      border-radius: 32px;
-      overflow: hidden;
-      background: linear-gradient(160deg, #0d3f99 0%, #0a2d6d 56%, #081a39 100%);
-      box-shadow: 0 26px 70px rgba(8, 28, 66, 0.30);
-      padding: 24px;
-      color: white;
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
     }
 
-    .hero-visual::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        linear-gradient(120deg, rgba(255,255,255,.08), transparent 34%),
-        radial-gradient(circle at 18% 18%, rgba(255,255,255,.16), transparent 24%),
-        radial-gradient(circle at 80% 24%, rgba(105,155,255,.32), transparent 22%);
-      z-index: -1;
+    .feature-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      border-radius: var(--radius);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
     }
 
-    .glass-card {
-      background: rgba(255,255,255,.10);
-      border: 1px solid rgba(255,255,255,.18);
-      backdrop-filter: blur(18px);
-      color: #edf4ff;
-      border-radius: 22px;
-      box-shadow: 0 18px 40px rgba(5,14,30,.22);
-      padding: 14px 16px;
-      font-size: .9rem;
+    .feature-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
     }
 
-    .glass-stack {
-      display: grid;
-      gap: 10px;
+    .feature-card p {
+      color: var(--text-light);
+      line-height: 1.7;
     }
 
-    .glass-card span {
-      display: block;
-      color: rgba(237,244,255,.8);
-      font-size: .8rem;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-      margin-bottom: 4px;
+    /* Services */
+    .services {
+      background: var(--white);
     }
 
-    .glass-card strong {
-      display: block;
-      font-size: .98rem;
-    }
-
-    /* SERVICES GRID */
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0,1fr));
-      gap: 18px;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
     }
 
-    .service {
-      position: relative;
-      overflow: hidden;
-      background: var(--surface-solid);
-      border: 1px solid rgba(17,40,86,.08);
-      border-radius: 26px;
-      padding: 22px;
-      box-shadow: var(--shadow-sm);
-      min-height: 220px;
-      transition: transform .2s, box-shadow .2s;
+    .service-card {
+      background: var(--bg);
+      padding: 2.5rem;
+      border-radius: var(--radius-lg);
+      border-left: 4px solid var(--primary);
+      transition: all 0.3s;
     }
-    .service:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
 
-    .service::before {
-      content: "";
-      position: absolute;
-      width: 140px;
-      height: 140px;
+    .service-card:hover {
+      border-left-color: var(--secondary);
+      transform: translateX(5px);
+    }
+
+    .service-letter {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background: var(--primary);
+      color: var(--white);
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(13,63,153,.10), transparent 68%);
-      top: -60px;
-      right: -40px;
-      pointer-events: none;
+      text-align: center;
+      line-height: 40px;
+      font-weight: 700;
+      margin-bottom: 1rem;
     }
 
-    .service-icon {
-      width: 46px;
-      height: 46px;
-      border-radius: 16px;
-      display: grid;
-      place-items: center;
-      margin-bottom: 14px;
-      background: rgba(13,63,153,.08);
+    .service-card h3 {
+      font-size: 1.3rem;
       color: var(--primary);
-      font-weight: 800;
-      font-size: .82rem;
-      letter-spacing: .08em;
+      margin-bottom: 1rem;
     }
 
-    .service h3 { margin: 0 0 8px; font-size: 1.06rem; }
-    .service p { margin: 0; color: var(--muted); font-size: .92rem; }
-
-    .section-dark .service {
-      background: rgba(4,18,56,0.9);
-      border-color: rgba(158,179,255,0.35);
-      color: var(--text-on-dark);
-    }
-    .section-dark .service p { color: var(--muted-on-dark); }
-    .section-dark .service-icon {
-      background: rgba(255,255,255,.08);
-      color: var(--muted-on-dark);
+    .service-card p {
+      color: var(--text-light);
+      line-height: 1.7;
     }
 
-    /* SPLIT / PROPUESTA */
-    .split {
+    /* Value Proposition */
+    .value-prop {
+      background: linear-gradient(135deg, #f0f9ff 0%, #ecfdf5 100%);
+    }
+
+    .value-grid {
       display: grid;
-      grid-template-columns: 0.98fr 1.02fr;
-      gap: 22px;
-      align-items: stretch;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
     }
 
-    .panel-deep {
-      position: relative;
-      overflow: hidden;
-      border-radius: 30px;
-      padding: 26px;
-      background: linear-gradient(165deg, #0b2f72 0%, #081b3d 100%);
-      color: white;
-      box-shadow: 0 26px 70px rgba(10,37,86,.24);
-    }
-
-    .panel-deep::before {
-      content: "";
-      position: absolute;
-      inset: auto -40px -60px auto;
-      width: 200px;
-      height: 200px;
-      background: radial-gradient(circle, rgba(255,255,255,.16), transparent 70%);
-      border-radius: 50%;
-    }
-
-    .panel-deep p { color: rgba(238,243,255,.85); }
-
-    .benefits { display: grid; gap: 14px; }
-
-    .benefit {
+    .value-item {
       display: flex;
-      gap: 12px;
+      gap: 1rem;
       align-items: flex-start;
-      background: rgba(255,255,255,.96);
-      border: 1px solid rgba(17,40,86,.08);
-      border-radius: 22px;
-      padding: 16px;
-      box-shadow: var(--shadow-sm);
     }
 
-    .benefit-mark {
-      flex: 0 0 32px;
-      width: 32px;
-      height: 32px;
+    .value-check {
+      width: 24px;
+      height: 24px;
+      background: var(--secondary);
+      color: var(--white);
       border-radius: 50%;
-      display: grid;
-      place-items: center;
-      background: rgba(15,118,110,.12);
-      color: var(--success);
-      font-weight: 800;
-      font-size: .9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 0.8rem;
     }
 
-    .benefit strong { display: block; margin-bottom: 3px; }
-    .benefit span { color: var(--muted); font-size: .9rem; }
-
-    /* PROCESS */
-    .process-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0,1fr));
-      gap: 18px;
+    .value-content h3 {
+      color: var(--primary);
+      margin-bottom: 0.5rem;
     }
 
-    .process-step {
-      background: var(--surface-solid);
-      border: 1px solid rgba(17,40,86,.08);
-      border-radius: 26px;
-      padding: 22px;
-      box-shadow: var(--shadow-sm);
+    .value-content p {
+      color: var(--text-light);
+    }
+
+    /* Process */
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .step {
+      text-align: center;
+      padding: 2rem;
+      position: relative;
+    }
+
+    .step-number {
+      width: 60px;
+      height: 60px;
+      background: var(--primary);
+      color: var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0 auto 1.5rem;
+    }
+
+    .step h3 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+
+    .step p {
+      color: var(--text-light);
+    }
+
+    /* Team */
+    .team {
+      background: var(--white);
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 3rem;
+      margin-top: 3rem;
+    }
+
+    .team-member {
+      background: var(--bg);
+      padding: 2.5rem;
+      border-radius: var(--radius-lg);
       text-align: center;
     }
 
-    .process-step .step-num {
-      width: 44px;
-      height: 44px;
+    .member-avatar {
+      width: 120px;
+      height: 120px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
       border-radius: 50%;
-      background: linear-gradient(135deg, var(--primary) 0%, #1a57c7 100%);
-      color: white;
-      font-weight: 800;
-      font-size: 1.1rem;
-      display: grid;
-      place-items: center;
-      margin: 0 auto 14px;
-      box-shadow: 0 8px 20px rgba(13,63,153,.25);
-    }
-
-    .process-step h3 { margin: 0 0 6px; font-size: 1.02rem; }
-    .process-step p { margin: 0; color: var(--muted); font-size: .9rem; }
-
-    .section-dark .process-step {
-      background: rgba(4,18,56,0.9);
-      border-color: rgba(158,179,255,0.35);
-      color: var(--text-on-dark);
-    }
-    .section-dark .process-step p { color: var(--muted-on-dark); }
-
-    /* CREDIBILITY */
-    .cred-grid {
-      display: grid;
-      grid-template-columns: repeat(4, minmax(0,1fr));
-      gap: 22px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .cred-item { text-align: center; }
-
-    .cred-num {
-      font-size: 2.6rem;
-      font-weight: 800;
-      line-height: 1;
-      margin-bottom: 6px;
-      color: var(--gold);
-    }
-
-    .cred-label {
-      font-size: .9rem;
-      color: rgba(255,255,255,.85);
-      line-height: 1.45;
-    }
-
-    .client-logos {
       display: flex;
+      align-items: center;
       justify-content: center;
-      gap: 26px;
-      margin-top: 28px;
-      flex-wrap: wrap;
-      position: relative;
-      z-index: 1;
+      color: var(--white);
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin: 0 auto 1.5rem;
     }
 
-    .client-logos span {
-      padding: 8px 18px;
-      background: rgba(255,255,255,.08);
-      border: 1px solid rgba(255,255,255,.16);
-      border-radius: 12px;
-      font-size: .82rem;
-      color: rgba(255,255,255,.80);
-      font-weight: 600;
-    }
-
-    /* TEAM */
-    .team-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0,1fr));
-      gap: 18px;
-    }
-
-    .member {
-      position: relative;
-      overflow: hidden;
-      border-radius: 26px;
-      background: var(--surface-solid);
-      border: 1px solid rgba(17,40,86,.08);
-      padding: 22px;
-      box-shadow: var(--shadow-sm);
-    }
-
-    .section-dark .member {
-      background: rgba(4,18,56,0.9);
-      border-color: rgba(158,179,255,0.35);
-      color: var(--text-on-dark);
-    }
-    .section-dark .member p { color: var(--muted-on-dark); }
-
-    .member-top { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
-
-    .avatar {
-      width: 60px;
-      height: 60px;
-      border-radius: 18px;
-      background: linear-gradient(135deg, rgba(13,63,153,.12), rgba(13,63,153,.24));
-      display: grid;
-      place-items: center;
+    .team-member h3 {
       color: var(--primary);
-      font-weight: 800;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,.35);
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
     }
 
-    .member h3 { margin: 0 0 3px; }
-    .member-role { color: var(--primary); font-weight: 700; font-size: .9rem; margin-bottom: 8px; }
-    .section-dark .member-role { color: var(--muted-on-dark); }
+    .member-role {
+      color: var(--secondary);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
 
-    .member p { margin: 0; color: var(--muted); font-size: .9rem; }
+    .team-member p {
+      color: var(--text-light);
+      line-height: 1.7;
+    }
 
     /* FAQ */
     .faq-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0,1fr));
-      gap: 18px;
+      gap: 1.5rem;
+      max-width: 900px;
+      margin: 3rem auto 0;
     }
 
     .faq-item {
-      background: var(--surface-solid);
-      border: 1px solid rgba(17,40,86,.08);
-      border-radius: 24px;
-      padding: 20px;
-      box-shadow: var(--shadow-sm);
+      background: var(--white);
+      padding: 2rem;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
     }
 
-    .faq-item h3 { margin: 0 0 8px; font-size: 1.02rem; }
-    .faq-item p { margin: 0; color: var(--muted); font-size: .9rem; }
-
-    .section-dark .faq-item {
-      background: rgba(4,18,56,0.95);
-      border-color: rgba(158,179,255,0.35);
-      color: var(--text-on-dark);
+    .faq-item h3 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
     }
-    .section-dark .faq-item p { color: var(--muted-on-dark); }
 
-    /* CTA / CONTACT */
-    .cta-shell {
-      border-radius: 34px;
-      padding: 30px;
-      background: linear-gradient(135deg, #0b2e71 0%, #081a3c 100%);
-      color: white;
+    .faq-item p {
+      color: var(--text-light);
+      line-height: 1.7;
+    }
+
+    /* Contact */
+    .contact {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      color: var(--white);
+    }
+
+    .contact .section-header h2,
+    .contact .section-header p {
+      color: var(--white);
+    }
+
+    .contact-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--white);
+      padding: 3rem;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      color: var(--text);
+    }
+
+    .form-grid {
       display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
-      gap: 20px;
-      box-shadow: 0 30px 80px rgba(8, 28, 66, 0.28);
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
     }
 
-    .cta-shell p { color: rgba(255,255,255,.85); max-width: 60ch; }
-
-    .contact-card {
-      background: rgba(255,255,255,.10);
-      border: 1px solid rgba(255,255,255,.16);
-      border-radius: 24px;
-      padding: 20px;
-      backdrop-filter: blur(12px);
-      box-shadow: 0 20px 50px rgba(5,14,30,.16);
+    .form-group {
+      display: flex;
+      flex-direction: column;
     }
 
-    .contact-form { display: grid; gap: 10px; }
+    .form-group.full-width {
+      grid-column: span 2;
+    }
 
-    .field { display: grid; gap: 4px; }
-
-    .field label {
-      font-size: 0.82rem;
+    .form-group label {
       font-weight: 600;
-      color: rgba(255,255,255,0.92);
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+      font-size: 0.9rem;
     }
 
-    .field input,
-    .field select,
-    .field textarea {
-      padding: 8px 10px;
-      border-radius: 10px;
-      border: 1px solid rgba(255,255,255,0.35);
-      background: rgba(8,24,54,0.7);
-      color: #f7f9ff;
-      font-size: 0.88rem;
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding: 0.9rem;
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      font-family: inherit;
+      font-size: 1rem;
+      transition: border-color 0.2s;
     }
 
-    .field input::placeholder,
-    .field textarea::placeholder {
-      color: rgba(235,241,255,0.78);
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--primary);
     }
 
-    .form-footnote {
-      margin-top: 6px;
-      font-size: 0.78rem;
-      color: rgba(255,255,255,0.86);
+    .form-group textarea {
+      resize: vertical;
+      min-height: 120px;
     }
 
-    /* FOOTER */
-    footer {
-      padding: 20px 0 32px;
-      color: var(--muted);
-      font-size: .9rem;
+    .whatsapp-box {
+      margin-top: 2rem;
+      padding: 2rem;
+      background: var(--bg);
+      border-radius: var(--radius-lg);
       text-align: center;
-      background: #010510;
     }
 
-    /* RESPONSIVE */
-    @media (max-width: 1080px) {
-      .hero-grid,
-      .split,
-      .services-grid,
-      .process-grid,
-      .team-grid,
-      .faq-grid,
-      .cta-shell,
-      .cred-grid {
-        grid-template-columns: 1fr 1fr;
+    .whatsapp-box p {
+      margin-bottom: 1rem;
+      color: var(--text-light);
+    }
+
+    .whatsapp-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #25D366;
+      font-weight: 700;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+
+    .whatsapp-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--text);
+      color: var(--white);
+      padding: 3rem 2rem 2rem;
+      text-align: center;
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-logo {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      color: var(--white);
+    }
+
+    .footer-text {
+      opacity: 0.8;
+      margin-bottom: 2rem;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 2rem;
+      margin-top: 2rem;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+
+    /* Floating WhatsApp */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 60px;
+      height: 60px;
+      background: #25D366;
+      color: var(--white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      box-shadow: var(--shadow-lg);
+      text-decoration: none;
+      z-index: 999;
+      transition: transform 0.3s;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
       }
-      .services-grid .service:last-child,
-      .faq-grid .faq-item:last-child { grid-column: span 2; }
-    }
 
-    @media (max-width: 760px) {
-      .nav { flex-wrap: wrap; padding: 8px 0; }
-      .nav-links { display: none; }
-      .nav-cta { padding: 8px 12px; font-size: 0.8rem; }
-      .brand-mark { width: 40px; height: 40px; }
-      section { padding: 30px 0; }
-      .hero { padding-top: 30px; }
-      .hero-shell { padding: 18px; border-radius: 26px; }
-      .hero-grid,
-      .split,
-      .services-grid,
-      .process-grid,
-      .team-grid,
-      .faq-grid,
-      .cta-shell,
-      .cred-grid {
+      .mobile-menu {
+        display: block;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1rem;
+      }
+
+      .hero-stats {
+        gap: 2rem;
+      }
+
+      .stat-number {
+        font-size: 2rem;
+      }
+
+      .section-header h2 {
+        font-size: 2rem;
+      }
+
+      .form-grid {
         grid-template-columns: 1fr;
       }
-      .services-grid .service:last-child,
-      .faq-grid .faq-item:last-child { grid-column: auto; }
-      .cta-row { flex-direction: column; }
-      .btn { width: 100%; }
-      h1 { max-width: 11ch; font-size: 2.2rem; }
-      .hero-visual {
-        border-radius: 22px;
-        padding: 18px;
-        margin-top: 8px;
+
+      .form-group.full-width {
+        grid-column: span 1;
       }
-      .section-head { display: block; }
-      h2 { max-width: 13ch; }
+
+      .services-grid,
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-container {
+        padding: 2rem 1.5rem;
+      }
     }
   </style>
 </head>
-
 <body>
-  <header class="topbar">
-    <div class="container nav">
-      <a href="#inicio" class="brand" aria-label="SEGPREV inicio">
-        <div class="brand-mark">
-          <img src="Segprev 01.svg" alt="SEGPREV" />
-        </div>
-        <div class="brand-copy">
-          <strong>SEGPREV</strong>
-          <span>Seguridad, salud ocupacional y gestión ambiental integral</span>
-        </div>
-      </a>
-      <nav class="nav-links" aria-label="Principal">
-        <a href="#servicios">Servicios</a>
-        <a href="#propuesta">Propuesta</a>
-        <a href="#proceso">Cómo trabajamos</a>
-        <a href="#equipo">Equipo</a>
-        <a href="#faq">FAQ</a>
-      </nav>
-      <a class="nav-cta" href="#contacto">Solicitar diagnóstico</a>
-    </div>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="#" class="logo">SEGPREV</a>
+      <ul class="nav-links">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#propuesta">Propuesta</a></li>
+        <li><a href="#proceso">Cómo trabajamos</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contacto" class="nav-cta">Solicitar diagnóstico</a></li>
+      </ul>
+      <div class="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
   </header>
 
-  <main>
-    <!-- HERO (CLARO) -->
-    <section class="hero section-light" id="inicio">
-      <div class="container hero-shell">
-        <div class="hero-grid">
-          <div>
-            <div class="eyebrow">Consultora técnica integral</div>
-            <h1>Seguridad, salud ocupacional y gestión ambiental integral, en una sola consultora.</h1>
-            <p class="lead">
-              SEGPREV integra seguridad, salud ocupacional, gestión documental, sistemas de gestión
-              e ingeniería ambiental. Acompañamos a empresas, contratistas, comunidades y proyectos
-              para que operen con respaldo técnico, menor exposición al riesgo y mayor claridad
-              frente a inspecciones y auditorías, con cobertura nacional desde Santiago.
-            </p>
-            <div class="cta-row">
-              <a class="btn btn-primary" href="#contacto">Solicitar diagnóstico sin costo</a>
-              <button class="btn btn-secondary" type="button"
-                onclick="window.open('https://wa.me/56954025756','_blank')">
-                Escribir por WhatsApp
-              </button>
-            </div>
-            <div class="proof-row">
-              <div class="proof-card">
-                <strong>20+ años</strong>
-                <span>Experiencia en seguridad, salud ocupacional y gestión documental.</span>
-              </div>
-              <div class="proof-card">
-                <strong>20+ años</strong>
-                <span>Trayectoria en consultoría ambiental, SEIA, RCA y sistemas integrados ISO.</span>
-              </div>
-              <div class="proof-card">
-                <strong>Cobertura CL</strong>
-                <span>Base en Santiago, servicios remotos y presenciales en todo Chile.</span>
-              </div>
-            </div>
-          </div>
-
-          <aside class="hero-visual">
-            <div class="glass-stack">
-              <div class="glass-card">
-                <span>Qué hacemos</span>
-                <strong>
-                  Diseñamos soluciones integrales en seguridad, salud ocupacional y gestión ambiental,
-                  conectando normativa, operación y territorio.
-                </strong>
-              </div>
-              <div class="glass-card">
-                <span>Enfoque</span>
-                <strong>
-                  Combinamos gestión documental, sistemas ISO, SEIA, SIG e inteligencia aplicada
-                  para decisiones con más contexto y menos incertidumbre.
-                </strong>
-              </div>
-              <div class="glass-card">
-                <span>Diagnóstico inicial</span>
-                <strong>
-                  Evaluamos de manera integrada tu situación en seguridad, salud ocupacional
-                  y ambiente, e identificamos brechas prioritarias en menos de 24 horas hábiles.
-                </strong>
-              </div>
-            </div>
-          </aside>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-container">
+      <h1>Consultora técnica integral en Seguridad, Salud Ocupacional y Gestión Ambiental</h1>
+      <p class="hero-subtitle">
+        Integramos seguridad, salud ocupacional, gestión documental, sistemas de gestión 
+        e ingeniería ambiental. Acompañamos a empresas para que operen con respaldo técnico, 
+        menor exposición al riesgo y mayor claridad frente a inspecciones y auditorías.
+      </p>
+      
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">20+</span>
+          <span class="stat-label">Años de experiencia</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Cobertura nacional</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">ISO</span>
+          <span class="stat-label">9001, 14001, 45001</span>
         </div>
       </div>
-    </section>
 
-    <!-- SERVICIOS (CLARO) -->
-    <section class="section-light" id="servicios">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-kicker">Servicios</div>
-            <h2>Consultoría integral en seguridad, salud ocupacional y gestión ambiental.</h2>
+      <div class="hero-buttons">
+        <a href="#contacto" class="btn btn-primary btn-large">
+          <i class="fas fa-clipboard-check"></i>
+          Solicitar diagnóstico sin costo
+        </a>
+        <a href="https://wa.me/56954025756" target="_blank" class="btn btn-outline btn-large">
+          <i class="fab fa-whatsapp"></i>
+          Escribir por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Qué Hacemos -->
+  <section id="que-hacemos">
+    <div class="container">
+      <div class="section-header">
+        <h2>Qué hacemos</h2>
+        <p>Diseñamos soluciones integrales en seguridad, salud ocupacional y gestión ambiental, 
+        conectando normativa, operación y territorio.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-bullseye"></i>
           </div>
-          <p class="section-copy">
-            Nuestra oferta está organizada en dominios técnicos complementarios
-            que se pueden contratar de forma independiente o articulada, según
-            la madurez y el contexto de cada organización.
-          </p>
+          <h3>Enfoque integral</h3>
+          <p>Combinamos gestión documental, sistemas ISO, SEIA, SIG e inteligencia aplicada 
+          para decisiones con más contexto y menos incertidumbre.</p>
         </div>
 
-        <div class="services-grid">
-          <article class="service">
-            <div class="service-icon">A</div>
-            <h3>Seguridad y salud ocupacional</h3>
-            <p>
-              Diseño e implementación de sistemas de seguridad y salud ocupacional,
-              matrices de riesgos, planes de emergencia, procedimientos de trabajo
-              seguro y programas de capacitación, orientados a ambientes de trabajo
-              seguros y saludables.
-            </p>
-          </article>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <h3>Diagnóstico inicial</h3>
+          <p>Evaluamos de manera integrada tu situación en seguridad, salud ocupacional 
+          y ambiente, e identificamos brechas prioritarias en menos de 24 horas hábiles.</p>
+        </div>
 
-          <article class="service">
-            <div class="service-icon">B</div>
-            <h3>Gestión ambiental y SEIA</h3>
-            <p>
-              Consultoría ambiental integral: líneas base, evaluación de impacto,
-              seguimiento de RCA, monitoreos y apoyo técnico en SEIA para proyectos
-              de minería, infraestructura, energía, industria y servicios.
-            </p>
-          </article>
-
-          <article class="service">
-            <div class="service-icon">C</div>
-            <h3>Sistemas de gestión y documentación</h3>
-            <p>
-              Diseño y mejora de sistemas ISO 9001, 14001 y 45001; gestión documental
-              completa (reglamentos internos, manuales, procedimientos, registros,
-              carpetas de arranque), incluyendo actualización conforme a la normativa
-              vigente en seguridad y salud en el trabajo.
-            </p>
-          </article>
-
-          <article class="service">
-            <div class="service-icon">D</div>
-            <h3>SIG, teledetección e IA aplicada</h3>
-            <p>
-              Uso de QGIS, ArcGIS, Google Earth Engine, teledetección, Google Colab
-              y Python para análisis territorial, monitoreo, estudios de ambientes
-              de complejidad y automatización de tareas analíticas.
-            </p>
-          </article>
-
-          <article class="service">
-            <div class="service-icon">E</div>
-            <h3>Asesoría y acompañamiento continuo</h3>
-            <p>
-              Acompañamiento técnico para administraciones, empresas y proyectos,
-              combinando soporte preventivo, ambiental y de sistemas de gestión,
-              en modalidad puntual o continua.
-            </p>
-          </article>
-
-          <article class="service">
-            <div class="service-icon">F</div>
-            <h3>Capacitación y transferencia</h3>
-            <p>
-              Programas de capacitación para equipos de prevención, operación,
-              administración y gestión ambiental, con foco en aplicación práctica
-              y actualización normativa.
-            </p>
-          </article>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Respaldamos tu operación</h3>
+          <p>Ayudamos a diseñar y sostener marcos de trabajo que resisten auditorías, 
+          exigencias regulatorias y cambios en el entorno operativo.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- PROPUESTA DE VALOR (AZUL) -->
-    <section class="section-dark" id="propuesta">
-      <div class="container split">
-        <div class="panel-deep">
-          <div class="section-kicker" style="color:#d8e7ff;">Propuesta de valor</div>
-          <h2 style="color:white; max-width:12ch;">Una consultora técnica integral, no un proveedor de documentos sueltos.</h2>
-          <p>
-            SEGPREV articula seguridad, salud ocupacional, gestión ambiental, sistemas
-            de gestión e inteligencia aplicada. No solo producimos entregables, sino que
-            ayudamos a diseñar y sostener marcos de trabajo que resisten auditorías,
-            exigencias regulatorias y cambios en el entorno operativo.
-          </p>
+  <!-- Servicios -->
+  <section id="servicios" class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Servicios</h2>
+        <p>Consultoría integral en seguridad, salud ocupacional y gestión ambiental. 
+        Nuestra oferta está organizada en dominios técnicos complementarios.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <span class="service-letter">A</span>
+          <h3>Seguridad y salud ocupacional</h3>
+          <p>Diseño e implementación de sistemas de seguridad y salud ocupacional, 
+          matrices de riesgos, planes de emergencia, procedimientos de trabajo seguro 
+          y programas de capacitación.</p>
         </div>
 
-        <div class="benefits">
-          <div class="benefit">
-            <div class="benefit-mark">✓</div>
-            <div>
-              <strong>Visión integrada</strong>
-              <span>Abordamos seguridad, salud ocupacional y ambiente como partes de un mismo sistema, evitando soluciones fragmentadas o contradictorias.</span>
-            </div>
+        <div class="service-card">
+          <span class="service-letter">B</span>
+          <h3>Gestión ambiental y SEIA</h3>
+          <p>Consultoría ambiental integral: líneas base, evaluación de impacto, 
+          seguimiento de RCA, monitoreos y apoyo técnico en SEIA para proyectos 
+          de minería, infraestructura, energía e industria.</p>
+        </div>
+
+        <div class="service-card">
+          <span class="service-letter">C</span>
+          <h3>Sistemas de gestión y documentación</h3>
+          <p>Diseño y mejora de sistemas ISO 9001, 14001 y 45001; gestión documental 
+          completa (reglamentos internos, manuales, procedimientos, registros, 
+          carpetas de arranque).</p>
+        </div>
+
+        <div class="service-card">
+          <span class="service-letter">D</span>
+          <h3>SIG, teledetección e IA aplicada</h3>
+          <p>Uso de QGIS, ArcGIS, Google Earth Engine, teledetección y Python para 
+          análisis territorial, monitoreo y automatización de tareas analíticas.</p>
+        </div>
+
+        <div class="service-card">
+          <span class="service-letter">E</span>
+          <h3>Asesoría y acompañamiento continuo</h3>
+          <p>Acompañamiento técnico para administraciones, empresas y proyectos, 
+          combinando soporte preventivo, ambiental y de sistemas de gestión.</p>
+        </div>
+
+        <div class="service-card">
+          <span class="service-letter">F</span>
+          <h3>Capacitación y transferencia</h3>
+          <p>Programas de capacitación para equipos de prevención, operación, 
+          administración y gestión ambiental, con foco en aplicación práctica.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Propuesta de Valor -->
+  <section id="propuesta" class="value-prop">
+    <div class="container">
+      <div class="section-header">
+        <h2>Propuesta de valor</h2>
+        <p>Una consultora técnica integral, no un proveedor de documentos sueltos.</p>
+      </div>
+
+      <div class="value-grid">
+        <div class="value-item">
+          <div class="value-check">✓</div>
+          <div class="value-content">
+            <h3>Visión integrada</h3>
+            <p>Abordamos seguridad, salud ocupacional y ambiente como partes de un mismo sistema, 
+            evitando soluciones fragmentadas o contradictorias.</p>
           </div>
-          <div class="benefit">
-            <div class="benefit-mark">✓</div>
-            <div>
-              <strong>Rigor técnico</strong>
-              <span>Experiencia real en SEIA, RCA, sistemas ISO, SIG y análisis avanzado, aplicada a contextos operativos diversos y exigentes.</span>
-            </div>
+        </div>
+
+        <div class="value-item">
+          <div class="value-check">✓</div>
+          <div class="value-content">
+            <h3>Rigor técnico</h3>
+            <p>Experiencia real en SEIA, RCA, sistemas ISO, SIG y análisis avanzado, 
+            aplicada a contextos operativos diversos y exigentes.</p>
           </div>
-          <div class="benefit">
-            <div class="benefit-mark">✓</div>
-            <div>
-              <strong>Enfoque en decisión</strong>
-              <span>Entregables diseñados para apoyar decisiones, auditorías e inspecciones, no solo para “cumplir” en el papel.</span>
-            </div>
+        </div>
+
+        <div class="value-item">
+          <div class="value-check">✓</div>
+          <div class="value-content">
+            <h3>Enfoque en decisión</h3>
+            <p>Entregables diseñados para apoyar decisiones, auditorías e inspecciones, 
+            no solo para "cumplir" en el papel.</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- CÓMO TRABAJAMOS (CLARO) -->
-    <section class="section-light" id="proceso">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-kicker">Cómo trabajamos</div>
-            <h2>Proceso claro para ordenar tu cumplimiento integral.</h2>
-          </div>
-          <p class="section-copy">
-            Definimos un flujo simple y transparente, pensado para organizaciones
-            que necesitan avanzar rápido sin perder la prolijidad técnica.
-          </p>
+  <!-- Cómo Trabajamos -->
+  <section id="proceso">
+    <div class="container">
+      <div class="section-header">
+        <h2>Cómo trabajamos</h2>
+        <p>Proceso claro para ordenar tu cumplimiento integral.</p>
+      </div>
+
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Diagnóstico integral</h3>
+          <p>Analizamos tu situación en seguridad, salud ocupacional, documentación, 
+          sistemas de gestión y ambiente, identificando brechas críticas.</p>
         </div>
 
-        <div class="process-grid">
-          <article class="process-step">
-            <div class="step-num">1</div>
-            <h3>Diagnóstico integral</h3>
-            <p>
-              Analizamos tu situación en seguridad, salud ocupacional, documentación,
-              sistemas de gestión y ambiente, identificando brechas críticas.
-            </p>
-          </article>
-          <article class="process-step">
-            <div class="step-num">2</div>
-            <h3>Plan y propuesta</h3>
-            <p>
-              Presentamos un plan de trabajo y propuesta económica claros, priorizando
-              acciones según riesgo, plazos y recursos disponibles.
-            </p>
-          </article>
-          <article class="process-step">
-            <div class="step-num">3</div>
-            <h3>Ejecución técnica</h3>
-            <p>
-              Ejecutamos el plan, actualizando documentación, mejorando procesos,
-              integrando SIG/IA cuando corresponde y capacitando a tu equipo.
-            </p>
-          </article>
-          <article class="process-step">
-            <div class="step-num">4</div>
-            <h3>Seguimiento y ajuste</h3>
-            <p>
-              Ofrecemos acompañamiento para mantener el sistema vivo, ajustar a cambios
-              normativos y apoyar futuras auditorías e inspecciones.
-            </p>
-          </article>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Plan y propuesta</h3>
+          <p>Presentamos un plan de trabajo y propuesta económica claros, priorizando 
+          acciones según riesgo, plazos y recursos disponibles.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Ejecución técnica</h3>
+          <p>Ejecutamos el plan, actualizando documentación, mejorando procesos, 
+          integrando SIG/IA cuando corresponde y capacitando a tu equipo.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">4</div>
+          <h3>Seguimiento y ajuste</h3>
+          <p>Ofrecemos acompañamiento para mantener el sistema vivo, ajustar a cambios 
+          normativos y apoyar futuras auditorías e inspecciones.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- CREDIBILIDAD (AZUL) -->
-    <section class="section-dark" id="credibilidad">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-kicker" style="color:#d8e7ff;">Confianza y experiencia</div>
-            <h2 style="color:white;">Más de 20 años integrando seguridad, salud ocupacional y ambiente.</h2>
-          </div>
-          <p class="section-copy">
-            Hemos trabajado en minería, infraestructura, energía, industria, servicios
-            y comunidades, combinando terreno, análisis de datos y gestión normativa.
-          </p>
+  <!-- Equipo -->
+  <section id="equipo" class="team">
+    <div class="container">
+      <div class="section-header">
+        <h2>Equipo principal</h2>
+        <p>Perfiles senior en prevención, ambiente y sistemas integrados.</p>
+      </div>
+
+      <div class="team-grid">
+        <div class="team-member">
+          <div class="member-avatar">JC</div>
+          <h3>Juan Carlos Delgado</h3>
+          <p class="member-role">Seguridad, salud ocupacional y gestión documental</p>
+          <p>Especialista con más de 20 años en sistemas de seguridad y salud ocupacional, 
+          programas preventivos, matrices de riesgos, planes de emergencia, reglamentos 
+          internos y gestión documental para contratistas y empresas.</p>
         </div>
 
-        <div class="cred-grid">
-          <div class="cred-item">
-            <div class="cred-num">20+</div>
-            <div class="cred-label">Años en seguridad, salud ocupacional y gestión documental.</div>
-          </div>
-          <div class="cred-item">
-            <div class="cred-num">20+</div>
-            <div class="cred-label">Años en consultoría ambiental, SEIA, RCA y monitoreo.</div>
-          </div>
-          <div class="cred-item">
-            <div class="cred-num">ISO</div>
-            <div class="cred-label">Experiencia con ISO 9001, 14001 y 45001 en contextos exigentes.</div>
-          </div>
-          <div class="cred-item">
-            <div class="cred-num">SIG</div>
-            <div class="cred-label">Uso avanzado de SIG, teledetección e IA aplicada a proyectos reales.</div>
-          </div>
-        </div>
-
-        <div class="client-logos">
-          <span>Minería y recursos naturales</span>
-          <span>Construcción e infraestructura</span>
-          <span>Industria y servicios</span>
-          <span>Comunidades y edificios</span>
+        <div class="team-member">
+          <div class="member-avatar">LR</div>
+          <h3>Leonardo Ruiz</h3>
+          <p class="member-role">Consultoría ambiental, SEIA, SIG e IA aplicada</p>
+          <p>Biólogo y Magíster en Ingeniería de Gestión de Recursos Naturales y Medio Ambiente, 
+          con más de 20 años en consultoría ambiental, evaluación de impacto, seguimiento RCA, 
+          monitoreo, SIG, teledetección y sistemas integrados ISO.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- EQUIPO (CLARO) -->
-    <section class="section-light" id="equipo">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-kicker">Equipo principal</div>
-            <h2>Perfiles senior en prevención, ambiente y sistemas integrados.</h2>
-          </div>
-          <p class="section-copy">
-            SEGPREV se construye sobre trayectorias profesionales extensas y complementarias,
-            capaces de abordar proyectos complejos con rigor técnico y visión sistémica.
-          </p>
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-header">
+        <h2>Preguntas frecuentes</h2>
+        <p>Resolvemos dudas clave antes de que tomes la decisión.</p>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3>¿Trabajan solo en Santiago?</h3>
+          <p>No. Tenemos base en Santiago, Región Metropolitana, pero trabajamos a nivel 
+          nacional, combinando trabajo remoto y presencial según el tipo de proyecto.</p>
         </div>
 
-        <div class="team-grid">
-          <article class="member">
-            <div class="member-top">
-              <div class="avatar">JC</div>
-              <div>
-                <h3>Juan Carlos Delgado</h3>
-                <div class="member-role">Seguridad, salud ocupacional y gestión documental</div>
-              </div>
+        <div class="faq-item">
+          <h3>¿Atienden organizaciones de distintos tamaños?</h3>
+          <p>Sí. Apoyamos desde pymes y comunidades hasta grandes contratistas, empresas 
+          industriales y organismos públicos, adaptando la profundidad del servicio.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>¿Pueden ayudar en situaciones urgentes?</h3>
+          <p>Tenemos experiencia en procesos de regularización y actualización rápida, 
+          priorizando acciones que reduzcan riesgos críticos frente a auditorías o 
+          inspecciones cercanas.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>¿El diagnóstico inicial es realmente integral?</h3>
+          <p>El diagnóstico considera seguridad, salud ocupacional, documentación, 
+          sistemas de gestión y ambiente. A partir de ahí definimos juntos qué 
+          líneas abordar primero.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Contacto</h2>
+        <p>Solicita un diagnóstico integral sin costo.</p>
+      </div>
+
+      <div class="contact-container">
+        <form action="https://formspree.io/f/mykvvljy" method="POST">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="nombre">Nombre completo *</label>
+              <input type="text" id="nombre" name="nombre" required>
             </div>
-            <p>
-              Especialista con más de 20 años en sistemas de seguridad y salud ocupacional,
-              programas preventivos, matrices de riesgos, planes de emergencia, reglamentos
-              internos, carpetas de arranque y gestión documental para contratistas y empresas.
-            </p>
-          </article>
 
-          <article class="member">
-            <div class="member-top">
-              <div class="avatar">LR</div>
-              <div>
-                <h3>Leonardo Ruiz</h3>
-                <div class="member-role">Consultoría ambiental, SEIA, SIG e IA aplicada</div>
-              </div>
-            </div>
-            <p>
-              Biólogo y Magíster en Ingeniería de Gestión de Recursos Naturales y Medio Ambiente,
-              con más de 20 años en consultoría ambiental, evaluación de impacto, seguimiento RCA,
-              monitoreo, SIG, teledetección y sistemas integrados ISO, integrando además
-              herramientas de inteligencia artificial y análisis de datos para proyectos complejos.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ (AZUL) -->
-    <section class="section-dark" id="faq">
-      <div class="container">
-        <div class="section-head">
-          <div>
-            <div class="section-kicker" style="color:#d8e7ff;">Preguntas frecuentes</div>
-            <h2 style="color:white;">Resolvemos dudas clave antes de que tomes la decisión.</h2>
-          </div>
-          <p class="section-copy">
-            Una parte importante de nuestra labor es clarificar alcance, plazos y cobertura,
-            para que el trabajo se diseñe con expectativas alineadas desde el inicio.
-          </p>
-        </div>
-
-        <div class="faq-grid">
-          <article class="faq-item">
-            <h3>¿Trabajan solo en Santiago?</h3>
-            <p>No. Tenemos base en Santiago, Región Metropolitana, pero trabajamos a nivel nacional, combinando trabajo remoto y presencial según el tipo de proyecto.</p>
-          </article>
-          <article class="faq-item">
-            <h3>¿Atienden organizaciones de distintos tamaños?</h3>
-            <p>Sí. Apoyamos desde pymes y comunidades hasta grandes contratistas, empresas industriales y organismos públicos, adaptando la profundidad del servicio.</p>
-          </article>
-          <article class="faq-item">
-            <h3>¿Pueden ayudar en situaciones urgentes?</h3>
-            <p>Tenemos experiencia en procesos de regularización y actualización rápida, priorizando acciones que reduzcan riesgos críticos frente a auditorías o inspecciones cercanas.</p>
-          </article>
-          <article class="faq-item">
-            <h3>¿El diagnóstico inicial es realmente integral?</h3>
-            <p>El diagnóstico considera seguridad, salud ocupacional, documentación, sistemas de gestión y ambiente. A partir de ahí definimos juntos qué líneas abordar primero.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACTO / CTA (AZUL) -->
-    <section class="section-dark" id="contacto">
-      <div class="container cta-shell">
-        <div>
-          <div class="section-kicker" style="color:#d8e7ff;">Contacto</div>
-          <h2 style="color:white; max-width:13ch;">Solicita un diagnóstico integral sin costo.</h2>
-          <p>
-            Si quieres evaluar cómo estás hoy en seguridad, salud ocupacional, documentación,
-            sistemas de gestión y ambiente, podemos comenzar con un diagnóstico integral acotado.
-            Desde ahí definimos un plan realista y un ritmo de trabajo que haga sentido
-            a tu organización.
-          </p>
-          <div class="cta-row" style="margin-bottom:0;">
-            <a class="btn btn-primary"
-               style="background:white;color:#0b2e71;box-shadow:none;"
-               href="#contacto">
-              Completar formulario
-            </a>
-            <a class="btn btn-secondary"
-               style="background:transparent;color:white;border-color:rgba(255,255,255,.22);"
-               href="https://wa.me/56954025756" target="_blank" rel="noopener noreferrer">
-              Escribir por WhatsApp
-            </a>
-          </div>
-        </div>
-
-        <aside class="contact-card">
-          <form
-            action="https://formspree.io/f/tu-id-aqui"
-            method="POST"
-            class="contact-form"
-          >
-            <div class="field">
-              <label for="nombre">Nombre completo</label>
-              <input type="text" id="nombre" name="nombre" required />
-            </div>
-            <div class="field">
+            <div class="form-group">
               <label for="empresa">Empresa / organización</label>
-              <input type="text" id="empresa" name="empresa" required />
+              <input type="text" id="empresa" name="empresa">
             </div>
-            <div class="field">
-              <label for="telefono">Teléfono / WhatsApp</label>
-              <input type="tel" id="telefono" name="telefono" required />
+
+            <div class="form-group">
+              <label for="telefono">Teléfono / WhatsApp *</label>
+              <input type="tel" id="telefono" name="telefono" required>
             </div>
-            <div class="field">
-              <label for="servicio">Interés principal</label>
-              <select id="servicio" name="servicio">
+
+            <div class="form-group">
+              <label for="interes">Interés principal *</label>
+              <select id="interes" name="interes" required>
+                <option value="">Selecciona una opción</option>
                 <option value="seguridad">Seguridad y salud ocupacional</option>
                 <option value="ambiental">Gestión ambiental / SEIA / RCA</option>
-                <option value="sistemas">Sistemas de gestión e ISO</option>
+                <option value="iso">Sistemas de gestión e ISO</option>
                 <option value="sig">SIG, teledetección e IA aplicada</option>
-                <option value="integral">Diagnóstico integral (todas las anteriores)</option>
+                <option value="diagnostico">Diagnóstico integral (todas)</option>
                 <option value="otro">Otro / no estoy seguro</option>
               </select>
             </div>
-            <div class="field">
-              <label for="mensaje">Mensaje breve (opcional)</label>
-              <textarea id="mensaje" name="mensaje" rows="3"
-                placeholder="Contexto del proyecto, urgencia, tipo de instalación, etc."></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar solicitud</button>
-            <p class="form-footnote">
-              También puedes escribirnos directamente a
-              <strong>+56 9 5402 5756</strong> o <strong>+56 9 8430 9798</strong>.
-            </p>
-          </form>
-        </aside>
-      </div>
-    </section>
-  </main>
 
+            <div class="form-group full-width">
+              <label for="mensaje">Mensaje breve (opcional)</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos sobre tu proyecto o necesidad..."></textarea>
+            </div>
+
+            <div class="form-group full-width">
+              <button type="submit" class="btn btn-secondary btn-large" style="width: 100%;">
+                <i class="fas fa-paper-plane"></i>
+                Enviar solicitud
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <div class="whatsapp-box">
+          <p>O también puedes escribirnos directamente a:</p>
+          <a href="https://wa.me/56954025756" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i>
+            +56 9 5402 5756
+          </a>
+          <p style="margin-top: 1rem; font-size: 0.9rem;">o al +56 9 8430 9798</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    SEGPREV · Consultora técnica integral en seguridad, salud ocupacional y gestión ambiental · Santiago, Chile.
+    <div class="footer-content">
+      <div class="footer-logo">SEGPREV</div>
+      <p class="footer-text">
+        Consultora técnica integral en seguridad, salud ocupacional y gestión ambiental<br>
+        Santiago, Chile
+      </p>
+      <div class="footer-bottom">
+        <p>&copy; 2024 SEGPREV. Todos los derechos reservados.</p>
+      </div>
+    </div>
   </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/56954025756" target="_blank" class="whatsapp-float" title="Escríbenos por WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Simple Mobile Menu Script -->
+  <script>
+    document.querySelector('.mobile-menu').addEventListener('click', function() {
+      alert('Menú móvil: Usa los enlaces del header para navegar');
+    });
+
+    // Smooth scroll para navegación
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
