@@ -95,5 +95,5 @@ seprevin/
 
 1. **Clonar el repositorio**
 ```bash
-git clone https://github.com/tu-usuario/seprevin.git
+git clone https://github.com/le0ruiz/seprevin.git
 cd seprevin
