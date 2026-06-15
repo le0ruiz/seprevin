@@ -1,0 +1,2197 @@
+<!DOCTYPE html>
+<html lang="es-CL" dir="ltr">
+<head>
+    <!-- ============================================
+         METADATOS ESENCIALES
+         ============================================ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="SEPREVIN - Gestión Ambiental y SEIA: Consultoría ambiental integral, evaluación de impacto ambiental, seguimiento RCA, monitoreos y apoyo técnico en SEIA. Cumplimiento Ley 19.300 y normativa ambiental chilena.">
+    <meta name="keywords" content="gestión ambiental, SEIA, evaluación de impacto ambiental, RCA, SMA, Ley 19.300, monitoreo ambiental, línea base, EIA, DIA, consultoría ambiental, Chile, SEPREVIN">
+    <meta name="author" content="SEPREVIN">
+    <meta name="robots" content="index, follow">
+    
+    <!-- ============================================
+         SEGURIDAD
+         ============================================ -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <meta http-equiv="Content-Security-Policy" 
+          content="default-src 'self'; 
+                   script-src 'self' 'unsafe-inline'; 
+                   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
+                   font-src 'self' https://fonts.gstatic.com data:; 
+                   img-src 'self' data: https: blob: https://images.unsplash.com; 
+                   connect-src 'self' https://api.whatsapp.com https://formspree.io; 
+                   frame-ancestors 'none'; 
+                   base-uri 'self'; 
+                   form-action 'self' https://formspree.io; 
+                   upgrade-insecure-requests;">
+    
+    <meta http-equiv="Permissions-Policy" 
+          content="geolocation=(), microphone=(), camera=(), payment=(), usb=()">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.seprevin.cl/gestion-ambiental-seia.html">
+    <meta property="og:title" content="SEPREVIN | Gestión Ambiental y SEIA">
+    <meta property="og:description" content="Consultoría ambiental integral: evaluación de impacto ambiental, seguimiento RCA, monitoreos y apoyo técnico en SEIA. Cumplimiento Ley 19.300.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SEPREVIN | Gestión Ambiental y SEIA">
+    <meta name="twitter:description" content="Consultoría ambiental integral con más de 20 años de experiencia en Chile.">
+    
+    <meta name="theme-color" content="#012D90">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="SEPREVIN">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Schema.org -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Gestión Ambiental y SEIA",
+        "provider": {
+            "@type": "Organization",
+            "name": "SEPREVIN",
+            "url": "https://www.seprevin.cl"
+        },
+        "description": "Consultoría ambiental integral: líneas base, evaluación de impacto, seguimiento de RCA, monitoreos y apoyo técnico en SEIA para proyectos de minería, infraestructura, energía, industria y servicios.",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Chile"
+        }
+    }
+    </script>
+    
+    <title>SEPREVIN | Gestión Ambiental y SEIA</title>
+    
+    <!-- ============================================
+         CSS COMPLETO
+         ============================================ -->
+    <style>
+        /* Variables CSS */
+        :root {
+            --primary: #012D90;
+            --primary-dark: #001a5c;
+            --primary-light: #0047AB;
+            --primary-rgb: 1, 45, 144;
+            --accent: #00D4FF;
+            
+            /* Colores ambientales */
+            --env-green: #10B981;
+            --env-blue: #3B82F6;
+            --env-yellow: #F59E0B;
+            --env-red: #EF4444;
+            --env-purple: #8B5CF6;
+            
+            --bg: #FEFEFE;
+            --bg-alt: #F8FAFC;
+            --surface: #FFFFFF;
+            --text: #0F172A;
+            --text-muted: #475569;
+            --text-light: #94A3B8;
+            --border: #E2E8F0;
+            
+            --whatsapp: #25D366;
+            --whatsapp-dark: #128C7E;
+            
+            --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+            --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+            --shadow-primary: 0 10px 40px -10px rgba(1, 45, 144, 0.4);
+            --shadow-glow: 0 0 60px rgba(1, 45, 144, 0.15);
+            
+            --gradient-primary: linear-gradient(135deg, #012D90 0%, #0047AB 100%);
+            --gradient-hero: linear-gradient(135deg, #012D90 0%, #001a5c 50%, #000d33 100%);
+            --gradient-overlay: linear-gradient(135deg, rgba(1, 45, 144, 0.95) 0%, rgba(0, 26, 92, 0.85) 100%);
+            --gradient-env: linear-gradient(135deg, #10B981 0%, #059669 100%);
+            
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            --font-display: 'Space Grotesk', 'Inter', sans-serif;
+            
+            --space-xs: clamp(0.25rem, 0.5vw, 0.5rem);
+            --space-sm: clamp(0.5rem, 1vw, 1rem);
+            --space-md: clamp(1rem, 2vw, 1.5rem);
+            --space-lg: clamp(1.5rem, 3vw, 2rem);
+            --space-xl: clamp(2rem, 4vw, 3rem);
+            --space-2xl: clamp(3rem, 6vw, 4rem);
+            --space-3xl: clamp(4rem, 8vw, 6rem);
+            --space-4xl: clamp(5rem, 10vw, 8rem);
+            
+            --radius-sm: 0.5rem;
+            --radius-md: 0.75rem;
+            --radius-lg: 1rem;
+            --radius-xl: 1.5rem;
+            --radius-2xl: 2rem;
+            --radius-full: 9999px;
+            
+            --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-bounce: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+            
+            --max-width: 1400px;
+            --header-height: clamp(70px, 10vw, 90px);
+            --container-padding: clamp(1rem, 5vw, 3rem);
+            
+            --z-dropdown: 1000;
+            --z-sticky: 1020;
+            --z-fixed: 1030;
+            --z-modal: 1050;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+            scroll-padding-top: var(--header-height);
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+            font-feature-settings: "kern" 1, "liga" 1;
+        }
+
+        ::selection {
+            background-color: rgba(1, 45, 144, 0.2);
+            color: var(--primary);
+        }
+
+        ::-webkit-scrollbar { width: 12px; height: 12px; }
+        ::-webkit-scrollbar-track { background: var(--bg-alt); }
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: var(--radius-full);
+            border: 3px solid var(--bg-alt);
+        }
+        ::-webkit-scrollbar-thumb:hover { background: var(--primary-dark); }
+
+        /* Utilidades */
+        .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--container-padding);
+        }
+
+        .section {
+            padding: var(--space-4xl) 0;
+            position: relative;
+        }
+
+        .section-alt { background: var(--bg-alt); }
+        .text-center { text-align: center; }
+        
+        .text-gradient {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            font-weight: 600;
+            z-index: 9999;
+            transition: top var(--transition-fast);
+        }
+
+        .skip-link:focus { top: 1rem; }
+
+        /* Tipografía Fluida */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-display);
+            font-weight: 700;
+            line-height: 1.1;
+            color: var(--text);
+            letter-spacing: -0.02em;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw + 1rem, 5rem);
+            font-weight: 800;
+            line-height: 1.05;
+        }
+
+        h2 {
+            font-size: clamp(1.75rem, 4vw + 0.5rem, 3.5rem);
+            margin-bottom: var(--space-md);
+        }
+
+        h3 {
+            font-size: clamp(1.25rem, 2vw + 0.25rem, 1.75rem);
+            margin-bottom: var(--space-sm);
+        }
+
+        p {
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: var(--space-md);
+        }
+
+        .subtitle {
+            font-size: clamp(1rem, 1.5vw + 0.25rem, 1.25rem);
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto var(--space-xl);
+            line-height: 1.8;
+        }
+
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1.25rem;
+            background: rgba(1, 45, 144, 0.08);
+            color: var(--primary);
+            border-radius: var(--radius-full);
+            font-size: clamp(0.75rem, 1vw, 0.875rem);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: var(--space-lg);
+            border: 1px solid rgba(1, 45, 144, 0.15);
+        }
+
+        .section-label::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--primary);
+            border-radius: 50%;
+            animation: pulse-dot 2s infinite;
+        }
+
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
+
+        /* Botones */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            padding: clamp(0.875rem, 1.5vw, 1.25rem) clamp(1.5rem, 3vw, 2.5rem);
+            font-family: var(--font-sans);
+            font-weight: 600;
+            font-size: clamp(0.875rem, 1.2vw, 1rem);
+            text-decoration: none;
+            border: none;
+            border-radius: var(--radius-lg);
+            cursor: pointer;
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+            min-height: 52px;
+            white-space: nowrap;
+            letter-spacing: 0.01em;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 100%);
+            opacity: 0;
+            transition: opacity var(--transition-base);
+        }
+
+        .btn:hover::before { opacity: 1; }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: var(--shadow-primary);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 40px -10px rgba(1, 45, 144, 0.5);
+        }
+
+        .btn-primary:active { transform: translateY(-1px); }
+
+        .btn-white {
+            background: white;
+            color: var(--primary);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-white:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .btn-outline-white {
+            background: transparent;
+            color: white;
+            border: 2px solid rgba(255,255,255,0.4);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-outline-white:hover {
+            background: white;
+            color: var(--primary);
+            border-color: white;
+            transform: translateY(-3px);
+        }
+
+        .btn-whatsapp {
+            background: var(--whatsapp);
+            color: white;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-whatsapp:hover {
+            background: var(--whatsapp-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        .btn:focus-visible {
+            outline: 3px solid var(--accent);
+            outline-offset: 3px;
+        }
+
+        .btn-icon {
+            display: inline-flex;
+            transition: transform var(--transition-base);
+        }
+
+        .btn:hover .btn-icon { transform: translateX(4px); }
+
+        /* Header Sticky con Glassmorphism */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: var(--z-sticky);
+            background: rgba(254, 254, 254, 0.95);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+            transition: all var(--transition-base);
+        }
+
+        header.scrolled {
+            box-shadow: var(--shadow-md);
+            background: rgba(254, 254, 254, 0.98);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: var(--header-height);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: var(--space-sm);
+        }
+
+        .logo img {
+            height: clamp(40px, 6vw, 55px);
+            width: auto;
+            transition: transform var(--transition-base);
+        }
+
+        .logo:hover img { transform: scale(1.05); }
+
+        .logo-text {
+            font-family: var(--font-display);
+            font-size: clamp(1.25rem, 2vw, 1.5rem);
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: clamp(1rem, 2vw, 2rem);
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            font-size: clamp(0.875rem, 1vw, 0.95rem);
+            padding: 0.5rem 0.75rem;
+            border-radius: var(--radius-md);
+            transition: all var(--transition-fast);
+            position: relative;
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width var(--transition-base);
+            border-radius: var(--radius-full);
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active { color: var(--primary); }
+
+        .nav-menu a:hover::after,
+        .nav-menu a.active::after { width: 80%; }
+
+        .nav-menu a:not(.btn):focus-visible {
+            outline: 2px solid var(--primary);
+            outline-offset: 2px;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            min-height: 48px;
+            min-width: 48px;
+            z-index: var(--z-dropdown);
+        }
+
+        .mobile-menu-btn span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--primary);
+            margin: 5px 0;
+            transition: all var(--transition-base);
+            border-radius: var(--radius-full);
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) { opacity: 0; }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+
+        /* ============================================
+           HERO CON IMAGEN DE FONDO
+           ============================================ */
+        .hero {
+            position: relative;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            padding: calc(var(--header-height) + var(--space-3xl)) 0 var(--space-3xl);
+        }
+
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            z-index: 0;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-overlay);
+            z-index: 1;
+        }
+
+        .hero-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            z-index: 2;
+        }
+
+        .hero-blob-1 {
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 80vw;
+            height: 80vw;
+            background: radial-gradient(circle, rgba(16, 185, 129, 0.2) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float-blob 20s ease-in-out infinite;
+            z-index: 2;
+        }
+
+        .hero-blob-2 {
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 60vw;
+            height: 60vw;
+            background: radial-gradient(circle, rgba(1, 45, 144, 0.4) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float-blob 25s ease-in-out infinite reverse;
+            z-index: 2;
+        }
+
+        @keyframes float-blob {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.95); }
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-2xl);
+            position: relative;
+            z-index: 3;
+        }
+
+        .hero-content { max-width: 1000px; }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem 1.5rem;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: var(--radius-full);
+            color: white;
+            font-size: clamp(0.875rem, 1.2vw, 1rem);
+            font-weight: 500;
+            margin-bottom: var(--space-lg);
+            animation: fadeInDown 0.8s ease-out;
+        }
+
+        .hero-badge-icon { font-size: 1.25rem; }
+
+        .hero h1 {
+            color: white;
+            margin-bottom: var(--space-lg);
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .hero h1 .highlight {
+            display: block;
+            background: linear-gradient(135deg, #fff 0%, #00D4FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-top: 0.25em;
+        }
+
+        .hero p {
+            color: rgba(255, 255, 255, 0.95);
+            font-size: clamp(1rem, 1.5vw + 0.25rem, 1.25rem);
+            margin-bottom: var(--space-xl);
+            max-width: 700px;
+            line-height: 1.8;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: var(--space-md);
+            flex-wrap: wrap;
+            animation: fadeInUp 0.8s ease-out 0.6s both;
+        }
+
+        /* Stats en Hero */
+        .hero-stats {
+            margin-top: var(--space-2xl);
+            padding-top: var(--space-xl);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            animation: fadeInUp 0.8s ease-out 0.8s both;
+        }
+
+        .hero-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: var(--space-lg);
+        }
+
+        .hero-stat {
+            color: white;
+            padding: var(--space-lg);
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: var(--radius-lg);
+            transition: all var(--transition-base);
+        }
+
+        .hero-stat:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .hero-stat-number {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 4vw, 3rem);
+            font-weight: 800;
+            display: block;
+            background: linear-gradient(135deg, #fff 0%, #00D4FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.25rem;
+        }
+
+        .hero-stat-label {
+            font-size: clamp(0.75rem, 1vw, 0.9rem);
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.4;
+        }
+
+        /* ============================================
+           SECCIÓN CON IMAGEN LATERAL
+           ============================================ */
+        .split-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-3xl);
+            align-items: center;
+            margin-top: var(--space-2xl);
+        }
+
+        .split-image {
+            position: relative;
+            border-radius: var(--radius-2xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-2xl);
+            aspect-ratio: 4/3;
+        }
+
+        .split-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .split-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .split-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, transparent 100%);
+            pointer-events: none;
+        }
+
+        .split-content h2 {
+            margin-bottom: var(--space-lg);
+        }
+
+        .split-content p {
+            font-size: 1.0625rem;
+            margin-bottom: var(--space-lg);
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin-top: var(--space-lg);
+        }
+
+        .feature-list li {
+            padding: var(--space-sm) 0;
+            padding-left: var(--space-xl);
+            position: relative;
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        .feature-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: var(--space-sm);
+            width: 24px;
+            height: 24px;
+            background: var(--gradient-env);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        /* ============================================
+           CARDS CON ICONOS SVG
+           ============================================ */
+        .card {
+            background: var(--surface);
+            border-radius: var(--radius-2xl);
+            padding: var(--space-xl);
+            border: 1px solid var(--border);
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-env);
+            transform: scaleX(0);
+            transition: transform var(--transition-base);
+            transform-origin: left;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-2xl);
+            border-color: transparent;
+        }
+
+        .card:hover::before { transform: scaleX(1); }
+
+        .card-icon {
+            width: 64px;
+            height: 64px;
+            background: var(--gradient-env);
+            border-radius: var(--radius-xl);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--space-lg);
+            transition: all var(--transition-base);
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+        }
+
+        .card:hover .card-icon {
+            transform: scale(1.1) rotate(-5deg);
+            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+        }
+
+        .card-icon svg {
+            width: 28px;
+            height: 28px;
+            stroke: white;
+            stroke-width: 2;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        /* ============================================
+           GRID DE FEATURES
+           ============================================ */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-2xl);
+        }
+
+        /* ============================================
+           GALERÍA DE IMÁGENES
+           ============================================ */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-2xl);
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            box-shadow: var(--shadow-lg);
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to top, rgba(1, 45, 144, 0.8) 0%, transparent 60%);
+            opacity: 0;
+            transition: opacity var(--transition-base);
+        }
+
+        .gallery-item:hover::after {
+            opacity: 1;
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: var(--space-lg);
+            color: white;
+            font-weight: 600;
+            font-size: 1.125rem;
+            transform: translateY(20px);
+            opacity: 0;
+            transition: all var(--transition-base);
+            z-index: 2;
+        }
+
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        /* ============================================
+           DASHBOARD DE INDICADORES AMBIENTALES
+           ============================================ */
+        .dashboard-section {
+            background: linear-gradient(135deg, #F0FDF4 0%, #ECFDF5 100%);
+            padding: var(--space-4xl) 0;
+        }
+
+        .dashboard-container {
+            background: var(--surface);
+            border-radius: var(--radius-2xl);
+            padding: var(--space-2xl);
+            box-shadow: var(--shadow-xl);
+            border: 1px solid var(--border);
+        }
+
+        .dashboard-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--space-xl);
+            flex-wrap: wrap;
+            gap: var(--space-md);
+        }
+
+        .dashboard-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        .dashboard-subtitle {
+            font-size: 0.9375rem;
+            color: var(--text-muted);
+            margin-top: 0.25rem;
+        }
+
+        /* Indicadores con barras de progreso */
+        .indicators-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-lg);
+            margin-bottom: var(--space-xl);
+        }
+
+        .indicator-card {
+            background: var(--bg-alt);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            border: 1px solid var(--border);
+        }
+
+        .indicator-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: var(--space-md);
+        }
+
+        .indicator-label {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .indicator-value {
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--env-green);
+        }
+
+        .indicator-bar {
+            height: 8px;
+            background: var(--border);
+            border-radius: var(--radius-full);
+            overflow: hidden;
+            margin-bottom: var(--space-sm);
+        }
+
+        .indicator-fill {
+            height: 100%;
+            background: var(--gradient-env);
+            border-radius: var(--radius-full);
+            transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+            width: 0;
+        }
+
+        .indicator-fill.animated {
+            width: var(--target-width);
+        }
+
+        .indicator-footer {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        /* Stats del dashboard */
+        .dashboard-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-xl);
+            padding-top: var(--space-xl);
+            border-top: 1px solid var(--border);
+        }
+
+        .stat-card {
+            background: var(--bg-alt);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: all var(--transition-base);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        /* ============================================
+           NORMATIVA AMBIENTAL CHILENA
+           ============================================ */
+        .normativa-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-2xl);
+        }
+
+        .normativa-card {
+            background: var(--surface);
+            border-radius: var(--radius-xl);
+            padding: var(--space-xl);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--env-green);
+            transition: all var(--transition-base);
+        }
+
+        .normativa-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .normativa-code {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--env-green);
+            margin-bottom: var(--space-sm);
+        }
+
+        .normativa-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: var(--space-sm);
+        }
+
+        .normativa-desc {
+            font-size: 0.9375rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* ============================================
+           METODOLOGÍA CON NÚMEROS
+           ============================================ */
+        .methodology-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-2xl);
+        }
+
+        .methodology-card {
+            background: var(--surface);
+            border-radius: var(--radius-2xl);
+            padding: var(--space-xl);
+            border: 1px solid var(--border);
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .methodology-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 120px;
+            background: var(--gradient-env);
+            opacity: 0.05;
+        }
+
+        .methodology-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-2xl);
+            border-color: var(--env-green);
+        }
+
+        .methodology-number {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient-env);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-size: 1.75rem;
+            font-weight: 800;
+            margin-bottom: var(--space-lg);
+            box-shadow: 0 10px 30px -5px rgba(16, 185, 129, 0.4);
+            position: relative;
+            z-index: 1;
+            transition: all var(--transition-bounce);
+        }
+
+        .methodology-card:hover .methodology-number {
+            transform: scale(1.1) rotate(-5deg);
+        }
+
+        .methodology-card h3 {
+            position: relative;
+            z-index: 1;
+        }
+
+        .methodology-card p {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ============================================
+           CTA SECTION
+           ============================================ */
+        .cta-section {
+            position: relative;
+            padding: var(--space-4xl) 0;
+            overflow: hidden;
+        }
+
+        .cta-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .cta-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-overlay);
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .cta-content h2 {
+            color: white;
+            margin-bottom: var(--space-lg);
+        }
+
+        .cta-content p {
+            color: rgba(255, 255, 255, 0.95);
+            font-size: clamp(1.125rem, 2vw, 1.375rem);
+            max-width: 700px;
+            margin: 0 auto var(--space-xl);
+        }
+
+        /* ============================================
+           WHATSAPP FLOTANTE
+           ============================================ */
+        .whatsapp-float {
+            position: fixed;
+            bottom: clamp(1.5rem, 3vw, 2rem);
+            right: clamp(1.5rem, 3vw, 2rem);
+            z-index: var(--z-fixed);
+            background: var(--whatsapp);
+            color: white;
+            width: clamp(56px, 8vw, 64px);
+            height: clamp(56px, 8vw, 64px);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 10px 30px -5px rgba(37, 211, 102, 0.4);
+            transition: all var(--transition-bounce);
+            animation: pulse-whatsapp 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.15) rotate(10deg);
+            box-shadow: 0 15px 40px -5px rgba(37, 211, 102, 0.6);
+            animation: none;
+        }
+
+        .whatsapp-tooltip {
+            position: absolute;
+            right: calc(100% + 1rem);
+            background: white;
+            color: var(--text);
+            padding: 0.75rem 1.25rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-xl);
+            font-size: 0.875rem;
+            font-weight: 600;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--transition-base);
+            pointer-events: none;
+        }
+
+        .whatsapp-float:hover .whatsapp-tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        @keyframes pulse-whatsapp {
+            0%, 100% { box-shadow: 0 10px 30px -5px rgba(37, 211, 102, 0.4); }
+            50% { box-shadow: 0 10px 40px -5px rgba(37, 211, 102, 0.6), 0 0 0 10px rgba(37, 211, 102, 0.1); }
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        footer {
+            background: var(--gradient-hero);
+            color: white;
+            padding: var(--space-3xl) 0 var(--space-xl);
+            position: relative;
+            overflow: hidden;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.4;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: var(--space-2xl);
+            margin-bottom: var(--space-2xl);
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer-brand img {
+            height: clamp(50px, 7vw, 65px);
+            margin-bottom: var(--space-lg);
+        }
+
+        .footer-brand p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: clamp(0.875rem, 1vw, 0.95rem);
+            line-height: 1.8;
+            max-width: 400px;
+        }
+
+        .footer-title {
+            font-size: clamp(1rem, 1.2vw, 1.125rem);
+            font-weight: 700;
+            margin-bottom: var(--space-lg);
+            color: white;
+        }
+
+        .footer-links { list-style: none; }
+        .footer-links li { margin-bottom: var(--space-sm); }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: all var(--transition-fast);
+            font-size: clamp(0.875rem, 1vw, 0.95rem);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer-links a::before {
+            content: '→';
+            opacity: 0;
+            transition: all var(--transition-fast);
+            transform: translateX(-10px);
+        }
+
+        .footer-links a:hover { color: white; }
+
+        .footer-links a:hover::before {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: var(--space-xl);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: clamp(0.8rem, 0.9vw, 0.875rem);
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ============================================
+           ANIMACIONES
+           ============================================ */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .animate-on-scroll.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ============================================
+           RESPONSIVE
+           ============================================ */
+        @media (max-width: 1024px) {
+            .split-section {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --container-padding: 1.25rem;
+            }
+            
+            .nav-menu {
+                display: none;
+                position: fixed;
+                top: var(--header-height);
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(254, 254, 254, 0.98);
+                backdrop-filter: blur(20px);
+                flex-direction: column;
+                padding: var(--space-xl);
+                gap: var(--space-sm);
+                box-shadow: var(--shadow-xl);
+                border-top: 1px solid var(--border);
+                overflow-y: auto;
+            }
+            
+            .nav-menu.active { display: flex; }
+            .mobile-menu-btn { display: block; }
+            
+            .hero {
+                padding: calc(var(--header-height) + var(--space-2xl)) 0 var(--space-2xl);
+                min-height: auto;
+            }
+            
+            .hero-background {
+                background-attachment: scroll;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .hero-buttons .btn { width: 100%; }
+            
+            .hero-stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .hero-stat { text-align: center; }
+            
+            .feature-grid,
+            .gallery-grid,
+            .methodology-grid,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .section { padding: var(--space-3xl) 0; }
+            
+            .cta-background {
+                background-attachment: scroll;
+            }
+            
+            .whatsapp-float {
+                bottom: 1.5rem;
+                right: 1.5rem;
+            }
+            
+            .whatsapp-tooltip { display: none; }
+
+            .dashboard-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-stats-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: var(--space-sm);
+            }
+            
+            .hero-stat { padding: var(--space-sm); }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+            
+            html { scroll-behavior: auto; }
+            
+            .hero-background,
+            .cta-background {
+                background-attachment: scroll;
+            }
+        }
+
+        @media (prefers-contrast: high) {
+            .btn-primary { border: 2px solid white; }
+            .card, .methodology-card { border-width: 2px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Skip Link - Accesibilidad -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- ============================================
+         HEADER
+         ============================================ -->
+    <header role="banner" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="SEPREVIN - Inicio">
+                <img src="logo_azul.jpeg" alt="SEPREVIN" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                <span class="logo-text" style="display:none">SEPREVIN</span>
+            </a>
+            
+            <button class="mobile-menu-btn" 
+                    aria-label="Abrir menú de navegación" 
+                    aria-expanded="false"
+                    aria-controls="nav-menu"
+                    onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav role="navigation" aria-label="Navegación principal">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html#servicios">Servicios</a></li>
+                    <li><a href="index.html#propuesta">Propuesta</a></li>
+                    <li><a href="index.html#proceso">Cómo trabajamos</a></li>
+                    <li><a href="index.html#equipo">Equipo</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="index.html#contacto" class="btn btn-primary">Solicitar diagnóstico</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+        <!-- ============================================
+             HERO CON IMAGEN DE FONDO
+             ============================================ -->
+        <section class="hero" aria-labelledby="page-title">
+            <div class="hero-background" role="img" aria-label="Bosque nativo chileno representando la gestión ambiental"></div>
+            <div class="hero-overlay"></div>
+            <div class="hero-pattern"></div>
+            <div class="hero-blob-1"></div>
+            <div class="hero-blob-2"></div>
+            
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <span class="hero-badge-icon" aria-hidden="true">🌱</span>
+                            <span>Servicio Especializado</span>
+                        </div>
+                        
+                        <h1 id="page-title">
+                            Gestión Ambiental y SEIA
+                            <span class="highlight">Cumplimiento normativo con visión sustentable</span>
+                        </h1>
+                        
+                        <p>
+                            Ofrecemos consultoría ambiental integral: líneas base, evaluación de impacto ambiental, 
+                            seguimiento de Resolución de Calificación Ambiental (RCA), monitoreos y apoyo técnico 
+                            en el Sistema de Evaluación de Impacto Ambiental (SEIA) para proyectos de minería, 
+                            infraestructura, energía, industria y servicios, cumpliendo la Ley 19.300.
+                        </p>
+                        
+                        <div class="hero-buttons">
+                            <a href="index.html#contacto" class="btn btn-white">
+                                <span>Solicitar cotización</span>
+                                <span class="btn-icon" aria-hidden="true">→</span>
+                            </a>
+                            <a href="https://wa.me/56954025756?text=Hola%20SEPREVIN,%20me%20interesa%20el%20servicio%20de%20Gesti%C3%B3n%20Ambiental%20y%20SEIA" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="btn btn-outline-white"
+                               aria-label="Consultar por WhatsApp">
+                                <span aria-hidden="true">💬</span>
+                                <span>Consultar ahora</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             DESCRIPCIÓN CON IMAGEN LATERAL
+             ============================================ -->
+        <section class="section" aria-labelledby="descripcion-title">
+            <div class="container">
+                <div class="text-center animate-on-scroll">
+                    <span class="section-label">Sobre el servicio</span>
+                    <h2 id="descripcion-title" class="text-gradient">Consultoría Ambiental Integral</h2>
+                    <p class="subtitle">
+                        Acompañamos a empresas y proyectos en todo el ciclo de vida ambiental, 
+                        desde la línea base hasta el cierre, asegurando el cumplimiento normativo 
+                        y la sustentabilidad de las operaciones en el contexto chileno.
+                    </p>
+                </div>
+                
+                <div class="split-section">
+                    <div class="split-image animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80" 
+                             alt="Técnico ambiental realizando evaluación en terreno con vegetación nativa"
+                             loading="lazy">
+                    </div>
+                    
+                    <div class="split-content animate-on-scroll">
+                        <h3>¿Qué incluye nuestro servicio?</h3>
+                        <p>
+                            Brindamos un servicio completo que abarca todas las etapas del proceso 
+                            ambiental, adaptado a la normativa chilena y a los requerimientos específicos 
+                            de cada proyecto y sector productivo.
+                        </p>
+                        
+                        <ul class="feature-list">
+                            <li>Elaboración de Líneas Base Ambientales (flora, fauna, suelo, agua, aire, ruido, paisaje)</li>
+                            <li>Evaluación de Impacto Ambiental (EIA) y Declaración de Impacto Ambiental (DIA)</li>
+                            <li>Ingreso y tramitación ante el Sistema de Evaluación de Impacto Ambiental (SEIA)</li>
+                            <li>Seguimiento e implementación de Resolución de Calificación Ambiental (RCA)</li>
+                            <li>Planes de Manejo Ambiental (PMA) y Planes de Abandono</li>
+                            <li>Monitoreos ambientales: calidad de agua, aire, suelo, ruido y biodiversidad</li>
+                            <li>Estudios de biodiversidad y caracterización de ecosistemas</li>
+                            <li>Gestión de residuos sólidos y peligrosos</li>
+                            <li>Auditorías ambientales y debido diligence</li>
+                            <li>Asesoría en cumplimiento de la Ley 19.300 y normativa sectorial</li>
+                            <li>Apoyo en procesos de fiscalización ante la Superintendencia del Medio Ambiente (SMA)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             NORMATIVA AMBIENTAL CHILENA
+             ============================================ -->
+        <section class="section section-alt" aria-labelledby="normativa-title">
+            <div class="container">
+                <div class="text-center animate-on-scroll">
+                    <span class="section-label">Marco Normativo</span>
+                    <h2 id="normativa-title" class="text-gradient">Cumplimiento de la Normativa Ambiental Chilena</h2>
+                    <p class="subtitle">
+                        Aseguramos el cumplimiento de toda la legislación ambiental vigente, 
+                        evitando sanciones y garantizando la operatividad de tu proyecto.
+                    </p>
+                </div>
+                
+                <div class="normativa-grid">
+                    <div class="normativa-card animate-on-scroll">
+                        <div class="normativa-code">Ley 19.300</div>
+                        <div class="normativa-title">Bases Generales del Medio Ambiente</div>
+                        <div class="normativa-desc">Marco legal fundamental que establece el Sistema de Evaluación de Impacto Ambiental y los instrumentos de gestión ambiental en Chile.</div>
+                    </div>
+                    
+                    <div class="normativa-card animate-on-scroll">
+                        <div class="normativa-code">DS 40/2012</div>
+                        <div class="normativa-title">Reglamento del SEIA</div>
+                        <div class="normativa-desc">Reglamenta el Sistema de Evaluación de Impacto Ambiental, estableciendo los procedimientos para la evaluación de proyectos.</div>
+                    </div>
+                    
+                    <div class="normativa-card animate-on-scroll">
+                        <div class="normativa-code">DS 136/2012</div>
+                        <div class="normativa-title">Reglamento de Participación Ciudadana</div>
+                        <div class="normativa-desc">Establece el mecanismo de participación ciudadana en el proceso de evaluación ambiental de proyectos.</div>
+                    </div>
+                    
+                    <div class="normativa-card animate-on-scroll">
+                        <div class="normativa-code">Ley 20.417</div>
+                        <div class="normativa-title">Sistema de Fiscalización Ambiental</div>
+                        <div class="normativa-desc">Crea la Superintendencia del Medio Ambiente (SMA) y el Servicio de Evaluación Ambiental (SEA).</div>
+                    </div>
+                    
+                    <div class="normativa-card animate-on-scroll">
+                        <div class="normativa-code">DS 144/2012</div>
+                        <div class="normativa-title">Emisiones Atmosféricas</div>
+                        <div class="normativa-desc">Regula las emisiones de contaminantes atmosféricos desde fuentes fijas, estableciendo límites y métodos de medición.</div>
+                    </div>
+                    
+                    <div class="normativa-card animate-on-scroll">
+                        <div class="normativa-code">Ley 20.283</div>
+                        <div class="normativa-title">Recuperación del Bosque Nativo</div>
+                        <div class="normativa-desc">Establece normas para la protección y fomento del bosque nativo, crucial para proyectos en zonas forestales.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             DASHBOARD DE INDICADORES AMBIENTALES
+             ============================================ -->
+        <section class="dashboard-section" aria-labelledby="dashboard-title">
+            <div class="container">
+                <div class="text-center animate-on-scroll">
+                    <span class="section-label">Indicadores de Gestión</span>
+                    <h2 id="dashboard-title" class="text-gradient">Dashboard de Gestión Ambiental</h2>
+                    <p class="subtitle">
+                        Seguimiento continuo de indicadores clave para asegurar el cumplimiento 
+                        ambiental y la mejora continua de tu operación.
+                    </p>
+                </div>
+                
+                <div class="dashboard-container animate-on-scroll">
+                    <div class="dashboard-header">
+                        <div>
+                            <div class="dashboard-title">Indicadores de Cumplimiento Ambiental</div>
+                            <div class="dashboard-subtitle">Seguimiento de metas y compromisos ambientales</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Indicadores con barras de progreso -->
+                    <div class="indicators-grid">
+                        <div class="indicator-card">
+                            <div class="indicator-header">
+                                <span class="indicator-label">Cumplimiento RCA</span>
+                                <span class="indicator-value">98%</span>
+                            </div>
+                            <div class="indicator-bar">
+                                <div class="indicator-fill" style="--target-width: 98%;"></div>
+                            </div>
+                            <div class="indicator-footer">
+                                <span>Meta: 100%</span>
+                                <span>Actualizado</span>
+                            </div>
+                        </div>
+                        
+                        <div class="indicator-card">
+                            <div class="indicator-header">
+                                <span class="indicator-label">Reducción Emisiones CO₂</span>
+                                <span class="indicator-value">85%</span>
+                            </div>
+                            <div class="indicator-bar">
+                                <div class="indicator-fill" style="--target-width: 85%;"></div>
+                            </div>
+                            <div class="indicator-footer">
+                                <span>Meta: 90%</span>
+                                <span>En progreso</span>
+                            </div>
+                        </div>
+                        
+                        <div class="indicator-card">
+                            <div class="indicator-header">
+                                <span class="indicator-label">Gestión de Residuos</span>
+                                <span class="indicator-value">92%</span>
+                            </div>
+                            <div class="indicator-bar">
+                                <div class="indicator-fill" style="--target-width: 92%;"></div>
+                            </div>
+                            <div class="indicator-footer">
+                                <span>Meta: 95%</span>
+                                <span>En progreso</span>
+                            </div>
+                        </div>
+                        
+                        <div class="indicator-card">
+                            <div class="indicator-header">
+                                <span class="indicator-label">Monitoreo de Agua</span>
+                                <span class="indicator-value">100%</span>
+                            </div>
+                            <div class="indicator-bar">
+                                <div class="indicator-fill" style="--target-width: 100%;"></div>
+                            </div>
+                            <div class="indicator-footer">
+                                <span>Meta: 100%</span>
+                                <span>Cumplido</span>
+                            </div>
+                        </div>
+                        
+                        <div class="indicator-card">
+                            <div class="indicator-header">
+                                <span class="indicator-label">Control de Ruido</span>
+                                <span class="indicator-value">88%</span>
+                            </div>
+                            <div class="indicator-bar">
+                                <div class="indicator-fill" style="--target-width: 88%;"></div>
+                            </div>
+                            <div class="indicator-footer">
+                                <span>Meta: 95%</span>
+                                <span>En progreso</span>
+                            </div>
+                        </div>
+                        
+                        <div class="indicator-card">
+                            <div class="indicator-header">
+                                <span class="indicator-label">Biodiversidad</span>
+                                <span class="indicator-value">95%</span>
+                            </div>
+                            <div class="indicator-bar">
+                                <div class="indicator-fill" style="--target-width: 95%;"></div>
+                            </div>
+                            <div class="indicator-footer">
+                                <span>Meta: 100%</span>
+                                <span>En progreso</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Stats del dashboard -->
+                    <div class="dashboard-stats">
+                        <div class="stat-card">
+                            <div class="stat-value" style="color: var(--env-green);">24</div>
+                            <div class="stat-label">Monitoreos Realizados</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value" style="color: var(--env-blue);">156</div>
+                            <div class="stat-label">Puntos de Muestreo</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value" style="color: var(--env-yellow);">12</div>
+                            <div class="stat-label">Planes de Manejo</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-value" style="color: var(--env-red);">0</div>
+                            <div class="stat-label">No Conformidades</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             BENEFICIOS CON ICONOS
+             ============================================ -->
+        <section class="section" aria-labelledby="beneficios-title">
+            <div class="container">
+                <div class="text-center animate-on-scroll">
+                    <span class="section-label">Beneficios</span>
+                    <h2 id="beneficios-title" class="text-gradient">¿Por qué elegirnos?</h2>
+                    <p class="subtitle">
+                        Más de 20 años de experiencia en consultoría ambiental nos permiten 
+                        ofrecer soluciones efectivas, técnicas y normativamente sólidas.
+                    </p>
+                </div>
+                
+                <div class="feature-grid">
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                <polyline points="9 12 11 14 15 10"/>
+                            </svg>
+                        </div>
+                        <h3>Cumplimiento Normativo</h3>
+                        <p>Aseguramos el cumplimiento de la Ley 19.300, DS 40, DS 136 y toda la normativa ambiental vigente, evitando sanciones de la SMA.</p>
+                    </div>
+                    
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"/>
+                                <circle cx="12" cy="12" r="6"/>
+                                <circle cx="12" cy="12" r="2"/>
+                            </svg>
+                        </div>
+                        <h3>Rigor Técnico</h3>
+                        <p>Estudios con metodologías validadas, datos confiables y análisis científicos que sustentan decisiones técnicas y regulatorias.</p>
+                    </div>
+                    
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
+                                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+                            </svg>
+                        </div>
+                        <h3>Visión Sustentable</h3>
+                        <p>Integramos la dimensión ambiental con la social y económica, promoviendo operaciones sustentables y responsables.</p>
+                    </div>
+                    
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24">
+                                <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/>
+                                <line x1="8" y1="2" x2="8" y2="18"/>
+                                <line x1="16" y1="6" x2="16" y2="22"/>
+                            </svg>
+                        </div>
+                        <h3>Experiencia Multisectorial</h3>
+                        <p>Hemos trabajado en minería, energía, infraestructura, industria y servicios, conociendo los desafíos específicos de cada rubro.</p>
+                    </div>
+                    
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
+                            </svg>
+                        </div>
+                        <h3>Acompañamiento Continuo</h3>
+                        <p>No solo entregamos estudios: acompañamos la implementación, el seguimiento y la fiscalización durante todo el ciclo del proyecto.</p>
+                    </div>
+                    
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3>Equipo Multidisciplinario</h3>
+                        <p>Contamos con biólogos, ingenieros ambientales, especialistas en SIG y profesionales con experiencia en SEIA y fiscalización.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             GALERÍA DE IMÁGENES ALUSIVAS
+             ============================================ -->
+        <section class="section section-alt" aria-labelledby="galeria-title">
+            <div class="container">
+                <div class="text-center animate-on-scroll">
+                    <span class="section-label">Contexto del Servicio</span>
+                    <h2 id="galeria-title" class="text-gradient">Gestión Ambiental en Acción</h2>
+                    <p class="subtitle">
+                        Imágenes representativas de los ecosistemas y actividades donde 
+                        aplicamos nuestros servicios de gestión ambiental.
+                    </p>
+                </div>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80" 
+                             alt="Bosque nativo chileno con árboles centenarios"
+                             loading="lazy">
+                        <div class="gallery-caption">Biodiversidad y flora nativa</div>
+                    </div>
+                    
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=600&q=80" 
+                             alt="Paisaje natural con niebla en zona de estudio ambiental"
+                             loading="lazy">
+                        <div class="gallery-caption">Evaluación de ecosistemas</div>
+                    </div>
+                    
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=600&q=80" 
+                             alt="Cascada y curso de agua para monitoreo de calidad hídrica"
+                             loading="lazy">
+                        <div class="gallery-caption">Monitoreo de calidad de agua</div>
+                    </div>
+                    
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&q=80" 
+                             alt="Vista aérea de paisaje natural para análisis territorial"
+                             loading="lazy">
+                        <div class="gallery-caption">Análisis territorial y SIG</div>
+                    </div>
+                    
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?w=600&q=80" 
+                             alt="Fauna silvestre en hábitat natural"
+                             loading="lazy">
+                        <div class="gallery-caption">Estudios de fauna</div>
+                    </div>
+                    
+                    <div class="gallery-item animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&q=80" 
+                             alt="Montañas representando el entorno natural de proyectos"
+                             loading="lazy">
+                        <div class="gallery-caption">Evaluación de impacto ambiental</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             METODOLOGÍA
+             ============================================ -->
+        <section class="section" aria-labelledby="metodologia-title">
+            <div class="container">
+                <div class="text-center animate-on-scroll">
+                    <span class="section-label">Metodología</span>
+                    <h2 id="metodologia-title" class="text-gradient">Cómo trabajamos</h2>
+                    <p class="subtitle">
+                        Un proceso estructurado que asegura el cumplimiento normativo 
+                        y la calidad técnica en cada etapa del proceso ambiental.
+                    </p>
+                </div>
+                
+                <div class="methodology-grid">
+                    <div class="methodology-card animate-on-scroll">
+                        <div class="methodology-number">1</div>
+                        <h3>Caracterización Ambiental</h3>
+                        <p>Realizamos líneas base ambientales completas: flora, fauna, suelo, agua, aire, ruido y paisaje, con metodologías validadas.</p>
+                    </div>
+                    
+                    <div class="methodology-card animate-on-scroll">
+                        <div class="methodology-number">2</div>
+                        <h3>Evaluación de Impacto</h3>
+                        <p>Identificamos y evaluamos los impactos ambientales del proyecto, proponiendo medidas de mitigación, compensación y reparación.</p>
+                    </div>
+                    
+                    <div class="methodology-card animate-on-scroll">
+                        <div class="methodology-number">3</div>
+                        <h3>Tramitación SEIA</h3>
+                        <p>Ingresamos y tramitamos el estudio o declaración ante el SEIA, respondiendo a las observaciones de los servicios evaluadores.</p>
+                    </div>
+                    
+                    <div class="methodology-card animate-on-scroll">
+                        <div class="methodology-number">4</div>
+                        <h3>Seguimiento y Monitoreo</h3>
+                        <p>Implementamos y damos seguimiento a la RCA, ejecutando los planes de manejo y monitoreos ambientales comprometidos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             CTA FINAL CON IMAGEN DE FONDO
+             ============================================ -->
+        <section class="cta-section" aria-labelledby="cta-title">
+            <div class="cta-background" role="img" aria-label="Paisaje montañoso representando el entorno natural"></div>
+            <div class="cta-overlay"></div>
+            
+            <div class="container">
+                <div class="cta-content animate-on-scroll">
+                    <h2 id="cta-title">¿Necesitas apoyo en tu proyecto ambiental?</h2>
+                    <p>
+                        Contáctanos hoy mismo y descubre cómo podemos ayudarte a cumplir 
+                        con la normativa ambiental y desarrollar tu proyecto de manera sustentable.
+                    </p>
+                    <div class="hero-buttons" style="justify-content: center;">
+                        <a href="index.html#contacto" class="btn btn-white">
+                            <span>Solicitar diagnóstico gratuito</span>
+                            <span class="btn-icon" aria-hidden="true">→</span>
+                        </a>
+                        <a href="https://wa.me/56954025756?text=Hola%20SEPREVIN,%20me%20interesa%20el%20servicio%20de%20Gesti%C3%B3n%20Ambiental%20y%20SEIA" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="btn btn-outline-white">
+                            <span aria-hidden="true">💬</span>
+                            <span>Escribir por WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================
+         BOTÓN FLOTANTE WHATSAPP
+         ============================================ -->
+    <a href="https://wa.me/56954025756?text=Hola%20SEPREVIN,%20me%20interesa%20el%20servicio%20de%20Gesti%C3%B3n%20Ambiental%20y%20SEIA" 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Chatear por WhatsApp">
+        <span style="font-size: 1.75rem;" aria-hidden="true">💬</span>
+        <span class="whatsapp-tooltip">¿Tienes dudas? Escríbenos</span>
+    </a>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="logo_blanco.jpeg" alt="SEPREVIN" onerror="this.style.display='none'">
+                    <p>
+                        Consultora técnica integral en gestión de riesgos, prevención, seguridad, 
+                        salud ocupacional y gestión ambiental. Respaldo técnico de excelencia para 
+                        que tu operación cumpla con los más altos estándares normativos.
+                    </p>
+                </div>
+                
+                <nav aria-label="Navegación principal">
+                    <h4 class="footer-title">Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#servicios">Servicios</a></li>
+                        <li><a href="index.html#propuesta">Propuesta de valor</a></li>
+                        <li><a href="index.html#proceso">Cómo trabajamos</a></li>
+                        <li><a href="index.html#equipo">Equipo</a></li>
+                        <li><a href="index.html#faq">Preguntas frecuentes</a></li>
+                    </ul>
+                </nav>
+                
+                <nav aria-label="Navegación legal">
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Términos de servicio</a></li>
+                        <li><a href="#">Política de cookies</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 SEPREVIN. Todos los derechos reservados. Santiago, Chile.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         JAVASCRIPT
+         ============================================ -->
+    <script>
+        // Menú móvil
+        function toggleMenu() {
+            const navMenu = document.getElementById('nav-menu');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+            
+            navMenu.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+            menuBtn.setAttribute('aria-expanded', !isExpanded);
+            menuBtn.setAttribute('aria-label', isExpanded ? 'Abrir menú de navegación' : 'Cerrar menú de navegación');
+        }
+        
+        // Cerrar menú al hacer click en un enlace
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                const navMenu = document.getElementById('nav-menu');
+                const menuBtn = document.querySelector('.mobile-menu-btn');
+                navMenu.classList.remove('active');
+                menuBtn.classList.remove('active');
+                menuBtn.setAttribute('aria-expanded', 'false');
+            });
+        });
+        
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Animaciones al scroll con Intersection Observer
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                    
+                    // Animar barras de indicadores cuando son visibles
+                    const indicatorFills = entry.target.querySelectorAll('.indicator-fill');
+                    indicatorFills.forEach(fill => {
+                        setTimeout(() => {
+                            fill.classList.add('animated');
+                        }, 300);
+                    });
+                    
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Service Worker para PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').catch(() => {});
+            });
+        }
+    </script>
+</body>
+</html>

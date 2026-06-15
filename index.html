@@ -2,27 +2,24 @@
 <html lang="es-CL" dir="ltr">
 <head>
     <!-- ============================================
-         1. METADATOS ESENCIALES
-         Configuración básica del documento HTML
+         METADATOS ESENCIALES
          ============================================ -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="SEPREVIN: Consultora líder en gestión de riesgos, prevención, seguridad, salud ocupacional y gestión ambiental. Más de 20 años de excelencia técnica en Chile.">
+    <meta name="description" content="SEPREVIN: Consultora líder en gestión de riesgos, prevención, seguridad, salud ocupacional y gestión ambiental. Más de 20 años de experiencia en Chile.">
     <meta name="keywords" content="gestión de riesgos, prevención, seguridad ocupacional, salud laboral, gestión ambiental, SEIA, RCA, ISO, consultoría Chile">
     <meta name="author" content="SEPREVIN">
     <meta name="robots" content="index, follow">
     
     <!-- ============================================
-         2. SEGURIDAD - Headers HTTP
-         Protección contra ataques comunes
+         SEGURIDAD - Headers HTTP
          ============================================ -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     
-    <!-- Content Security Policy: Restringe origen de recursos -->
     <meta http-equiv="Content-Security-Policy" 
           content="default-src 'self'; 
                    script-src 'self' 'unsafe-inline'; 
@@ -35,13 +32,11 @@
                    form-action 'self' https://formspree.io; 
                    upgrade-insecure-requests;">
     
-    <!-- Permissions Policy: Restringe APIs sensibles del navegador -->
     <meta http-equiv="Permissions-Policy" 
           content="geolocation=(), microphone=(), camera=(), payment=(), usb=()">
     
     <!-- ============================================
-         3. SEO Y REDES SOCIALES
-         Optimización para buscadores y compartir
+         SEO Y REDES SOCIALES
          ============================================ -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.seprevin.cl/">
@@ -52,29 +47,33 @@
     <meta name="twitter:title" content="SEPREVIN | Gestión de Riesgos y Prevención Integral">
     <meta name="twitter:description" content="Consultora líder en gestión de riesgos, prevención, seguridad ocupacional, salud laboral y gestión ambiental.">
     
-    <!-- Tema y colores corporativos -->
     <meta name="theme-color" content="#012D90">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="SEPREVIN">
     
     <!-- ============================================
-         4. FAVICONS
-         Iconos para pestañas y dispositivos
+         FAVICONS
          ============================================ -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
     
     <!-- ============================================
-         5. PRECONNECT Y FUENTES
-         Optimización de carga de recursos externos
+         PRECONNECT Y FUENTES
          ============================================ -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://api.whatsapp.com" crossorigin>
+    <link rel="preconnect" href="https://formspree.io" crossorigin>
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     
     <!-- ============================================
-         6. SCHEMA.ORG - Datos Estructurados
-         Mejora el SEO y resultados enriquecidos
+         SCHEMA.ORG
          ============================================ -->
     <script type="application/ld+json">
     {
@@ -101,79 +100,84 @@
     <title>SEPREVIN | Excelencia en Gestión de Riesgos, Prevención, Seguridad, Salud y Ambiente</title>
     
     <!-- ============================================
-         7. CSS OPTIMIZADO
-         Variables, reset y estilos del sitio
+         CSS OPTIMIZADO
          ============================================ -->
     <style>
-        /* --- 7.1 VARIABLES CSS --- */
-        /* Sistema de diseño centralizado para consistencia */
+        /* Variables CSS - Sistema de diseño */
         :root {
-            /* Colores corporativos */
             --primary: #012D90;
             --primary-dark: #001a5c;
             --primary-light: #0047AB;
+            --primary-rgb: 1, 45, 144;
             --accent: #00D4FF;
             
-            /* Colores neutros */
             --bg: #FEFEFE;
             --bg-alt: #F8FAFC;
             --surface: #FFFFFF;
             --text: #0F172A;
             --text-muted: #475569;
+            --text-light: #94A3B8;
             --border: #E2E8F0;
             
-            /* WhatsApp */
             --whatsapp: #25D366;
+            --whatsapp-dark: #128C7E;
             
-            /* Sombras */
             --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1);
             --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
             --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
             --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+            --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
             --shadow-primary: 0 10px 40px -10px rgba(1, 45, 144, 0.4);
             
-            /* Gradientes */
             --gradient-primary: linear-gradient(135deg, #012D90 0%, #0047AB 100%);
             --gradient-hero: linear-gradient(135deg, #012D90 0%, #001a5c 50%, #000d33 100%);
             
-            /* Tipografía */
-            --font-sans: 'Inter', -apple-system, sans-serif;
-            --font-display: 'Space Grotesk', var(--font-sans);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            --font-display: 'Space Grotesk', 'Inter', sans-serif;
             
-            /* Espaciado fluido */
-            --space-xs: 0.25rem;
-            --space-sm: 0.5rem;
-            --space-md: 1rem;
-            --space-lg: 1.5rem;
-            --space-xl: 2rem;
-            --space-2xl: 3rem;
-            --space-3xl: 4rem;
+            --space-xs: clamp(0.25rem, 0.5vw, 0.5rem);
+            --space-sm: clamp(0.5rem, 1vw, 1rem);
+            --space-md: clamp(1rem, 2vw, 1.5rem);
+            --space-lg: clamp(1.5rem, 3vw, 2rem);
+            --space-xl: clamp(2rem, 4vw, 3rem);
+            --space-2xl: clamp(3rem, 6vw, 4rem);
+            --space-3xl: clamp(4rem, 8vw, 6rem);
+            --space-4xl: clamp(5rem, 10vw, 8rem);
             
-            /* Bordes */
             --radius-sm: 0.5rem;
             --radius-md: 0.75rem;
             --radius-lg: 1rem;
             --radius-xl: 1.5rem;
+            --radius-2xl: 2rem;
             --radius-full: 9999px;
             
-            /* Transiciones */
-            --transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-bounce: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
             
-            /* Layout */
-            --max-width: 1280px;
-            --header-height: 80px;
+            --max-width: 1400px;
+            --header-height: clamp(70px, 10vw, 90px);
+            --container-padding: clamp(1rem, 5vw, 3rem);
+            
+            --z-dropdown: 1000;
+            --z-sticky: 1020;
+            --z-fixed: 1030;
+            --z-modal: 1050;
         }
 
-        /* --- 7.2 RESET MODERNO --- */
+        /* Reset moderno */
         *, *::before, *::after {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
             -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
         html {
             scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
             scroll-padding-top: var(--header-height);
         }
 
@@ -183,22 +187,36 @@
             color: var(--text);
             line-height: 1.6;
             overflow-x: hidden;
+            font-feature-settings: "kern" 1, "liga" 1;
         }
 
-        /* Scrollbar personalizada */
-        ::-webkit-scrollbar { width: 10px; }
-        ::-webkit-scrollbar-track { background: var(--bg-alt); }
-        ::-webkit-scrollbar-thumb { background: var(--primary); border-radius: var(--radius-full); }
+        ::selection {
+            background-color: rgba(1, 45, 144, 0.2);
+            color: var(--primary);
+        }
 
-        /* --- 7.3 UTILIDADES --- */
+        ::-webkit-scrollbar { width: 12px; height: 12px; }
+        ::-webkit-scrollbar-track { background: var(--bg-alt); }
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: var(--radius-full);
+            border: 3px solid var(--bg-alt);
+        }
+        ::-webkit-scrollbar-thumb:hover { background: var(--primary-dark); }
+
+        /* Utilidades */
         .container {
             width: 100%;
             max-width: var(--max-width);
             margin: 0 auto;
-            padding: 0 clamp(1rem, 5vw, 3rem);
+            padding: 0 var(--container-padding);
         }
 
-        .section { padding: var(--space-3xl) 0; }
+        .section {
+            padding: var(--space-4xl) 0;
+            position: relative;
+        }
+
         .section-alt { background: var(--bg-alt); }
         .text-center { text-align: center; }
         
@@ -206,26 +224,63 @@
             background: var(--gradient-primary);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
-        /* --- 7.4 TIPOGRAFÍA --- */
-        h1, h2, h3 {
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            font-weight: 600;
+            z-index: 9999;
+            transition: top var(--transition-fast);
+        }
+
+        .skip-link:focus { top: 1rem; }
+
+        /* Tipografía fluida */
+        h1, h2, h3, h4, h5, h6 {
             font-family: var(--font-display);
             font-weight: 700;
             line-height: 1.1;
+            color: var(--text);
             letter-spacing: -0.02em;
         }
 
-        h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
-        h2 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: var(--space-md); }
-        h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); margin-bottom: var(--space-sm); }
+        h1 {
+            font-size: clamp(2rem, 5vw + 1rem, 5rem);
+            font-weight: 800;
+            line-height: 1.05;
+        }
 
-        p { color: var(--text-muted); margin-bottom: var(--space-md); line-height: 1.7; }
+        h2 {
+            font-size: clamp(1.75rem, 4vw + 0.5rem, 3.5rem);
+            margin-bottom: var(--space-md);
+        }
+
+        h3 {
+            font-size: clamp(1.25rem, 2vw + 0.25rem, 1.75rem);
+            margin-bottom: var(--space-sm);
+        }
+
+        p {
+            color: var(--text-muted);
+            line-height: 1.7;
+            margin-bottom: var(--space-md);
+        }
 
         .subtitle {
-            font-size: clamp(1.125rem, 2vw, 1.375rem);
+            font-size: clamp(1rem, 1.5vw + 0.25rem, 1.25rem);
+            color: var(--text-muted);
             max-width: 700px;
             margin: 0 auto var(--space-xl);
+            line-height: 1.8;
         }
 
         .section-label {
@@ -236,30 +291,63 @@
             background: rgba(1, 45, 144, 0.08);
             color: var(--primary);
             border-radius: var(--radius-full);
-            font-size: 0.875rem;
+            font-size: clamp(0.75rem, 1vw, 0.875rem);
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.08em;
             margin-bottom: var(--space-lg);
+            border: 1px solid rgba(1, 45, 144, 0.15);
         }
 
-        /* --- 7.5 BOTONES --- */
+        .section-label::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: var(--primary);
+            border-radius: 50%;
+            animation: pulse-dot 2s infinite;
+        }
+
+        @keyframes pulse-dot {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
+
+        /* Botones */
         .btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
             gap: 0.75rem;
-            padding: clamp(1rem, 1.5vw, 1.25rem) clamp(2rem, 3vw, 2.5rem);
+            padding: clamp(0.875rem, 1.5vw, 1.25rem) clamp(1.5rem, 3vw, 2.5rem);
             font-family: var(--font-sans);
             font-weight: 600;
-            font-size: clamp(0.9375rem, 1.2vw, 1rem);
+            font-size: clamp(0.875rem, 1.2vw, 1rem);
             text-decoration: none;
             border: none;
             border-radius: var(--radius-lg);
             cursor: pointer;
-            transition: all var(--transition);
-            min-height: 56px;
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+            min-height: 52px;
+            white-space: nowrap;
+            letter-spacing: 0.01em;
         }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, transparent 100%);
+            opacity: 0;
+            transition: opacity var(--transition-base);
+        }
+
+        .btn:hover::before { opacity: 1; }
 
         .btn-primary {
             background: var(--gradient-primary);
@@ -271,6 +359,8 @@
             transform: translateY(-3px);
             box-shadow: 0 20px 40px -10px rgba(1, 45, 144, 0.5);
         }
+
+        .btn-primary:active { transform: translateY(-1px); }
 
         .btn-white {
             background: white;
@@ -287,27 +377,58 @@
             background: transparent;
             color: white;
             border: 2px solid rgba(255,255,255,0.4);
+            backdrop-filter: blur(10px);
         }
 
         .btn-outline-white:hover {
             background: white;
             color: var(--primary);
+            border-color: white;
+            transform: translateY(-3px);
         }
 
-        /* --- 7.6 HEADER --- */
+        .btn-whatsapp {
+            background: var(--whatsapp);
+            color: white;
+            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-whatsapp:hover {
+            background: var(--whatsapp-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        .btn:focus-visible {
+            outline: 3px solid var(--accent);
+            outline-offset: 3px;
+        }
+
+        .btn-icon {
+            display: inline-flex;
+            transition: transform var(--transition-base);
+        }
+
+        .btn:hover .btn-icon { transform: translateX(4px); }
+
+        /* Header sticky con glassmorphism */
         header {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
-            z-index: 1020;
+            z-index: var(--z-sticky);
             background: rgba(254, 254, 254, 0.95);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid var(--border);
-            transition: all var(--transition);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+            transition: all var(--transition-base);
         }
 
-        header.scrolled { box-shadow: var(--shadow-md); }
+        header.scrolled {
+            box-shadow: var(--shadow-md);
+            background: rgba(254, 254, 254, 0.98);
+        }
 
         .nav-container {
             display: flex;
@@ -323,13 +444,20 @@
             gap: var(--space-sm);
         }
 
-        .logo img { height: clamp(40px, 6vw, 50px); width: auto; }
-        
+        .logo img {
+            height: clamp(40px, 6vw, 55px);
+            width: auto;
+            transition: transform var(--transition-base);
+        }
+
+        .logo:hover img { transform: scale(1.05); }
+
         .logo-text {
             font-family: var(--font-display);
             font-size: clamp(1.25rem, 2vw, 1.5rem);
             font-weight: 800;
             color: var(--primary);
+            letter-spacing: -0.5px;
         }
 
         .nav-menu {
@@ -343,13 +471,36 @@
             text-decoration: none;
             color: var(--text);
             font-weight: 500;
-            font-size: 0.9375rem;
+            font-size: clamp(0.875rem, 1vw, 0.95rem);
             padding: 0.5rem 0.75rem;
             border-radius: var(--radius-md);
-            transition: all var(--transition);
+            transition: all var(--transition-fast);
+            position: relative;
         }
 
-        .nav-menu a:hover { color: var(--primary); }
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: width var(--transition-base);
+            border-radius: var(--radius-full);
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active { color: var(--primary); }
+
+        .nav-menu a:hover::after,
+        .nav-menu a.active::after { width: 80%; }
+
+        .nav-menu a:not(.btn):focus-visible {
+            outline: 2px solid var(--primary);
+            outline-offset: 2px;
+        }
 
         .mobile-menu-btn {
             display: none;
@@ -357,6 +508,9 @@
             border: none;
             cursor: pointer;
             padding: 0.5rem;
+            min-height: 48px;
+            min-width: 48px;
+            z-index: var(--z-dropdown);
         }
 
         .mobile-menu-btn span {
@@ -365,18 +519,29 @@
             height: 2px;
             background: var(--primary);
             margin: 5px 0;
-            transition: all var(--transition);
+            transition: all var(--transition-base);
+            border-radius: var(--radius-full);
         }
 
-        /* --- 7.7 HERO --- */
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) { opacity: 0; }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+
+        /* Hero section */
         .hero {
+            position: relative;
             min-height: 100vh;
             display: flex;
             align-items: center;
             background: var(--gradient-hero);
-            padding: calc(var(--header-height) + var(--space-3xl)) 0 var(--space-3xl);
-            position: relative;
             overflow: hidden;
+            padding: calc(var(--header-height) + var(--space-3xl)) 0 var(--space-3xl);
         }
 
         .hero::before {
@@ -388,19 +553,36 @@
             height: 80vw;
             background: radial-gradient(circle, rgba(0, 212, 255, 0.15) 0%, transparent 70%);
             border-radius: 50%;
-            animation: float 20s ease-in-out infinite;
+            animation: float-blob 20s ease-in-out infinite;
         }
 
-        @keyframes float {
-            0%, 100% { transform: translate(0, 0); }
-            50% { transform: translate(-30px, 30px); }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 60vw;
+            height: 60vw;
+            background: radial-gradient(circle, rgba(1, 45, 144, 0.3) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float-blob 25s ease-in-out infinite reverse;
         }
 
-        .hero-content {
+        @keyframes float-blob {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.95); }
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--space-2xl);
             position: relative;
             z-index: 2;
-            max-width: 1000px;
         }
+
+        .hero-content { max-width: 1000px; }
 
         .hero-badge {
             display: inline-flex;
@@ -408,14 +590,17 @@
             gap: 0.75rem;
             padding: 0.75rem 1.5rem;
             background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: var(--radius-full);
             color: white;
-            font-size: 0.9375rem;
+            font-size: clamp(0.875rem, 1.2vw, 1rem);
+            font-weight: 500;
             margin-bottom: var(--space-lg);
-            animation: fadeInUp 0.8s ease-out;
+            animation: fadeInDown 0.8s ease-out;
         }
+
+        .hero-badge-icon { font-size: 1.25rem; }
 
         .hero h1 {
             color: white;
@@ -423,20 +608,20 @@
             animation: fadeInUp 0.8s ease-out 0.2s both;
         }
 
-        /* Highlight con gradiente para parte destacada del título */
         .hero h1 .highlight {
             display: block;
             background: linear-gradient(135deg, #fff 0%, #00D4FF 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            background-clip: text;
             margin-top: 0.25em;
         }
 
         .hero p {
             color: rgba(255, 255, 255, 0.9);
-            font-size: clamp(1.125rem, 1.75vw, 1.375rem);
+            font-size: clamp(1rem, 1.5vw + 0.25rem, 1.25rem);
             margin-bottom: var(--space-xl);
-            max-width: 750px;
+            max-width: 700px;
             line-height: 1.8;
             animation: fadeInUp 0.8s ease-out 0.4s both;
         }
@@ -448,7 +633,7 @@
             animation: fadeInUp 0.8s ease-out 0.6s both;
         }
 
-        /* Stats del hero */
+        /* Stats en Hero */
         .hero-stats {
             margin-top: var(--space-2xl);
             padding-top: var(--space-xl);
@@ -469,7 +654,7 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: var(--radius-lg);
-            transition: all var(--transition);
+            transition: all var(--transition-base);
         }
 
         .hero-stat:hover {
@@ -485,46 +670,63 @@
             background: linear-gradient(135deg, #fff 0%, #00D4FF 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            background-clip: text;
             margin-bottom: 0.25rem;
         }
 
         .hero-stat-label {
-            font-size: 0.875rem;
+            font-size: clamp(0.75rem, 1vw, 0.9rem);
             color: rgba(255, 255, 255, 0.8);
             line-height: 1.4;
         }
 
-        /* --- 7.8 CARDS CON ICONOS SVG --- */
+        /* Cards con iconos SVG */
         .card {
             background: var(--surface);
-            border-radius: var(--radius-xl);
+            border-radius: var(--radius-2xl);
             padding: var(--space-xl);
             border: 1px solid var(--border);
-            transition: all var(--transition);
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-primary);
+            transform: scaleX(0);
+            transition: transform var(--transition-base);
+            transform-origin: left;
         }
 
         .card:hover {
             transform: translateY(-8px);
-            box-shadow: var(--shadow-xl);
-            border-color: var(--primary);
+            box-shadow: var(--shadow-2xl);
+            border-color: transparent;
         }
 
-        /* Icono SVG profesional */
+        .card:hover::before { transform: scaleX(1); }
+
         .card-icon {
-            width: 56px;
-            height: 56px;
+            width: 64px;
+            height: 64px;
             background: var(--gradient-primary);
-            border-radius: var(--radius-lg);
+            border-radius: var(--radius-xl);
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: var(--space-lg);
-            transition: all var(--transition);
+            transition: all var(--transition-base);
             box-shadow: 0 4px 12px rgba(1, 45, 144, 0.2);
         }
 
         .card:hover .card-icon {
-            transform: scale(1.1);
+            transform: scale(1.1) rotate(-5deg);
             box-shadow: 0 6px 20px rgba(1, 45, 144, 0.3);
         }
 
@@ -538,7 +740,7 @@
             stroke-linejoin: round;
         }
 
-        /* --- 7.9 GRIDS --- */
+        /* Grids */
         .intro-grid,
         .value-grid {
             display: grid;
@@ -547,6 +749,7 @@
             margin-top: var(--space-2xl);
         }
 
+        /* Servicios con links */
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -554,40 +757,61 @@
             margin-top: var(--space-2xl);
         }
 
-        /* --- 7.10 SERVICE CARDS --- */
         .service-card {
             background: var(--surface);
-            border-radius: var(--radius-xl);
+            border-radius: var(--radius-2xl);
             padding: var(--space-xl);
             border: 1px solid var(--border);
             position: relative;
             overflow: hidden;
-            transition: all var(--transition);
+            transition: all var(--transition-base);
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .service-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-primary);
+            opacity: 0;
+            transition: opacity var(--transition-base);
+            z-index: 0;
         }
 
         .service-card:hover {
             transform: translateY(-8px);
-            box-shadow: var(--shadow-xl);
-            border-color: var(--primary);
+            box-shadow: var(--shadow-2xl);
+            border-color: transparent;
         }
 
-        /* Icono SVG para servicios */
+        .service-card:hover::after { opacity: 0.03; }
+
+        .service-card > * {
+            position: relative;
+            z-index: 1;
+        }
+
         .service-icon {
             width: 64px;
             height: 64px;
             background: linear-gradient(135deg, rgba(1, 45, 144, 0.08) 0%, rgba(0, 71, 171, 0.12) 100%);
-            border-radius: var(--radius-lg);
+            border-radius: var(--radius-xl);
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: var(--space-lg);
-            transition: all var(--transition);
+            transition: all var(--transition-base);
             border: 1px solid rgba(1, 45, 144, 0.1);
         }
 
         .service-card:hover .service-icon {
             background: var(--gradient-primary);
-            transform: scale(1.1);
+            transform: scale(1.1) rotate(-5deg);
             box-shadow: 0 6px 20px rgba(1, 45, 144, 0.3);
         }
 
@@ -599,12 +823,10 @@
             fill: none;
             stroke-linecap: round;
             stroke-linejoin: round;
-            transition: all var(--transition);
+            transition: all var(--transition-base);
         }
 
-        .service-card:hover .service-icon svg {
-            stroke: white;
-        }
+        .service-card:hover .service-icon svg { stroke: white; }
 
         .service-title {
             font-size: clamp(1.125rem, 1.5vw, 1.375rem);
@@ -613,21 +835,30 @@
             color: var(--text);
         }
 
-        .service-card:hover .service-title {
+        .service-card:hover .service-title { color: var(--primary); }
+
+        .service-link-text {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
             color: var(--primary);
+            font-weight: 600;
+            font-size: 0.9375rem;
+            margin-top: var(--space-md);
+            transition: gap var(--transition-base);
         }
 
-        /* --- 7.11 PROCESO --- */
-        .process-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: var(--space-lg);
-            margin-top: var(--space-2xl);
+        .service-card:hover .service-link-text {
+            gap: 0.75rem;
+        }
+
+        /* Proceso con timeline */
+        .process-container {
             position: relative;
+            margin-top: var(--space-2xl);
         }
 
-        .process-grid::before {
-            content: '';
+        .process-line {
             position: absolute;
             top: 40px;
             left: 10%;
@@ -635,22 +866,30 @@
             height: 3px;
             background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
             border-radius: var(--radius-full);
+            z-index: 0;
             opacity: 0.3;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: var(--space-lg);
+            position: relative;
+            z-index: 1;
         }
 
         .process-step {
             text-align: center;
             padding: var(--space-lg);
             background: var(--surface);
-            border-radius: var(--radius-xl);
+            border-radius: var(--radius-2xl);
             border: 1px solid var(--border);
-            position: relative;
-            transition: all var(--transition);
+            transition: all var(--transition-base);
         }
 
         .process-step:hover {
             transform: translateY(-5px);
-            box-shadow: var(--shadow-lg);
+            box-shadow: var(--shadow-xl);
             border-color: var(--primary);
         }
 
@@ -669,10 +908,23 @@
             margin: 0 auto var(--space-lg);
             box-shadow: var(--shadow-primary);
             position: relative;
-            z-index: 1;
+            transition: all var(--transition-bounce);
         }
 
-        /* --- 7.12 TRUST SECTION --- */
+        .process-number::after {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border: 2px solid var(--primary);
+            border-radius: 50%;
+            opacity: 0.3;
+        }
+
+        .process-step:hover .process-number {
+            transform: scale(1.15) rotate(10deg);
+        }
+
+        /* Trust section */
         .trust-section {
             background: var(--gradient-hero);
             color: white;
@@ -680,8 +932,33 @@
             overflow: hidden;
         }
 
+        .trust-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 80vw;
+            height: 80vw;
+            background: radial-gradient(circle, rgba(0, 212, 255, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float-blob 20s ease-in-out infinite;
+        }
+
+        .trust-content {
+            position: relative;
+            z-index: 1;
+        }
+
         .trust-section h2 { color: white; }
         .trust-section .subtitle { color: rgba(255, 255, 255, 0.85); }
+
+        .trust-section .section-label {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .trust-section .section-label::before { background: white; }
 
         .trust-grid {
             display: grid;
@@ -694,26 +971,35 @@
             text-align: center;
             padding: var(--space-xl);
             background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: var(--radius-xl);
-            transition: all var(--transition);
+            transition: all var(--transition-base);
         }
 
         .trust-item:hover {
-            background: rgba(255, 255, 255, 0.1);
             transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
         }
 
         .trust-number {
             font-family: var(--font-display);
-            font-size: clamp(2.5rem, 5vw, 3rem);
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
             font-weight: 800;
             display: block;
+            margin-bottom: var(--space-sm);
             background: linear-gradient(135deg, #fff 0%, #00D4FF 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            margin-bottom: var(--space-sm);
+            background-clip: text;
+        }
+
+        .trust-label {
+            font-size: clamp(0.875rem, 1vw, 1rem);
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 500;
+            line-height: 1.5;
         }
 
         .sectors-grid {
@@ -732,15 +1018,17 @@
             color: white;
             font-weight: 600;
             text-align: center;
-            transition: all var(--transition);
+            transition: all var(--transition-base);
+            font-size: clamp(0.875rem, 1vw, 1rem);
         }
 
         .sector-chip:hover {
             background: rgba(255, 255, 255, 0.15);
             transform: translateY(-3px);
+            border-color: rgba(255, 255, 255, 0.3);
         }
 
-        /* --- 7.13 EQUIPO --- */
+        /* Equipo */
         .team-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -750,22 +1038,35 @@
 
         .team-card {
             background: var(--surface);
-            border-radius: var(--radius-xl);
+            border-radius: var(--radius-2xl);
             padding: var(--space-xl);
             border: 1px solid var(--border);
             text-align: center;
-            transition: all var(--transition);
+            transition: all var(--transition-base);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .team-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 120px;
+            background: var(--gradient-primary);
+            opacity: 0.05;
         }
 
         .team-card:hover {
             transform: translateY(-8px);
-            box-shadow: var(--shadow-xl);
-            border-color: var(--primary);
+            box-shadow: var(--shadow-2xl);
+            border-color: transparent;
         }
 
         .team-avatar {
-            width: 120px;
-            height: 120px;
+            width: clamp(100px, 15vw, 130px);
+            height: clamp(100px, 15vw, 130px);
             background: var(--gradient-primary);
             border-radius: 50%;
             display: flex;
@@ -773,18 +1074,36 @@
             justify-content: center;
             margin: 0 auto var(--space-lg);
             font-family: var(--font-display);
-            font-size: 2.5rem;
+            font-size: clamp(2rem, 4vw, 3rem);
             font-weight: 800;
             color: white;
             box-shadow: var(--shadow-primary);
-            transition: all var(--transition);
+            transition: all var(--transition-bounce);
+            position: relative;
+            z-index: 1;
+        }
+
+        .team-avatar::after {
+            content: '';
+            position: absolute;
+            inset: -6px;
+            border: 3px solid var(--primary);
+            border-radius: 50%;
+            opacity: 0.2;
         }
 
         .team-card:hover .team-avatar {
-            transform: scale(1.1);
+            transform: scale(1.1) rotate(-5deg);
         }
 
-        /* --- 7.14 FAQ --- */
+        .team-role {
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: var(--space-md);
+            font-size: clamp(0.875rem, 1vw, 1rem);
+        }
+
+        /* FAQ acordeón */
         .faq-list {
             max-width: 900px;
             margin: var(--space-2xl) auto 0;
@@ -793,13 +1112,21 @@
         .faq-item {
             background: var(--surface);
             border: 1px solid var(--border);
-            border-radius: var(--radius-lg);
+            border-radius: var(--radius-xl);
             margin-bottom: var(--space-md);
             overflow: hidden;
-            transition: all var(--transition);
+            transition: all var(--transition-base);
         }
 
-        .faq-item:hover { border-color: var(--primary); }
+        .faq-item:hover {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-md);
+        }
+
+        .faq-item.active {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-lg);
+        }
 
         .faq-question {
             width: 100%;
@@ -808,17 +1135,20 @@
             border: none;
             text-align: left;
             font-family: var(--font-sans);
-            font-size: 1.0625rem;
+            font-size: clamp(1rem, 1.2vw, 1.125rem);
             font-weight: 600;
+            color: var(--text);
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: var(--space-md);
+            min-height: 72px;
         }
 
         .faq-icon {
-            width: 32px;
-            height: 32px;
+            width: 36px;
+            height: 36px;
             background: var(--bg-alt);
             border-radius: 50%;
             display: flex;
@@ -826,19 +1156,21 @@
             justify-content: center;
             font-size: 1.5rem;
             color: var(--primary);
-            transition: all var(--transition);
+            transition: all var(--transition-base);
+            flex-shrink: 0;
+            font-weight: 300;
         }
 
         .faq-item.active .faq-icon {
-            transform: rotate(45deg);
             background: var(--primary);
             color: white;
+            transform: rotate(45deg);
         }
 
         .faq-answer {
             max-height: 0;
             overflow: hidden;
-            transition: all var(--transition);
+            transition: all var(--transition-base);
             padding: 0 var(--space-lg);
         }
 
@@ -847,17 +1179,24 @@
             padding: 0 var(--space-lg) var(--space-lg);
         }
 
-        /* --- 7.15 CONTACTO --- */
+        .faq-answer p {
+            margin: 0;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+
+        /* Contacto */
         .contact-layout {
             display: grid;
             grid-template-columns: 1fr 1.5fr;
             gap: var(--space-2xl);
             margin-top: var(--space-2xl);
+            align-items: start;
         }
 
         .contact-info-card {
             background: var(--surface);
-            border-radius: var(--radius-lg);
+            border-radius: var(--radius-xl);
             padding: var(--space-lg);
             border: 1px solid var(--border);
             display: flex;
@@ -865,8 +1204,8 @@
             gap: var(--space-md);
             text-decoration: none;
             color: inherit;
+            transition: all var(--transition-base);
             margin-bottom: var(--space-md);
-            transition: all var(--transition);
         }
 
         .contact-info-card:hover {
@@ -875,9 +1214,33 @@
             border-color: var(--primary);
         }
 
+        .contact-info-card .icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+            width: 48px;
+            height: 48px;
+            background: var(--bg-alt);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-info-card strong {
+            display: block;
+            color: var(--text);
+            margin-bottom: 0.25rem;
+            font-size: clamp(0.9rem, 1vw, 1rem);
+        }
+
+        .contact-info-card span {
+            color: var(--text-muted);
+            font-size: clamp(0.85rem, 0.9vw, 0.95rem);
+        }
+
         .contact-form {
             background: var(--surface);
-            border-radius: var(--radius-xl);
+            border-radius: var(--radius-2xl);
             padding: var(--space-xl);
             border: 1px solid var(--border);
             box-shadow: var(--shadow-lg);
@@ -889,20 +1252,23 @@
             display: block;
             font-weight: 600;
             margin-bottom: var(--space-sm);
-            font-size: 0.9375rem;
+            color: var(--text);
+            font-size: clamp(0.875rem, 1vw, 0.95rem);
         }
 
         .form-input,
         .form-select,
         .form-textarea {
             width: 100%;
-            padding: 1rem 1.25rem;
+            padding: clamp(0.875rem, 1.2vw, 1rem) clamp(1rem, 1.5vw, 1.25rem);
             font-family: var(--font-sans);
-            font-size: 1rem;
+            font-size: clamp(0.95rem, 1vw, 1rem);
             border: 2px solid var(--border);
             border-radius: var(--radius-lg);
             background: var(--bg);
-            transition: all var(--transition);
+            color: var(--text);
+            transition: all var(--transition-fast);
+            min-height: 52px;
         }
 
         .form-input:focus,
@@ -913,44 +1279,82 @@
             box-shadow: 0 0 0 4px rgba(1, 45, 144, 0.1);
         }
 
-        .form-textarea { resize: vertical; min-height: 120px; }
+        .form-textarea {
+            resize: vertical;
+            min-height: 140px;
+        }
 
-        /* --- 7.16 WHATSAPP FLOTANTE --- */
+        /* WhatsApp flotante */
         .whatsapp-float {
             position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            z-index: 1030;
+            bottom: clamp(1.5rem, 3vw, 2rem);
+            right: clamp(1.5rem, 3vw, 2rem);
+            z-index: var(--z-fixed);
             background: var(--whatsapp);
             color: white;
-            width: 64px;
-            height: 64px;
+            width: clamp(56px, 8vw, 64px);
+            height: clamp(56px, 8vw, 64px);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             text-decoration: none;
-            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
-            transition: all var(--transition);
-            animation: pulse 2s infinite;
-            font-size: 1.75rem;
+            box-shadow: 0 10px 30px -5px rgba(37, 211, 102, 0.4);
+            transition: all var(--transition-bounce);
+            animation: pulse-whatsapp 2s infinite;
         }
 
         .whatsapp-float:hover {
-            transform: scale(1.1);
+            transform: scale(1.15) rotate(10deg);
+            box-shadow: 0 15px 40px -5px rgba(37, 211, 102, 0.6);
             animation: none;
         }
 
-        @keyframes pulse {
-            0%, 100% { box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4); }
-            50% { box-shadow: 0 10px 40px rgba(37, 211, 102, 0.6); }
+        .whatsapp-tooltip {
+            position: absolute;
+            right: calc(100% + 1rem);
+            background: white;
+            color: var(--text);
+            padding: 0.75rem 1.25rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-xl);
+            font-size: 0.875rem;
+            font-weight: 600;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--transition-base);
+            pointer-events: none;
         }
 
-        /* --- 7.17 FOOTER --- */
+        .whatsapp-float:hover .whatsapp-tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        @keyframes pulse-whatsapp {
+            0%, 100% { box-shadow: 0 10px 30px -5px rgba(37, 211, 102, 0.4); }
+            50% { box-shadow: 0 10px 40px -5px rgba(37, 211, 102, 0.6), 0 0 0 10px rgba(37, 211, 102, 0.1); }
+        }
+
+        /* Footer */
         footer {
             background: var(--gradient-hero);
             color: white;
             padding: var(--space-3xl) 0 var(--space-xl);
+            position: relative;
+            overflow: hidden;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.4;
         }
 
         .footer-grid {
@@ -958,15 +1362,24 @@
             grid-template-columns: 2fr 1fr 1fr;
             gap: var(--space-2xl);
             margin-bottom: var(--space-2xl);
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer-brand img {
+            height: clamp(50px, 7vw, 65px);
+            margin-bottom: var(--space-lg);
         }
 
         .footer-brand p {
             color: rgba(255, 255, 255, 0.7);
-            font-size: 0.9375rem;
+            font-size: clamp(0.875rem, 1vw, 0.95rem);
+            line-height: 1.8;
+            max-width: 400px;
         }
 
         .footer-title {
-            font-size: 1.125rem;
+            font-size: clamp(1rem, 1.2vw, 1.125rem);
             font-weight: 700;
             margin-bottom: var(--space-lg);
             color: white;
@@ -978,20 +1391,38 @@
         .footer-links a {
             color: rgba(255, 255, 255, 0.7);
             text-decoration: none;
-            transition: color var(--transition);
+            transition: all var(--transition-fast);
+            font-size: clamp(0.875rem, 1vw, 0.95rem);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer-links a::before {
+            content: '→';
+            opacity: 0;
+            transition: all var(--transition-fast);
+            transform: translateX(-10px);
         }
 
         .footer-links a:hover { color: white; }
+
+        .footer-links a:hover::before {
+            opacity: 1;
+            transform: translateX(0);
+        }
 
         .footer-bottom {
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             padding-top: var(--space-xl);
             text-align: center;
             color: rgba(255, 255, 255, 0.5);
-            font-size: 0.875rem;
+            font-size: clamp(0.8rem, 0.9vw, 0.875rem);
+            position: relative;
+            z-index: 1;
         }
 
-        /* --- 7.18 ANIMACIONES --- */
+        /* Animaciones */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -1003,8 +1434,48 @@
             }
         }
 
-        /* --- 7.19 RESPONSIVE --- */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .animate-on-scroll.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .services-grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .contact-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
         @media (max-width: 768px) {
+            :root {
+                --container-padding: 1.25rem;
+            }
+            
             .nav-menu {
                 display: none;
                 position: fixed;
@@ -1012,109 +1483,195 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                background: white;
+                background: rgba(254, 254, 254, 0.98);
+                backdrop-filter: blur(20px);
                 flex-direction: column;
                 padding: var(--space-xl);
                 gap: var(--space-sm);
+                box-shadow: var(--shadow-xl);
+                border-top: 1px solid var(--border);
+                overflow-y: auto;
             }
             
             .nav-menu.active { display: flex; }
             .mobile-menu-btn { display: block; }
             
-            .hero-buttons { flex-direction: column; }
+            .hero {
+                padding: calc(var(--header-height) + var(--space-2xl)) 0 var(--space-2xl);
+                min-height: auto;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+            
             .hero-buttons .btn { width: 100%; }
+            
+            .hero-stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .hero-stat { text-align: center; }
             
             .services-grid,
             .intro-grid,
             .value-grid,
-            .team-grid { grid-template-columns: 1fr; }
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
             
-            .contact-layout { grid-template-columns: 1fr; }
+            .process-line { display: none; }
             
-            .footer-grid { grid-template-columns: 1fr; }
+            .process-grid { grid-template-columns: 1fr; }
             
-            .section { padding: var(--space-2xl) 0; }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-xl);
+            }
             
-            .process-grid::before { display: none; }
+            .section { padding: var(--space-3xl) 0; }
+            
+            .whatsapp-float {
+                bottom: 1.5rem;
+                right: 1.5rem;
+            }
+            
+            .whatsapp-tooltip { display: none; }
+            
+            .contact-layout { gap: var(--space-xl); }
         }
 
         @media (max-width: 480px) {
-            .hero-stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .hero-stats-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: var(--space-sm);
+            }
+            
+            .hero-stat { padding: var(--space-sm); }
+            
             .trust-grid { grid-template-columns: 1fr 1fr; }
+            
+            .sectors-grid { grid-template-columns: 1fr; }
+        }
+
+        @media (min-width: 1024px) and (max-width: 1440px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1440px) {
+            .services-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+            
+            html { scroll-behavior: auto; }
+        }
+
+        @media (prefers-contrast: high) {
+            .btn-primary { border: 2px solid white; }
+            .card, .service-card { border-width: 2px; }
         }
     </style>
 </head>
 <body>
 
+    <!-- Skip Link - Accesibilidad -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
     <!-- ============================================
-         8. HEADER - Navegación principal
+         HEADER - Navegación Sticky
          ============================================ -->
-    <header>
+    <header role="banner" id="header">
         <div class="container nav-container">
-            <a href="#" class="logo">
-                <img src="logo_azul.jpeg" alt="SEPREVIN" onerror="this.style.display='none'">
-                <span class="logo-text">SEPREVIN</span>
+            <a href="index.html" class="logo" aria-label="SEPREVIN - Inicio">
+                <img src="logo_azul.jpeg" alt="SEPREVIN" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                <span class="logo-text" style="display:none">SEPREVIN</span>
             </a>
             
-            <button class="mobile-menu-btn" onclick="document.querySelector('.nav-menu').classList.toggle('active')" aria-label="Menú">
-                <span></span><span></span><span></span>
+            <button class="mobile-menu-btn" 
+                    aria-label="Abrir menú de navegación" 
+                    aria-expanded="false"
+                    aria-controls="nav-menu"
+                    onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
             
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#propuesta">Propuesta</a></li>
-                    <li><a href="#proceso">Cómo trabajamos</a></li>
-                    <li><a href="#equipo">Equipo</a></li>
-                    <li><a href="#faq">FAQ</a></li>
+            <nav role="navigation" aria-label="Navegación principal">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#servicios" data-section="servicios">Servicios</a></li>
+                    <li><a href="#propuesta" data-section="propuesta">Propuesta</a></li>
+                    <li><a href="#proceso" data-section="proceso">Cómo trabajamos</a></li>
+                    <li><a href="#equipo" data-section="equipo">Equipo</a></li>
+                    <li><a href="#faq" data-section="faq">FAQ</a></li>
                     <li><a href="#contacto" class="btn btn-primary">Solicitar diagnóstico</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main id="main-content" role="main">
         <!-- ============================================
-             9. HERO - Sección principal
+             HERO - Sección Principal
              ============================================ -->
-        <section class="hero">
+        <section class="hero" aria-labelledby="hero-title">
             <div class="container">
-                <div class="hero-content">
-                    <div class="hero-badge">🏆 Más de 20 años de excelencia técnica en Chile</div>
-                    
-                    <!-- Título principal actualizado -->
-                    <h1>
-                        Excelencia en Gestión de Riesgos, Prevención,
-                        <span class="highlight">Seguridad, Salud Ocupacional y Gestión Ambiental</span>
-                    </h1>
-                    
-                    <p>
-                        Integramos gestión de riesgos, prevención, seguridad ocupacional, salud laboral, 
-                        gestión documental, sistemas ISO e ingeniería ambiental. Acompañamos a empresas 
-                        líderes para que operen con respaldo técnico, menor exposición al riesgo y 
-                        total claridad frente a inspecciones y auditorías.
-                    </p>
-                    
-                    <div class="hero-buttons">
-                        <a href="#contacto" class="btn btn-white">
-                            Solicitar diagnóstico sin costo →
-                        </a>
-                        <a href="https://wa.me/56954025756?text=Hola%20SEPREVIN,%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n" 
-                           class="btn btn-outline-white" target="_blank" rel="noopener">
-                            💬 Escribir por WhatsApp
-                        </a>
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <span class="hero-badge-icon" aria-hidden="true">🏆</span>
+                            <span>Más de 20 años de excelencia técnica en Chile</span>
+                        </div>
+                        
+                        <h1 id="hero-title">
+                            Excelencia en Gestión de Riesgos, Prevención,
+                            <span class="highlight">Seguridad, Salud Ocupacional y Gestión Ambiental</span>
+                        </h1>
+                        
+                        <p>
+                            Integramos gestión de riesgos, prevención, seguridad ocupacional, salud laboral, 
+                            gestión documental, sistemas ISO e ingeniería ambiental. Acompañamos a empresas 
+                            líderes para que operen con respaldo técnico, menor exposición al riesgo y 
+                            total claridad frente a inspecciones y auditorías.
+                        </p>
+                        
+                        <div class="hero-buttons">
+                            <a href="#contacto" class="btn btn-white">
+                                <span>Solicitar diagnóstico sin costo</span>
+                                <span class="btn-icon" aria-hidden="true">→</span>
+                            </a>
+                            <a href="https://wa.me/56954025756?text=Hola%20SEPREVIN,%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="btn btn-outline-white"
+                               aria-label="Escribir por WhatsApp">
+                                <span aria-hidden="true"></span>
+                                <span>Escribir por WhatsApp</span>
+                            </a>
+                        </div>
                     </div>
                     
-                    <!-- Estadísticas -->
+                    <!-- Stats con contadores animados -->
                     <div class="hero-stats">
                         <div class="hero-stats-grid">
                             <div class="hero-stat">
-                                <span class="hero-stat-number">20+</span>
+                                <span class="hero-stat-number" data-count="20">0</span>
                                 <span class="hero-stat-label">Años de experiencia</span>
                             </div>
                             <div class="hero-stat">
-                                <span class="hero-stat-number">100%</span>
-                                <span class="hero-stat-label">Cobertura nacional</span>
+                                <span class="hero-stat-number" data-count="100">0</span>
+                                <span class="hero-stat-label">% Cobertura nacional</span>
                             </div>
                             <div class="hero-stat">
                                 <span class="hero-stat-number">3</span>
@@ -1127,23 +1684,21 @@
         </section>
 
         <!-- ============================================
-             10. QUÉ HACEMOS - 4 cards introductorias
+             QUÉ HACEMOS - 4 Cards con Iconos SVG
              ============================================ -->
-        <section class="section">
+        <section class="section" aria-labelledby="intro-title">
             <div class="container">
-                <div class="text-center">
+                <div class="text-center animate-on-scroll">
                     <span class="section-label">Qué hacemos</span>
-                    <h2 class="text-gradient">Consultoría técnica integral</h2>
+                    <h2 id="intro-title" class="text-gradient">Consultoría técnica integral</h2>
                     <p class="subtitle">
-                        Diseñamos soluciones integrales en gestión de riesgos, prevención, 
-                        seguridad, salud ocupacional y gestión ambiental, conectando normativa, 
-                        operación y territorio.
+                        Diseñamos soluciones integrales en gestión de riesgos, prevención, seguridad, 
+                        salud ocupacional y gestión ambiental, conectando normativa, operación y territorio.
                     </p>
                 </div>
                 
                 <div class="intro-grid">
-                    <!-- Card 1: Enfoque con icono Target -->
-                    <div class="card">
+                    <div class="card animate-on-scroll">
                         <div class="card-icon">
                             <svg viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="10"/>
@@ -1156,8 +1711,7 @@
                         para decisiones con más contexto y menos incertidumbre.</p>
                     </div>
                     
-                    <!-- Card 2: Diagnóstico con icono Lupa -->
-                    <div class="card">
+                    <div class="card animate-on-scroll">
                         <div class="card-icon">
                             <svg viewBox="0 0 24 24">
                                 <circle cx="11" cy="11" r="8"/>
@@ -1168,12 +1722,11 @@
                         </div>
                         <h3>Diagnóstico inicial</h3>
                         <p>Evaluamos de manera integrada tu situación en gestión de riesgos, prevención, 
-                        seguridad, salud ocupacional y ambiente, e identificamos brechas prioritarias 
+                        seguridad, salud ocupacional y ambiente, identificando brechas prioritarias 
                         en menos de 24 horas hábiles.</p>
                     </div>
                     
-                    <!-- Card 3: Respaldo con icono Escudo -->
-                    <div class="card">
+                    <div class="card animate-on-scroll">
                         <div class="card-icon">
                             <svg viewBox="0 0 24 24">
                                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
@@ -1185,8 +1738,7 @@
                         exigencias regulatorias y cambios en el entorno operativo.</p>
                     </div>
                     
-                    <!-- Card 4: Cobertura con icono Globo -->
-                    <div class="card">
+                    <div class="card animate-on-scroll">
                         <div class="card-icon">
                             <svg viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="10"/>
@@ -1203,23 +1755,23 @@
         </section>
 
         <!-- ============================================
-             11. SERVICIOS - 6 servicios con iconos SVG
+             SERVICIOS - 6 Cards con Links a páginas individuales
              ============================================ -->
-        <section id="servicios" class="section section-alt">
+        <section id="servicios" class="section section-alt" aria-labelledby="servicios-title">
             <div class="container">
-                <div class="text-center">
+                <div class="text-center animate-on-scroll">
                     <span class="section-label">Servicios</span>
-                    <h2 class="text-gradient">Nuestros Servicios</h2>
+                    <h2 id="servicios-title" class="text-gradient">Nuestros Servicios</h2>
                     <p class="subtitle">
-                        Consultoría integral en gestión de riesgos, prevención, seguridad, 
-                        salud ocupacional y gestión ambiental. Nuestra oferta está organizada 
-                        en dominios técnicos complementarios.
+                        Consultoría integral en gestión de riesgos, prevención, seguridad, salud ocupacional 
+                        y gestión ambiental. Nuestra oferta está organizada en dominios técnicos complementarios 
+                        que se pueden contratar de forma independiente o articulada.
                     </p>
                 </div>
                 
                 <div class="services-grid">
-                    <!-- Servicio A: Seguridad con icono Casco -->
-                    <article class="service-card">
+                    <!-- Servicio 1: Seguridad y Salud -->
+                    <a href="seguridad-salud-ocupacional.html" class="service-card animate-on-scroll" aria-label="Ver más sobre Seguridad y Salud Ocupacional">
                         <div class="service-icon">
                             <svg viewBox="0 0 24 24">
                                 <path d="M2 18a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v2z"/>
@@ -1229,11 +1781,16 @@
                         </div>
                         <h3 class="service-title">Seguridad y salud ocupacional</h3>
                         <p>Diseño e implementación de sistemas de seguridad y salud ocupacional, 
-                        matrices de riesgos, planes de emergencia y programas de capacitación.</p>
-                    </article>
+                        matrices de riesgos, planes de emergencia, procedimientos de trabajo 
+                        seguro y programas de capacitación.</p>
+                        <span class="service-link-text">
+                            Ver más detalles
+                            <span aria-hidden="true">→</span>
+                        </span>
+                    </a>
                     
-                    <!-- Servicio B: Ambiental con icono Hoja -->
-                    <article class="service-card">
+                    <!-- Servicio 2: Gestión Ambiental -->
+                    <a href="gestion-ambiental-seia.html" class="service-card animate-on-scroll" aria-label="Ver más sobre Gestión Ambiental y SEIA">
                         <div class="service-icon">
                             <svg viewBox="0 0 24 24">
                                 <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
@@ -1242,11 +1799,16 @@
                         </div>
                         <h3 class="service-title">Gestión ambiental y SEIA</h3>
                         <p>Consultoría ambiental integral: líneas base, evaluación de impacto, 
-                        seguimiento de RCA y apoyo técnico en SEIA.</p>
-                    </article>
+                        seguimiento de RCA, monitoreos y apoyo técnico en SEIA para proyectos 
+                        de minería, infraestructura, energía, industria y servicios.</p>
+                        <span class="service-link-text">
+                            Ver más detalles
+                            <span aria-hidden="true">→</span>
+                        </span>
+                    </a>
                     
-                    <!-- Servicio C: ISO con icono Documento -->
-                    <article class="service-card">
+                    <!-- Servicio 3: Sistemas ISO -->
+                    <a href="sistemas-gestion-documentacion.html" class="service-card animate-on-scroll" aria-label="Ver más sobre Sistemas de Gestión y Documentación">
                         <div class="service-icon">
                             <svg viewBox="0 0 24 24">
                                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
@@ -1256,13 +1818,17 @@
                                 <polyline points="10 9 9 10 8 9"/>
                             </svg>
                         </div>
-                        <h3 class="service-title">Sistemas de gestión ISO</h3>
+                        <h3 class="service-title">Sistemas de gestión y documentación</h3>
                         <p>Diseño y mejora de sistemas ISO 9001, 14001 y 45001; gestión documental 
-                        completa y actualización normativa.</p>
-                    </article>
+                        completa incluyendo actualización conforme a la normativa vigente.</p>
+                        <span class="service-link-text">
+                            Ver más detalles
+                            <span aria-hidden="true">→</span>
+                        </span>
+                    </a>
                     
-                    <!-- Servicio D: SIG con icono Mapa -->
-                    <article class="service-card">
+                    <!-- Servicio 4: SIG e IA -->
+                    <a href="sig-teledeteccion-ia.html" class="service-card animate-on-scroll" aria-label="Ver más sobre SIG, Teledetección e IA Aplicada">
                         <div class="service-icon">
                             <svg viewBox="0 0 24 24">
                                 <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/>
@@ -1270,13 +1836,17 @@
                                 <line x1="16" y1="6" x2="16" y2="22"/>
                             </svg>
                         </div>
-                        <h3 class="service-title">SIG, teledetección e IA</h3>
-                        <p>Uso de QGIS, ArcGIS, Google Earth Engine y Python para análisis 
-                        territorial y automatización de tareas analíticas.</p>
-                    </article>
+                        <h3 class="service-title">SIG, teledetección e IA aplicada</h3>
+                        <p>Uso de QGIS, ArcGIS, Google Earth Engine, teledetección y Python para 
+                        análisis territorial, monitoreo y automatización de tareas analíticas.</p>
+                        <span class="service-link-text">
+                            Ver más detalles
+                            <span aria-hidden="true">→</span>
+                        </span>
+                    </a>
                     
-                    <!-- Servicio E: Asesoría con icono Personas -->
-                    <article class="service-card">
+                    <!-- Servicio 5: Asesoría -->
+                    <a href="asesoria-acompanamiento.html" class="service-card animate-on-scroll" aria-label="Ver más sobre Asesoría y Acompañamiento Continuo">
                         <div class="service-icon">
                             <svg viewBox="0 0 24 24">
                                 <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
@@ -1285,51 +1855,59 @@
                                 <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
                             </svg>
                         </div>
-                        <h3 class="service-title">Asesoría continua</h3>
-                        <p>Acompañamiento técnico combinando soporte preventivo, ambiental 
-                        y de sistemas de gestión, en modalidad puntual o continua.</p>
-                    </article>
+                        <h3 class="service-title">Asesoría y acompañamiento continuo</h3>
+                        <p>Acompañamiento técnico combinando soporte preventivo, ambiental y de 
+                        sistemas de gestión, en modalidad puntual o continua.</p>
+                        <span class="service-link-text">
+                            Ver más detalles
+                            <span aria-hidden="true">→</span>
+                        </span>
+                    </a>
                     
-                    <!-- Servicio F: Capacitación con icono Birrete -->
-                    <article class="service-card">
+                    <!-- Servicio 6: Capacitación -->
+                    <a href="capacitacion.html" class="service-card animate-on-scroll" aria-label="Ver más sobre Capacitación y Transferencia">
                         <div class="service-icon">
                             <svg viewBox="0 0 24 24">
                                 <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
                                 <path d="M6 12v5c3 3 9 3 12 0v-5"/>
                             </svg>
                         </div>
-                        <h3 class="service-title">Capacitación</h3>
-                        <p>Programas de capacitación para equipos de prevención, operación 
-                        y gestión ambiental, con foco en aplicación práctica.</p>
-                    </article>
+                        <h3 class="service-title">Capacitación y transferencia</h3>
+                        <p>Programas de capacitación para equipos de prevención, operación y 
+                        gestión ambiental, con foco en aplicación práctica y actualización normativa.</p>
+                        <span class="service-link-text">
+                            Ver más detalles
+                            <span aria-hidden="true">→</span>
+                        </span>
+                    </a>
                 </div>
             </div>
         </section>
 
         <!-- ============================================
-             12. PROPUESTA DE VALOR - 3 diferenciadores
+             PROPUESTA DE VALOR
              ============================================ -->
-        <section id="propuesta" class="section">
+        <section id="propuesta" class="section" aria-labelledby="propuesta-title">
             <div class="container">
-                <div class="text-center">
+                <div class="text-center animate-on-scroll">
                     <span class="section-label">Propuesta de valor</span>
-                    <h2 class="text-gradient">Propuesta de Valor</h2>
+                    <h2 id="propuesta-title" class="text-gradient">Propuesta de Valor</h2>
                     <p class="subtitle">Una consultora técnica integral, no un proveedor de documentos sueltos.</p>
                 </div>
                 
                 <div class="value-grid">
-                    <div class="card">
+                    <div class="card animate-on-scroll">
                         <div class="card-icon">
                             <svg viewBox="0 0 24 24">
                                 <polyline points="20 6 9 17 4 12"/>
                             </svg>
                         </div>
                         <h3>Visión integrada</h3>
-                        <p>Abordamos gestión de riesgos, prevención, seguridad, salud ocupacional 
-                        y ambiente como partes de un mismo sistema, evitando soluciones fragmentadas.</p>
+                        <p>Abordamos gestión de riesgos, prevención, seguridad, salud ocupacional y ambiente 
+                        como partes de un mismo sistema, evitando soluciones fragmentadas o contradictorias.</p>
                     </div>
                     
-                    <div class="card">
+                    <div class="card animate-on-scroll">
                         <div class="card-icon">
                             <svg viewBox="0 0 24 24">
                                 <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
@@ -1340,7 +1918,7 @@
                         aplicada a contextos operativos diversos y exigentes.</p>
                     </div>
                     
-                    <div class="card">
+                    <div class="card animate-on-scroll">
                         <div class="card-icon">
                             <svg viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="10"/>
@@ -1357,72 +1935,77 @@
         </section>
 
         <!-- ============================================
-             13. PROCESO - 4 pasos con timeline
+             PROCESO - Timeline Visual
              ============================================ -->
-        <section id="proceso" class="section section-alt">
+        <section id="proceso" class="section section-alt" aria-labelledby="proceso-title">
             <div class="container">
-                <div class="text-center">
+                <div class="text-center animate-on-scroll">
                     <span class="section-label">Cómo trabajamos</span>
-                    <h2 class="text-gradient">Cómo Trabajamos</h2>
+                    <h2 id="proceso-title" class="text-gradient">Cómo Trabajamos</h2>
                     <p class="subtitle">
                         Proceso claro para ordenar tu cumplimiento integral. 
-                        Flujo simple y transparente para avanzar rápido sin perder prolijidad técnica.
+                        Definimos un flujo simple y transparente, pensado para organizaciones 
+                        que necesitan avanzar rápido sin perder la prolijidad técnica.
                     </p>
                 </div>
                 
-                <div class="process-grid">
-                    <div class="process-step">
-                        <div class="process-number">1</div>
-                        <h3>Diagnóstico integral</h3>
-                        <p>Analizamos tu situación identificando brechas críticas en gestión de riesgos, 
-                        prevención, seguridad, salud, documentación y ambiente.</p>
-                    </div>
-                    
-                    <div class="process-step">
-                        <div class="process-number">2</div>
-                        <h3>Plan y propuesta</h3>
-                        <p>Presentamos plan de trabajo y propuesta económica claros, priorizando 
-                        acciones según riesgo y recursos.</p>
-                    </div>
-                    
-                    <div class="process-step">
-                        <div class="process-number">3</div>
-                        <h3>Ejecución técnica</h3>
-                        <p>Ejecutamos el plan actualizando documentación, mejorando procesos 
-                        e integrando SIG/IA cuando corresponde.</p>
-                    </div>
-                    
-                    <div class="process-step">
-                        <div class="process-number">4</div>
-                        <h3>Seguimiento</h3>
-                        <p>Ofrecemos acompañamiento continuo para mantener el sistema vivo 
-                        y apoyar futuras auditorías.</p>
+                <div class="process-container animate-on-scroll">
+                    <div class="process-line"></div>
+                    <div class="process-grid">
+                        <div class="process-step">
+                            <div class="process-number">1</div>
+                            <h3>Diagnóstico integral</h3>
+                            <p>Analizamos tu situación en gestión de riesgos, prevención, seguridad, 
+                            salud ocupacional, documentación, sistemas de gestión y ambiente, 
+                            identificando brechas críticas.</p>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="process-number">2</div>
+                            <h3>Plan y propuesta</h3>
+                            <p>Presentamos un plan de trabajo y propuesta económica claros, priorizando 
+                            acciones según riesgo, plazos y recursos disponibles.</p>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="process-number">3</div>
+                            <h3>Ejecución técnica</h3>
+                            <p>Ejecutamos el plan, actualizando documentación, mejorando procesos, 
+                            integrando SIG/IA cuando corresponde y capacitando a tu equipo.</p>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="process-number">4</div>
+                            <h3>Seguimiento y ajuste</h3>
+                            <p>Ofrecemos acompañamiento para mantener el sistema vivo, ajustar a cambios 
+                            normativos y apoyar futuras auditorías e inspecciones.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ============================================
-             14. CONFIANZA Y EXPERIENCIA - Sección destacada
+             CONFIANZA Y EXPERIENCIA
              ============================================ -->
-        <section class="section trust-section">
-            <div class="container">
-                <div class="text-center">
+        <section class="section trust-section" aria-labelledby="trust-title">
+            <div class="container trust-content">
+                <div class="text-center animate-on-scroll">
                     <span class="section-label">Confianza y experiencia</span>
-                    <h2>Más de 20 años integrando gestión de riesgos, prevención, seguridad y ambiente</h2>
+                    <h2 id="trust-title">Más de 20 años integrando gestión de riesgos, prevención, seguridad y ambiente</h2>
                     <p class="subtitle">
                         Hemos trabajado en minería, infraestructura, energía, industria, servicios 
                         y comunidades, combinando terreno, análisis de datos y gestión normativa.
                     </p>
                 </div>
                 
-                <div class="trust-grid">
+                <div class="trust-grid animate-on-scroll">
                     <div class="trust-item">
-                        <span class="trust-number">20+</span>
+                        <span class="trust-number" data-count="20">0</span>
                         <span class="trust-label">Años en gestión de riesgos, prevención y seguridad</span>
                     </div>
                     <div class="trust-item">
-                        <span class="trust-number">20+</span>
+                        <span class="trust-number" data-count="20">0</span>
                         <span class="trust-label">Años en consultoría ambiental y SEIA</span>
                     </div>
                     <div class="trust-item">
@@ -1435,7 +2018,7 @@
                     </div>
                 </div>
                 
-                <div class="sectors-grid">
+                <div class="sectors-grid animate-on-scroll">
                     <div class="sector-chip">⛏️ Minería y recursos naturales</div>
                     <div class="sector-chip">🏗️ Construcción e infraestructura</div>
                     <div class="sector-chip">🏭 Industria y servicios</div>
@@ -1445,95 +2028,96 @@
         </section>
 
         <!-- ============================================
-             15. EQUIPO - 2 miembros principales
+             EQUIPO
              ============================================ -->
-        <section id="equipo" class="section">
+        <section id="equipo" class="section" aria-labelledby="equipo-title">
             <div class="container">
-                <div class="text-center">
+                <div class="text-center animate-on-scroll">
                     <span class="section-label">Equipo principal</span>
-                    <h2 class="text-gradient">Equipo Principal</h2>
+                    <h2 id="equipo-title" class="text-gradient">Equipo Principal</h2>
                     <p class="subtitle">
                         Perfiles senior en prevención, ambiente y sistemas integrados. 
-                        Trayectorias profesionales extensas y complementarias.
+                        SEPREVIN se construye sobre trayectorias profesionales extensas y complementarias.
                     </p>
                 </div>
                 
                 <div class="team-grid">
-                    <article class="team-card">
+                    <article class="team-card animate-on-scroll">
                         <div class="team-avatar">JC</div>
                         <h3>Juan Carlos Delgado</h3>
-                        <p style="color: var(--primary); font-weight: 600;">Seguridad y salud ocupacional</p>
-                        <p>Especialista con más de 20 años en sistemas de seguridad, matrices de riesgos, 
-                        planes de emergencia, reglamentos internos y gestión documental para contratistas 
-                        y empresas.</p>
+                        <p class="team-role">Seguridad, salud ocupacional y gestión documental</p>
+                        <p>Especialista con más de 20 años en sistemas de seguridad y salud ocupacional, 
+                        programas preventivos, matrices de riesgos, planes de emergencia, reglamentos 
+                        internos, carpetas de arranque y gestión documental para contratistas y empresas.</p>
                     </article>
                     
-                    <article class="team-card">
+                    <article class="team-card animate-on-scroll">
                         <div class="team-avatar">LR</div>
                         <h3>Leonardo Ruiz</h3>
-                        <p style="color: var(--primary); font-weight: 600;">Consultoría ambiental y SIG</p>
-                        <p>Biólogo y Magíster con más de 20 años en SEIA, RCA, monitoreo, SIG, 
-                        teledetección y sistemas integrados ISO, integrando herramientas de IA 
-                        y análisis de datos.</p>
+                        <p class="team-role">Consultoría ambiental, SEIA, SIG e IA aplicada</p>
+                        <p>Biólogo y Magíster en Ingeniería de Gestión de Recursos Naturales y Medio Ambiente, 
+                        con más de 20 años en consultoría ambiental, evaluación de impacto, seguimiento RCA, 
+                        monitoreo, SIG, teledetección y sistemas integrados ISO.</p>
                     </article>
                 </div>
             </div>
         </section>
 
         <!-- ============================================
-             16. FAQ - Preguntas frecuentes
+             FAQ - Acordeón Interactivo
              ============================================ -->
-        <section id="faq" class="section section-alt">
+        <section id="faq" class="section section-alt" aria-labelledby="faq-title">
             <div class="container">
-                <div class="text-center">
+                <div class="text-center animate-on-scroll">
                     <span class="section-label">Preguntas frecuentes</span>
-                    <h2 class="text-gradient">Preguntas Frecuentes</h2>
+                    <h2 id="faq-title" class="text-gradient">Preguntas Frecuentes</h2>
                     <p class="subtitle">Resolvemos dudas clave antes de que tomes la decisión.</p>
                 </div>
                 
-                <div class="faq-list">
+                <div class="faq-list animate-on-scroll">
                     <div class="faq-item">
-                        <button class="faq-question">
-                            ¿Trabajan solo en Santiago?
-                            <span class="faq-icon">+</span>
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq1">
+                            <span>¿Trabajan solo en Santiago?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
                         </button>
-                        <div class="faq-answer">
-                            <p>No. Tenemos base en Santiago pero trabajamos a nivel nacional, 
-                            combinando trabajo remoto y presencial según el tipo de proyecto.</p>
+                        <div id="faq1" class="faq-answer">
+                            <p>No. Tenemos base en Santiago, Región Metropolitana, pero trabajamos a nivel 
+                            nacional, combinando trabajo remoto y presencial según el tipo de proyecto.</p>
                         </div>
                     </div>
                     
                     <div class="faq-item">
-                        <button class="faq-question">
-                            ¿Atienden organizaciones de distintos tamaños?
-                            <span class="faq-icon">+</span>
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq2">
+                            <span>¿Atienden organizaciones de distintos tamaños?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
                         </button>
-                        <div class="faq-answer">
-                            <p>Sí. Apoyamos desde pymes hasta grandes empresas, adaptando 
-                            la profundidad del servicio.</p>
+                        <div id="faq2" class="faq-answer">
+                            <p>Sí. Apoyamos desde pymes y comunidades hasta grandes contratistas, empresas 
+                            industriales y organismos públicos, adaptando la profundidad del servicio.</p>
                         </div>
                     </div>
                     
                     <div class="faq-item">
-                        <button class="faq-question">
-                            ¿Pueden ayudar en situaciones urgentes?
-                            <span class="faq-icon">+</span>
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq3">
+                            <span>¿Pueden ayudar en situaciones urgentes?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
                         </button>
-                        <div class="faq-answer">
-                            <p>Tenemos experiencia en procesos de regularización rápida 
-                            priorizando riesgos críticos frente a auditorías.</p>
+                        <div id="faq3" class="faq-answer">
+                            <p>Tenemos experiencia en procesos de regularización y actualización rápida, 
+                            priorizando acciones que reduzcan riesgos críticos frente a auditorías o 
+                            inspecciones cercanas.</p>
                         </div>
                     </div>
                     
                     <div class="faq-item">
-                        <button class="faq-question">
-                            ¿El diagnóstico es realmente integral?
-                            <span class="faq-icon">+</span>
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq4">
+                            <span>¿El diagnóstico inicial es realmente integral?</span>
+                            <span class="faq-icon" aria-hidden="true">+</span>
                         </button>
-                        <div class="faq-answer">
-                            <p>Sí. Consideramos gestión de riesgos, prevención, seguridad, 
-                            salud, documentación, sistemas de gestión y ambiente para definir 
-                            prioridades juntos.</p>
+                        <div id="faq4" class="faq-answer">
+                            <p>El diagnóstico considera gestión de riesgos, prevención, seguridad, salud ocupacional, 
+                            documentación, sistemas de gestión y ambiente. A partir de ahí definimos juntos qué 
+                            líneas abordar primero.</p>
                         </div>
                     </div>
                 </div>
@@ -1541,31 +2125,42 @@
         </section>
 
         <!-- ============================================
-             17. CONTACTO - Formulario Formspree
+             CONTACTO - Formulario Formspree
              ============================================ -->
-        <section id="contacto" class="section">
+        <section id="contacto" class="section" aria-labelledby="contacto-title">
             <div class="container">
-                <div class="text-center">
+                <div class="text-center animate-on-scroll">
                     <span class="section-label">Contacto</span>
-                    <h2 class="text-gradient">Contacto</h2>
-                    <p class="subtitle">Solicita un diagnóstico integral sin costo.</p>
+                    <h2 id="contacto-title" class="text-gradient">Contacto</h2>
+                    <p class="subtitle">
+                        Solicita un diagnóstico integral sin costo. Evaluamos tu situación actual y 
+                        definimos un plan realista.
+                    </p>
                 </div>
                 
                 <div class="contact-layout">
-                    <div>
-                        <h3 style="margin-bottom: 1rem;">Hablemos de tu proyecto</h3>
-                        <p style="margin-bottom: 2rem;">Contáctanos directamente:</p>
+                    <div class="animate-on-scroll">
+                        <h3 style="margin-bottom: var(--space-lg);">Hablemos de tu proyecto</h3>
+                        <p style="margin-bottom: var(--space-xl);">
+                            Completa el formulario o contáctanos directamente por nuestros canales oficiales.
+                        </p>
                         
-                        <a href="https://wa.me/56954025756" class="contact-info-card" target="_blank" rel="noopener">
-                            <span style="font-size: 1.5rem;">📱</span>
+                        <a href="https://wa.me/56954025756" 
+                           class="contact-info-card" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            <span class="icon" aria-hidden="true">📱</span>
                             <div>
-                                <strong>WhatsApp</strong>
+                                <strong>WhatsApp principal</strong>
                                 <span>+56 9 5402 5756</span>
                             </div>
                         </a>
                         
-                        <a href="https://wa.me/56984309798" class="contact-info-card" target="_blank" rel="noopener">
-                            <span style="font-size: 1.5rem;"></span>
+                        <a href="https://wa.me/56984309798" 
+                           class="contact-info-card" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            <span class="icon" aria-hidden="true">📞</span>
                             <div>
                                 <strong>Teléfono alternativo</strong>
                                 <span>+56 9 8430 9798</span>
@@ -1573,7 +2168,7 @@
                         </a>
                         
                         <div class="contact-info-card">
-                            <span style="font-size: 1.5rem;">📍</span>
+                            <span class="icon" aria-hidden="true">📍</span>
                             <div>
                                 <strong>Ubicación</strong>
                                 <span>Santiago, Chile (Cobertura nacional)</span>
@@ -1581,52 +2176,91 @@
                         </div>
                     </div>
                     
-                    <form class="contact-form" action="https://formspree.io/f/mwvjajwa" method="POST">
+                    <form class="contact-form animate-on-scroll" 
+                          id="contactForm" 
+                          action="https://formspree.io/f/mwvjajwa" 
+                          method="POST">
+                        
                         <div class="form-group">
-                            <label class="form-label" for="nombre">Nombre completo *</label>
-                            <input type="text" id="nombre" name="nombre" class="form-input" required placeholder="Juan Pérez">
+                            <label class="form-label" for="nombre">
+                                Nombre completo <span aria-label="obligatorio" style="color: var(--primary);">*</span>
+                            </label>
+                            <input type="text" 
+                                   id="nombre" 
+                                   name="nombre" 
+                                   class="form-input"
+                                   required 
+                                   autocomplete="name"
+                                   aria-required="true"
+                                   placeholder="Ej: Juan Pérez González">
                         </div>
                         
                         <div class="form-group">
-                            <label class="form-label" for="empresa">Empresa</label>
-                            <input type="text" id="empresa" name="empresa" class="form-input" placeholder="Tu empresa">
+                            <label class="form-label" for="empresa">Empresa / organización</label>
+                            <input type="text" 
+                                   id="empresa" 
+                                   name="empresa" 
+                                   class="form-input"
+                                   autocomplete="organization"
+                                   placeholder="Ej: Empresa Minera del Norte SpA">
                         </div>
                         
                         <div class="form-group">
-                            <label class="form-label" for="telefono">Teléfono *</label>
-                            <input type="tel" id="telefono" name="telefono" class="form-input" required placeholder="+56 9 1234 5678">
+                            <label class="form-label" for="telefono">
+                                Teléfono / WhatsApp <span aria-label="obligatorio" style="color: var(--primary);">*</span>
+                            </label>
+                            <input type="tel" 
+                                   id="telefono" 
+                                   name="telefono" 
+                                   class="form-input"
+                                   required 
+                                   autocomplete="tel"
+                                   aria-required="true"
+                                   placeholder="+56 9 1234 5678">
                         </div>
                         
                         <div class="form-group">
-                            <label class="form-label" for="email">Email</label>
-                            <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com">
+                            <label class="form-label" for="email">Correo electrónico</label>
+                            <input type="email" 
+                                   id="email" 
+                                   name="email" 
+                                   class="form-input"
+                                   autocomplete="email"
+                                   placeholder="tu@email.com">
                         </div>
                         
                         <div class="form-group">
-                            <label class="form-label" for="servicio">Servicio de interés *</label>
-                            <select id="servicio" name="servicio" class="form-select" required>
+                            <label class="form-label" for="servicio">
+                                Servicio de interés <span aria-label="obligatorio" style="color: var(--primary);">*</span>
+                            </label>
+                            <select id="servicio" 
+                                    name="servicio" 
+                                    class="form-select"
+                                    required 
+                                    aria-required="true">
                                 <option value="">Selecciona una opción</option>
                                 <option value="seguridad">Seguridad y salud ocupacional</option>
-                                <option value="ambiental">Gestión ambiental / SEIA</option>
-                                <option value="sistemas">Sistemas de gestión ISO</option>
-                                <option value="sig">SIG y teledetección</option>
-                                <option value="integral">Diagnóstico integral</option>
-                                <option value="otro">Otro</option>
+                                <option value="ambiental">Gestión ambiental / SEIA / RCA</option>
+                                <option value="sistemas">Sistemas de gestión e ISO</option>
+                                <option value="sig">SIG, teledetección e IA aplicada</option>
+                                <option value="integral">Diagnóstico integral (todas)</option>
+                                <option value="otro">Otro / no estoy seguro</option>
                             </select>
                         </div>
                         
                         <div class="form-group">
-                            <label class="form-label" for="mensaje">Mensaje</label>
-                            <textarea id="mensaje" name="mensaje" class="form-textarea" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+                            <label class="form-label" for="mensaje">Mensaje breve (opcional)</label>
+                            <textarea id="mensaje" 
+                                      name="mensaje" 
+                                      class="form-textarea"
+                                      maxlength="1000"
+                                      placeholder="Cuéntanos brevemente sobre tu proyecto o necesidad..."></textarea>
                         </div>
                         
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">
-                            Enviar solicitud →
+                        <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1.25rem;">
+                            <span>Enviar solicitud</span>
+                            <span class="btn-icon" aria-hidden="true">→</span>
                         </button>
-                        
-                        <p style="margin-top: 1rem; font-size: 0.875rem; text-align: center; color: var(--text-muted);">
-                            Te responderemos en menos de 24 horas hábiles.
-                        </p>
                     </form>
                 </div>
             </div>
@@ -1634,42 +2268,49 @@
     </main>
 
     <!-- ============================================
-         18. BOTÓN FLOTANTE WHATSAPP
+         BOTÓN FLOTANTE WHATSAPP
          ============================================ -->
-    <a href="https://wa.me/56954025756?text=Hola%20SEPREVIN,%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n" 
-       class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
-        💬
+    <a href="https://wa.me/56954025756?text=Hola%20SEPREVIN,%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios" 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Chatear por WhatsApp - ¿Tienes una emergencia? Escríbenos">
+        <span style="font-size: 1.75rem;" aria-hidden="true">💬</span>
+        <span class="whatsapp-tooltip">¿Tienes una emergencia? Escríbenos</span>
     </a>
 
     <!-- ============================================
-         19. FOOTER
+         FOOTER
          ============================================ -->
-    <footer>
+    <footer role="contentinfo">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <h3 style="color: white; margin-bottom: 1rem;">SEPREVIN</h3>
-                    <p>Consultora técnica integral en gestión de riesgos, prevención, seguridad, 
-                    salud ocupacional y gestión ambiental. Respaldo técnico de excelencia para 
-                    que tu operación cumpla con los más altos estándares normativos.</p>
+                    <img src="logo_blanco.jpeg" alt="SEPREVIN" onerror="this.style.display='none'">
+                    <p>
+                        Consultora técnica integral en gestión de riesgos, prevención, seguridad, 
+                        salud ocupacional y gestión ambiental. Respaldo técnico de excelencia para 
+                        que tu operación cumpla con los más altos estándares normativos.
+                    </p>
                 </div>
                 
-                <nav>
+                <nav aria-label="Navegación principal">
                     <h4 class="footer-title">Navegación</h4>
                     <ul class="footer-links">
                         <li><a href="#servicios">Servicios</a></li>
-                        <li><a href="#propuesta">Propuesta</a></li>
+                        <li><a href="#propuesta">Propuesta de valor</a></li>
                         <li><a href="#proceso">Cómo trabajamos</a></li>
                         <li><a href="#equipo">Equipo</a></li>
-                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#faq">Preguntas frecuentes</a></li>
                     </ul>
                 </nav>
                 
-                <nav>
+                <nav aria-label="Navegación legal">
                     <h4 class="footer-title">Legal</h4>
                     <ul class="footer-links">
                         <li><a href="#">Política de privacidad</a></li>
                         <li><a href="#">Términos de servicio</a></li>
+                        <li><a href="#">Política de cookies</a></li>
                     </ul>
                 </nav>
             </div>
@@ -1681,49 +2322,175 @@
     </footer>
 
     <!-- ============================================
-         20. JAVASCRIPT
-         Funcionalidad mínima y eficiente
+         JAVASCRIPT - Funcionalidad Optimizada
          ============================================ -->
     <script>
-        // FAQ Accordion - Toggle de preguntas frecuentes
-        document.querySelectorAll('.faq-question').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const item = btn.parentElement;
-                const isActive = item.classList.contains('active');
-                
-                document.querySelectorAll('.faq-item').forEach(faq => {
-                    faq.classList.remove('active');
-                });
-                
-                if (!isActive) {
-                    item.classList.add('active');
-                }
+        // Menú móvil
+        function toggleMenu() {
+            const navMenu = document.getElementById('nav-menu');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+            
+            navMenu.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+            menuBtn.setAttribute('aria-expanded', !isExpanded);
+            menuBtn.setAttribute('aria-label', isExpanded ? 'Abrir menú de navegación' : 'Cerrar menú de navegación');
+        }
+        
+        // Cerrar menú al hacer click en un enlace
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                const navMenu = document.getElementById('nav-menu');
+                const menuBtn = document.querySelector('.mobile-menu-btn');
+                navMenu.classList.remove('active');
+                menuBtn.classList.remove('active');
+                menuBtn.setAttribute('aria-expanded', 'false');
             });
         });
-
-        // Header scroll effect - Agregar sombra al hacer scroll
+        
+        // Header scroll effect
+        const header = document.getElementById('header');
         window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
             if (window.scrollY > 50) {
                 header.classList.add('scrolled');
             } else {
                 header.classList.remove('scrolled');
             }
         });
-
-        // Form validation - Estado de envío
-        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+        
+        // FAQ Acordeón
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const isActive = faqItem.classList.contains('active');
+                
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    item.classList.remove('active');
+                    item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                });
+                
+                if (!isActive) {
+                    faqItem.classList.add('active');
+                    button.setAttribute('aria-expanded', 'true');
+                }
+            });
+        });
+        
+        // Animaciones al scroll con Intersection Observer
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Contador animado para stats
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = parseInt(entry.target.getAttribute('data-count'));
+                    if (target) animateCount(entry.target, target);
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        document.querySelectorAll('[data-count]').forEach(stat => {
+            statsObserver.observe(stat);
+        });
+        
+        function animateCount(element, target) {
+            let current = 0;
+            const increment = target / 50;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target + (target === 100 ? '%' : '+');
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current);
+                }
+            }, 30);
+        }
+        
+        // Scroll Spy - Marcar sección activa en navegación
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-menu a[data-section]');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const scrollPosition = window.scrollY + 100;
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('data-section') === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // Validación de formulario
+        const form = document.getElementById('contactForm');
+        
+        form.addEventListener('submit', function(e) {
+            let isValid = true;
+            
+            form.querySelectorAll('[required]').forEach(field => {
+                if (!field.value.trim()) {
+                    isValid = false;
+                    field.style.borderColor = '#dc2626';
+                    field.style.boxShadow = '0 0 0 4px rgba(220, 38, 38, 0.1)';
+                } else {
+                    field.style.borderColor = '';
+                    field.style.boxShadow = '';
+                }
+            });
+            
+            if (!isValid) {
+                e.preventDefault();
+                alert('Por favor, complete todos los campos obligatorios.');
+                return false;
+            }
+            
             const btn = this.querySelector('button[type="submit"]');
             btn.innerHTML = 'Enviando...';
             btn.disabled = true;
         });
-
-        // Cerrar menú móvil al hacer click en un enlace
-        document.querySelectorAll('.nav-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.querySelector('.nav-menu').classList.remove('active');
+        
+        // Limpiar errores al escribir
+        form.querySelectorAll('input, select, textarea').forEach(field => {
+            field.addEventListener('input', function() {
+                this.style.borderColor = '';
+                this.style.boxShadow = '';
             });
         });
+        
+        // Service Worker para PWA
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js').catch(() => {});
+            });
+        }
     </script>
 </body>
 </html>
