@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="SEPREVIN: Consultora líder en seguridad, salud ocupacional y gestión ambiental. Más de 20 años de excelencia técnica en Chile.">
-    <meta name="keywords" content="seguridad ocupacional, salud laboral, gestión ambiental, SEIA, RCA, ISO, consultoría Chile">
+    <meta name="keywords" content="seguridad ocupacional, salud laboral, gestión ambiental, SEIA, RCA, ISO, consultoría Chile, prevención de riesgos">
     <meta name="author" content="SEPREVIN">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-    <meta name="language" content="Spanish">
     
     <!-- Seguridad -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
@@ -16,38 +15,19 @@
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     
-    <meta http-equiv="Content-Security-Policy" 
-          content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https: blob:; connect-src 'self' https://api.whatsapp.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests; block-all-mixed-content;">
-    
-    <meta http-equiv="Permissions-Policy" 
-          content="geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()">
-    
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.seprevin.cl/">
-    <meta property="og:site_name" content="SEPREVIN">
-    <meta property="og:locale" content="es_CL">
-    <meta property="og:title" content="SEPREVIN | Excelencia en Seguridad, Salud y Medio Ambiente">
-    <meta property="og:description" content="Consultora técnica integral con más de 20 años liderando proyectos de seguridad ocupacional, gestión ambiental y sistemas ISO en Chile.">
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="SEPREVIN | Seguridad y Gestión Ambiental Integral">
-    <meta name="twitter:description" content="Consultora líder en seguridad ocupacional, salud laboral y gestión ambiental. Cobertura nacional en Chile.">
+    <meta property="og:title" content="SEPREVIN | Excelencia en Seguridad, Salud y Gestión Ambiental">
+    <meta property="og:description" content="Consultora técnica integral con más de 20 años liderando proyectos de seguridad ocupacional y gestión ambiental en Chile.">
     
     <meta name="theme-color" content="#012D90">
-    <meta name="color-scheme" content="light">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="SEPREVIN">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="manifest" href="site.webmanifest">
     
     <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
@@ -55,7 +35,7 @@
     <link rel="preconnect" href="https://api.whatsapp.com" crossorigin>
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     
     <!-- Schema.org -->
     <script type="application/ld+json">
@@ -69,237 +49,107 @@
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "Santiago",
-            "addressRegion": "Región Metropolitana",
             "addressCountry": "CL"
         },
-        "contactPoint": [
-            {"@type": "ContactPoint", "telephone": "+56-9-5402-5756", "contactType": "ventas", "availableLanguage": ["Spanish"]},
-            {"@type": "ContactPoint", "telephone": "+56-9-8430-9798", "contactType": "soporte", "availableLanguage": ["Spanish"]}
-        ],
-        "foundingDate": "2006",
-        "areaServed": "CL"
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+56-9-5402-5756",
+            "contactType": "ventas",
+            "availableLanguage": ["Spanish"]
+        },
+        "foundingDate": "2006"
     }
     </script>
     
-    <title>SEPREVIN | Excelencia en Seguridad, Salud y Gestión Ambiental Integral</title>
+    <title>SEPREVIN | Seguridad, Salud Ocupacional y Gestión Ambiental Integral</title>
     
     <style>
-        /* ============================================
-           RESET Y VARIABLES GLOBALES
-           ============================================ */
-        *, *::before, *::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-
         :root {
-            /* Colores Corporativos */
             --primary: #012D90;
             --primary-dark: #001a5c;
             --primary-light: #0047AB;
-            --primary-rgb: 1, 45, 144;
             --accent: #00D4FF;
-            
-            /* Neutros */
             --bg: #FEFEFE;
             --bg-alt: #F8FAFC;
             --surface: #FFFFFF;
             --text: #0F172A;
             --text-muted: #475569;
-            --text-light: #94A3B8;
             --border: #E2E8F0;
-            --border-light: #F1F5F9;
-            
-            /* WhatsApp */
             --whatsapp: #25D366;
-            --whatsapp-dark: #128C7E;
-            
-            /* Sombras */
             --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1);
-            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-            --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
             --shadow-primary: 0 10px 40px -10px rgba(1, 45, 144, 0.4);
-            --shadow-glow: 0 0 60px rgba(1, 45, 144, 0.15);
-            
-            /* Gradientes */
             --gradient-primary: linear-gradient(135deg, #012D90 0%, #0047AB 100%);
             --gradient-hero: linear-gradient(135deg, #012D90 0%, #001a5c 50%, #000d33 100%);
-            --gradient-mesh: radial-gradient(at 0% 0%, rgba(1, 45, 144, 0.15) 0px, transparent 50%),
-                             radial-gradient(at 100% 0%, rgba(0, 212, 255, 0.1) 0px, transparent 50%),
-                             radial-gradient(at 100% 100%, rgba(1, 45, 144, 0.1) 0px, transparent 50%),
-                             radial-gradient(at 0% 100%, rgba(0, 71, 171, 0.12) 0px, transparent 50%);
-            
-            /* Tipografía */
-            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-            --font-display: 'Space Grotesk', 'Inter', sans-serif;
-            
-            /* Espaciado fluido */
-            --space-xs: clamp(0.25rem, 0.5vw, 0.5rem);
-            --space-sm: clamp(0.5rem, 1vw, 1rem);
-            --space-md: clamp(1rem, 2vw, 1.5rem);
-            --space-lg: clamp(1.5rem, 3vw, 2rem);
-            --space-xl: clamp(2rem, 4vw, 3rem);
-            --space-2xl: clamp(3rem, 6vw, 4rem);
-            --space-3xl: clamp(4rem, 8vw, 6rem);
-            --space-4xl: clamp(5rem, 10vw, 8rem);
-            
-            /* Bordes */
+            --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+            --font-display: 'Space Grotesk', var(--font-sans);
+            --space-xs: 0.25rem;
+            --space-sm: 0.5rem;
+            --space-md: 1rem;
+            --space-lg: 1.5rem;
+            --space-xl: 2rem;
+            --space-2xl: 3rem;
+            --space-3xl: 4rem;
+            --space-4xl: 6rem;
             --radius-sm: 0.5rem;
             --radius-md: 0.75rem;
             --radius-lg: 1rem;
             --radius-xl: 1.5rem;
             --radius-2xl: 2rem;
             --radius-full: 9999px;
-            
-            /* Transiciones */
-            --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
-            --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
-            --transition-slow: 500ms cubic-bezier(0.4, 0, 0.2, 1);
-            --transition-bounce: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
-            
-            /* Layout */
-            --max-width: 1400px;
-            --header-height: clamp(70px, 10vw, 90px);
-            --container-padding: clamp(1rem, 5vw, 3rem);
-            
-            /* Z-index */
-            --z-dropdown: 1000;
-            --z-sticky: 1020;
-            --z-fixed: 1030;
-            --z-modal: 1050;
+            --transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+            --max-width: 1280px;
+            --header-height: 80px;
         }
 
-        html {
-            scroll-behavior: smooth;
-            -webkit-text-size-adjust: 100%;
-            scroll-padding-top: var(--header-height);
-        }
-
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        html { scroll-behavior: smooth; scroll-padding-top: var(--header-height); }
+        
         body {
             font-family: var(--font-sans);
-            background-color: var(--bg);
+            background: var(--bg);
             color: var(--text);
             line-height: 1.6;
-            min-height: 100vh;
             overflow-x: hidden;
-            font-feature-settings: "kern" 1, "liga" 1;
         }
 
-        ::selection {
-            background-color: rgba(1, 45, 144, 0.2);
-            color: var(--primary);
-        }
-
-        ::-webkit-scrollbar {
-            width: 12px;
-            height: 12px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: var(--bg-alt);
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: var(--primary);
-            border-radius: var(--radius-full);
-            border: 3px solid var(--bg-alt);
-        }
-
-        ::-webkit-scrollbar-thumb:hover {
-            background: var(--primary-dark);
-        }
-
-        /* ============================================
-           UTILIDADES
-           ============================================ */
         .container {
             width: 100%;
             max-width: var(--max-width);
             margin: 0 auto;
-            padding: 0 var(--container-padding);
+            padding: 0 clamp(1rem, 5vw, 3rem);
         }
 
-        .section {
-            padding: var(--space-4xl) 0;
-            position: relative;
-        }
-
-        .section-alt {
-            background-color: var(--bg-alt);
-        }
-
+        .section { padding: var(--space-4xl) 0; }
+        .section-alt { background: var(--bg-alt); }
         .text-center { text-align: center; }
-
+        
         .text-gradient {
             background: var(--gradient-primary);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            background-clip: text;
         }
 
-        .skip-link {
-            position: absolute;
-            top: -100px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--primary);
-            color: white;
-            padding: 0.75rem 1.5rem;
-            border-radius: var(--radius-md);
-            text-decoration: none;
-            font-weight: 600;
-            z-index: 9999;
-            transition: top var(--transition-fast);
-        }
-
-        .skip-link:focus {
-            top: 1rem;
-        }
-
-        /* ============================================
-           TIPOGRAFÍA FLUIDA
-           ============================================ */
-        h1, h2, h3, h4, h5, h6 {
+        h1, h2, h3 {
             font-family: var(--font-display);
             font-weight: 700;
             line-height: 1.1;
-            color: var(--text);
             letter-spacing: -0.02em;
         }
 
-        h1 {
-            font-size: clamp(2rem, 5vw + 1rem, 5rem);
-            font-weight: 800;
-            line-height: 1.05;
-        }
+        h1 { font-size: clamp(2rem, 5vw, 3.5rem); }
+        h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); margin-bottom: var(--space-md); }
+        h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); margin-bottom: var(--space-sm); }
 
-        h2 {
-            font-size: clamp(1.75rem, 4vw + 0.5rem, 3.5rem);
-            margin-bottom: var(--space-md);
-        }
-
-        h3 {
-            font-size: clamp(1.25rem, 2vw + 0.25rem, 1.75rem);
-            margin-bottom: var(--space-sm);
-        }
-
-        p {
-            color: var(--text-muted);
-            line-height: 1.7;
-            margin-bottom: var(--space-md);
-        }
+        p { color: var(--text-muted); margin-bottom: var(--space-md); line-height: 1.7; }
 
         .subtitle {
-            font-size: clamp(1rem, 1.5vw + 0.25rem, 1.25rem);
-            color: var(--text-muted);
+            font-size: clamp(1rem, 1.5vw, 1.25rem);
             max-width: 700px;
             margin: 0 auto var(--space-xl);
-            line-height: 1.8;
         }
 
         .section-label {
@@ -310,31 +160,13 @@
             background: rgba(1, 45, 144, 0.08);
             color: var(--primary);
             border-radius: var(--radius-full);
-            font-size: clamp(0.75rem, 1vw, 0.875rem);
+            font-size: 0.875rem;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.08em;
             margin-bottom: var(--space-lg);
-            border: 1px solid rgba(1, 45, 144, 0.15);
         }
 
-        .section-label::before {
-            content: '';
-            width: 8px;
-            height: 8px;
-            background: var(--primary);
-            border-radius: 50%;
-            animation: pulse-dot 2s infinite;
-        }
-
-        @keyframes pulse-dot {
-            0%, 100% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.5; transform: scale(1.2); }
-        }
-
-        /* ============================================
-           BOTONES
-           ============================================ */
         .btn {
             display: inline-flex;
             align-items: center;
@@ -348,12 +180,8 @@
             border: none;
             border-radius: var(--radius-lg);
             cursor: pointer;
-            transition: all var(--transition-base);
-            position: relative;
-            overflow: hidden;
+            transition: all var(--transition);
             min-height: 52px;
-            white-space: nowrap;
-            letter-spacing: 0.01em;
         }
 
         .btn-primary {
@@ -365,10 +193,6 @@
         .btn-primary:hover {
             transform: translateY(-3px);
             box-shadow: 0 20px 40px -10px rgba(1, 45, 144, 0.5);
-        }
-
-        .btn-primary:active {
-            transform: translateY(-1px);
         }
 
         .btn-white {
@@ -386,61 +210,23 @@
             background: transparent;
             color: white;
             border: 2px solid rgba(255,255,255,0.4);
-            backdrop-filter: blur(10px);
         }
 
         .btn-outline-white:hover {
             background: white;
             color: var(--primary);
-            border-color: white;
-            transform: translateY(-3px);
         }
 
-        .btn-whatsapp {
-            background: var(--whatsapp);
-            color: white;
-            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
-        }
-
-        .btn-whatsapp:hover {
-            background: var(--whatsapp-dark);
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
-        }
-
-        .btn:focus-visible {
-            outline: 3px solid var(--accent);
-            outline-offset: 3px;
-        }
-
-        .btn-icon {
-            display: inline-flex;
-            transition: transform var(--transition-base);
-        }
-
-        .btn:hover .btn-icon {
-            transform: translateX(4px);
-        }
-
-        /* ============================================
-           HEADER
-           ============================================ */
+        /* Header */
         header {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
-            z-index: var(--z-sticky);
+            z-index: 1020;
             background: rgba(254, 254, 254, 0.95);
-            backdrop-filter: blur(20px) saturate(180%);
-            -webkit-backdrop-filter: blur(20px) saturate(180%);
-            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
-            transition: all var(--transition-base);
-        }
-
-        header.scrolled {
-            box-shadow: var(--shadow-md);
-            background: rgba(254, 254, 254, 0.98);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border);
         }
 
         .nav-container {
@@ -457,22 +243,12 @@
             gap: var(--space-sm);
         }
 
-        .logo img {
-            height: clamp(40px, 6vw, 55px);
-            width: auto;
-            transition: transform var(--transition-base);
-        }
-
-        .logo:hover img {
-            transform: scale(1.05);
-        }
-
+        .logo img { height: clamp(40px, 6vw, 50px); width: auto; }
         .logo-text {
             font-family: var(--font-display);
             font-size: clamp(1.25rem, 2vw, 1.5rem);
             font-weight: 800;
             color: var(--primary);
-            letter-spacing: -0.5px;
         }
 
         .nav-menu {
@@ -486,38 +262,13 @@
             text-decoration: none;
             color: var(--text);
             font-weight: 500;
-            font-size: clamp(0.875rem, 1vw, 0.95rem);
+            font-size: 0.9375rem;
             padding: 0.5rem 0.75rem;
             border-radius: var(--radius-md);
-            transition: all var(--transition-fast);
-            position: relative;
+            transition: all var(--transition);
         }
 
-        .nav-menu a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 0;
-            height: 2px;
-            background: var(--primary);
-            transition: width var(--transition-base);
-            border-radius: var(--radius-full);
-        }
-
-        .nav-menu a:hover {
-            color: var(--primary);
-        }
-
-        .nav-menu a:hover::after {
-            width: 80%;
-        }
-
-        .nav-menu a:not(.btn):focus-visible {
-            outline: 2px solid var(--primary);
-            outline-offset: 2px;
-        }
+        .nav-menu a:hover { color: var(--primary); }
 
         .mobile-menu-btn {
             display: none;
@@ -525,9 +276,6 @@
             border: none;
             cursor: pointer;
             padding: 0.5rem;
-            min-height: 48px;
-            min-width: 48px;
-            z-index: var(--z-dropdown);
         }
 
         .mobile-menu-btn span {
@@ -536,33 +284,18 @@
             height: 2px;
             background: var(--primary);
             margin: 5px 0;
-            transition: all var(--transition-base);
-            border-radius: var(--radius-full);
+            transition: all var(--transition);
         }
 
-        .mobile-menu-btn.active span:nth-child(1) {
-            transform: translateY(7px) rotate(45deg);
-        }
-
-        .mobile-menu-btn.active span:nth-child(2) {
-            opacity: 0;
-        }
-
-        .mobile-menu-btn.active span:nth-child(3) {
-            transform: translateY(-7px) rotate(-45deg);
-        }
-
-        /* ============================================
-           HERO
-           ============================================ */
+        /* Hero */
         .hero {
-            position: relative;
             min-height: 100vh;
             display: flex;
             align-items: center;
             background: var(--gradient-hero);
-            overflow: hidden;
             padding: calc(var(--header-height) + var(--space-3xl)) 0 var(--space-3xl);
+            position: relative;
+            overflow: hidden;
         }
 
         .hero::before {
@@ -574,36 +307,11 @@
             height: 80vw;
             background: radial-gradient(circle, rgba(0, 212, 255, 0.15) 0%, transparent 70%);
             border-radius: 50%;
-            animation: float-blob 20s ease-in-out infinite;
-        }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            bottom: -30%;
-            left: -10%;
-            width: 60vw;
-            height: 60vw;
-            background: radial-gradient(circle, rgba(1, 45, 144, 0.3) 0%, transparent 70%);
-            border-radius: 50%;
-            animation: float-blob 25s ease-in-out infinite reverse;
-        }
-
-        @keyframes float-blob {
-            0%, 100% { transform: translate(0, 0) scale(1); }
-            33% { transform: translate(30px, -50px) scale(1.1); }
-            66% { transform: translate(-20px, 20px) scale(0.95); }
-        }
-
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: var(--space-2xl);
-            position: relative;
-            z-index: 2;
         }
 
         .hero-content {
+            position: relative;
+            z-index: 2;
             max-width: 900px;
         }
 
@@ -613,24 +321,17 @@
             gap: 0.75rem;
             padding: 0.75rem 1.5rem;
             background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(20px);
+            backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: var(--radius-full);
             color: white;
-            font-size: clamp(0.875rem, 1.2vw, 1rem);
-            font-weight: 500;
+            font-size: 0.9375rem;
             margin-bottom: var(--space-lg);
-            animation: fadeInDown 0.8s ease-out;
-        }
-
-        .hero-badge-icon {
-            font-size: 1.25rem;
         }
 
         .hero h1 {
             color: white;
             margin-bottom: var(--space-lg);
-            animation: fadeInUp 0.8s ease-out 0.2s both;
         }
 
         .hero h1 .highlight {
@@ -638,32 +339,25 @@
             background: linear-gradient(135deg, #fff 0%, #00D4FF 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-top: 0.25em;
         }
 
         .hero p {
             color: rgba(255, 255, 255, 0.9);
-            font-size: clamp(1rem, 1.5vw + 0.25rem, 1.25rem);
+            font-size: clamp(1rem, 1.5vw, 1.25rem);
             margin-bottom: var(--space-xl);
             max-width: 650px;
-            line-height: 1.8;
-            animation: fadeInUp 0.8s ease-out 0.4s both;
         }
 
         .hero-buttons {
             display: flex;
             gap: var(--space-md);
             flex-wrap: wrap;
-            animation: fadeInUp 0.8s ease-out 0.6s both;
         }
 
-        /* Stats en Hero - Separado del contenido */
         .hero-stats {
             margin-top: var(--space-2xl);
             padding-top: var(--space-xl);
             border-top: 1px solid rgba(255, 255, 255, 0.1);
-            animation: fadeInUp 0.8s ease-out 0.8s both;
         }
 
         .hero-stats-grid {
@@ -673,74 +367,41 @@
         }
 
         .hero-stat {
-            text-align: left;
             color: white;
             padding: var(--space-md);
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: var(--radius-lg);
-            transition: all var(--transition-base);
-        }
-
-        .hero-stat:hover {
-            background: rgba(255, 255, 255, 0.1);
-            transform: translateY(-5px);
         }
 
         .hero-stat-number {
             font-family: var(--font-display);
-            font-size: clamp(2rem, 4vw, 3rem);
+            font-size: clamp(2rem, 4vw, 2.5rem);
             font-weight: 800;
             display: block;
-            margin-bottom: 0.25rem;
             background: linear-gradient(135deg, #fff 0%, #00D4FF 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            background-clip: text;
         }
 
         .hero-stat-label {
-            font-size: clamp(0.75rem, 1vw, 0.9rem);
+            font-size: 0.875rem;
             color: rgba(255, 255, 255, 0.8);
-            font-weight: 500;
-            line-height: 1.4;
         }
 
-        /* ============================================
-           CARDS MODERNAS
-           ============================================ */
+        /* Cards */
         .card {
             background: var(--surface);
             border-radius: var(--radius-2xl);
             padding: var(--space-xl);
             border: 1px solid var(--border);
-            transition: all var(--transition-base);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: var(--gradient-primary);
-            transform: scaleX(0);
-            transition: transform var(--transition-base);
-            transform-origin: left;
+            transition: all var(--transition);
         }
 
         .card:hover {
             transform: translateY(-8px);
-            box-shadow: var(--shadow-2xl);
-            border-color: transparent;
-        }
-
-        .card:hover::before {
-            transform: scaleX(1);
+            box-shadow: var(--shadow-xl);
         }
 
         .card-icon {
@@ -754,28 +415,9 @@
             font-size: 1.75rem;
             color: var(--primary);
             margin-bottom: var(--space-lg);
-            transition: all var(--transition-base);
         }
 
-        .card:hover .card-icon {
-            background: var(--gradient-primary);
-            color: white;
-            transform: scale(1.1) rotate(-5deg);
-        }
-
-        /* ============================================
-           INTRO GRID
-           ============================================ */
-        .intro-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--space-lg);
-            margin-top: var(--space-2xl);
-        }
-
-        /* ============================================
-           SERVICIOS
-           ============================================ */
+        /* Services Grid */
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -788,55 +430,25 @@
             border-radius: var(--radius-2xl);
             padding: var(--space-xl);
             border: 1px solid var(--border);
-            transition: all var(--transition-base);
             position: relative;
             overflow: hidden;
-        }
-
-        .service-card::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: var(--gradient-primary);
-            opacity: 0;
-            transition: opacity var(--transition-base);
-            z-index: 0;
+            transition: all var(--transition);
         }
 
         .service-card:hover {
             transform: translateY(-8px);
-            box-shadow: var(--shadow-2xl);
-            border-color: transparent;
-        }
-
-        .service-card:hover::after {
-            opacity: 0.03;
-        }
-
-        .service-card > * {
-            position: relative;
-            z-index: 1;
+            box-shadow: var(--shadow-xl);
         }
 
         .service-letter {
             font-family: var(--font-display);
-            font-size: clamp(3rem, 5vw, 5rem);
+            font-size: 4rem;
             font-weight: 900;
             color: var(--primary);
             opacity: 0.08;
             position: absolute;
             top: var(--space-md);
             right: var(--space-lg);
-            transition: all var(--transition-base);
-            line-height: 1;
-        }
-
-        .service-card:hover .service-letter {
-            opacity: 0.15;
-            transform: scale(1.1);
         }
 
         .service-icon {
@@ -850,115 +462,14 @@
             font-size: 1.5rem;
             color: var(--primary);
             margin-bottom: var(--space-lg);
-            transition: all var(--transition-base);
         }
 
-        .service-card:hover .service-icon {
-            background: var(--gradient-primary);
-            color: white;
-            transform: scale(1.1) rotate(-5deg);
-        }
-
-        .service-title {
-            font-size: clamp(1.125rem, 1.5vw, 1.375rem);
-            font-weight: 700;
-            margin-bottom: var(--space-sm);
-            color: var(--text);
-        }
-
-        .service-card:hover .service-title {
-            color: var(--primary);
-        }
-
-        /* ============================================
-           PROPUESTA DE VALOR
-           ============================================ */
-        .value-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: var(--space-lg);
-            margin-top: var(--space-2xl);
-        }
-
-        .value-card {
-            background: linear-gradient(135deg, rgba(1,45,144,0.03) 0%, rgba(0,71,171,0.06) 100%);
-            border-radius: var(--radius-2xl);
-            padding: var(--space-xl);
-            border: 1px solid rgba(1, 45, 144, 0.1);
-            transition: all var(--transition-base);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .value-card::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(1, 45, 144, 0.08) 0%, transparent 70%);
-            opacity: 0;
-            transition: opacity var(--transition-base);
-        }
-
-        .value-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-xl);
-            border-color: var(--primary);
-        }
-
-        .value-card:hover::before {
-            opacity: 1;
-        }
-
-        .value-icon {
-            width: 64px;
-            height: 64px;
-            background: var(--gradient-primary);
-            border-radius: var(--radius-xl);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.75rem;
-            color: white;
-            margin-bottom: var(--space-lg);
-            box-shadow: var(--shadow-primary);
-            position: relative;
-            z-index: 1;
-        }
-
-        .value-card > * {
-            position: relative;
-            z-index: 1;
-        }
-
-        /* ============================================
-           PROCESO - TIMELINE
-           ============================================ */
-        .process-container {
-            position: relative;
-            margin-top: var(--space-2xl);
-        }
-
-        .process-line {
-            position: absolute;
-            top: 40px;
-            left: 10%;
-            right: 10%;
-            height: 3px;
-            background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
-            border-radius: var(--radius-full);
-            z-index: 0;
-            opacity: 0.3;
-        }
-
+        /* Process */
         .process-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: var(--space-lg);
-            position: relative;
-            z-index: 1;
+            margin-top: var(--space-2xl);
         }
 
         .process-step {
@@ -967,13 +478,6 @@
             background: var(--surface);
             border-radius: var(--radius-2xl);
             border: 1px solid var(--border);
-            transition: all var(--transition-base);
-        }
-
-        .process-step:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-xl);
-            border-color: var(--primary);
         }
 
         .process-number {
@@ -990,26 +494,9 @@
             font-weight: 800;
             margin: 0 auto var(--space-lg);
             box-shadow: var(--shadow-primary);
-            position: relative;
-            transition: all var(--transition-bounce);
         }
 
-        .process-number::after {
-            content: '';
-            position: absolute;
-            inset: -4px;
-            border: 2px solid var(--primary);
-            border-radius: 50%;
-            opacity: 0.3;
-        }
-
-        .process-step:hover .process-number {
-            transform: scale(1.15) rotate(10deg);
-        }
-
-        /* ============================================
-           TRUST SECTION
-           ============================================ */
+        /* Trust Section */
         .trust-section {
             background: var(--gradient-hero);
             color: white;
@@ -1017,40 +504,8 @@
             overflow: hidden;
         }
 
-        .trust-section::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -20%;
-            width: 80vw;
-            height: 80vw;
-            background: radial-gradient(circle, rgba(0, 212, 255, 0.1) 0%, transparent 70%);
-            border-radius: 50%;
-            animation: float-blob 20s ease-in-out infinite;
-        }
-
-        .trust-content {
-            position: relative;
-            z-index: 1;
-        }
-
-        .trust-section h2 {
-            color: white;
-        }
-
-        .trust-section .subtitle {
-            color: rgba(255, 255, 255, 0.85);
-        }
-
-        .trust-section .section-label {
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-            border-color: rgba(255, 255, 255, 0.2);
-        }
-
-        .trust-section .section-label::before {
-            background: white;
-        }
+        .trust-section h2 { color: white; }
+        .trust-section .subtitle { color: rgba(255, 255, 255, 0.85); }
 
         .trust-grid {
             display: grid;
@@ -1063,66 +518,22 @@
             text-align: center;
             padding: var(--space-xl);
             background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(20px);
+            backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: var(--radius-xl);
-            transition: all var(--transition-base);
-        }
-
-        .trust-item:hover {
-            transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.1);
-            border-color: rgba(255, 255, 255, 0.2);
         }
 
         .trust-number {
             font-family: var(--font-display);
-            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-size: clamp(2.5rem, 5vw, 3rem);
             font-weight: 800;
             display: block;
-            margin-bottom: var(--space-sm);
             background: linear-gradient(135deg, #fff 0%, #00D4FF 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            background-clip: text;
         }
 
-        .trust-label {
-            font-size: clamp(0.875rem, 1vw, 1rem);
-            color: rgba(255, 255, 255, 0.8);
-            font-weight: 500;
-            line-height: 1.5;
-        }
-
-        .sectors-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: var(--space-md);
-            margin-top: var(--space-2xl);
-        }
-
-        .sector-chip {
-            padding: var(--space-md) var(--space-lg);
-            background: rgba(255, 255, 255, 0.08);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: var(--radius-lg);
-            color: white;
-            font-weight: 600;
-            text-align: center;
-            transition: all var(--transition-base);
-            font-size: clamp(0.875rem, 1vw, 1rem);
-        }
-
-        .sector-chip:hover {
-            background: rgba(255, 255, 255, 0.15);
-            transform: translateY(-3px);
-            border-color: rgba(255, 255, 255, 0.3);
-        }
-
-        /* ============================================
-           EQUIPO
-           ============================================ */
+        /* Team */
         .team-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -1136,31 +547,11 @@
             padding: var(--space-xl);
             border: 1px solid var(--border);
             text-align: center;
-            transition: all var(--transition-base);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .team-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 120px;
-            background: var(--gradient-primary);
-            opacity: 0.05;
-        }
-
-        .team-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-2xl);
-            border-color: transparent;
         }
 
         .team-avatar {
-            width: clamp(100px, 15vw, 130px);
-            height: clamp(100px, 15vw, 130px);
+            width: 120px;
+            height: 120px;
             background: var(--gradient-primary);
             border-radius: 50%;
             display: flex;
@@ -1168,38 +559,12 @@
             justify-content: center;
             margin: 0 auto var(--space-lg);
             font-family: var(--font-display);
-            font-size: clamp(2rem, 4vw, 3rem);
+            font-size: 2.5rem;
             font-weight: 800;
             color: white;
-            box-shadow: var(--shadow-primary);
-            transition: all var(--transition-bounce);
-            position: relative;
-            z-index: 1;
         }
 
-        .team-avatar::after {
-            content: '';
-            position: absolute;
-            inset: -6px;
-            border: 3px solid var(--primary);
-            border-radius: 50%;
-            opacity: 0.2;
-        }
-
-        .team-card:hover .team-avatar {
-            transform: scale(1.1) rotate(-5deg);
-        }
-
-        .team-role {
-            color: var(--primary);
-            font-weight: 600;
-            margin-bottom: var(--space-md);
-            font-size: clamp(0.875rem, 1vw, 1rem);
-        }
-
-        /* ============================================
-           FAQ
-           ============================================ */
+        /* FAQ */
         .faq-list {
             max-width: 900px;
             margin: var(--space-2xl) auto 0;
@@ -1211,17 +576,6 @@
             border-radius: var(--radius-xl);
             margin-bottom: var(--space-md);
             overflow: hidden;
-            transition: all var(--transition-base);
-        }
-
-        .faq-item:hover {
-            border-color: var(--primary);
-            box-shadow: var(--shadow-md);
-        }
-
-        .faq-item.active {
-            border-color: var(--primary);
-            box-shadow: var(--shadow-lg);
         }
 
         .faq-question {
@@ -1231,20 +585,17 @@
             border: none;
             text-align: left;
             font-family: var(--font-sans);
-            font-size: clamp(1rem, 1.2vw, 1.125rem);
+            font-size: 1.0625rem;
             font-weight: 600;
-            color: var(--text);
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: var(--space-md);
-            min-height: 72px;
         }
 
         .faq-icon {
-            width: 36px;
-            height: 36px;
+            width: 32px;
+            height: 32px;
             background: var(--bg-alt);
             border-radius: 50%;
             display: flex;
@@ -1252,21 +603,19 @@
             justify-content: center;
             font-size: 1.5rem;
             color: var(--primary);
-            transition: all var(--transition-base);
-            flex-shrink: 0;
-            font-weight: 300;
+            transition: transform var(--transition);
         }
 
         .faq-item.active .faq-icon {
+            transform: rotate(45deg);
             background: var(--primary);
             color: white;
-            transform: rotate(45deg);
         }
 
         .faq-answer {
             max-height: 0;
             overflow: hidden;
-            transition: all var(--transition-base);
+            transition: all var(--transition);
             padding: 0 var(--space-lg);
         }
 
@@ -1275,21 +624,12 @@
             padding: 0 var(--space-lg) var(--space-lg);
         }
 
-        .faq-answer p {
-            margin: 0;
-            color: var(--text-muted);
-            line-height: 1.8;
-        }
-
-        /* ============================================
-           CONTACTO
-           ============================================ */
+        /* Contact Form */
         .contact-layout {
             display: grid;
             grid-template-columns: 1fr 1.5fr;
             gap: var(--space-2xl);
             margin-top: var(--space-2xl);
-            align-items: start;
         }
 
         .contact-info-card {
@@ -1302,38 +642,14 @@
             gap: var(--space-md);
             text-decoration: none;
             color: inherit;
-            transition: all var(--transition-base);
             margin-bottom: var(--space-md);
+            transition: all var(--transition);
         }
 
         .contact-info-card:hover {
             transform: translateY(-3px);
             box-shadow: var(--shadow-lg);
             border-color: var(--primary);
-        }
-
-        .contact-info-card .icon {
-            font-size: 1.5rem;
-            flex-shrink: 0;
-            width: 48px;
-            height: 48px;
-            background: var(--bg-alt);
-            border-radius: var(--radius-lg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .contact-info-card strong {
-            display: block;
-            color: var(--text);
-            margin-bottom: 0.25rem;
-            font-size: clamp(0.9rem, 1vw, 1rem);
-        }
-
-        .contact-info-card span {
-            color: var(--text-muted);
-            font-size: clamp(0.85rem, 0.9vw, 0.95rem);
         }
 
         .contact-form {
@@ -1352,23 +668,20 @@
             display: block;
             font-weight: 600;
             margin-bottom: var(--space-sm);
-            color: var(--text);
-            font-size: clamp(0.875rem, 1vw, 0.95rem);
+            font-size: 0.9375rem;
         }
 
         .form-input,
         .form-select,
         .form-textarea {
             width: 100%;
-            padding: clamp(0.875rem, 1.2vw, 1rem) clamp(1rem, 1.5vw, 1.25rem);
+            padding: 1rem 1.25rem;
             font-family: var(--font-sans);
-            font-size: clamp(0.95rem, 1vw, 1rem);
+            font-size: 1rem;
             border: 2px solid var(--border);
             border-radius: var(--radius-lg);
             background: var(--bg);
-            color: var(--text);
-            transition: all var(--transition-fast);
-            min-height: 52px;
+            transition: all var(--transition);
         }
 
         .form-input:focus,
@@ -1379,86 +692,43 @@
             box-shadow: 0 0 0 4px rgba(1, 45, 144, 0.1);
         }
 
-        .form-textarea {
-            resize: vertical;
-            min-height: 140px;
-        }
+        .form-textarea { resize: vertical; min-height: 120px; }
 
-        /* ============================================
-           WHATSAPP FLOAT
-           ============================================ */
+        /* WhatsApp Float */
         .whatsapp-float {
             position: fixed;
-            bottom: clamp(1.5rem, 3vw, 2rem);
-            right: clamp(1.5rem, 3vw, 2rem);
-            z-index: var(--z-fixed);
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 1030;
             background: var(--whatsapp);
             color: white;
-            width: clamp(56px, 8vw, 64px);
-            height: clamp(56px, 8vw, 64px);
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             text-decoration: none;
-            box-shadow: 0 10px 30px -5px rgba(37, 211, 102, 0.4);
-            transition: all var(--transition-bounce);
-            animation: pulse-whatsapp 2s infinite;
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+            transition: all var(--transition);
+            animation: pulse 2s infinite;
         }
 
         .whatsapp-float:hover {
-            transform: scale(1.15) rotate(10deg);
-            box-shadow: 0 15px 40px -5px rgba(37, 211, 102, 0.6);
+            transform: scale(1.1);
             animation: none;
         }
 
-        .whatsapp-tooltip {
-            position: absolute;
-            right: calc(100% + 1rem);
-            background: white;
-            color: var(--text);
-            padding: 0.75rem 1.25rem;
-            border-radius: var(--radius-lg);
-            box-shadow: var(--shadow-xl);
-            font-size: 0.875rem;
-            font-weight: 600;
-            white-space: nowrap;
-            opacity: 0;
-            visibility: hidden;
-            transition: all var(--transition-base);
-            pointer-events: none;
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4); }
+            50% { box-shadow: 0 10px 40px rgba(37, 211, 102, 0.6); }
         }
 
-        .whatsapp-float:hover .whatsapp-tooltip {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        @keyframes pulse-whatsapp {
-            0%, 100% { box-shadow: 0 10px 30px -5px rgba(37, 211, 102, 0.4); }
-            50% { box-shadow: 0 10px 40px -5px rgba(37, 211, 102, 0.6), 0 0 0 10px rgba(37, 211, 102, 0.1); }
-        }
-
-        /* ============================================
-           FOOTER
-           ============================================ */
+        /* Footer */
         footer {
             background: var(--gradient-hero);
             color: white;
             padding: var(--space-3xl) 0 var(--space-xl);
-            position: relative;
-            overflow: hidden;
-        }
-
-        footer::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-            opacity: 0.4;
         }
 
         .footer-grid {
@@ -1466,24 +736,15 @@
             grid-template-columns: 2fr 1fr 1fr;
             gap: var(--space-2xl);
             margin-bottom: var(--space-2xl);
-            position: relative;
-            z-index: 1;
-        }
-
-        .footer-brand img {
-            height: clamp(50px, 7vw, 65px);
-            margin-bottom: var(--space-lg);
         }
 
         .footer-brand p {
             color: rgba(255, 255, 255, 0.7);
-            font-size: clamp(0.875rem, 1vw, 0.95rem);
-            line-height: 1.8;
-            max-width: 400px;
+            font-size: 0.9375rem;
         }
 
         .footer-title {
-            font-size: clamp(1rem, 1.2vw, 1.125rem);
+            font-size: 1.125rem;
             font-weight: 700;
             margin-bottom: var(--space-lg);
             color: white;
@@ -1493,107 +754,26 @@
             list-style: none;
         }
 
-        .footer-links li {
-            margin-bottom: var(--space-sm);
-        }
+        .footer-links li { margin-bottom: var(--space-sm); }
 
         .footer-links a {
             color: rgba(255, 255, 255, 0.7);
             text-decoration: none;
-            transition: all var(--transition-fast);
-            font-size: clamp(0.875rem, 1vw, 0.95rem);
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
+            transition: color var(--transition);
         }
 
-        .footer-links a::before {
-            content: '→';
-            opacity: 0;
-            transition: all var(--transition-fast);
-            transform: translateX(-10px);
-        }
-
-        .footer-links a:hover {
-            color: white;
-        }
-
-        .footer-links a:hover::before {
-            opacity: 1;
-            transform: translateX(0);
-        }
+        .footer-links a:hover { color: white; }
 
         .footer-bottom {
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             padding-top: var(--space-xl);
             text-align: center;
             color: rgba(255, 255, 255, 0.5);
-            font-size: clamp(0.8rem, 0.9vw, 0.875rem);
-            position: relative;
-            z-index: 1;
+            font-size: 0.875rem;
         }
 
-        /* ============================================
-           ANIMACIONES
-           ============================================ */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .animate-on-scroll {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .animate-on-scroll.animated {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* ============================================
-           RESPONSIVE - MOBILE FIRST
-           ============================================ */
-        
-        /* Tablets */
-        @media (max-width: 1024px) {
-            .services-grid {
-                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            }
-            
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-            
-            .contact-layout {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* Mobile */
+        /* Responsive */
         @media (max-width: 768px) {
-            :root {
-                --container-padding: 1.25rem;
-            }
-            
             .nav-menu {
                 display: none;
                 position: fixed;
@@ -1601,209 +781,50 @@
                 left: 0;
                 right: 0;
                 bottom: 0;
-                background: rgba(254, 254, 254, 0.98);
-                backdrop-filter: blur(20px);
+                background: white;
                 flex-direction: column;
                 padding: var(--space-xl);
                 gap: var(--space-sm);
-                box-shadow: var(--shadow-xl);
-                border-top: 1px solid var(--border);
-                overflow-y: auto;
             }
             
-            .nav-menu.active {
-                display: flex;
-            }
+            .nav-menu.active { display: flex; }
+            .mobile-menu-btn { display: block; }
             
-            .nav-menu a {
-                font-size: 1.125rem;
-                padding: var(--space-md);
-                width: 100%;
-                text-align: center;
-            }
-            
-            .nav-menu a::after {
-                display: none;
-            }
-            
-            .mobile-menu-btn {
-                display: block;
-            }
-            
-            .hero {
-                padding: calc(var(--header-height) + var(--space-2xl)) 0 var(--space-2xl);
-                min-height: auto;
-            }
-            
-            .hero-buttons {
-                flex-direction: column;
-                width: 100%;
-            }
-            
-            .hero-buttons .btn {
-                width: 100%;
-            }
-            
-            .hero-stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .hero-stat {
-                text-align: center;
-            }
+            .hero-buttons { flex-direction: column; }
+            .hero-buttons .btn { width: 100%; }
             
             .services-grid,
-            .intro-grid,
-            .value-grid,
-            .team-grid {
-                grid-template-columns: 1fr;
-            }
+            .team-grid { grid-template-columns: 1fr; }
             
-            .process-line {
-                display: none;
-            }
+            .contact-layout { grid-template-columns: 1fr; }
             
-            .process-grid {
-                grid-template-columns: 1fr;
-            }
+            .footer-grid { grid-template-columns: 1fr; }
             
-            .footer-grid {
-                grid-template-columns: 1fr;
-                gap: var(--space-xl);
-            }
-            
-            .section {
-                padding: var(--space-3xl) 0;
-            }
-            
-            .whatsapp-float {
-                bottom: 1.5rem;
-                right: 1.5rem;
-            }
-            
-            .whatsapp-tooltip {
-                display: none;
-            }
-            
-            .contact-layout {
-                gap: var(--space-xl);
-            }
+            .section { padding: var(--space-3xl) 0; }
         }
 
-        /* Mobile pequeño */
         @media (max-width: 480px) {
-            .hero-stats-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: var(--space-sm);
-            }
-            
-            .hero-stat {
-                padding: var(--space-sm);
-            }
-            
-            .trust-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-            
-            .sectors-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* Tablets grandes */
-        @media (min-width: 1024px) and (max-width: 1440px) {
-            .services-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        /* Desktop grande */
-        @media (min-width: 1440px) {
-            .services-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
-        /* Pantallas gigantes (TVs) */
-        @media (min-width: 1920px) {
-            :root {
-                --max-width: 1800px;
-            }
-            
-            h1 {
-                font-size: 5rem;
-            }
-            
-            h2 {
-                font-size: 3.5rem;
-            }
-            
-            .section {
-                padding: 8rem 0;
-            }
-        }
-
-        /* Ultra wide */
-        @media (min-width: 2560px) {
-            :root {
-                --max-width: 2200px;
-            }
-            
-            .container {
-                padding: 0 5rem;
-            }
-        }
-
-        /* Reducir movimiento */
-        @media (prefers-reduced-motion: reduce) {
-            *, *::before, *::after {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-            }
-            
-            html {
-                scroll-behavior: auto;
-            }
-        }
-
-        /* Alto contraste */
-        @media (prefers-contrast: high) {
-            .btn-primary {
-                border: 2px solid white;
-            }
-            
-            .card, .service-card {
-                border-width: 2px;
-            }
+            .hero-stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .trust-grid { grid-template-columns: 1fr 1fr; }
         }
     </style>
 </head>
 <body>
 
-    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
-
-    <!-- HEADER -->
-    <header role="banner" id="header">
+    <!-- Header -->
+    <header>
         <div class="container nav-container">
-            <a href="#" class="logo" aria-label="SEPREVIN - Inicio">
-                <img src="logo_azul.jpeg" alt="SEPREVIN - Consultora técnica integral" 
-                     onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
-                <span class="logo-text" style="display:none">SEPREVIN</span>
+            <a href="#" class="logo">
+                <img src="logo_azul.jpeg" alt="SEPREVIN" onerror="this.style.display='none'">
+                <span class="logo-text">SEPREVIN</span>
             </a>
             
-            <button class="mobile-menu-btn" 
-                    aria-label="Abrir menú de navegación" 
-                    aria-expanded="false"
-                    aria-controls="nav-menu"
-                    onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="mobile-menu-btn" onclick="document.querySelector('.nav-menu').classList.toggle('active')" aria-label="Menú">
+                <span></span><span></span><span></span>
             </button>
             
-            <nav role="navigation" aria-label="Navegación principal">
-                <ul class="nav-menu" id="nav-menu">
+            <nav>
+                <ul class="nav-menu">
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#propuesta">Propuesta</a></li>
                     <li><a href="#proceso">Cómo trabajamos</a></li>
@@ -1815,60 +836,43 @@
         </div>
     </header>
 
-    <main id="main-content" role="main">
-        <!-- HERO -->
-        <section class="hero" aria-labelledby="hero-title">
+    <main>
+        <!-- Hero -->
+        <section class="hero">
             <div class="container">
-                <div class="hero-grid">
-                    <div class="hero-content">
-                        <div class="hero-badge">
-                            <span class="hero-badge-icon" aria-hidden="true">🏆</span>
-                            <span>Más de 20 años de excelencia técnica en Chile</span>
-                        </div>
-                        <h1 id="hero-title">
-                            Excelencia en Seguridad,
-                            <span class="highlight">Salud y Gestión Ambiental</span>
-                        </h1>
-                        <p>
-                            Integramos seguridad ocupacional, salud laboral, gestión documental, 
-                            sistemas ISO e ingeniería ambiental. Acompañamos a empresas líderes 
-                            para que operen con respaldo técnico, menor exposición al riesgo y 
-                            total claridad frente a inspecciones y auditorías.
-                        </p>
-                        <div class="hero-buttons">
-                            <a href="#contacto" class="btn btn-white">
-                                <span>Solicitar diagnóstico sin costo</span>
-                                <span class="btn-icon" aria-hidden="true">→</span>
-                            </a>
-                            <a href="https://wa.me/56954025756?text=Hola%20SEPREVIN,%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n" 
-                               target="_blank" 
-                               rel="noopener noreferrer" 
-                               class="btn btn-outline-white"
-                               aria-label="Escribir por WhatsApp">
-                                <span aria-hidden="true">💬</span>
-                                <span>Escribir por WhatsApp</span>
-                            </a>
-                        </div>
+                <div class="hero-content">
+                    <div class="hero-badge">🏆 Más de 20 años de excelencia técnica en Chile</div>
+                    <h1>
+                        Excelencia en Seguridad,
+                        <span class="highlight">Salud y Gestión Ambiental</span>
+                    </h1>
+                    <p>
+                        Integramos seguridad ocupacional, salud laboral, gestión documental, 
+                        sistemas ISO e ingeniería ambiental. Acompañamos a empresas líderes 
+                        para que operen con respaldo técnico y menor exposición al riesgo.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contacto" class="btn btn-white">
+                            Solicitar diagnóstico sin costo →
+                        </a>
+                        <a href="https://wa.me/56954025756" class="btn btn-outline-white" target="_blank" rel="noopener">
+                            💬 Escribir por WhatsApp
+                        </a>
                     </div>
                     
-                    <!-- Stats separados del contenido principal -->
                     <div class="hero-stats">
                         <div class="hero-stats-grid">
                             <div class="hero-stat">
-                                <span class="hero-stat-number" data-count="20">0</span>
+                                <span class="hero-stat-number">20+</span>
                                 <span class="hero-stat-label">Años de experiencia</span>
                             </div>
                             <div class="hero-stat">
-                                <span class="hero-stat-number" data-count="500">0</span>
+                                <span class="hero-stat-number">500+</span>
                                 <span class="hero-stat-label">Proyectos exitosos</span>
                             </div>
                             <div class="hero-stat">
-                                <span class="hero-stat-number" data-count="100">0</span>
-                                <span class="hero-stat-label">% Cobertura nacional</span>
-                            </div>
-                            <div class="hero-stat">
-                                <span class="hero-stat-number">3</span>
-                                <span class="hero-stat-label">Certificaciones ISO</span>
+                                <span class="hero-stat-number">100%</span>
+                                <span class="hero-stat-label">Cobertura nacional</span>
                             </div>
                         </div>
                     </div>
@@ -1876,555 +880,387 @@
             </div>
         </section>
 
-        <!-- QUÉ HACEMOS -->
-        <section class="section" aria-labelledby="intro-title">
+        <!-- Qué Hacemos -->
+        <section class="section">
             <div class="container">
-                <div class="text-center animate-on-scroll">
+                <div class="text-center">
                     <span class="section-label">Qué hacemos</span>
-                    <h2 id="intro-title" class="text-gradient">Consultoría técnica integral</h2>
+                    <h2 class="text-gradient">Consultoría técnica integral</h2>
                     <p class="subtitle">
-                        Diseñamos soluciones integrales en seguridad, salud ocupacional y gestión ambiental, 
-                        conectando normativa, operación y territorio.
+                        Diseñamos soluciones integrales en seguridad, salud ocupacional y gestión ambiental.
                     </p>
                 </div>
                 
-                <div class="intro-grid">
-                    <div class="card animate-on-scroll">
-                        <div class="card-icon"></div>
+                <div class="services-grid" style="margin-top: 3rem;">
+                    <div class="card">
+                        <div class="card-icon">🎯</div>
                         <h3>Enfoque</h3>
-                        <p>
-                            Combinamos gestión documental, sistemas ISO, SEIA, SIG e inteligencia aplicada 
-                            para decisiones con más contexto y menos incertidumbre.
-                        </p>
+                        <p>Combinamos gestión documental, sistemas ISO, SEIA, SIG e inteligencia aplicada.</p>
                     </div>
-                    
-                    <div class="card animate-on-scroll">
+                    <div class="card">
                         <div class="card-icon">⚡</div>
                         <h3>Diagnóstico inicial</h3>
-                        <p>
-                            Evaluamos de manera integrada tu situación en seguridad, salud ocupacional 
-                            y ambiente, e identificamos brechas prioritarias en menos de 24 horas hábiles.
-                        </p>
+                        <p>Evaluamos tu situación e identificamos brechas prioritarias en 24 horas.</p>
                     </div>
-                    
-                    <div class="card animate-on-scroll">
+                    <div class="card">
                         <div class="card-icon">🛡️</div>
                         <h3>Respaldamos tu operación</h3>
-                        <p>
-                            Ayudamos a diseñar y sostener marcos de trabajo que resisten auditorías, 
-                            exigencias regulatorias y cambios en el entorno operativo.
-                        </p>
-                    </div>
-                    
-                    <div class="card animate-on-scroll">
-                        <div class="card-icon">🌎</div>
-                        <h3>Cobertura nacional</h3>
-                        <p>
-                            Base en Santiago, servicios remotos y presenciales en todo Chile. 
-                            Combinamos terreno, análisis de datos y gestión normativa.
-                        </p>
+                        <p>Diseñamos marcos de trabajo que resisten auditorías y exigencias regulatorias.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- SERVICIOS -->
-        <section id="servicios" class="section section-alt" aria-labelledby="servicios-title">
+        <!-- Servicios -->
+        <section id="servicios" class="section section-alt">
             <div class="container">
-                <div class="text-center animate-on-scroll">
+                <div class="text-center">
                     <span class="section-label">Servicios</span>
-                    <h2 id="servicios-title" class="text-gradient">Nuestros Servicios</h2>
+                    <h2 class="text-gradient">Nuestros Servicios</h2>
                     <p class="subtitle">
-                        Consultoría integral en seguridad, salud ocupacional y gestión ambiental. 
-                        Nuestra oferta está organizada en dominios técnicos complementarios que se pueden 
-                        contratar de forma independiente o articulada.
+                        Consultoría integral que se puede contratar de forma independiente o articulada.
                     </p>
                 </div>
                 
                 <div class="services-grid">
-                    <article class="service-card animate-on-scroll">
+                    <article class="service-card">
                         <span class="service-letter">A</span>
                         <div class="service-icon">🛡️</div>
-                        <h3 class="service-title">Seguridad y salud ocupacional</h3>
-                        <p>
-                            Diseño e implementación de sistemas de seguridad y salud ocupacional, 
-                            matrices de riesgos, planes de emergencia, procedimientos de trabajo 
-                            seguro y programas de capacitación.
-                        </p>
+                        <h3>Seguridad y salud ocupacional</h3>
+                        <p>Sistemas de seguridad, matrices de riesgos, planes de emergencia y capacitación.</p>
                     </article>
                     
-                    <article class="service-card animate-on-scroll">
+                    <article class="service-card">
                         <span class="service-letter">B</span>
                         <div class="service-icon">🌱</div>
-                        <h3 class="service-title">Gestión ambiental y SEIA</h3>
-                        <p>
-                            Consultoría ambiental integral: líneas base, evaluación de impacto, 
-                            seguimiento de RCA, monitoreos y apoyo técnico en SEIA para proyectos 
-                            de minería, infraestructura, energía, industria y servicios.
-                        </p>
+                        <h3>Gestión ambiental y SEIA</h3>
+                        <p>Líneas base, evaluación de impacto, seguimiento RCA y apoyo técnico en SEIA.</p>
                     </article>
                     
-                    <article class="service-card animate-on-scroll">
+                    <article class="service-card">
                         <span class="service-letter">C</span>
-                        <div class="service-icon"></div>
-                        <h3 class="service-title">Sistemas de gestión y documentación</h3>
-                        <p>
-                            Diseño y mejora de sistemas ISO 9001, 14001 y 45001; gestión documental 
-                            completa incluyendo actualización conforme a la normativa vigente.
-                        </p>
+                        <div class="service-icon">📋</div>
+                        <h3>Sistemas de gestión ISO</h3>
+                        <p>ISO 9001, 14001 y 45001; gestión documental completa y actualización normativa.</p>
                     </article>
                     
-                    <article class="service-card animate-on-scroll">
+                    <article class="service-card">
                         <span class="service-letter">D</span>
                         <div class="service-icon">🗺️</div>
-                        <h3 class="service-title">SIG, teledetección e IA aplicada</h3>
-                        <p>
-                            Uso de QGIS, ArcGIS, Google Earth Engine, teledetección y Python para 
-                            análisis territorial, monitoreo y automatización de tareas analíticas.
-                        </p>
+                        <h3>SIG, teledetección e IA</h3>
+                        <p>QGIS, ArcGIS, Google Earth Engine y Python para análisis territorial.</p>
                     </article>
                     
-                    <article class="service-card animate-on-scroll">
+                    <article class="service-card">
                         <span class="service-letter">E</span>
                         <div class="service-icon">🤝</div>
-                        <h3 class="service-title">Asesoría y acompañamiento continuo</h3>
-                        <p>
-                            Acompañamiento técnico combinando soporte preventivo, ambiental y de 
-                            sistemas de gestión, en modalidad puntual o continua.
-                        </p>
+                        <h3>Asesoría continua</h3>
+                        <p>Acompañamiento técnico preventivo, ambiental y de sistemas de gestión.</p>
                     </article>
                     
-                    <article class="service-card animate-on-scroll">
+                    <article class="service-card">
                         <span class="service-letter">F</span>
                         <div class="service-icon">🎓</div>
-                        <h3 class="service-title">Capacitación y transferencia</h3>
-                        <p>
-                            Programas de capacitación para equipos de prevención, operación y 
-                            gestión ambiental, con foco en aplicación práctica y actualización normativa.
-                        </p>
+                        <h3>Capacitación</h3>
+                        <p>Programas de capacitación con foco en aplicación práctica y normativa.</p>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- PROPUESTA DE VALOR -->
-        <section id="propuesta" class="section" aria-labelledby="propuesta-title">
+        <!-- Propuesta de Valor -->
+        <section id="propuesta" class="section">
             <div class="container">
-                <div class="text-center animate-on-scroll">
+                <div class="text-center">
                     <span class="section-label">Propuesta de valor</span>
-                    <h2 id="propuesta-title" class="text-gradient">Propuesta de Valor</h2>
-                    <p class="subtitle">
-                        Una consultora técnica integral, no un proveedor de documentos sueltos.
-                    </p>
+                    <h2 class="text-gradient">Propuesta de Valor</h2>
+                    <p class="subtitle">Una consultora técnica integral, no un proveedor de documentos sueltos.</p>
                 </div>
                 
-                <div class="value-grid">
-                    <div class="value-card animate-on-scroll">
-                        <div class="value-icon">✓</div>
+                <div class="services-grid">
+                    <div class="card">
+                        <div class="card-icon">✓</div>
                         <h3>Visión integrada</h3>
-                        <p>
-                            Abordamos seguridad, salud ocupacional y ambiente como partes de un mismo sistema, 
-                            evitando soluciones fragmentadas o contradictorias.
-                        </p>
+                        <p>Abordamos seguridad, salud y ambiente como partes de un mismo sistema.</p>
                     </div>
-                    
-                    <div class="value-card animate-on-scroll">
-                        <div class="value-icon">⚡</div>
+                    <div class="card">
+                        <div class="card-icon">⚡</div>
                         <h3>Rigor técnico</h3>
-                        <p>
-                            Experiencia real en SEIA, RCA, sistemas ISO, SIG y análisis avanzado, 
-                            aplicada a contextos operativos diversos y exigentes.
-                        </p>
+                        <p>Experiencia real en SEIA, RCA, ISO y SIG aplicada a contextos exigentes.</p>
                     </div>
-                    
-                    <div class="value-card animate-on-scroll">
-                        <div class="value-icon">🎯</div>
+                    <div class="card">
+                        <div class="card-icon">🎯</div>
                         <h3>Enfoque en decisión</h3>
-                        <p>
-                            Entregables diseñados para apoyar decisiones, auditorías e inspecciones, 
-                            no solo para "cumplir" en el papel.
-                        </p>
+                        <p>Entregables diseñados para apoyar decisiones y auditorías reales.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- PROCESO -->
-        <section id="proceso" class="section section-alt" aria-labelledby="proceso-title">
+        <!-- Proceso -->
+        <section id="proceso" class="section section-alt">
             <div class="container">
-                <div class="text-center animate-on-scroll">
+                <div class="text-center">
                     <span class="section-label">Cómo trabajamos</span>
-                    <h2 id="proceso-title" class="text-gradient">Cómo Trabajamos</h2>
-                    <p class="subtitle">
-                        Proceso claro para ordenar tu cumplimiento integral. 
-                        Definimos un flujo simple y transparente, pensado para organizaciones 
-                        que necesitan avanzar rápido sin perder la prolijidad técnica.
-                    </p>
+                    <h2 class="text-gradient">Cómo Trabajamos</h2>
+                    <p class="subtitle">Proceso claro para ordenar tu cumplimiento integral.</p>
                 </div>
                 
-                <div class="process-container animate-on-scroll">
-                    <div class="process-line"></div>
-                    <div class="process-grid">
-                        <div class="process-step">
-                            <div class="process-number">1</div>
-                            <h3>Diagnóstico integral</h3>
-                            <p>
-                                Analizamos tu situación en seguridad, salud ocupacional, documentación, 
-                                sistemas de gestión y ambiente, identificando brechas críticas.
-                            </p>
-                        </div>
-                        
-                        <div class="process-step">
-                            <div class="process-number">2</div>
-                            <h3>Plan y propuesta</h3>
-                            <p>
-                                Presentamos un plan de trabajo y propuesta económica claros, priorizando 
-                                acciones según riesgo, plazos y recursos disponibles.
-                            </p>
-                        </div>
-                        
-                        <div class="process-step">
-                            <div class="process-number">3</div>
-                            <h3>Ejecución técnica</h3>
-                            <p>
-                                Ejecutamos el plan, actualizando documentación, mejorando procesos, 
-                                integrando SIG/IA cuando corresponde y capacitando a tu equipo.
-                            </p>
-                        </div>
-                        
-                        <div class="process-step">
-                            <div class="process-number">4</div>
-                            <h3>Seguimiento y ajuste</h3>
-                            <p>
-                                Ofrecemos acompañamiento para mantener el sistema vivo, ajustar a cambios 
-                                normativos y apoyar futuras auditorías e inspecciones.
-                            </p>
-                        </div>
+                <div class="process-grid">
+                    <div class="process-step">
+                        <div class="process-number">1</div>
+                        <h3>Diagnóstico integral</h3>
+                        <p>Analizamos tu situación identificando brechas críticas.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-number">2</div>
+                        <h3>Plan y propuesta</h3>
+                        <p>Presentamos plan de trabajo priorizando acciones según riesgo.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-number">3</div>
+                        <h3>Ejecución técnica</h3>
+                        <p>Ejecutamos el plan actualizando documentación y procesos.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-number">4</div>
+                        <h3>Seguimiento</h3>
+                        <p>Acompañamiento continuo para mantener el sistema vivo.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CONFIANZA Y EXPERIENCIA -->
-        <section class="section trust-section" aria-labelledby="trust-title">
-            <div class="container trust-content">
-                <div class="text-center animate-on-scroll">
+        <!-- Confianza -->
+        <section class="section trust-section">
+            <div class="container">
+                <div class="text-center">
                     <span class="section-label">Confianza y experiencia</span>
-                    <h2 id="trust-title">Más de 20 años integrando seguridad, salud ocupacional y ambiente</h2>
-                    <p class="subtitle">
-                        Hemos trabajado en minería, infraestructura, energía, industria, servicios 
-                        y comunidades, combinando terreno, análisis de datos y gestión normativa.
-                    </p>
+                    <h2>Más de 20 años integrando seguridad y ambiente</h2>
+                    <p class="subtitle">Hemos trabajado en minería, infraestructura, energía, industria y servicios.</p>
                 </div>
                 
-                <div class="trust-grid animate-on-scroll">
+                <div class="trust-grid">
                     <div class="trust-item">
-                        <span class="trust-number" data-count="20">0</span>
-                        <span class="trust-label">Años en seguridad, salud ocupacional y gestión documental</span>
+                        <span class="trust-number">20+</span>
+                        <span class="trust-label">Años en seguridad y salud ocupacional</span>
                     </div>
                     <div class="trust-item">
-                        <span class="trust-number" data-count="20">0</span>
-                        <span class="trust-label">Años en consultoría ambiental, SEIA, RCA y monitoreo</span>
+                        <span class="trust-number">20+</span>
+                        <span class="trust-label">Años en consultoría ambiental y SEIA</span>
                     </div>
                     <div class="trust-item">
                         <span class="trust-number">ISO</span>
-                        <span class="trust-label">Experiencia con ISO 9001, 14001 y 45001 en contextos exigentes</span>
+                        <span class="trust-label">Experiencia con ISO 9001, 14001 y 45001</span>
                     </div>
                     <div class="trust-item">
                         <span class="trust-number">SIG</span>
-                        <span class="trust-label">Uso avanzado de SIG, teledetección e IA aplicada a proyectos reales</span>
+                        <span class="trust-label">Uso avanzado de SIG e IA aplicada</span>
                     </div>
-                </div>
-                
-                <div class="sectors-grid animate-on-scroll">
-                    <div class="sector-chip">⛏️ Minería y recursos naturales</div>
-                    <div class="sector-chip">🏗️ Construcción e infraestructura</div>
-                    <div class="sector-chip">🏭 Industria y servicios</div>
-                    <div class="sector-chip">🏘️ Comunidades y edificios</div>
                 </div>
             </div>
         </section>
 
-        <!-- EQUIPO -->
-        <section id="equipo" class="section" aria-labelledby="equipo-title">
+        <!-- Equipo -->
+        <section id="equipo" class="section">
             <div class="container">
-                <div class="text-center animate-on-scroll">
+                <div class="text-center">
                     <span class="section-label">Equipo principal</span>
-                    <h2 id="equipo-title" class="text-gradient">Equipo Principal</h2>
-                    <p class="subtitle">
-                        Perfiles senior en prevención, ambiente y sistemas integrados. 
-                        SEPREVIN se construye sobre trayectorias profesionales extensas y complementarias.
-                    </p>
+                    <h2 class="text-gradient">Equipo Principal</h2>
+                    <p class="subtitle">Perfiles senior con más de 20 años de experiencia.</p>
                 </div>
                 
                 <div class="team-grid">
-                    <article class="team-card animate-on-scroll">
+                    <article class="team-card">
                         <div class="team-avatar">JC</div>
                         <h3>Juan Carlos Delgado</h3>
-                        <p class="team-role">Seguridad, salud ocupacional y gestión documental</p>
-                        <p>
-                            Especialista con más de 20 años en sistemas de seguridad y salud ocupacional, 
-                            programas preventivos, matrices de riesgos, planes de emergencia, reglamentos 
-                            internos, carpetas de arranque y gestión documental para contratistas y empresas.
-                        </p>
+                        <p style="color: var(--primary); font-weight: 600;">Seguridad y salud ocupacional</p>
+                        <p>Especialista con más de 20 años en sistemas de seguridad, matrices de riesgos, planes de emergencia y gestión documental.</p>
                     </article>
                     
-                    <article class="team-card animate-on-scroll">
+                    <article class="team-card">
                         <div class="team-avatar">LR</div>
                         <h3>Leonardo Ruiz</h3>
-                        <p class="team-role">Consultoría ambiental, SEIA, SIG e IA aplicada</p>
-                        <p>
-                            Biólogo y Magíster en Ingeniería de Gestión de Recursos Naturales y Medio Ambiente, 
-                            con más de 20 años en consultoría ambiental, evaluación de impacto, seguimiento RCA, 
-                            monitoreo, SIG, teledetección y sistemas integrados ISO.
-                        </p>
+                        <p style="color: var(--primary); font-weight: 600;">Consultoría ambiental y SIG</p>
+                        <p>Biólogo y Magíster con más de 20 años en SEIA, RCA, monitoreo, SIG, teledetección y sistemas ISO.</p>
                     </article>
                 </div>
             </div>
         </section>
 
         <!-- FAQ -->
-        <section id="faq" class="section section-alt" aria-labelledby="faq-title">
+        <section id="faq" class="section section-alt">
             <div class="container">
-                <div class="text-center animate-on-scroll">
+                <div class="text-center">
                     <span class="section-label">Preguntas frecuentes</span>
-                    <h2 id="faq-title" class="text-gradient">Preguntas Frecuentes</h2>
-                    <p class="subtitle">
-                        Resolvemos dudas clave antes de que tomes la decisión.
-                    </p>
+                    <h2 class="text-gradient">Preguntas Frecuentes</h2>
                 </div>
                 
-                <div class="faq-list animate-on-scroll">
+                <div class="faq-list">
                     <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq1">
-                            <span>¿Trabajan solo en Santiago?</span>
-                            <span class="faq-icon" aria-hidden="true">+</span>
+                        <button class="faq-question">
+                            ¿Trabajan solo en Santiago?
+                            <span class="faq-icon">+</span>
                         </button>
-                        <div id="faq1" class="faq-answer">
-                            <p>
-                                No. Tenemos base en Santiago, Región Metropolitana, pero trabajamos a nivel 
-                                nacional, combinando trabajo remoto y presencial según el tipo de proyecto.
-                            </p>
+                        <div class="faq-answer">
+                            <p>No. Tenemos base en Santiago pero trabajamos a nivel nacional, combinando trabajo remoto y presencial.</p>
                         </div>
                     </div>
                     
                     <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq2">
-                            <span>¿Atienden organizaciones de distintos tamaños?</span>
-                            <span class="faq-icon" aria-hidden="true">+</span>
+                        <button class="faq-question">
+                            ¿Atienden organizaciones de distintos tamaños?
+                            <span class="faq-icon">+</span>
                         </button>
-                        <div id="faq2" class="faq-answer">
-                            <p>
-                                Sí. Apoyamos desde pymes y comunidades hasta grandes contratistas, empresas 
-                                industriales y organismos públicos, adaptando la profundidad del servicio.
-                            </p>
+                        <div class="faq-answer">
+                            <p>Sí. Apoyamos desde pymes hasta grandes empresas, adaptando la profundidad del servicio.</p>
                         </div>
                     </div>
                     
                     <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq3">
-                            <span>¿Pueden ayudar en situaciones urgentes?</span>
-                            <span class="faq-icon" aria-hidden="true">+</span>
+                        <button class="faq-question">
+                            ¿Pueden ayudar en situaciones urgentes?
+                            <span class="faq-icon">+</span>
                         </button>
-                        <div id="faq3" class="faq-answer">
-                            <p>
-                                Tenemos experiencia en procesos de regularización y actualización rápida, 
-                                priorizando acciones que reduzcan riesgos críticos frente a auditorías o 
-                                inspecciones cercanas.
-                            </p>
+                        <div class="faq-answer">
+                            <p>Tenemos experiencia en procesos de regularización rápida priorizando riesgos críticos.</p>
                         </div>
                     </div>
                     
                     <div class="faq-item">
-                        <button class="faq-question" aria-expanded="false" aria-controls="faq4">
-                            <span>¿El diagnóstico inicial es realmente integral?</span>
-                            <span class="faq-icon" aria-hidden="true">+</span>
+                        <button class="faq-question">
+                            ¿El diagnóstico es realmente integral?
+                            <span class="faq-icon">+</span>
                         </button>
-                        <div id="faq4" class="faq-answer">
-                            <p>
-                                El diagnóstico considera seguridad, salud ocupacional, documentación, 
-                                sistemas de gestión y ambiente. A partir de ahí definimos juntos qué 
-                                líneas abordar primero.
-                            </p>
+                        <div class="faq-answer">
+                            <p>Sí. Consideramos seguridad, salud, documentación, sistemas de gestión y ambiente.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- CONTACTO -->
-        <section id="contacto" class="section" aria-labelledby="contacto-title">
+        <!-- Contacto -->
+        <section id="contacto" class="section">
             <div class="container">
-                <div class="text-center animate-on-scroll">
+                <div class="text-center">
                     <span class="section-label">Contacto</span>
-                    <h2 id="contacto-title" class="text-gradient">Contacto</h2>
-                    <p class="subtitle">
-                        Solicita un diagnóstico integral sin costo. Evaluamos tu situación actual y 
-                        definimos un plan realista.
-                    </p>
+                    <h2 class="text-gradient">Contacto</h2>
+                    <p class="subtitle">Solicita un diagnóstico integral sin costo.</p>
                 </div>
                 
                 <div class="contact-layout">
-                    <div class="animate-on-scroll">
-                        <h3 style="margin-bottom: var(--space-lg);">Hablemos de tu proyecto</h3>
-                        <p style="margin-bottom: var(--space-xl);">
-                            Completa el formulario o contáctanos directamente por nuestros canales oficiales.
-                        </p>
+                    <div>
+                        <h3 style="margin-bottom: 1rem;">Hablemos de tu proyecto</h3>
+                        <p style="margin-bottom: 2rem;">Contáctanos directamente:</p>
                         
-                        <a href="https://wa.me/56954025756" 
-                           class="contact-info-card" 
-                           target="_blank" 
-                           rel="noopener noreferrer">
-                            <span class="icon" aria-hidden="true">📱</span>
+                        <a href="https://wa.me/56954025756" class="contact-info-card" target="_blank">
+                            <span style="font-size: 1.5rem;">📱</span>
                             <div>
-                                <strong>WhatsApp principal</strong>
+                                <strong>WhatsApp</strong>
                                 <span>+56 9 5402 5756</span>
                             </div>
                         </a>
                         
-                        <a href="https://wa.me/56984309798" 
-                           class="contact-info-card" 
-                           target="_blank" 
-                           rel="noopener noreferrer">
-                            <span class="icon" aria-hidden="true">📞</span>
+                        <a href="https://wa.me/56984309798" class="contact-info-card" target="_blank">
+                            <span style="font-size: 1.5rem;">📞</span>
                             <div>
-                                <strong>Teléfono alternativo</strong>
+                                <strong>Teléfono</strong>
                                 <span>+56 9 8430 9798</span>
                             </div>
                         </a>
                         
                         <div class="contact-info-card">
-                            <span class="icon" aria-hidden="true">📍</span>
+                            <span style="font-size: 1.5rem;">📍</span>
                             <div>
                                 <strong>Ubicación</strong>
-                                <span>Santiago, Chile (Cobertura nacional)</span>
+                                <span>Santiago, Chile</span>
                             </div>
                         </div>
                     </div>
                     
-                    <form class="contact-form animate-on-scroll" 
-                          id="contactForm" 
-                          action="gracias.html" 
-                          method="GET" 
-                          novalidate
-                          aria-labelledby="contacto-title">
-                        
+                    <!-- Formspree Form -->
+                    <form class="contact-form" action="https://formspree.io/f/mwvjajwa" method="POST">
                         <div class="form-group">
-                            <label class="form-label" for="nombre">
-                                Nombre completo <span aria-label="obligatorio" style="color: var(--primary);">*</span>
-                            </label>
-                            <input type="text" 
-                                   id="nombre" 
-                                   name="nombre" 
-                                   class="form-input"
-                                   required 
-                                   autocomplete="name"
-                                   aria-required="true"
-                                   placeholder="Ej: Juan Pérez González">
+                            <label class="form-label" for="nombre">Nombre completo *</label>
+                            <input type="text" id="nombre" name="nombre" class="form-input" required placeholder="Juan Pérez">
                         </div>
                         
                         <div class="form-group">
-                            <label class="form-label" for="empresa">Empresa / organización</label>
-                            <input type="text" 
-                                   id="empresa" 
-                                   name="empresa" 
-                                   class="form-input"
-                                   autocomplete="organization"
-                                   placeholder="Ej: Empresa Minera del Norte SpA">
+                            <label class="form-label" for="empresa">Empresa</label>
+                            <input type="text" id="empresa" name="empresa" class="form-input" placeholder="Tu empresa">
                         </div>
                         
                         <div class="form-group">
-                            <label class="form-label" for="telefono">
-                                Teléfono / WhatsApp <span aria-label="obligatorio" style="color: var(--primary);">*</span>
-                            </label>
-                            <input type="tel" 
-                                   id="telefono" 
-                                   name="telefono" 
-                                   class="form-input"
-                                   required 
-                                   autocomplete="tel"
-                                   aria-required="true"
-                                   placeholder="+56 9 1234 5678">
+                            <label class="form-label" for="telefono">Teléfono *</label>
+                            <input type="tel" id="telefono" name="telefono" class="form-input" required placeholder="+56 9 1234 5678">
                         </div>
                         
                         <div class="form-group">
-                            <label class="form-label" for="interes">
-                                Interés principal <span aria-label="obligatorio" style="color: var(--primary);">*</span>
-                            </label>
-                            <select id="interes" 
-                                    name="interes" 
-                                    class="form-select"
-                                    required 
-                                    aria-required="true">
+                            <label class="form-label" for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label" for="servicio">Servicio de interés *</label>
+                            <select id="servicio" name="servicio" class="form-select" required>
                                 <option value="">Selecciona una opción</option>
                                 <option value="seguridad">Seguridad y salud ocupacional</option>
-                                <option value="ambiental">Gestión ambiental / SEIA / RCA</option>
-                                <option value="sistemas">Sistemas de gestión e ISO</option>
-                                <option value="sig">SIG, teledetección e IA aplicada</option>
-                                <option value="integral">Diagnóstico integral (todas)</option>
-                                <option value="otro">Otro / no estoy seguro</option>
+                                <option value="ambiental">Gestión ambiental / SEIA</option>
+                                <option value="sistemas">Sistemas de gestión ISO</option>
+                                <option value="sig">SIG y teledetección</option>
+                                <option value="integral">Diagnóstico integral</option>
+                                <option value="otro">Otro</option>
                             </select>
                         </div>
                         
                         <div class="form-group">
-                            <label class="form-label" for="mensaje">Mensaje breve (opcional)</label>
-                            <textarea id="mensaje" 
-                                      name="mensaje" 
-                                      class="form-textarea"
-                                      maxlength="1000"
-                                      placeholder="Cuéntanos brevemente sobre tu proyecto..."></textarea>
+                            <label class="form-label" for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" class="form-textarea" placeholder="Cuéntanos sobre tu proyecto..."></textarea>
                         </div>
                         
                         <button type="submit" class="btn btn-primary" style="width: 100%;">
-                            <span>Enviar solicitud</span>
-                            <span class="btn-icon" aria-hidden="true">→</span>
+                            Enviar solicitud →
                         </button>
+                        
+                        <p style="margin-top: 1rem; font-size: 0.875rem; text-align: center; color: var(--text-muted);">
+                            Te responderemos en menos de 24 horas hábiles.
+                        </p>
                     </form>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- BOTÓN FLOTANTE WHATSAPP -->
-    <a href="https://wa.me/56954025756?text=Hola%20SEPREVIN,%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n" 
-       class="whatsapp-float" 
-       target="_blank" 
-       rel="noopener noreferrer"
-       aria-label="Chatear por WhatsApp">
-        <span style="font-size: 1.75rem;" aria-hidden="true">💬</span>
-        <span class="whatsapp-tooltip">¿Tienes una emergencia? Escríbenos</span>
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/56954025756" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+        💬
     </a>
 
-    <!-- FOOTER -->
-    <footer role="contentinfo">
+    <!-- Footer -->
+    <footer>
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="logo_blanco.jpeg" alt="SEPREVIN" onerror="this.style.display='none'">
-                    <p>
-                        Consultora técnica integral en seguridad, salud ocupacional y gestión ambiental. 
-                        Respaldo técnico de excelencia para que tu operación cumpla con los más altos 
-                        estándares normativos.
-                    </p>
+                    <h3 style="color: white; margin-bottom: 1rem;">SEPREVIN</h3>
+                    <p>Consultora técnica integral en seguridad, salud ocupacional y gestión ambiental.</p>
                 </div>
                 
-                <nav aria-label="Navegación principal">
+                <nav>
                     <h4 class="footer-title">Navegación</h4>
                     <ul class="footer-links">
                         <li><a href="#servicios">Servicios</a></li>
-                        <li><a href="#propuesta">Propuesta de valor</a></li>
+                        <li><a href="#propuesta">Propuesta</a></li>
                         <li><a href="#proceso">Cómo trabajamos</a></li>
                         <li><a href="#equipo">Equipo</a></li>
-                        <li><a href="#faq">Preguntas frecuentes</a></li>
                     </ul>
                 </nav>
                 
-                <nav aria-label="Navegación legal">
+                <nav>
                     <h4 class="footer-title">Legal</h4>
                     <ul class="footer-links">
                         <li><a href="#">Política de privacidad</a></li>
                         <li><a href="#">Términos de servicio</a></li>
-                        <li><a href="#">Política de cookies</a></li>
                     </ul>
                 </nav>
             </div>
@@ -2435,145 +1271,40 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- Scripts -->
     <script>
-        // Menú móvil
-        function toggleMenu() {
-            const navMenu = document.getElementById('nav-menu');
-            const menuBtn = document.querySelector('.mobile-menu-btn');
-            const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
-            
-            navMenu.classList.toggle('active');
-            menuBtn.classList.toggle('active');
-            menuBtn.setAttribute('aria-expanded', !isExpanded);
-        }
-        
-        // Cerrar menú al hacer click en un enlace
-        document.querySelectorAll('.nav-menu a').forEach(link => {
-            link.addEventListener('click', () => {
-                const navMenu = document.getElementById('nav-menu');
-                const menuBtn = document.querySelector('.mobile-menu-btn');
-                navMenu.classList.remove('active');
-                menuBtn.classList.remove('active');
-                menuBtn.setAttribute('aria-expanded', 'false');
-            });
-        });
-        
-        // Header scroll effect
-        const header = document.getElementById('header');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-        
-        // FAQ Acordeón
-        document.querySelectorAll('.faq-question').forEach(button => {
-            button.addEventListener('click', () => {
-                const faqItem = button.parentElement;
-                const isActive = faqItem.classList.contains('active');
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const item = btn.parentElement;
+                const isActive = item.classList.contains('active');
                 
-                document.querySelectorAll('.faq-item').forEach(item => {
-                    item.classList.remove('active');
-                    item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                document.querySelectorAll('.faq-item').forEach(faq => {
+                    faq.classList.remove('active');
                 });
                 
                 if (!isActive) {
-                    faqItem.classList.add('active');
-                    button.setAttribute('aria-expanded', 'true');
+                    item.classList.add('active');
                 }
             });
         });
-        
-        // Animaciones al scroll
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animated');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-        
-        document.querySelectorAll('.animate-on-scroll').forEach(el => {
-            observer.observe(el);
-        });
-        
-        // Contador animado
-        const statsObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const target = parseInt(entry.target.getAttribute('data-count'));
-                    if (target) animateCount(entry.target, target);
-                    statsObserver.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.5 });
-        
-        document.querySelectorAll('[data-count]').forEach(stat => {
-            statsObserver.observe(stat);
-        });
-        
-        function animateCount(element, target) {
-            let current = 0;
-            const increment = target / 50;
-            const timer = setInterval(() => {
-                current += increment;
-                if (current >= target) {
-                    element.textContent = target + (target === 100 ? '%' : '+');
-                    clearInterval(timer);
-                } else {
-                    element.textContent = Math.floor(current);
-                }
-            }, 30);
-        }
-        
-        // Validación de formulario
-        const form = document.getElementById('contactForm');
-        
-        form.addEventListener('submit', function(e) {
-            let isValid = true;
-            
-            form.querySelectorAll('[required]').forEach(field => {
-                if (!field.value.trim()) {
-                    isValid = false;
-                    field.style.borderColor = '#dc2626';
-                    field.style.boxShadow = '0 0 0 4px rgba(220, 38, 38, 0.1)';
-                } else {
-                    field.style.borderColor = '';
-                    field.style.boxShadow = '';
-                }
-            });
-            
-            if (!isValid) {
-                e.preventDefault();
-                alert('Por favor, complete todos los campos obligatorios.');
-                return false;
+
+        // Header scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.style.boxShadow = '0 4px 6px -1px rgb(0 0 0 / 0.1)';
+            } else {
+                header.style.boxShadow = 'none';
             }
         });
-        
-        // Limpiar errores al escribir
-        form.querySelectorAll('input, select, textarea').forEach(field => {
-            field.addEventListener('input', function() {
-                this.style.borderColor = '';
-                this.style.boxShadow = '';
-            });
+
+        // Form validation
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            const btn = this.querySelector('button[type="submit"]');
+            btn.innerHTML = 'Enviando...';
+            btn.disabled = true;
         });
-        
-        // Service Worker
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js').catch(() => {});
-            });
-        }
     </script>
 </body>
 </html>
