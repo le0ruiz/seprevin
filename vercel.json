@@ -1,8 +1,6 @@
 {
   "version": 2,
   "name": "seprevin",
-  "public": true,
-  
   "cleanUrls": true,
   "trailingSlash": false,
   
