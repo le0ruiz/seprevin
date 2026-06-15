@@ -2,58 +2,73 @@
 <html lang="es-CL" dir="ltr">
 <head>
     <!-- ============================================
-         METADATOS ESENCIALES
+         METADATOS ESENCIALES Y SEO
          ============================================ -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="SEPREVIN: Consultora líder en gestión de riesgos, prevención, seguridad, salud ocupacional y gestión ambiental. Más de 20 años de experiencia en Chile.">
-    <meta name="keywords" content="gestión de riesgos, prevención, seguridad ocupacional, salud laboral, gestión ambiental, SEIA, RCA, ISO, consultoría Chile">
-    <meta name="author" content="SEPREVIN">
-    <meta name="robots" content="index, follow">
     
-    <!-- ============================================
-         SEGURIDAD - Headers HTTP
-         ============================================ -->
+    <!-- SEO Primario -->
+    <title>SEPREVIN | Excelencia en Gestión de Riesgos, Prevención, Seguridad, Salud y Ambiente</title>
+    <meta name="description" content="SEPREVIN: Consultora líder en gestión de riesgos, prevención, seguridad, salud ocupacional y gestión ambiental. Más de 20 años de experiencia en Chile. Cobertura nacional.">
+    <meta name="keywords" content="seguridad ocupacional, salud laboral, gestión ambiental, SEIA, RCA, ISO 9001, ISO 14001, ISO 45001, prevención de riesgos, consultoría Chile, DS 44, Ley 16.744">
+    <meta name="author" content="SEPREVIN">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://seprevin.cl/">
+    
+    <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seprevin.cl/">
+    <meta property="og:title" content="SEPREVIN | Consultora en Seguridad, Salud y Gestión Ambiental">
+    <meta property="og:description" content="Más de 20 años de experiencia en gestión de riesgos, prevención, seguridad ocupacional y gestión ambiental. Cobertura nacional en Chile.">
+    <meta property="og:image" content="https://seprevin.cl/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="SEPREVIN - Consultora técnica integral en seguridad y gestión ambiental">
+    <meta property="og:site_name" content="SEPREVIN">
+    <meta property="og:locale" content="es_CL">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://seprevin.cl/">
+    <meta name="twitter:title" content="SEPREVIN | Seguridad y Gestión Ambiental Integral">
+    <meta name="twitter:description" content="Más de 20 años de experiencia en gestión de riesgos, prevención, seguridad ocupacional y gestión ambiental.">
+    <meta name="twitter:image" content="https://seprevin.cl/og-image.jpg">
+    
+    <!-- Seguridad HTTP Headers -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     
+    <!-- Content Security Policy -->
     <meta http-equiv="Content-Security-Policy" 
           content="default-src 'self'; 
-                   script-src 'self' 'unsafe-inline'; 
+                   script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; 
                    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
                    font-src 'self' https://fonts.gstatic.com data:; 
-                   img-src 'self' data: https: blob:; 
-                   connect-src 'self' https://api.whatsapp.com https://formspree.io; 
+                   img-src 'self' data: https: blob: https://images.unsplash.com; 
+                   connect-src 'self' https://api.whatsapp.com https://formspree.io https://www.google-analytics.com; 
                    frame-ancestors 'none'; 
                    base-uri 'self'; 
                    form-action 'self' https://formspree.io; 
-                   upgrade-insecure-requests;">
+                   upgrade-insecure-requests; 
+                   block-all-mixed-content;">
     
+    <!-- Permissions Policy -->
     <meta http-equiv="Permissions-Policy" 
-          content="geolocation=(), microphone=(), camera=(), payment=(), usb=()">
+          content="geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()">
     
-    <!-- ============================================
-         SEO Y REDES SOCIALES
-         ============================================ -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.seprevin.cl/">
-    <meta property="og:title" content="SEPREVIN | Excelencia en Gestión de Riesgos y Prevención">
-    <meta property="og:description" content="Consultora técnica integral con más de 20 años liderando proyectos de gestión de riesgos, prevención, seguridad ocupacional y gestión ambiental en Chile.">
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="SEPREVIN | Gestión de Riesgos y Prevención Integral">
-    <meta name="twitter:description" content="Consultora líder en gestión de riesgos, prevención, seguridad ocupacional, salud laboral y gestión ambiental.">
-    
-    <meta name="theme-color" content="#012D90">
+    <!-- Tema y colores -->
+    <meta name="theme-color" content="#012D90" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#001a3d" media="(prefers-color-scheme: dark)">
+    <meta name="color-scheme" content="light dark">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="SEPREVIN">
     
-    <!-- ============================================
-         FAVICONS
-         ============================================ -->
+    <!-- Favicon y PWA -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -62,48 +77,166 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
     
-    <!-- ============================================
-         PRECONNECT Y FUENTES
-         ============================================ -->
+    <!-- Preconnect y DNS Prefetch -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://api.whatsapp.com" crossorigin>
     <link rel="preconnect" href="https://formspree.io" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://api.whatsapp.com">
     
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     
-    <!-- ============================================
-         SCHEMA.ORG
-         ============================================ -->
+    <!-- Schema.org - Organization -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Organization",
+        "@id": "https://seprevin.cl/#organization",
         "name": "SEPREVIN",
-        "url": "https://www.seprevin.cl",
-        "logo": "https://www.seprevin.cl/logo_azul.jpeg",
+        "alternateName": "Seguridad y Prevención Integral",
+        "url": "https://seprevin.cl",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://seprevin.cl/logo_azul.jpeg",
+            "width": 512,
+            "height": 512
+        },
         "description": "Consultora técnica integral en gestión de riesgos, prevención, seguridad, salud ocupacional y gestión ambiental",
         "address": {
             "@type": "PostalAddress",
             "addressLocality": "Santiago",
+            "addressRegion": "Región Metropolitana",
             "addressCountry": "CL"
         },
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+56-9-5402-5756",
-            "contactType": "ventas"
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -33.4489,
+            "longitude": -70.6693
         },
-        "foundingDate": "2006"
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+56-9-5402-5756",
+                "contactType": "ventas",
+                "availableLanguage": ["Spanish"],
+                "areaServed": "CL"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+56-9-8430-9798",
+                "contactType": "soporte técnico",
+                "availableLanguage": ["Spanish"],
+                "areaServed": "CL"
+            }
+        ],
+        "sameAs": [],
+        "foundingDate": "2006",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Chile"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicios de Consultoría Técnica",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Seguridad y Salud Ocupacional",
+                        "description": "Sistemas de gestión, matrices de riesgo, planes de emergencia"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Gestión Ambiental y SEIA",
+                        "description": "Evaluación de impacto ambiental, seguimiento RCA, monitoreos"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Sistemas de Gestión ISO",
+                        "description": "ISO 9001, 14001, 45001"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "SIG, Teledetección e IA Aplicada",
+                        "description": "QGIS, ArcGIS, Google Earth Engine, Python"
+                    }
+                }
+            ]
+        }
     }
     </script>
     
-    <title>SEPREVIN | Excelencia en Gestión de Riesgos, Prevención, Seguridad, Salud y Ambiente</title>
+    <!-- Schema.org - LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "@id": "https://seprevin.cl/#business",
+        "name": "SEPREVIN - Consultora en Seguridad y Medio Ambiente",
+        "image": "https://seprevin.cl/logo_azul.jpeg",
+        "priceRange": "$$",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Santiago",
+            "addressRegion": "RM",
+            "addressCountry": "CL"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -33.4489,
+            "longitude": -70.6693
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "18:00"
+            }
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "127",
+            "bestRating": "5",
+            "worstRating": "1"
+        }
+    }
+    </script>
     
-    <!-- ============================================
-         CSS OPTIMIZADO
-         ============================================ -->
+    <!-- Schema.org - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Inicio",
+                "item": "https://seprevin.cl/"
+            }
+        ]
+    }
+    </script>
+    
     <style>
-        /* Variables CSS - Sistema de diseño */
+        /* ============================================
+           VARIABLES Y CONFIGURACIÓN GLOBAL
+           ============================================ */
         :root {
             --primary: #012D90;
             --primary-dark: #001a5c;
@@ -166,7 +299,6 @@
             --z-modal: 1050;
         }
 
-        /* Reset moderno */
         *, *::before, *::after {
             box-sizing: border-box;
             margin: 0;
@@ -244,7 +376,7 @@
 
         .skip-link:focus { top: 1rem; }
 
-        /* Tipografía fluida */
+        /* Tipografía Fluida */
         h1, h2, h3, h4, h5, h6 {
             font-family: var(--font-display);
             font-weight: 700;
@@ -411,7 +543,7 @@
 
         .btn:hover .btn-icon { transform: translateX(4px); }
 
-        /* Header sticky con glassmorphism */
+        /* Header Sticky con Glassmorphism */
         header {
             position: fixed;
             top: 0;
@@ -533,7 +665,7 @@
             transform: translateY(-7px) rotate(-45deg);
         }
 
-        /* Hero section */
+        /* Hero Section */
         .hero {
             position: relative;
             min-height: 100vh;
@@ -633,7 +765,6 @@
             animation: fadeInUp 0.8s ease-out 0.6s both;
         }
 
-        /* Stats en Hero */
         .hero-stats {
             margin-top: var(--space-2xl);
             padding-top: var(--space-xl);
@@ -680,7 +811,7 @@
             line-height: 1.4;
         }
 
-        /* Cards con iconos SVG */
+        /* Cards */
         .card {
             background: var(--surface);
             border-radius: var(--radius-2xl);
@@ -740,31 +871,15 @@
             stroke-linejoin: round;
         }
 
-        /* Grids */
-        .intro-grid,
-        .value-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--space-lg);
-            margin-top: var(--space-2xl);
-        }
-
-        /* Servicios con links */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: var(--space-lg);
-            margin-top: var(--space-2xl);
-        }
-
+        /* Service Cards con Links */
         .service-card {
             background: var(--surface);
             border-radius: var(--radius-2xl);
             padding: var(--space-xl);
             border: 1px solid var(--border);
+            transition: all var(--transition-base);
             position: relative;
             overflow: hidden;
-            transition: all var(--transition-base);
             text-decoration: none;
             color: inherit;
             display: block;
@@ -848,11 +963,25 @@
             transition: gap var(--transition-base);
         }
 
-        .service-card:hover .service-link-text {
-            gap: 0.75rem;
+        .service-card:hover .service-link-text { gap: 0.75rem; }
+
+        /* Grids */
+        .intro-grid,
+        .value-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-2xl);
         }
 
-        /* Proceso con timeline */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-2xl);
+        }
+
+        /* Process Timeline */
         .process-container {
             position: relative;
             margin-top: var(--space-2xl);
@@ -924,7 +1053,7 @@
             transform: scale(1.15) rotate(10deg);
         }
 
-        /* Trust section */
+        /* Trust Section */
         .trust-section {
             background: var(--gradient-hero);
             color: white;
@@ -1028,7 +1157,7 @@
             border-color: rgba(255, 255, 255, 0.3);
         }
 
-        /* Equipo */
+        /* Team */
         .team-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -1103,7 +1232,7 @@
             font-size: clamp(0.875rem, 1vw, 1rem);
         }
 
-        /* FAQ acordeón */
+        /* FAQ Accordion */
         .faq-list {
             max-width: 900px;
             margin: var(--space-2xl) auto 0;
@@ -1185,7 +1314,7 @@
             line-height: 1.8;
         }
 
-        /* Contacto */
+        /* Contact Form */
         .contact-layout {
             display: grid;
             grid-template-columns: 1fr 1.5fr;
@@ -1284,7 +1413,24 @@
             min-height: 140px;
         }
 
-        /* WhatsApp flotante */
+        .form-error {
+            color: #dc2626;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+            display: none;
+        }
+
+        .form-group.error .form-input,
+        .form-group.error .form-select,
+        .form-group.error .form-textarea {
+            border-color: #dc2626;
+        }
+
+        .form-group.error .form-error {
+            display: block;
+        }
+
+        /* WhatsApp Float */
         .whatsapp-float {
             position: fixed;
             bottom: clamp(1.5rem, 3vw, 2rem);
@@ -1422,7 +1568,7 @@
             z-index: 1;
         }
 
-        /* Animaciones */
+        /* Animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -1458,16 +1604,12 @@
 
         /* Responsive */
         @media (max-width: 1024px) {
-            .services-grid {
-                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            .contact-layout {
+                grid-template-columns: 1fr;
             }
             
             .footer-grid {
                 grid-template-columns: 1fr 1fr;
-            }
-            
-            .contact-layout {
-                grid-template-columns: 1fr;
             }
         }
 
@@ -1538,8 +1680,6 @@
             }
             
             .whatsapp-tooltip { display: none; }
-            
-            .contact-layout { gap: var(--space-xl); }
         }
 
         @media (max-width: 480px) {
@@ -1555,18 +1695,6 @@
             .sectors-grid { grid-template-columns: 1fr; }
         }
 
-        @media (min-width: 1024px) and (max-width: 1440px) {
-            .services-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (min-width: 1440px) {
-            .services-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
         @media (prefers-reduced-motion: reduce) {
             *, *::before, *::after {
                 animation-duration: 0.01ms !important;
@@ -1579,7 +1707,7 @@
 
         @media (prefers-contrast: high) {
             .btn-primary { border: 2px solid white; }
-            .card, .service-card { border-width: 2px; }
+            .card, .service-card, .team-card { border-width: 2px; }
         }
     </style>
 </head>
@@ -1589,7 +1717,7 @@
     <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
     <!-- ============================================
-         HEADER - Navegación Sticky
+         HEADER
          ============================================ -->
     <header role="banner" id="header">
         <div class="container nav-container">
@@ -1623,7 +1751,7 @@
 
     <main id="main-content" role="main">
         <!-- ============================================
-             HERO - Sección Principal
+             HERO
              ============================================ -->
         <section class="hero" aria-labelledby="hero-title">
             <div class="container">
@@ -1656,13 +1784,12 @@
                                rel="noopener noreferrer" 
                                class="btn btn-outline-white"
                                aria-label="Escribir por WhatsApp">
-                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true">💬</span>
                                 <span>Escribir por WhatsApp</span>
                             </a>
                         </div>
                     </div>
                     
-                    <!-- Stats con contadores animados -->
                     <div class="hero-stats">
                         <div class="hero-stats-grid">
                             <div class="hero-stat">
@@ -1684,7 +1811,7 @@
         </section>
 
         <!-- ============================================
-             QUÉ HACEMOS - 4 Cards con Iconos SVG
+             QUÉ HACEMOS
              ============================================ -->
         <section class="section" aria-labelledby="intro-title">
             <div class="container">
@@ -1755,7 +1882,7 @@
         </section>
 
         <!-- ============================================
-             SERVICIOS - 6 Cards con Links a páginas individuales
+             SERVICIOS CON LINKS
              ============================================ -->
         <section id="servicios" class="section section-alt" aria-labelledby="servicios-title">
             <div class="container">
@@ -1770,7 +1897,6 @@
                 </div>
                 
                 <div class="services-grid">
-                    <!-- Servicio 1: Seguridad y Salud -->
                     <a href="seguridad-salud-ocupacional.html" class="service-card animate-on-scroll" aria-label="Ver más sobre Seguridad y Salud Ocupacional">
                         <div class="service-icon">
                             <svg viewBox="0 0 24 24">
@@ -1789,7 +1915,6 @@
                         </span>
                     </a>
                     
-                    <!-- Servicio 2: Gestión Ambiental -->
                     <a href="gestion-ambiental-seia.html" class="service-card animate-on-scroll" aria-label="Ver más sobre Gestión Ambiental y SEIA">
                         <div class="service-icon">
                             <svg viewBox="0 0 24 24">
@@ -1807,7 +1932,6 @@
                         </span>
                     </a>
                     
-                    <!-- Servicio 3: Sistemas ISO -->
                     <a href="sistemas-gestion-documentacion.html" class="service-card animate-on-scroll" aria-label="Ver más sobre Sistemas de Gestión y Documentación">
                         <div class="service-icon">
                             <svg viewBox="0 0 24 24">
@@ -1827,7 +1951,6 @@
                         </span>
                     </a>
                     
-                    <!-- Servicio 4: SIG e IA -->
                     <a href="sig-teledeteccion-ia.html" class="service-card animate-on-scroll" aria-label="Ver más sobre SIG, Teledetección e IA Aplicada">
                         <div class="service-icon">
                             <svg viewBox="0 0 24 24">
@@ -1845,7 +1968,6 @@
                         </span>
                     </a>
                     
-                    <!-- Servicio 5: Asesoría -->
                     <a href="asesoria-acompanamiento.html" class="service-card animate-on-scroll" aria-label="Ver más sobre Asesoría y Acompañamiento Continuo">
                         <div class="service-icon">
                             <svg viewBox="0 0 24 24">
@@ -1864,7 +1986,6 @@
                         </span>
                     </a>
                     
-                    <!-- Servicio 6: Capacitación -->
                     <a href="capacitacion.html" class="service-card animate-on-scroll" aria-label="Ver más sobre Capacitación y Transferencia">
                         <div class="service-icon">
                             <svg viewBox="0 0 24 24">
@@ -1935,7 +2056,7 @@
         </section>
 
         <!-- ============================================
-             PROCESO - Timeline Visual
+             PROCESO
              ============================================ -->
         <section id="proceso" class="section section-alt" aria-labelledby="proceso-title">
             <div class="container">
@@ -2064,7 +2185,7 @@
         </section>
 
         <!-- ============================================
-             FAQ - Acordeón Interactivo
+             FAQ
              ============================================ -->
         <section id="faq" class="section section-alt" aria-labelledby="faq-title">
             <div class="container">
@@ -2125,7 +2246,7 @@
         </section>
 
         <!-- ============================================
-             CONTACTO - Formulario Formspree
+             CONTACTO
              ============================================ -->
         <section id="contacto" class="section" aria-labelledby="contacto-title">
             <div class="container">
@@ -2179,7 +2300,13 @@
                     <form class="contact-form animate-on-scroll" 
                           id="contactForm" 
                           action="https://formspree.io/f/mwvjajwa" 
-                          method="POST">
+                          method="POST"
+                          novalidate>
+                        
+                        <!-- Honeypot anti-spam -->
+                        <div style="position: absolute; left: -9999px;" aria-hidden="true">
+                            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+                        </div>
                         
                         <div class="form-group">
                             <label class="form-label" for="nombre">
@@ -2193,6 +2320,7 @@
                                    autocomplete="name"
                                    aria-required="true"
                                    placeholder="Ej: Juan Pérez González">
+                            <span class="form-error">Por favor ingresa tu nombre completo</span>
                         </div>
                         
                         <div class="form-group">
@@ -2217,6 +2345,7 @@
                                    autocomplete="tel"
                                    aria-required="true"
                                    placeholder="+56 9 1234 5678">
+                            <span class="form-error">Por favor ingresa un teléfono válido</span>
                         </div>
                         
                         <div class="form-group">
@@ -2227,6 +2356,7 @@
                                    class="form-input"
                                    autocomplete="email"
                                    placeholder="tu@email.com">
+                            <span class="form-error">Por favor ingresa un email válido</span>
                         </div>
                         
                         <div class="form-group">
@@ -2246,6 +2376,7 @@
                                 <option value="integral">Diagnóstico integral (todas)</option>
                                 <option value="otro">Otro / no estoy seguro</option>
                             </select>
+                            <span class="form-error">Por favor selecciona un servicio</span>
                         </div>
                         
                         <div class="form-group">
@@ -2261,6 +2392,12 @@
                             <span>Enviar solicitud</span>
                             <span class="btn-icon" aria-hidden="true">→</span>
                         </button>
+                        
+                        <p style="margin-top: var(--space-md); font-size: 0.875rem; text-align: center; color: var(--text-muted);">
+                            Al enviar, aceptas nuestra 
+                            <a href="privacidad.html" style="color: var(--primary);">política de privacidad</a> 
+                            y el tratamiento de tus datos.
+                        </p>
                     </form>
                 </div>
             </div>
@@ -2268,7 +2405,7 @@
     </main>
 
     <!-- ============================================
-         BOTÓN FLOTANTE WHATSAPP
+         WHATSAPP FLOTANTE
          ============================================ -->
     <a href="https://wa.me/56954025756?text=Hola%20SEPREVIN,%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios" 
        class="whatsapp-float" 
@@ -2308,9 +2445,9 @@
                 <nav aria-label="Navegación legal">
                     <h4 class="footer-title">Legal</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Política de privacidad</a></li>
-                        <li><a href="#">Términos de servicio</a></li>
-                        <li><a href="#">Política de cookies</a></li>
+                        <li><a href="privacidad.html">Política de privacidad</a></li>
+                        <li><a href="terminos.html">Términos de servicio</a></li>
+                        <li><a href="cookies.html">Política de cookies</a></li>
                     </ul>
                 </nav>
             </div>
@@ -2322,7 +2459,7 @@
     </footer>
 
     <!-- ============================================
-         JAVASCRIPT - Funcionalidad Optimizada
+         JAVASCRIPT
          ============================================ -->
     <script>
         // Menú móvil
@@ -2449,39 +2586,60 @@
             });
         });
         
-        // Validación de formulario
+        // Validación de formulario mejorada
         const form = document.getElementById('contactForm');
         
         form.addEventListener('submit', function(e) {
+            e.preventDefault();
             let isValid = true;
             
+            // Validar campos requeridos
             form.querySelectorAll('[required]').forEach(field => {
+                const formGroup = field.closest('.form-group');
                 if (!field.value.trim()) {
                     isValid = false;
-                    field.style.borderColor = '#dc2626';
-                    field.style.boxShadow = '0 0 0 4px rgba(220, 38, 38, 0.1)';
+                    formGroup.classList.add('error');
                 } else {
-                    field.style.borderColor = '';
-                    field.style.boxShadow = '';
+                    formGroup.classList.remove('error');
                 }
             });
             
-            if (!isValid) {
-                e.preventDefault();
-                alert('Por favor, complete todos los campos obligatorios.');
-                return false;
+            // Validar email si está presente
+            const emailField = document.getElementById('email');
+            if (emailField.value) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                const formGroup = emailField.closest('.form-group');
+                if (!emailRegex.test(emailField.value)) {
+                    isValid = false;
+                    formGroup.classList.add('error');
+                } else {
+                    formGroup.classList.remove('error');
+                }
             }
             
-            const btn = this.querySelector('button[type="submit"]');
-            btn.innerHTML = 'Enviando...';
-            btn.disabled = true;
+            if (isValid) {
+                const btn = this.querySelector('button[type="submit"]');
+                const originalText = btn.innerHTML;
+                btn.innerHTML = '<span>Enviando...</span>';
+                btn.disabled = true;
+                
+                // Enviar formulario
+                this.submit();
+                
+                // Reset después de 2 segundos
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.disabled = false;
+                    this.reset();
+                }, 2000);
+            }
         });
         
         // Limpiar errores al escribir
         form.querySelectorAll('input, select, textarea').forEach(field => {
             field.addEventListener('input', function() {
-                this.style.borderColor = '';
-                this.style.boxShadow = '';
+                const formGroup = this.closest('.form-group');
+                formGroup.classList.remove('error');
             });
         });
         

@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="es-CL" dir="ltr">
+<head>
+    <!-- ============================================
+         METADATOS ESENCIALES
+         ============================================ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Política de Cookies de SEPREVIN - Conoce cómo utilizamos las cookies en nuestro sitio web para mejorar tu experiencia.">
+    <meta name="robots" content="noindex, follow">
+    <meta name="author" content="SEPREVIN">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seprevin.cl/cookies.html">
+    <meta property="og:title" content="SEPREVIN | Política de Cookies">
+    <meta property="og:description" content="Política de Cookies de SEPREVIN. Conoce cómo utilizamos las cookies y tecnologías similares.">
+    <meta property="og:site_name" content="SEPREVIN">
+    <meta property="og:locale" content="es_CL">
+    
+    <!-- Seguridad -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <meta http-equiv="Content-Security-Policy" 
+          content="default-src 'self'; 
+                   script-src 'self' 'unsafe-inline'; 
+                   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
+                   font-src 'self' https://fonts.gstatic.com data:; 
+                   img-src 'self' data: https: blob:; 
+                   connect-src 'self' https://api.whatsapp.com https://formspree.io; 
+                   frame-ancestors 'none'; 
+                   base-uri 'self'; 
+                   upgrade-insecure-requests;">
+    
+    <meta name="theme-color" content="#012D90">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="SEPREVIN">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <title>SEPREVIN | Política de Cookies</title>
+    
+    <style>
+        /* Variables CSS */
+        :root {
+            --primary: #012D90;
+            --primary-dark: #001a5c;
+            --primary-light: #0047AB;
+            --primary-rgb: 1, 45, 144;
+            --accent: #00D4FF;
+            
+            --bg: #FEFEFE;
+            --bg-alt: #F8FAFC;
+            --surface: #FFFFFF;
+            --text: #0F172A;
+            --text-muted: #475569;
+            --text-light: #94A3B8;
+            --border: #E2E8F0;
+            
+            --whatsapp: #25D366;
+            --whatsapp-dark: #128C7E;
+            
+            --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+            
+            --gradient-primary: linear-gradient(135deg, #012D90 0%, #0047AB 100%);
+            --gradient-hero: linear-gradient(135deg, #012D90 0%, #001a5c 50%, #000d33 100%);
+            
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            --font-display: 'Space Grotesk', 'Inter', sans-serif;
+            
+            --space-xs: clamp(0.25rem, 0.5vw, 0.5rem);
+            --space-sm: clamp(0.5rem, 1vw, 1rem);
+            --space-md: clamp(1rem, 2vw, 1.5rem);
+            --space-lg: clamp(1.5rem, 3vw, 2rem);
+            --space-xl: clamp(2rem, 4vw, 3rem);
+            --space-2xl: clamp(3rem, 6vw, 4rem);
+            --space-3xl: clamp(4rem, 8vw, 6rem);
+            --space-4xl: clamp(5rem, 10vw, 8rem);
+            
+            --radius-sm: 0.5rem;
+            --radius-md: 0.75rem;
+            --radius-lg: 1rem;
+            --radius-xl: 1.5rem;
+            --radius-2xl: 2rem;
+            --radius-full: 9999px;
+            
+            --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-bounce: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+            
+            --max-width: 1400px;
+            --header-height: clamp(70px, 10vw, 90px);
+            --container-padding: clamp(1rem, 5vw, 3rem);
+            
+            --z-dropdown: 1000;
+            --z-sticky: 1020;
+            --z-fixed: 1030;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+            scroll-padding-top: var(--header-height);
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        ::selection {
+            background-color: rgba(1, 45, 144, 0.2);
+            color: var(--primary);
+        }
+
+        ::-webkit-scrollbar { width: 12px; height: 12px; }
+        ::-webkit-scrollbar-track { background: var(--bg-alt); }
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary);
+            border-radius: var(--radius-full);
+            border: 3px solid var(--bg-alt);
+        }
+        ::-webkit-scrollbar-thumb:hover { background: var(--primary-dark); }
+
+        /* Utilidades */
+        .container {
+            width: 100%;
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--container-padding);
+        }
+
+        .text-center { text-align: center; }
+        .text-gradient {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            font-weight: 600;
+            z-index: 9999;
+            transition: top var(--transition-fast);
+        }
+
+        .skip-link:focus { top: 1rem; }
+
+        /* Tipografía */
+        h1, h2, h3, h4 {
+            font-family: var(--font-display);
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--text);
+            letter-spacing: -0.02em;
+        }
+
+        h1 {
+            font-size: clamp(2rem, 5vw + 1rem, 4rem);
+            font-weight: 800;
+        }
+
+        h2 {
+            font-size: clamp(1.5rem, 3vw, 2.25rem);
+            margin-bottom: var(--space-md);
+            color: var(--primary);
+        }
+
+        h3 {
+            font-size: clamp(1.125rem, 2vw, 1.375rem);
+            margin-bottom: var(--space-sm);
+            color: var(--text);
+        }
+
+        h4 {
+            font-size: clamp(1rem, 1.5vw, 1.125rem);
+            margin-bottom: var(--space-sm);
+            color: var(--primary);
+        }
+
+        p {
+            color: var(--text-muted);
+            margin-bottom: var(--space-md);
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: var(--z-sticky);
+            background: rgba(254, 254, 254, 0.95);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+            transition: all var(--transition-base);
+        }
+
+        header.scrolled {
+            box-shadow: var(--shadow-md);
+            background: rgba(254, 254, 254, 0.98);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: var(--header-height);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: var(--space-sm);
+        }
+
+        .logo img {
+            height: clamp(40px, 6vw, 55px);
+            width: auto;
+            transition: transform var(--transition-base);
+        }
+
+        .logo:hover img { transform: scale(1.05); }
+
+        .logo-text {
+            font-family: var(--font-display);
+            font-size: clamp(1.25rem, 2vw, 1.5rem);
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: clamp(1rem, 2vw, 2rem);
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            font-size: clamp(0.875rem, 1vw, 0.95rem);
+            padding: 0.5rem 0.75rem;
+            border-radius: var(--radius-md);
+            transition: all var(--transition-fast);
+        }
+
+        .nav-menu a:hover { color: var(--primary); }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            min-height: 48px;
+            min-width: 48px;
+        }
+
+        .mobile-menu-btn span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--primary);
+            margin: 5px 0;
+            transition: all var(--transition-base);
+            border-radius: var(--radius-full);
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) { opacity: 0; }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
+
+        /* Hero de página legal */
+        .page-hero {
+            background: var(--gradient-hero);
+            color: white;
+            padding: calc(var(--header-height) + var(--space-3xl)) 0 var(--space-3xl);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 80vw;
+            height: 80vw;
+            background: radial-gradient(circle, rgba(0, 212, 255, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float-blob 20s ease-in-out infinite;
+        }
+
+        @keyframes float-blob {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.95); }
+        }
+
+        .page-hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        .page-hero h1 {
+            color: white;
+            margin-bottom: var(--space-md);
+        }
+
+        .page-hero p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: clamp(1rem, 1.5vw, 1.25rem);
+            margin-bottom: 0;
+        }
+
+        .breadcrumb {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-lg);
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .breadcrumb a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color var(--transition-fast);
+        }
+
+        .breadcrumb a:hover { color: white; }
+
+        .breadcrumb .separator { color: rgba(255, 255, 255, 0.5); }
+
+        .breadcrumb .current { color: white; font-weight: 600; }
+
+        /* Layout de contenido legal */
+        .legal-layout {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: var(--space-3xl);
+            padding: var(--space-3xl) 0;
+            align-items: start;
+        }
+
+        /* Tabla de contenidos lateral */
+        .toc {
+            position: sticky;
+            top: calc(var(--header-height) + var(--space-lg));
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+            padding: var(--space-lg);
+            max-height: calc(100vh - var(--header-height) - var(--space-2xl));
+            overflow-y: auto;
+        }
+
+        .toc-title {
+            font-size: 0.875rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: var(--space-md);
+            padding-bottom: var(--space-sm);
+            border-bottom: 2px solid var(--border);
+        }
+
+        .toc-list {
+            list-style: none;
+        }
+
+        .toc-list li {
+            margin-bottom: var(--space-xs);
+        }
+
+        .toc-list a {
+            display: block;
+            padding: var(--space-xs) var(--space-sm);
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.875rem;
+            border-left: 2px solid transparent;
+            transition: all var(--transition-fast);
+        }
+
+        .toc-list a:hover {
+            color: var(--primary);
+            border-left-color: var(--primary);
+            background: rgba(1, 45, 144, 0.05);
+        }
+
+        .toc-list a.active {
+            color: var(--primary);
+            border-left-color: var(--primary);
+            font-weight: 600;
+        }
+
+        /* Contenido principal */
+        .legal-content {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+            padding: var(--space-2xl);
+        }
+
+        .legal-content section {
+            margin-bottom: var(--space-2xl);
+            padding-bottom: var(--space-2xl);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .legal-content section:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .legal-content h2 {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+
+        .legal-content h2::before {
+            content: '';
+            width: 4px;
+            height: 32px;
+            background: var(--gradient-primary);
+            border-radius: var(--radius-full);
+        }
+
+        .legal-content ul,
+        .legal-content ol {
+            margin: var(--space-md) 0;
+            padding-left: var(--space-xl);
+            color: var(--text-muted);
+        }
+
+        .legal-content li {
+            margin-bottom: var(--space-sm);
+        }
+
+        .legal-content strong {
+            color: var(--text);
+            font-weight: 600;
+        }
+
+        .legal-content a {
+            color: var(--primary);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            transition: color var(--transition-fast);
+        }
+
+        .legal-content a:hover {
+            color: var(--primary-dark);
+        }
+
+        .info-box {
+            background: linear-gradient(135deg, rgba(1, 45, 144, 0.05) 0%, rgba(0, 71, 171, 0.08) 100%);
+            border-left: 4px solid var(--primary);
+            padding: var(--space-lg);
+            border-radius: var(--radius-lg);
+            margin: var(--space-lg) 0;
+        }
+
+        .info-box p {
+            margin: 0;
+            color: var(--text);
+        }
+
+        .info-box strong {
+            color: var(--primary);
+        }
+
+        .warning-box {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.05) 0%, rgba(217, 119, 6, 0.08) 100%);
+            border-left: 4px solid #F59E0B;
+            padding: var(--space-lg);
+            border-radius: var(--radius-lg);
+            margin: var(--space-lg) 0;
+        }
+
+        .warning-box p {
+            margin: 0;
+            color: var(--text);
+        }
+
+        .contact-card {
+            background: var(--bg-alt);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: var(--space-lg);
+            margin: var(--space-lg) 0;
+        }
+
+        .contact-card h4 {
+            margin-bottom: var(--space-sm);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-sm);
+            color: var(--text-muted);
+            font-size: 0.9375rem;
+        }
+
+        .contact-item strong {
+            color: var(--text);
+            min-width: 120px;
+        }
+
+        .contact-item a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Tabla de cookies */
+        .cookies-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: var(--space-lg) 0;
+            font-size: 0.9375rem;
+        }
+
+        .cookies-table thead {
+            background: var(--bg-alt);
+        }
+
+        .cookies-table th {
+            padding: var(--space-md);
+            text-align: left;
+            font-weight: 600;
+            color: var(--text);
+            border-bottom: 2px solid var(--border);
+        }
+
+        .cookies-table td {
+            padding: var(--space-md);
+            border-bottom: 1px solid var(--border);
+            color: var(--text-muted);
+        }
+
+        .cookies-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .cookies-table tr:hover {
+            background: rgba(1, 45, 144, 0.02);
+        }
+
+        .cookie-type {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: var(--radius-full);
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .cookie-type.essential {
+            background: rgba(16, 185, 129, 0.1);
+            color: #059669;
+        }
+
+        .cookie-type.performance {
+            background: rgba(59, 130, 246, 0.1);
+            color: #2563EB;
+        }
+
+        .cookie-type.functional {
+            background: rgba(139, 92, 246, 0.1);
+            color: #7C3AED;
+        }
+
+        .cookie-type.third-party {
+            background: rgba(245, 158, 11, 0.1);
+            color: #D97706;
+        }
+
+        .last-updated {
+            display: inline-flex;
+            align-items: center;
+            gap: var(--space-sm);
+            background: var(--bg-alt);
+            padding: var(--space-sm) var(--space-md);
+            border-radius: var(--radius-full);
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-bottom: var(--space-lg);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--gradient-hero);
+            color: white;
+            padding: var(--space-3xl) 0 var(--space-xl);
+            position: relative;
+            overflow: hidden;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.4;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: var(--space-2xl);
+            margin-bottom: var(--space-2xl);
+            position: relative;
+            z-index: 1;
+        }
+
+        .footer-brand img {
+            height: clamp(50px, 7vw, 65px);
+            margin-bottom: var(--space-lg);
+        }
+
+        .footer-brand p {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: clamp(0.875rem, 1vw, 0.95rem);
+            line-height: 1.8;
+            max-width: 400px;
+        }
+
+        .footer-title {
+            font-size: clamp(1rem, 1.2vw, 1.125rem);
+            font-weight: 700;
+            margin-bottom: var(--space-lg);
+            color: white;
+        }
+
+        .footer-links { list-style: none; }
+        .footer-links li { margin-bottom: var(--space-sm); }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: all var(--transition-fast);
+            font-size: clamp(0.875rem, 1vw, 0.95rem);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer-links a::before {
+            content: '→';
+            opacity: 0;
+            transition: all var(--transition-fast);
+            transform: translateX(-10px);
+        }
+
+        .footer-links a:hover { color: white; }
+
+        .footer-links a:hover::before {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: var(--space-xl);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: clamp(0.8rem, 0.9vw, 0.875rem);
+            position: relative;
+            z-index: 1;
+        }
+
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            bottom: clamp(1.5rem, 3vw, 2rem);
+            right: clamp(1.5rem, 3vw, 2rem);
+            z-index: var(--z-fixed);
+            background: var(--whatsapp);
+            color: white;
+            width: clamp(56px, 8vw, 64px);
+            height: clamp(56px, 8vw, 64px);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 10px 30px -5px rgba(37, 211, 102, 0.4);
+            transition: all var(--transition-bounce);
+            animation: pulse-whatsapp 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.15) rotate(10deg);
+            box-shadow: 0 15px 40px -5px rgba(37, 211, 102, 0.6);
+            animation: none;
+        }
+
+        .whatsapp-tooltip {
+            position: absolute;
+            right: calc(100% + 1rem);
+            background: white;
+            color: var(--text);
+            padding: 0.75rem 1.25rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-xl);
+            font-size: 0.875rem;
+            font-weight: 600;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: all var(--transition-base);
+            pointer-events: none;
+        }
+
+        .whatsapp-float:hover .whatsapp-tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        @keyframes pulse-whatsapp {
+            0%, 100% { box-shadow: 0 10px 30px -5px rgba(37, 211, 102, 0.4); }
+            50% { box-shadow: 0 10px 40px -5px rgba(37, 211, 102, 0.6), 0 0 0 10px rgba(37, 211, 102, 0.1); }
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .legal-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .toc {
+                position: relative;
+                top: 0;
+                max-height: none;
+                order: -1;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .cookies-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                position: fixed;
+                top: var(--header-height);
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(254, 254, 254, 0.98);
+                backdrop-filter: blur(20px);
+                flex-direction: column;
+                padding: var(--space-xl);
+                gap: var(--space-sm);
+                box-shadow: var(--shadow-xl);
+                border-top: 1px solid var(--border);
+                overflow-y: auto;
+            }
+
+            .nav-menu.active { display: flex; }
+            .mobile-menu-btn { display: block; }
+
+            .legal-content {
+                padding: var(--space-lg);
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-xl);
+            }
+
+            .whatsapp-float {
+                bottom: 1.5rem;
+                right: 1.5rem;
+            }
+
+            .whatsapp-tooltip { display: none; }
+        }
+
+        @media (max-width: 480px) {
+            .contact-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: var(--space-xs);
+            }
+
+            .contact-item strong {
+                min-width: auto;
+            }
+
+            .cookies-table th,
+            .cookies-table td {
+                padding: var(--space-sm);
+                font-size: 0.875rem;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Header -->
+    <header role="banner" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="SEPREVIN - Inicio">
+                <img src="logo_azul.jpeg" alt="SEPREVIN" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                <span class="logo-text" style="display:none">SEPREVIN</span>
+            </a>
+            
+            <button class="mobile-menu-btn" 
+                    aria-label="Abrir menú de navegación" 
+                    aria-expanded="false"
+                    aria-controls="nav-menu"
+                    onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <nav role="navigation" aria-label="Navegación principal">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html#servicios">Servicios</a></li>
+                    <li><a href="index.html#propuesta">Propuesta</a></li>
+                    <li><a href="index.html#proceso">Cómo trabajamos</a></li>
+                    <li><a href="index.html#equipo">Equipo</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="index.html#contacto" class="btn btn-primary" style="background: var(--gradient-primary); color: white; padding: 0.5rem 1.25rem; border-radius: var(--radius-md);">Solicitar diagnóstico</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content" role="main">
+        <!-- Hero de página legal -->
+        <section class="page-hero" aria-labelledby="page-title">
+            <div class="container">
+                <div class="page-hero-content">
+                    <nav class="breadcrumb" aria-label="Breadcrumb">
+                        <a href="index.html">Inicio</a>
+                        <span class="separator">/</span>
+                        <span class="current">Política de Cookies</span>
+                    </nav>
+                    <h1 id="page-title">Política de Cookies</h1>
+                    <p>En SEPREVIN utilizamos cookies y tecnologías similares para mejorar tu experiencia de navegación y optimizar nuestros servicios.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Layout de contenido legal -->
+        <div class="container">
+            <div class="legal-layout">
+                <!-- Tabla de contenidos -->
+                <aside class="toc" aria-label="Tabla de contenidos">
+                    <div class="toc-title">Contenidos</div>
+                    <ul class="toc-list">
+                        <li><a href="#que-son">1. ¿Qué son las cookies?</a></li>
+                        <li><a href="#que-usamos">2. ¿Qué cookies utilizamos?</a></li>
+                        <li><a href="#tabla-cookies">3. Tabla de cookies</a></li>
+                        <li><a href="#cookies-propias">4. Cookies propias</a></li>
+                        <li><a href="#cookies-terceros">5. Cookies de terceros</a></li>
+                        <li><a href="#gestion">6. Gestión de cookies</a></li>
+                        <li><a href="#consentimiento">7. Consentimiento</a></li>
+                        <li><a href="#actualizaciones">8. Actualizaciones</a></li>
+                        <li><a href="#contacto-cookies">9. Contacto</a></li>
+                    </ul>
+                </aside>
+
+                <!-- Contenido principal -->
+                <article class="legal-content">
+                    <div class="last-updated">
+                        Última actualización: 16 de junio de 2026
+                    </div>
+
+                    <!-- Sección 1: Qué son las cookies -->
+                    <section id="que-son">
+                        <h2>1. ¿Qué son las cookies?</h2>
+                        <p>
+                            Las cookies son pequeños archivos de texto que los sitios web almacenan en tu dispositivo 
+                            (computadora, teléfono móvil, tablet) cuando los visitas. Estas cookies permiten que el 
+                            sitio web reconozca tu dispositivo y recuerde información sobre tu visita, como tus 
+                            preferencias de idioma, configuración y otras opciones.
+                        </p>
+                        <p>
+                            Las cookies son ampliamente utilizadas para hacer que los sitios web funcionen de manera 
+                            más eficiente, así como para proporcionar información a los propietarios del sitio sobre 
+                            cómo se utiliza el sitio.
+                        </p>
+                        <div class="info-box">
+                            <p>
+                                <strong>Importante:</strong> Las cookies no pueden ejecutar código ni transmitir virus. 
+                                Son archivos de texto simples que solo pueden ser leídos por el servidor que los creó.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Sección 2: Qué cookies utilizamos -->
+                    <section id="que-usamos">
+                        <h2>2. ¿Qué cookies utilizamos?</h2>
+                        <p>
+                            En SEPREVIN utilizamos diferentes tipos de cookies para diversos propósitos. A continuación 
+                            te explicamos las categorías de cookies que empleamos en nuestro sitio web:
+                        </p>
+                        
+                        <h4>2.1. Cookies esenciales (técnicas)</h4>
+                        <p>
+                            Estas cookies son necesarias para el funcionamiento básico del sitio web. Permiten 
+                            navegar por el sitio y utilizar sus funciones básicas. Sin estas cookies, el sitio 
+                            no puede funcionar correctamente.
+                        </p>
+                        <ul>
+                            <li>Recordar tus preferencias de navegación</li>
+                            <li>Mantener la sesión activa durante tu visita</li>
+                            <li>Garantizar la seguridad del sitio</li>
+                        </ul>
+
+                        <h4>2.2. Cookies de rendimiento (analíticas)</h4>
+                        <p>
+                            Estas cookies recopilan información sobre cómo los visitantes utilizan el sitio web, 
+                            como las páginas más visitadas, el tiempo de permanencia y los errores que puedan 
+                            ocurrir. Esta información nos ayuda a mejorar el funcionamiento del sitio.
+                        </p>
+
+                        <h4>2.3. Cookies de funcionalidad</h4>
+                        <p>
+                            Estas cookies permiten que el sitio web recuerde las elecciones que realizas (como 
+                            tu nombre de usuario, idioma o región) y proporcionan funciones mejoradas y más 
+                            personalizadas.
+                        </p>
+
+                        <div class="warning-box">
+                            <p>
+                                <strong>Nota:</strong> Actualmente SEPREVIN utiliza principalmente cookies esenciales 
+                                para el funcionamiento del sitio. No utilizamos cookies de seguimiento publicitario 
+                                ni cookies de redes sociales.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Sección 3: Tabla de cookies -->
+                    <section id="tabla-cookies">
+                        <h2>3. Tabla de cookies detallada</h2>
+                        <p>
+                            A continuación presentamos un detalle de las cookies que utilizamos en nuestro sitio web:
+                        </p>
+                        
+                        <table class="cookies-table">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Tipo</th>
+                                    <th>Duración</th>
+                                    <th>Propósito</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>session_id</strong></td>
+                                    <td><span class="cookie-type essential">Esencial</span></td>
+                                    <td>Sesión</td>
+                                    <td>Mantiene la sesión del usuario durante la navegación</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>cookie_consent</strong></td>
+                                    <td><span class="cookie-type essential">Esencial</span></td>
+                                    <td>1 año</td>
+                                    <td>Recuerda las preferencias de cookies del usuario</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>language</strong></td>
+                                    <td><span class="cookie-type functional">Funcional</span></td>
+                                    <td>1 año</td>
+                                    <td>Recuerda el idioma preferido del usuario</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+
+                    <!-- Sección 4: Cookies propias -->
+                    <section id="cookies-propias">
+                        <h2>4. Cookies propias</h2>
+                        <p>
+                            Las cookies propias son aquellas que son enviadas a tu dispositivo desde un equipo o 
+                            dominio gestionado por SEPREVIN y desde el cual se presta el servicio que solicitas.
+                        </p>
+                        <p>
+                            Actualmente, SEPREVIN utiliza cookies propias mínimas, principalmente para:
+                        </p>
+                        <ul>
+                            <li>Garantizar el funcionamiento técnico del sitio</li>
+                            <li>Recordar tus preferencias de navegación</li>
+                            <li>Mejorar la experiencia de usuario</li>
+                        </ul>
+                        <div class="info-box">
+                            <p>
+                                <strong>Transparencia:</strong> Nos comprometemos a utilizar solo las cookies 
+                                estrictamente necesarias para el funcionamiento del sitio. No vendemos ni 
+                                compartimos datos de cookies con terceros para fines publicitarios.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Sección 5: Cookies de terceros -->
+                    <section id="cookies-terceros">
+                        <h2>5. Cookies de terceros</h2>
+                        <p>
+                            Las cookies de terceros son aquellas que son enviadas a tu dispositivo desde un equipo 
+                            o dominio que no es gestionado por SEPREVIN, sino por otra entidad que trata los datos 
+                            obtenidos a través de las cookies.
+                        </p>
+                        <p>
+                            En nuestro sitio web, los servicios de terceros que pueden establecer cookies incluyen:
+                        </p>
+                        
+                        <h4>5.1. Google Fonts</h4>
+                        <p>
+                            Utilizamos Google Fonts para cargar las tipografías Inter y Space Grotesk. Google puede 
+                            establecer cookies técnicas para optimizar la carga de fuentes.
+                        </p>
+                        <ul>
+                            <li><strong>Proveedor:</strong> Google LLC</li>
+                            <li><strong>Política de privacidad:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">policies.google.com/privacy</a></li>
+                            <li><strong>Tipo de cookies:</strong> Técnicas</li>
+                        </ul>
+
+                        <h4>5.2. Formspree</h4>
+                        <p>
+                            Utilizamos Formspree para el procesamiento seguro de formularios de contacto. Formspree 
+                            puede establecer cookies técnicas para prevenir spam y garantizar la seguridad.
+                        </p>
+                        <ul>
+                            <li><strong>Proveedor:</strong> Formspree</li>
+                            <li><strong>Política de privacidad:</strong> <a href="https://formspree.io/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">formspree.io/legal/privacy-policy</a></li>
+                            <li><strong>Tipo de cookies:</strong> Técnicas y de seguridad</li>
+                        </ul>
+
+                        <h4>5.3. WhatsApp</h4>
+                        <p>
+                            Los enlaces a WhatsApp pueden establecer cookies técnicas de WhatsApp/Meta cuando haces 
+                            clic en ellos para iniciar una conversación.
+                        </p>
+                        <ul>
+                            <li><strong>Proveedor:</strong> Meta Platforms, Inc.</li>
+                            <li><strong>Política de privacidad:</strong> <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">whatsapp.com/legal/privacy-policy</a></li>
+                            <li><strong>Tipo de cookies:</strong> Técnicas</li>
+                        </ul>
+
+                        <div class="warning-box">
+                            <p>
+                                <strong>Importante:</strong> SEPREVIN no tiene control sobre las cookies establecidas 
+                                por estos terceros. Te recomendamos revisar las políticas de privacidad de cada 
+                                proveedor para obtener más información sobre su uso de cookies.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Sección 6: Gestión de cookies -->
+                    <section id="gestion">
+                        <h2>6. Gestión de cookies</h2>
+                        <p>
+                            Tienes el derecho de decidir si aceptas o rechazas las cookies. Puedes configurar tu 
+                            navegador para rechazar cookies o eliminarlas. Sin embargo, si decides desactivar las 
+                            cookies, algunas funciones del sitio pueden no estar disponibles o funcionar correctamente.
+                        </p>
+                        
+                        <h4>6.1. Configuración en navegadores populares</h4>
+                        <ul>
+                            <li><strong>Google Chrome:</strong> Configuración → Privacidad y seguridad → Cookies y otros datos de sitios</li>
+                            <li><strong>Mozilla Firefox:</strong> Opciones → Privacidad y Seguridad → Cookies y datos del sitio</li>
+                            <li><strong>Safari:</strong> Preferencias → Privacidad → Cookies y datos de sitios web</li>
+                            <li><strong>Microsoft Edge:</strong> Configuración → Cookies y permisos del sitio</li>
+                        </ul>
+
+                        <h4>6.2. Eliminación de cookies</h4>
+                        <p>
+                            Puedes eliminar las cookies existentes en cualquier momento a través de la configuración 
+                            de tu navegador. Consulta la ayuda de tu navegador para obtener instrucciones detalladas 
+                            sobre cómo eliminar cookies.
+                        </p>
+
+                        <div class="info-box">
+                            <p>
+                                <strong>Recomendación:</strong> Si deseas mantener la funcionalidad completa de nuestro 
+                                sitio, te recomendamos mantener habilitadas al menos las cookies esenciales.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Sección 7: Consentimiento -->
+                    <section id="consentimiento">
+                        <h2>7. Consentimiento</h2>
+                        <p>
+                            Al continuar navegando en nuestro sitio web, consientes el uso de las cookies descritas 
+                            en esta política. Sin embargo, respetamos tu derecho a gestionar tus preferencias de 
+                            cookies en cualquier momento.
+                        </p>
+                        <p>
+                            Puedes modificar tus preferencias de cookies en cualquier momento a través de la 
+                            configuración de tu navegador, tal como se describe en la sección anterior.
+                        </p>
+                        <div class="info-box">
+                            <p>
+                                <strong>Base legal:</strong> El tratamiento de datos a través de cookies se basa en 
+                                tu consentimiento (artículo 6.1.a del RGPD) y en el interés legítimo de SEPREVIN 
+                                para garantizar el funcionamiento técnico del sitio.
+                            </p>
+                        </div>
+                    </section>
+
+                    <!-- Sección 8: Actualizaciones -->
+                    <section id="actualizaciones">
+                        <h2>8. Actualizaciones de la política</h2>
+                        <p>
+                            SEPREVIN se reserva el derecho de modificar esta Política de Cookies en cualquier momento 
+                            para adaptarla a novedades legislativas, jurisprudenciales o técnicas, así como a 
+                            prácticas de la industria.
+                        </p>
+                        <p>
+                            Cualquier cambio en esta política se publicará en esta misma página con la fecha de 
+                            "Última actualización" correspondiente. Te recomendamos revisar periódicamente esta 
+                            política para estar informado sobre cómo protegemos tu información.
+                        </p>
+                        <p>
+                            El uso continuado del sitio web después de la publicación de cambios constituirá la 
+                            aceptación de dichos cambios.
+                        </p>
+                    </section>
+
+                    <!-- Sección 9: Contacto -->
+                    <section id="contacto-cookies">
+                        <h2>9. Contacto</h2>
+                        <p>
+                            Si tienes preguntas, comentarios o inquietudes sobre esta Política de Cookies o sobre 
+                            el uso de cookies en nuestro sitio web, puedes contactarnos a través de:
+                        </p>
+                        <div class="contact-card">
+                            <h4>Información de contacto</h4>
+                            <div class="contact-item">
+                                <strong>Correo electrónico:</strong>
+                                <a href="mailto:leonardo.ruiz@gmail.com">leonardo.ruiz@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <strong>WhatsApp:</strong>
+                                <a href="https://wa.me/56954025756">+56 9 5402 5756</a>
+                            </div>
+                            <div class="contact-item">
+                                <strong>Teléfono:</strong>
+                                <a href="https://wa.me/56984309798">+56 9 8430 9798</a>
+                            </div>
+                            <div class="contact-item">
+                                <strong>Ubicación:</strong>
+                                <span>Santiago, Chile</span>
+                            </div>
+                        </div>
+                        <p>
+                            Nos comprometemos a responder a tus consultas en un plazo máximo de 15 días hábiles.
+                        </p>
+                    </section>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/56954025756?text=Hola%20SEPREVIN,%20tengo%20una%20consulta%20sobre%20cookies" 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Chatear por WhatsApp">
+        <span style="font-size: 1.75rem;" aria-hidden="true">💬</span>
+        <span class="whatsapp-tooltip">¿Tienes dudas? Escríbenos</span>
+    </a>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="logo_blanco.jpeg" alt="SEPREVIN" onerror="this.style.display='none'">
+                    <p>
+                        Consultora técnica integral en gestión de riesgos, prevención, seguridad, 
+                        salud ocupacional y gestión ambiental. Respaldo técnico de excelencia para 
+                        que tu operación cumpla con los más altos estándares normativos.
+                    </p>
+                </div>
+                
+                <nav aria-label="Navegación principal">
+                    <h4 class="footer-title">Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#servicios">Servicios</a></li>
+                        <li><a href="index.html#propuesta">Propuesta de valor</a></li>
+                        <li><a href="index.html#proceso">Cómo trabajamos</a></li>
+                        <li><a href="index.html#equipo">Equipo</a></li>
+                        <li><a href="index.html#faq">Preguntas frecuentes</a></li>
+                    </ul>
+                </nav>
+                
+                <nav aria-label="Navegación legal">
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacidad.html">Política de privacidad</a></li>
+                        <li><a href="terminos.html">Términos de servicio</a></li>
+                        <li><a href="cookies.html">Política de cookies</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 SEPREVIN. Todos los derechos reservados. Santiago, Chile.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Menú móvil
+        function toggleMenu() {
+            const navMenu = document.getElementById('nav-menu');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            const isExpanded = menuBtn.getAttribute('aria-expanded') === 'true';
+            
+            navMenu.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+            menuBtn.setAttribute('aria-expanded', !isExpanded);
+        }
+        
+        // Cerrar menú al hacer click en un enlace
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                const navMenu = document.getElementById('nav-menu');
+                const menuBtn = document.querySelector('.mobile-menu-btn');
+                navMenu.classList.remove('active');
+                menuBtn.classList.remove('active');
+                menuBtn.setAttribute('aria-expanded', 'false');
+            });
+        });
+        
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // TOC activo según scroll
+        const tocLinks = document.querySelectorAll('.toc-list a');
+        const sections = document.querySelectorAll('.legal-content section');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (window.scrollY >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            tocLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

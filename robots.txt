@@ -1,3 +1,43 @@
+# robots.txt para SEPREVIN
+# https://seprevin.cl/robots.txt
+
+# User-agent general para todos los bots
 User-agent: *
+
+# Permitir acceso a todo el sitio
 Allow: /
-Sitemap: https://www.seprevin.cl/sitemap.xml
+
+# No indexar páginas administrativas o de confirmación
+Disallow: /gracias.html
+Disallow: /*.json$
+Disallow: /*.txt$
+
+# No rastrear parámetros de búsqueda
+Disallow: /*?*
+
+# Sitemap
+Sitemap: https://seprevin.cl/sitemap.xml
+
+# Configuración de rate limiting (opcional)
+Crawl-delay: 1
+
+# Googlebot específico (opcional - más permisivo)
+User-agent: Googlebot
+Allow: /
+Disallow: /gracias.html
+Disallow: /*.json$
+
+# Bingbot específico
+User-agent: Bingbot
+Allow: /
+Disallow: /gracias.html
+
+# Bloquear bots maliciosos comunes (opcional)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Host preferido (para evitar contenido duplicado www vs non-www)
+# Nota: Esto se configura mejor en Google Search Console

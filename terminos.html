@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es-CL" dir="ltr">
+<head>
+    <!-- ============================================
+         METADATOS ESENCIALES
+         ============================================ -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Política de Privacidad de SEPREVIN. Conozca cómo recopilamos, usamos y protegemos sus datos personales.">
+    <meta name="robots" content="noindex, follow"> <!-- No indexar en buscadores, pero seguir links -->
+    <link rel="canonical" href="https://seprevin.cl/privacidad.html">
+    
+    <!-- SEO y Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seprevin.cl/privacidad.html">
+    <meta property="og:title" content="Política de Privacidad | SEPREVIN">
+    <meta property="og:description" content="Información sobre el tratamiento de datos personales en SEPREVIN.">
+    <meta property="og:site_name" content="SEPREVIN">
+    
+    <!-- Seguridad HTTP Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" 
+          content="default-src 'self'; 
+                   script-src 'self' 'unsafe-inline'; 
+                   style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
+                   font-src 'self' https://fonts.gstatic.com data:; 
+                   img-src 'self' data: https: blob:; 
+                   frame-ancestors 'none'; 
+                   base-uri 'self'; 
+                   upgrade-insecure-requests;">
+    
+    <!-- Tema -->
+    <meta name="theme-color" content="#012D90">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <title>Política de Privacidad | SEPREVIN</title>
+    
+    <style>
+        /* ============================================
+           VARIABLES Y ESTILOS BASE (Consistencia con index.html)
+           ============================================ */
+        :root {
+            --primary: #012D90;
+            --primary-dark: #001a5c;
+            --primary-light: #0047AB;
+            --bg: #FEFEFE;
+            --bg-alt: #F8FAFC;
+            --surface: #FFFFFF;
+            --text: #0F172A;
+            --text-muted: #475569;
+            --border: #E2E8F0;
+            --whatsapp: #25D366;
+            --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            --radius-md: 0.75rem;
+            --radius-lg: 1rem;
+            --radius-full: 9999px;
+            --header-height: clamp(70px, 10vw, 90px);
+            --container-padding: clamp(1rem, 5vw, 3rem);
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            --font-display: 'Space Grotesk', 'Inter', sans-serif;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+            scroll-padding-top: var(--header-height);
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 var(--container-padding);
+        }
+
+        /* ============================================
+           HEADER
+           ============================================ */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1020;
+            background: rgba(254, 254, 254, 0.95);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+            transition: all 0.3s;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: var(--header-height);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            gap: 0.5rem;
+        }
+
+        .logo img {
+            height: clamp(40px, 6vw, 55px);
+            width: auto;
+        }
+
+        .logo-text {
+            font-family: var(--font-display);
+            font-size: clamp(1.25rem, 2vw, 1.5rem);
+            font-weight: 800;
+            color: var(--primary);
+            letter-spacing: -0.5px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: clamp(1rem, 2vw, 2rem);
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            font-size: clamp(0.875rem, 1vw, 0.95rem);
+            padding: 0.5rem 0.75rem;
+            border-radius: var(--radius-md);
+            transition: all 0.15s;
+        }
+
+        .nav-menu a:hover { color: var(--primary); }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            transition: all 0.3s;
+            min-height: 48px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #012D90 0%, #0047AB 100%);
+            color: white;
+            box-shadow: 0 10px 40px -10px rgba(1, 45, 144, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px -10px rgba(1, 45, 144, 0.5);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .mobile-menu-btn span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background: var(--primary);
+            margin: 5px 0;
+        }
+
+        /* ============================================
+           CONTENIDO LEGAL
+           ============================================ */
+        .legal-hero {
+            background: var(--bg-alt);
+            padding: calc(var(--header-height) + var(--space-xl, 2rem)) 0 var(--space-xl, 2rem);
+            text-align: center;
+        }
+
+        .legal-hero h1 {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .legal-hero p {
+            color: var(--text-muted);
+            font-size: 1.125rem;
+        }
+
+        .legal-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: var(--space-xl, 2rem) var(--container-padding);
+        }
+
+        .legal-content h2 {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .legal-content h3 {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            color: var(--text);
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .legal-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+            color: var(--text-muted);
+        }
+
+        .legal-content ul {
+            margin-bottom: 1.5rem;
+            padding-left: 1.5rem;
+            color: var(--text-muted);
+        }
+
+        .legal-content li {
+            margin-bottom: 0.5rem;
+            line-height: 1.6;
+        }
+
+        .legal-content strong {
+            color: var(--text);
+        }
+
+        .legal-content a {
+            color: var(--primary);
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            transition: color 0.2s;
+        }
+
+        .legal-content a:hover {
+            color: var(--primary-light);
+        }
+
+        .last-updated {
+            background: var(--bg-alt);
+            padding: 1rem;
+            border-radius: var(--radius-md);
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            text-align: center;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border);
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        footer {
+            background: linear-gradient(135deg, #012D90 0%, #000d33 100%);
+            color: white;
+            padding: var(--space-xl, 2rem) 0;
+            margin-top: var(--space-2xl, 3rem);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: var(--space-lg, 1.5rem);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.875rem;
+        }
+
+        .footer-links {
+            list-style: none;
+            text-align: center;
+            margin-bottom: var(--space-md, 1rem);
+        }
+
+        .footer-links li {
+            display: inline-block;
+            margin: 0 1rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover { color: white; }
+
+        /* ============================================
+           RESPONSIVE
+           ============================================ */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+                position: fixed;
+                top: var(--header-height);
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: white;
+                flex-direction: column;
+                padding: 2rem;
+                gap: 1rem;
+                box-shadow: var(--shadow-lg);
+            }
+            .nav-menu.active { display: flex; }
+            .mobile-menu-btn { display: block; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================
+         HEADER
+         ============================================ -->
+    <header role="banner" id="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="SEPREVIN - Inicio">
+                <img src="logo_azul.jpeg" alt="SEPREVIN" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                <span class="logo-text" style="display:none">SEPREVIN</span>
+            </a>
+            
+            <button class="mobile-menu-btn" aria-label="Menú" onclick="document.querySelector('.nav-menu').classList.toggle('active')">
+                <span></span><span></span><span></span>
+            </button>
+            
+            <nav role="navigation" aria-label="Navegación principal">
+                <ul class="nav-menu">
+                    <li><a href="index.html#servicios">Servicios</a></li>
+                    <li><a href="index.html#propuesta">Propuesta</a></li>
+                    <li><a href="index.html#proceso">Cómo trabajamos</a></li>
+                    <li><a href="index.html#equipo">Equipo</a></li>
+                    <li><a href="index.html#contacto" class="btn btn-primary">Solicitar diagnóstico</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- ============================================
+             HERO
+             ============================================ -->
+        <section class="legal-hero">
+            <div class="container">
+                <h1>Política de Privacidad</h1>
+                <p>Compromiso con la protección de sus datos personales</p>
+            </div>
+        </section>
+
+        <!-- ============================================
+             CONTENIDO LEGAL
+             ============================================ -->
+        <article class="legal-content">
+            <div class="last-updated">
+                Última actualización: <time datetime="2026-06-16">16 de junio de 2026</time>
+            </div>
+
+            <p>En <strong>SEPREVIN</strong> ("nosotros", "nuestro" o "la Empresa"), nos comprometemos a proteger su privacidad y a tratar sus datos personales con el máximo cuidado y transparencia. Esta Política de Privacidad describe cómo recopilamos, usamos, compartimos y protegemos la información que usted nos proporciona a través de nuestro sitio web <a href="https://seprevin.cl">https://seprevin.cl</a>.</p>
+
+            <p>Al utilizar nuestros servicios o interactuar con nuestro sitio web, usted acepta las prácticas descritas en esta política.</p>
+
+            <h2>1. Responsable del Tratamiento</h2>
+            <p>El responsable del tratamiento de sus datos personales es:</p>
+            <ul>
+                <li><strong>Razón Social:</strong> SEPREVIN</li>
+                <li><strong>Dirección:</strong> Santiago, Región Metropolitana, Chile</li>
+                <li><strong>Email de contacto:</strong> <a href="mailto:leonardo.ruiz@gmail.com">leonardo.ruiz@gmail.com</a></li>
+                <li><strong>Teléfono:</strong> +56 9 5402 5756</li>
+            </ul>
+
+            <h2>2. Datos Personales que Recopilamos</h2>
+            <p>Recopilamos información que usted nos proporciona voluntariamente al utilizar nuestros formularios de contacto o al interactuar con nosotros. Estos datos pueden incluir:</p>
+            <ul>
+                <li><strong>Información de identificación:</strong> Nombre completo, nombre de la empresa/organización.</li>
+                <li><strong>Información de contacto:</strong> Correo electrónico, número de teléfono o WhatsApp.</li>
+                <li><strong>Información técnica:</strong> Dirección IP, tipo de navegador, sistema operativo (recopilados automáticamente para fines de seguridad y análisis de tráfico).</li>
+            </ul>
+
+            <h2>3. Finalidad del Tratamiento</h2>
+            <p>Utilizamos sus datos personales para las siguientes finalidades:</p>
+            <ul>
+                <li>Gestionar y responder a sus consultas, solicitudes de cotización o diagnósticos.</li>
+                <li>Prestar los servicios de consultoría técnica contratados.</li>
+                <li>Mantener comunicación comercial relacionada con nuestros servicios.</li>
+                <li>Cumplir con obligaciones legales y regulatorias aplicables.</li>
+                <li>Mejorar la experiencia de usuario en nuestro sitio web.</li>
+            </ul>
+
+            <h2>4. Base Legal para el Tratamiento</h2>
+            <p>Tratamos sus datos basándonos en:</p>
+            <ul>
+                <li><strong>Consentimiento:</strong> Al completar nuestro formulario de contacto y enviarlo, usted consiente el tratamiento de sus datos para los fines descritos.</li>
+                <li><strong>Ejecución de un contrato:</strong> Cuando contratamos servicios con usted, necesitamos sus datos para la ejecución del mismo.</li>
+                <li><strong>Interés legítimo:</strong> Para la seguridad de nuestra red y la prevención de fraudes.</li>
+            </ul>
+
+            <h2>5. Conservación de los Datos</h2>
+            <p>Conservaremos sus datos personales únicamente durante el tiempo necesario para cumplir con las finalidades para las que fueron recopilados, incluyendo el cumplimiento de obligaciones legales, contables o de reporte.</p>
+
+            <h2>6. Compartición de Datos con Terceros</h2>
+            <p>No vendemos, comercializamos ni transferimos sus datos personales a terceros para fines de marketing. Sin embargo, podemos compartir información con:</p>
+            <ul>
+                <li><strong>Proveedores de servicios:</strong> Terceros que nos ayudan a operar nuestro sitio web, procesar pagos o enviar comunicaciones (ej. Formspree para el formulario, Vercel para el hosting). Estos proveedores están obligados a proteger su información.</li>
+                <li><strong>Autoridades legales:</strong> Cuando sea requerido por ley o para proteger nuestros derechos legales.</li>
+            </ul>
+
+            <h2>7. Seguridad de los Datos</h2>
+            <p>Implementamos medidas de seguridad técnicas y organizativas para proteger sus datos contra acceso no autorizado, alteración, divulgación o destrucción. Nuestro sitio web utiliza cifrado SSL/TLS y políticas de seguridad estrictas (CSP, HSTS).</p>
+
+            <h2>8. Sus Derechos</h2>
+            <p>De acuerdo con la legislación vigente, usted tiene derecho a:</p>
+            <ul>
+                <li><strong>Acceder:</strong> Solicitar información sobre los datos personales que tenemos sobre usted.</li>
+                <li><strong>Rectificar:</strong> Solicitar la corrección de datos inexactos o incompletos.</li>
+                <li><strong>Cancelar:</strong> Solicitar la eliminación de sus datos personales cuando ya no sean necesarios.</li>
+                <li><strong>Oponerse:</strong> Oponerse al tratamiento de sus datos para fines de marketing directo.</li>
+                <li><strong>Portabilidad:</strong> Recibir sus datos en un formato estructurado y de uso común.</li>
+            </ul>
+            <p>Para ejercer estos derechos, por favor contáctenos a través de <a href="mailto:leonardo.ruiz@gmail.com">leonardo.ruiz@gmail.com</a>.</p>
+
+            <h2>9. Cookies</h2>
+            <p>Nuestro sitio web utiliza cookies técnicas esenciales para su funcionamiento. No utilizamos cookies de rastreo publicitario sin su consentimiento previo. Para más información, consulte nuestra <a href="cookies.html">Política de Cookies</a>.</p>
+
+            <h2>10. Enlaces a Sitios de Terceros</h2>
+            <p>Nuestro sitio web puede contener enlaces a sitios web de terceros (ej. LinkedIn, WhatsApp). No somos responsables de las prácticas de privacidad de dichos sitios. Le recomendamos leer las políticas de privacidad de estos sitios externos.</p>
+
+            <h2>11. Cambios en esta Política</h2>
+            <p>Nos reservamos el derecho de actualizar esta Política de Privacidad en cualquier momento. Le notificaremos sobre cambios significativos publicando la nueva política en esta página y actualizando la fecha de "Última actualización".</p>
+
+            <h2>12. Contacto</h2>
+            <p>Si tiene preguntas o inquietudes sobre esta Política de Privacidad o sobre el tratamiento de sus datos, no dude en contactarnos:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:leonardo.ruiz@gmail.com">leonardo.ruiz@gmail.com</a></li>
+                <li><strong>Teléfono:</strong> +56 9 5402 5756</li>
+            </ul>
+        </article>
+    </main>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer role="contentinfo">
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="terminos.html">Términos de servicio</a></li>
+                <li><a href="cookies.html">Cookies</a></li>
+            </ul>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SEPREVIN. Todos los derechos reservados. Santiago, Chile.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menú móvil simple
+        function toggleMenu() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
