@@ -1,19 +1,122 @@
 {
-  "name": "SEPREVIN",
+  "name": "SEPREVIN | Seguridad, Salud Ocupacional y Gestión Ambiental Integral",
   "short_name": "SEPREVIN",
+  "description": "Consultora técnica integral en gestión de riesgos, prevención, seguridad, salud ocupacional y gestión ambiental. Más de 20 años de experiencia en Chile.",
+  
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#FEFEFE",
+  "theme_color": "#012D90",
+  
+  "lang": "es-CL",
+  "dir": "ltr",
+  
+  "categories": ["business", "productivity", "education"],
+  
   "icons": [
+    {
+      "src": "favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
     {
       "src": "android-chrome-192x192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
       "src": "android-chrome-512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "apple touch icon"
     }
   ],
-  "theme_color": "#012D90",
-  "background_color": "#FEFEFE",
-  "display": "standalone"
+  
+  "screenshots": [
+    {
+      "src": "screenshot-mobile.png",
+      "sizes": "540x720",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "SEPREVIN - Vista móvil"
+    },
+    {
+      "src": "screenshot-desktop.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "SEPREVIN - Vista escritorio"
+    }
+  ],
+  
+  "shortcuts": [
+    {
+      "name": "Solicitar diagnóstico",
+      "short_name": "Diagnóstico",
+      "description": "Solicita un diagnóstico integral sin costo",
+      "url": "/index.html#contacto",
+      "icons": [
+        {
+          "src": "favicon-32x32.png",
+          "sizes": "32x32"
+        }
+      ]
+    },
+    {
+      "name": "WhatsApp",
+      "short_name": "WhatsApp",
+      "description": "Escríbenos por WhatsApp",
+      "url": "https://wa.me/56954025756",
+      "icons": [
+        {
+          "src": "favicon-32x32.png",
+          "sizes": "32x32"
+        }
+      ]
+    },
+    {
+      "name": "Servicios",
+      "short_name": "Servicios",
+      "description": "Ver nuestros servicios",
+      "url": "/index.html#servicios",
+      "icons": [
+        {
+          "src": "favicon-32x32.png",
+          "sizes": "32x32"
+        }
+      ]
+    }
+  ],
+  
+  "related_applications": [],
+  "prefer_related_applications": false,
+  
+  "iarc_rating_id": "",
+  
+  "share_target": {
+    "action": "/compartir",
+    "method": "GET",
+    "enctype": "application/x-www-form-urlencoded",
+    "params": {
+      "title": "titulo",
+      "text": "texto",
+      "url": "url"
+    }
+  }
 }

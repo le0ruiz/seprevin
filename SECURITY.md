@@ -1,21 +1,24 @@
-# Security Policy
+# Política de Seguridad
 
-## Supported Versions
+## 📋 Versión
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+**Última actualización**: Junio 2026
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+## 🔒 Descripción
 
-## Reporting a Vulnerability
+Este documento describe las medidas de seguridad implementadas en el sitio web de SEPREVIN para proteger la información de los usuarios y mantener la integridad del sitio.
 
-Use this section to tell people how to report a vulnerability.
+## 🛡️ Medidas de Seguridad Implementadas
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+### Headers HTTP de Seguridad
+
+| Header | Valor | Propósito |
+|--------|-------|-----------|
+| `X-Content-Type-Options` | `nosniff` | Previene MIME sniffing |
+| `X-Frame-Options` | `DENY` | Previene clickjacking |
+| `X-XSS-Protection` | `1; mode=block` | Protección contra XSS |
+| `Referrer-Policy` | `strict-origin-when-cross-origin` | Control de información del referer |
+| `Permissions-Policy` | Restringido | Limita acceso a APIs sensibles |
+| `Strict-Transport-Security` | `max-age=31536000` | Fuerza HTTPS |
+
+### Content Security Policy (CSP)
