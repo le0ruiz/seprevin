@@ -1,70 +1,159 @@
 <!DOCTYPE html>
 <html lang="es-CL" dir="ltr">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZD3EGCHJ3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LZD3EGCHJ3');
+    </script>
+    
     <!-- ============================================
          METADATOS ESENCIALES
          ============================================ -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="SEPREVIN - Seguridad y Salud Ocupacional: Diseño e implementación de sistemas de seguridad, matrices de riesgos, planes de emergencia y capacitación. Cumplimiento DS 44, DS 594 y Ley 16.744.">
-    <meta name="keywords" content="seguridad ocupacional, salud laboral, matrices de riesgo, DS 44, DS 594, Ley 16.744, planes de emergencia, capacitación, EPP, prevención de riesgos, SEPREVIN, Chile">
-    <meta name="author" content="SEPREVIN">
-    <meta name="robots" content="index, follow">
     
-    <!-- ============================================
-         SEGURIDAD
-         ============================================ -->
+    <!-- SEO Primario -->
+    <title>SEPREVIN | Seguridad y Salud Ocupacional</title>
+    <meta name="description" content="Diseño e implementación de sistemas integrales de seguridad y salud ocupacional, matrices de riesgos, planes de emergencia y programas de capacitación. Cumplimiento DS 44, DS 594 y Ley 16.744.">
+    <meta name="keywords" content="seguridad ocupacional, salud laboral, prevención de riesgos, DS 44, DS 594, Ley 16.744, SGSST, matriz de riesgos, planes de emergencia, EPP, SEPREVIN, Chile">
+    <meta name="author" content="SEPREVIN">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://seprevin.cl/seguridad-salud-ocupacional.html">
+    
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="puL0XaQAuyK7Tl33-eYJeZk2u1gHNrTtRlHpkpVcNiM" />
+    
+    <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seprevin.cl/seguridad-salud-ocupacional.html">
+    <meta property="og:title" content="SEPREVIN | Seguridad y Salud Ocupacional">
+    <meta property="og:description" content="Sistemas integrales de seguridad y salud ocupacional, matrices de riesgos, planes de emergencia y capacitación. Cumplimiento DS 44, DS 594 y Ley 16.744.">
+    <meta property="og:image" content="https://seprevin.cl/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="SEPREVIN - Seguridad y Salud Ocupacional en Chile">
+    <meta property="og:site_name" content="SEPREVIN">
+    <meta property="og:locale" content="es_CL">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://seprevin.cl/seguridad-salud-ocupacional.html">
+    <meta name="twitter:title" content="SEPREVIN | Seguridad y Salud Ocupacional">
+    <meta name="twitter:description" content="Sistemas integrales de seguridad y salud ocupacional con más de 20 años de experiencia en Chile.">
+    <meta name="twitter:image" content="https://seprevin.cl/og-image.jpg">
+    
+    <!-- Seguridad HTTP Headers -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     
+    <!-- Content Security Policy - CORREGIDO PARA GOOGLE ANALYTICS -->
     <meta http-equiv="Content-Security-Policy" 
           content="default-src 'self'; 
-                   script-src 'self' 'unsafe-inline'; 
+                   script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; 
                    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
                    font-src 'self' https://fonts.gstatic.com data:; 
                    img-src 'self' data: https: blob: https://images.unsplash.com; 
-                   connect-src 'self' https://api.whatsapp.com https://formspree.io; 
+                   connect-src 'self' https://api.whatsapp.com https://formspree.io https://www.google-analytics.com; 
                    frame-ancestors 'none'; 
                    base-uri 'self'; 
                    form-action 'self' https://formspree.io; 
-                   upgrade-insecure-requests;">
+                   upgrade-insecure-requests; 
+                   block-all-mixed-content;">
     
+    <!-- Permissions Policy -->
     <meta http-equiv="Permissions-Policy" 
-          content="geolocation=(), microphone=(), camera=(), payment=(), usb=()">
+          content="geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()">
     
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.seprevin.cl/seguridad-salud-ocupacional.html">
-    <meta property="og:title" content="SEPREVIN | Seguridad y Salud Ocupacional">
-    <meta property="og:description" content="Diseño e implementación de sistemas integrales de seguridad y salud ocupacional. Cumplimiento DS 44, DS 594 y Ley 16.744.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200">
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="SEPREVIN | Seguridad y Salud Ocupacional">
-    <meta name="twitter:description" content="Sistemas integrales de seguridad y salud ocupacional para tu empresa en Chile.">
-    
-    <meta name="theme-color" content="#012D90">
+    <!-- Tema y colores -->
+    <meta name="theme-color" content="#012D90" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#001a3d" media="(prefers-color-scheme: dark)">
+    <meta name="color-scheme" content="light dark">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="SEPREVIN">
     
-    <!-- Favicon -->
+    <!-- Favicon y PWA -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
     
-    <!-- Preconnect -->
+    <!-- Preconnect y DNS Prefetch -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://api.whatsapp.com" crossorigin>
+    <link rel="preconnect" href="https://formspree.io" crossorigin>
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://api.whatsapp.com">
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Schema.org -->
+    <!-- Schema.org - Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://seprevin.cl/#organization",
+        "name": "SEPREVIN",
+        "alternateName": "Seguridad y Prevención Integral",
+        "url": "https://seprevin.cl",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://seprevin.cl/logo_azul.jpeg",
+            "width": 512,
+            "height": 512
+        },
+        "description": "Consultora técnica integral en gestión de riesgos, prevención, seguridad, salud ocupacional y gestión ambiental",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Santiago",
+            "addressRegion": "Región Metropolitana",
+            "addressCountry": "CL"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -33.4489,
+            "longitude": -70.6693
+        },
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+56-9-5402-5756",
+                "contactType": "ventas",
+                "availableLanguage": ["Spanish"],
+                "areaServed": "CL"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+56-9-8430-9798",
+                "contactType": "soporte técnico",
+                "availableLanguage": ["Spanish"],
+                "areaServed": "CL"
+            }
+        ],
+        "sameAs": [],
+        "foundingDate": "2006",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Chile"
+        }
+    }
+    </script>
+    
+    <!-- Schema.org - Service -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -73,23 +162,72 @@
         "provider": {
             "@type": "Organization",
             "name": "SEPREVIN",
-            "url": "https://www.seprevin.cl"
+            "url": "https://seprevin.cl"
         },
-        "description": "Diseño e implementación de sistemas de seguridad y salud ocupacional, matrices de riesgos, planes de emergencia y programas de capacitación. Cumplimiento DS 44, DS 594 y Ley 16.744.",
+        "description": "Diseño e implementación de sistemas integrales de seguridad y salud ocupacional, matrices de riesgos, planes de emergencia y programas de capacitación",
         "areaServed": {
             "@type": "Country",
             "name": "Chile"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicios de Seguridad y Salud Ocupacional",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Sistema de Gestión de SST",
+                        "description": "Diseño e implementación del SGSST según DS 44"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Matriz IPER",
+                        "description": "Identificación de peligros y evaluación de riesgos"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Planes de Emergencia",
+                        "description": "Planes de emergencia y evacuación"
+                    }
+                }
+            ]
         }
     }
     </script>
     
-    <title>SEPREVIN | Seguridad y Salud Ocupacional</title>
+    <!-- Schema.org - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Inicio",
+                "item": "https://seprevin.cl/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Seguridad y Salud Ocupacional",
+                "item": "https://seprevin.cl/seguridad-salud-ocupacional.html"
+            }
+        ]
+    }
+    </script>
     
-    <!-- ============================================
-         CSS COMPLETO
-         ============================================ -->
     <style>
-        /* Variables CSS */
+        /* ============================================
+           VARIABLES Y CONFIGURACIÓN GLOBAL
+           ============================================ */
         :root {
             --primary: #012D90;
             --primary-dark: #001a5c;
@@ -108,23 +246,15 @@
             --whatsapp: #25D366;
             --whatsapp-dark: #128C7E;
             
-            /* Colores de matriz de riesgo */
-            --risk-low: #10B981;
-            --risk-medium: #F59E0B;
-            --risk-high: #F97316;
-            --risk-critical: #EF4444;
-            
             --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1);
             --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
             --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
             --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
             --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
             --shadow-primary: 0 10px 40px -10px rgba(1, 45, 144, 0.4);
-            --shadow-glow: 0 0 60px rgba(1, 45, 144, 0.15);
             
             --gradient-primary: linear-gradient(135deg, #012D90 0%, #0047AB 100%);
             --gradient-hero: linear-gradient(135deg, #012D90 0%, #001a5c 50%, #000d33 100%);
-            --gradient-overlay: linear-gradient(135deg, rgba(1, 45, 144, 0.95) 0%, rgba(0, 26, 92, 0.85) 100%);
             
             --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
             --font-display: 'Space Grotesk', 'Inter', sans-serif;
@@ -380,18 +510,6 @@
             transform: translateY(-3px);
         }
 
-        .btn-whatsapp {
-            background: var(--whatsapp);
-            color: white;
-            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
-        }
-
-        .btn-whatsapp:hover {
-            background: var(--whatsapp-dark);
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
-        }
-
         .btn:focus-visible {
             outline: 3px solid var(--accent);
             outline-offset: 3px;
@@ -526,73 +644,39 @@
             transform: translateY(-7px) rotate(-45deg);
         }
 
-        /* ============================================
-           HERO CON IMAGEN DE FONDO
-           ============================================ */
+        /* Hero Section */
         .hero {
             position: relative;
-            min-height: 90vh;
+            min-height: 100vh;
             display: flex;
             align-items: center;
+            background: var(--gradient-hero);
             overflow: hidden;
             padding: calc(var(--header-height) + var(--space-3xl)) 0 var(--space-3xl);
         }
 
-        .hero-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            z-index: 0;
-        }
-
-        .hero-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: var(--gradient-overlay);
-            z-index: 1;
-        }
-
-        .hero-pattern {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-            z-index: 2;
-        }
-
-        .hero-blob-1 {
+        .hero::before {
+            content: '';
             position: absolute;
             top: -50%;
             right: -20%;
             width: 80vw;
             height: 80vw;
-            background: radial-gradient(circle, rgba(0, 212, 255, 0.2) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(0, 212, 255, 0.15) 0%, transparent 70%);
             border-radius: 50%;
             animation: float-blob 20s ease-in-out infinite;
-            z-index: 2;
         }
 
-        .hero-blob-2 {
+        .hero::after {
+            content: '';
             position: absolute;
             bottom: -30%;
             left: -10%;
             width: 60vw;
             height: 60vw;
-            background: radial-gradient(circle, rgba(1, 45, 144, 0.4) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(1, 45, 144, 0.3) 0%, transparent 70%);
             border-radius: 50%;
             animation: float-blob 25s ease-in-out infinite reverse;
-            z-index: 2;
         }
 
         @keyframes float-blob {
@@ -606,7 +690,7 @@
             grid-template-columns: 1fr;
             gap: var(--space-2xl);
             position: relative;
-            z-index: 3;
+            z-index: 2;
         }
 
         .hero-content { max-width: 1000px; }
@@ -616,9 +700,9 @@
             align-items: center;
             gap: 0.75rem;
             padding: 0.75rem 1.5rem;
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: var(--radius-full);
             color: white;
             font-size: clamp(0.875rem, 1.2vw, 1rem);
@@ -645,7 +729,7 @@
         }
 
         .hero p {
-            color: rgba(255, 255, 255, 0.95);
+            color: rgba(255, 255, 255, 0.9);
             font-size: clamp(1rem, 1.5vw + 0.25rem, 1.25rem);
             margin-bottom: var(--space-xl);
             max-width: 700px;
@@ -660,137 +744,7 @@
             animation: fadeInUp 0.8s ease-out 0.6s both;
         }
 
-        /* Stats en Hero */
-        .hero-stats {
-            margin-top: var(--space-2xl);
-            padding-top: var(--space-xl);
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
-            animation: fadeInUp 0.8s ease-out 0.8s both;
-        }
-
-        .hero-stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-            gap: var(--space-lg);
-        }
-
-        .hero-stat {
-            color: white;
-            padding: var(--space-lg);
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: var(--radius-lg);
-            transition: all var(--transition-base);
-        }
-
-        .hero-stat:hover {
-            background: rgba(255, 255, 255, 0.15);
-            transform: translateY(-5px);
-        }
-
-        .hero-stat-number {
-            font-family: var(--font-display);
-            font-size: clamp(2.5rem, 4vw, 3rem);
-            font-weight: 800;
-            display: block;
-            background: linear-gradient(135deg, #fff 0%, #00D4FF 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 0.25rem;
-        }
-
-        .hero-stat-label {
-            font-size: clamp(0.75rem, 1vw, 0.9rem);
-            color: rgba(255, 255, 255, 0.9);
-            line-height: 1.4;
-        }
-
-        /* ============================================
-           SECCIÓN CON IMAGEN LATERAL
-           ============================================ */
-        .split-section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--space-3xl);
-            align-items: center;
-            margin-top: var(--space-2xl);
-        }
-
-        .split-image {
-            position: relative;
-            border-radius: var(--radius-2xl);
-            overflow: hidden;
-            box-shadow: var(--shadow-2xl);
-            aspect-ratio: 4/3;
-        }
-
-        .split-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .split-image:hover img {
-            transform: scale(1.05);
-        }
-
-        .split-image::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(1, 45, 144, 0.2) 0%, transparent 100%);
-            pointer-events: none;
-        }
-
-        .split-content h2 {
-            margin-bottom: var(--space-lg);
-        }
-
-        .split-content p {
-            font-size: 1.0625rem;
-            margin-bottom: var(--space-lg);
-        }
-
-        .feature-list {
-            list-style: none;
-            padding: 0;
-            margin-top: var(--space-lg);
-        }
-
-        .feature-list li {
-            padding: var(--space-sm) 0;
-            padding-left: var(--space-xl);
-            position: relative;
-            color: var(--text-muted);
-            font-size: 1rem;
-        }
-
-        .feature-list li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            top: var(--space-sm);
-            width: 24px;
-            height: 24px;
-            background: var(--gradient-primary);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.75rem;
-            font-weight: 700;
-        }
-
-        /* ============================================
-           CARDS CON ICONOS SVG
-           ============================================ */
+        /* Cards */
         .card {
             background: var(--surface);
             border-radius: var(--radius-2xl);
@@ -850,19 +804,209 @@
             stroke-linejoin: round;
         }
 
-        /* ============================================
-           GRID DE FEATURES
-           ============================================ */
-        .feature-grid {
+        /* Grids */
+        .intro-grid,
+        .value-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: var(--space-lg);
             margin-top: var(--space-2xl);
         }
 
-        /* ============================================
-           GALERÍA DE IMÁGENES
-           ============================================ */
+        /* Process Timeline */
+        .process-container {
+            position: relative;
+            margin-top: var(--space-2xl);
+        }
+
+        .process-line {
+            position: absolute;
+            top: 40px;
+            left: 10%;
+            right: 10%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+            border-radius: var(--radius-full);
+            z-index: 0;
+            opacity: 0.3;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: var(--space-lg);
+            position: relative;
+            z-index: 1;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: var(--space-lg);
+            background: var(--surface);
+            border-radius: var(--radius-2xl);
+            border: 1px solid var(--border);
+            transition: all var(--transition-base);
+        }
+
+        .process-step:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary);
+        }
+
+        .process-number {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 800;
+            margin: 0 auto var(--space-lg);
+            box-shadow: var(--shadow-primary);
+            position: relative;
+            transition: all var(--transition-bounce);
+        }
+
+        .process-number::after {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border: 2px solid var(--primary);
+            border-radius: 50%;
+            opacity: 0.3;
+        }
+
+        .process-step:hover .process-number {
+            transform: scale(1.15) rotate(10deg);
+        }
+
+        /* Trust Section */
+        .trust-section {
+            background: var(--gradient-hero);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .trust-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 80vw;
+            height: 80vw;
+            background: radial-gradient(circle, rgba(0, 212, 255, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float-blob 20s ease-in-out infinite;
+        }
+
+        .trust-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .trust-section h2 { color: white; }
+        .trust-section .subtitle { color: rgba(255, 255, 255, 0.85); }
+
+        .trust-section .section-label {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .trust-section .section-label::before { background: white; }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-2xl);
+        }
+
+        .trust-item {
+            text-align: center;
+            padding: var(--space-xl);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-xl);
+            transition: all var(--transition-base);
+        }
+
+        .trust-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .trust-number {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 800;
+            display: block;
+            margin-bottom: var(--space-sm);
+            background: linear-gradient(135deg, #fff 0%, #00D4FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .trust-label {
+            font-size: clamp(0.875rem, 1vw, 1rem);
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        /* Normativa Grid */
+        .normativa-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-2xl);
+        }
+
+        .normativa-card {
+            background: var(--surface);
+            border-radius: var(--radius-xl);
+            padding: var(--space-xl);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--primary);
+            transition: all var(--transition-base);
+        }
+
+        .normativa-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .normativa-code {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: var(--space-sm);
+        }
+
+        .normativa-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: var(--space-sm);
+        }
+
+        .normativa-desc {
+            font-size: 0.9375rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* Gallery */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -926,320 +1070,7 @@
             opacity: 1;
         }
 
-        /* ============================================
-           DASHBOARD DE MATRIZ DE RIESGO
-           ============================================ */
-        .dashboard-section {
-            background: var(--bg-alt);
-            padding: var(--space-4xl) 0;
-        }
-
-        .dashboard-container {
-            background: var(--surface);
-            border-radius: var(--radius-2xl);
-            padding: var(--space-2xl);
-            box-shadow: var(--shadow-xl);
-            border: 1px solid var(--border);
-        }
-
-        .dashboard-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: var(--space-xl);
-            flex-wrap: wrap;
-            gap: var(--space-md);
-        }
-
-        .dashboard-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--text);
-        }
-
-        .dashboard-legend {
-            display: flex;
-            gap: var(--space-md);
-            flex-wrap: wrap;
-        }
-
-        .legend-item {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 0.875rem;
-            color: var(--text-muted);
-        }
-
-        .legend-color {
-            width: 16px;
-            height: 16px;
-            border-radius: var(--radius-sm);
-        }
-
-        .legend-color.low { background: var(--risk-low); }
-        .legend-color.medium { background: var(--risk-medium); }
-        .legend-color.high { background: var(--risk-high); }
-        .legend-color.critical { background: var(--risk-critical); }
-
-        /* Matriz de riesgo 5x5 */
-        .risk-matrix {
-            display: grid;
-            grid-template-columns: 80px repeat(5, 1fr);
-            grid-template-rows: repeat(5, 60px) 40px;
-            gap: 4px;
-            margin-bottom: var(--space-xl);
-        }
-
-        .matrix-label {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.75rem;
-            font-weight: 600;
-            color: var(--text-muted);
-            text-align: center;
-        }
-
-        .matrix-label.y-axis {
-            writing-mode: vertical-rl;
-            transform: rotate(180deg);
-        }
-
-        .matrix-cell {
-            border-radius: var(--radius-sm);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.875rem;
-            font-weight: 700;
-            color: white;
-            transition: all var(--transition-base);
-            cursor: pointer;
-            position: relative;
-        }
-
-        .matrix-cell:hover {
-            transform: scale(1.05);
-            box-shadow: var(--shadow-md);
-        }
-
-        .matrix-cell.low { background: var(--risk-low); }
-        .matrix-cell.medium { background: var(--risk-medium); }
-        .matrix-cell.high { background: var(--risk-high); }
-        .matrix-cell.critical { background: var(--risk-critical); }
-
-        .matrix-cell .risk-count {
-            position: absolute;
-            top: 4px;
-            right: 4px;
-            background: rgba(255,255,255,0.3);
-            border-radius: 50%;
-            width: 20px;
-            height: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-        }
-
-        /* Stats del dashboard */
-        .dashboard-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: var(--space-lg);
-            margin-top: var(--space-xl);
-        }
-
-        .stat-card {
-            background: var(--bg-alt);
-            border-radius: var(--radius-lg);
-            padding: var(--space-lg);
-            text-align: center;
-            border: 1px solid var(--border);
-        }
-
-        .stat-value {
-            font-size: 2rem;
-            font-weight: 800;
-            color: var(--primary);
-            margin-bottom: 0.25rem;
-        }
-
-        .stat-label {
-            font-size: 0.875rem;
-            color: var(--text-muted);
-        }
-
-        /* ============================================
-           NORMATIVA CHILENA
-           ============================================ */
-        .normativa-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--space-lg);
-            margin-top: var(--space-2xl);
-        }
-
-        .normativa-card {
-            background: var(--surface);
-            border-radius: var(--radius-xl);
-            padding: var(--space-xl);
-            border: 1px solid var(--border);
-            border-left: 4px solid var(--primary);
-            transition: all var(--transition-base);
-        }
-
-        .normativa-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .normativa-code {
-            font-family: var(--font-display);
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--primary);
-            margin-bottom: var(--space-sm);
-        }
-
-        .normativa-title {
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--text);
-            margin-bottom: var(--space-sm);
-        }
-
-        .normativa-desc {
-            font-size: 0.9375rem;
-            color: var(--text-muted);
-            line-height: 1.6;
-        }
-
-        /* ============================================
-           METODOLOGÍA CON NÚMEROS
-           ============================================ */
-        .methodology-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: var(--space-lg);
-            margin-top: var(--space-2xl);
-        }
-
-        .methodology-card {
-            background: var(--surface);
-            border-radius: var(--radius-2xl);
-            padding: var(--space-xl);
-            border: 1px solid var(--border);
-            transition: all var(--transition-base);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .methodology-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 120px;
-            background: var(--gradient-primary);
-            opacity: 0.05;
-        }
-
-        .methodology-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-2xl);
-            border-color: var(--primary);
-        }
-
-        .methodology-number {
-            width: 70px;
-            height: 70px;
-            background: var(--gradient-primary);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: var(--font-display);
-            font-size: 1.75rem;
-            font-weight: 800;
-            margin-bottom: var(--space-lg);
-            box-shadow: var(--shadow-primary);
-            position: relative;
-            z-index: 1;
-            transition: all var(--transition-bounce);
-        }
-
-        .methodology-card:hover .methodology-number {
-            transform: scale(1.1) rotate(-5deg);
-        }
-
-        .methodology-card h3 {
-            position: relative;
-            z-index: 1;
-        }
-
-        .methodology-card p {
-            position: relative;
-            z-index: 1;
-        }
-
-        /* ============================================
-           CTA SECTION
-           ============================================ */
-        .cta-section {
-            position: relative;
-            padding: var(--space-4xl) 0;
-            overflow: hidden;
-        }
-
-        .cta-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1920&q=80');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
-
-        .cta-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: var(--gradient-overlay);
-        }
-
-        .cta-content {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-            color: white;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .cta-content h2 {
-            color: white;
-            margin-bottom: var(--space-lg);
-        }
-
-        .cta-content p {
-            color: rgba(255, 255, 255, 0.95);
-            font-size: clamp(1.125rem, 2vw, 1.375rem);
-            max-width: 700px;
-            margin: 0 auto var(--space-xl);
-        }
-
-        /* ============================================
-           WHATSAPP FLOTANTE
-           ============================================ */
+        /* WhatsApp Float */
         .whatsapp-float {
             position: fixed;
             bottom: clamp(1.5rem, 3vw, 2rem);
@@ -1292,9 +1123,7 @@
             50% { box-shadow: 0 10px 40px -5px rgba(37, 211, 102, 0.6), 0 0 0 10px rgba(37, 211, 102, 0.1); }
         }
 
-        /* ============================================
-           FOOTER
-           ============================================ */
+        /* Footer */
         footer {
             background: var(--gradient-hero);
             color: white;
@@ -1379,9 +1208,7 @@
             z-index: 1;
         }
 
-        /* ============================================
-           ANIMACIONES
-           ============================================ */
+        /* Animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -1415,14 +1242,8 @@
             transform: translateY(0);
         }
 
-        /* ============================================
-           RESPONSIVE
-           ============================================ */
+        /* Responsive */
         @media (max-width: 1024px) {
-            .split-section {
-                grid-template-columns: 1fr;
-            }
-            
             .footer-grid {
                 grid-template-columns: 1fr 1fr;
             }
@@ -1458,10 +1279,6 @@
                 min-height: auto;
             }
             
-            .hero-background {
-                background-attachment: scroll;
-            }
-            
             .hero-buttons {
                 flex-direction: column;
                 width: 100%;
@@ -1469,24 +1286,18 @@
             
             .hero-buttons .btn { width: 100%; }
             
-            .hero-stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .hero-stat { text-align: center; }
-            
-            .feature-grid,
+            .intro-grid,
+            .value-grid,
             .gallery-grid,
-            .methodology-grid,
             .footer-grid {
                 grid-template-columns: 1fr;
             }
             
-            .section { padding: var(--space-3xl) 0; }
+            .process-line { display: none; }
             
-            .cta-background {
-                background-attachment: scroll;
-            }
+            .process-grid { grid-template-columns: 1fr; }
+            
+            .section { padding: var(--space-3xl) 0; }
             
             .whatsapp-float {
                 bottom: 1.5rem;
@@ -1494,31 +1305,10 @@
             }
             
             .whatsapp-tooltip { display: none; }
-
-            /* Matriz de riesgo responsive */
-            .risk-matrix {
-                grid-template-columns: 60px repeat(5, 1fr);
-                grid-template-rows: repeat(5, 50px) 30px;
-                gap: 2px;
-            }
-
-            .matrix-cell {
-                font-size: 0.75rem;
-            }
-
-            .dashboard-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
         }
 
         @media (max-width: 480px) {
-            .hero-stats-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: var(--space-sm);
-            }
-            
-            .hero-stat { padding: var(--space-sm); }
+            .trust-grid { grid-template-columns: 1fr 1fr; }
         }
 
         @media (prefers-reduced-motion: reduce) {
@@ -1529,16 +1319,11 @@
             }
             
             html { scroll-behavior: auto; }
-            
-            .hero-background,
-            .cta-background {
-                background-attachment: scroll;
-            }
         }
 
         @media (prefers-contrast: high) {
             .btn-primary { border: 2px solid white; }
-            .card, .methodology-card { border-width: 2px; }
+            .card, .normativa-card { border-width: 2px; }
         }
     </style>
 </head>
@@ -1582,20 +1367,14 @@
 
     <main id="main-content" role="main">
         <!-- ============================================
-             HERO CON IMAGEN DE FONDO
+             HERO
              ============================================ -->
         <section class="hero" aria-labelledby="page-title">
-            <div class="hero-background" role="img" aria-label="Trabajadores con equipo de protección personal en entorno industrial"></div>
-            <div class="hero-overlay"></div>
-            <div class="hero-pattern"></div>
-            <div class="hero-blob-1"></div>
-            <div class="hero-blob-2"></div>
-            
             <div class="container">
                 <div class="hero-grid">
                     <div class="hero-content">
                         <div class="hero-badge">
-                            <span class="hero-badge-icon" aria-hidden="true">️</span>
+                            <span class="hero-badge-icon" aria-hidden="true">🛡️</span>
                             <span>Servicio Especializado</span>
                         </div>
                         
@@ -1621,7 +1400,7 @@
                                rel="noopener noreferrer" 
                                class="btn btn-outline-white"
                                aria-label="Consultar por WhatsApp">
-                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true">💬</span>
                                 <span>Consultar ahora</span>
                             </a>
                         </div>
@@ -1631,7 +1410,7 @@
         </section>
 
         <!-- ============================================
-             DESCRIPCIÓN CON IMAGEN LATERAL
+             SOBRE EL SERVICIO
              ============================================ -->
         <section class="section" aria-labelledby="descripcion-title">
             <div class="container">
@@ -1645,14 +1424,14 @@
                     </p>
                 </div>
                 
-                <div class="split-section">
-                    <div class="split-image animate-on-scroll">
-                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&q=80" 
-                             alt="Inspector de seguridad revisando equipo de protección en obra industrial"
-                             loading="lazy">
-                    </div>
-                    
-                    <div class="split-content animate-on-scroll">
+                <div class="intro-grid">
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                <polyline points="9 12 11 14 15 10"/>
+                            </svg>
+                        </div>
                         <h3>¿Qué incluye nuestro servicio?</h3>
                         <p>
                             Ofrecemos un servicio completo que abarca desde el diagnóstico inicial 
@@ -1660,17 +1439,17 @@
                             de seguridad y salud ocupacional, adaptado a la realidad de tu empresa.
                         </p>
                         
-                        <ul class="feature-list">
-                            <li>Diseño e implementación del Sistema de Gestión de Seguridad y Salud en el Trabajo (SGSST)</li>
-                            <li>Elaboración y actualización de matrices de identificación de peligros y evaluación de riesgos (IPER)</li>
-                            <li>Desarrollo de procedimientos de trabajo seguro (PTS) y análisis de trabajo seguro (ATS)</li>
-                            <li>Planes de emergencia y evacuación, incluyendo simulacros y brigadas</li>
-                            <li>Reglamento Interno de Orden, Higiene y Seguridad (RIOHS)</li>
-                            <li>Programas de capacitación en prevención de riesgos</li>
-                            <li>Investigación de accidentes e incidentes laborales</li>
-                            <li>Comité Paritario de Higiene y Seguridad (CPHS)</li>
-                            <li>Departamento de Prevención de Riesgos (DPR)</li>
-                            <li>Auditorías internas y preparación para certificaciones</li>
+                        <ul style="list-style: none; padding: 0; margin: var(--space-lg) 0 0 0;">
+                            <li style="margin-bottom: 0.5rem;">✓ Diseño e implementación del Sistema de Gestión de Seguridad y Salud en el Trabajo (SGSST)</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Elaboración y actualización de matrices de identificación de peligros y evaluación de riesgos (IPER)</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Desarrollo de procedimientos de trabajo seguro (PTS) y análisis de trabajo seguro (ATS)</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Planes de emergencia y evacuación, incluyendo simulacros y brigadas</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Reglamento Interno de Orden, Higiene y Seguridad (RIOHS)</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Programas de capacitación en prevención de riesgos</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Investigación de accidentes e incidentes laborales</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Comité Paritario de Higiene y Seguridad (CPHS)</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Departamento de Prevención de Riesgos (DPR)</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Auditorías internas y preparación para certificaciones</li>
                         </ul>
                     </div>
                 </div>
@@ -1678,7 +1457,7 @@
         </section>
 
         <!-- ============================================
-             NORMATIVA CHILENA
+             MARCO NORMATIVO
              ============================================ -->
         <section class="section section-alt" aria-labelledby="normativa-title">
             <div class="container">
@@ -1701,7 +1480,7 @@
                     <div class="normativa-card animate-on-scroll">
                         <div class="normativa-code">DS 594</div>
                         <div class="normativa-title">Condiciones Sanitarias y Ambientales Básicas</div>
-                        <div class="normativa-desc">Regula las condiciones sanititarias y ambientales en los lugares de trabajo, incluyendo ventilación, iluminación, ruido y agentes químicos.</div>
+                        <div class="normativa-desc">Regula las condiciones sanitarias y ambientales en los lugares de trabajo, incluyendo ventilación, iluminación, ruido y agentes químicos.</div>
                     </div>
                     
                     <div class="normativa-card animate-on-scroll">
@@ -1732,118 +1511,7 @@
         </section>
 
         <!-- ============================================
-             DASHBOARD DE MATRIZ DE RIESGO
-             ============================================ -->
-        <section class="dashboard-section" aria-labelledby="dashboard-title">
-            <div class="container">
-                <div class="text-center animate-on-scroll">
-                    <span class="section-label">Herramientas de Gestión</span>
-                    <h2 id="dashboard-title" class="text-gradient">Matriz de Identificación de Peligros y Evaluación de Riesgos</h2>
-                    <p class="subtitle">
-                        Utilizamos matrices de riesgo 5x5 para priorizar medidas de control 
-                        y focalizar recursos en los riesgos más críticos.
-                    </p>
-                </div>
-                
-                <div class="dashboard-container animate-on-scroll">
-                    <div class="dashboard-header">
-                        <div class="dashboard-title">Ejemplo de Matriz de Riesgo</div>
-                        <div class="dashboard-legend">
-                            <div class="legend-item">
-                                <div class="legend-color low"></div>
-                                <span>Bajo</span>
-                            </div>
-                            <div class="legend-item">
-                                <div class="legend-color medium"></div>
-                                <span>Medio</span>
-                            </div>
-                            <div class="legend-item">
-                                <div class="legend-color high"></div>
-                                <span>Alto</span>
-                            </div>
-                            <div class="legend-item">
-                                <div class="legend-color critical"></div>
-                                <span>Crítico</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Matriz 5x5 -->
-                    <div class="risk-matrix">
-                        <!-- Fila 5: Casi Seguro -->
-                        <div class="matrix-label y-axis">Casi Seguro</div>
-                        <div class="matrix-cell medium">3</div>
-                        <div class="matrix-cell high">6</div>
-                        <div class="matrix-cell critical">9</div>
-                        <div class="matrix-cell critical">12</div>
-                        <div class="matrix-cell critical">15</div>
-                        
-                        <!-- Fila 4: Probable -->
-                        <div class="matrix-label y-axis">Probable</div>
-                        <div class="matrix-cell low">2</div>
-                        <div class="matrix-cell medium">4</div>
-                        <div class="matrix-cell high">6</div>
-                        <div class="matrix-cell critical">8</div>
-                        <div class="matrix-cell critical">10</div>
-                        
-                        <!-- Fila 3: Posible -->
-                        <div class="matrix-label y-axis">Posible</div>
-                        <div class="matrix-cell low">1</div>
-                        <div class="matrix-cell medium">2</div>
-                        <div class="matrix-cell high">3</div>
-                        <div class="matrix-cell high">4</div>
-                        <div class="matrix-cell critical">5</div>
-                        
-                        <!-- Fila 2: Improbable -->
-                        <div class="matrix-label y-axis">Improbable</div>
-                        <div class="matrix-cell low">1</div>
-                        <div class="matrix-cell low">1</div>
-                        <div class="matrix-cell medium">2</div>
-                        <div class="matrix-cell medium">3</div>
-                        <div class="matrix-cell high">4</div>
-                        
-                        <!-- Fila 1: Raro -->
-                        <div class="matrix-label y-axis">Raro</div>
-                        <div class="matrix-cell low">1</div>
-                        <div class="matrix-cell low">1</div>
-                        <div class="matrix-cell low">1</div>
-                        <div class="matrix-cell medium">2</div>
-                        <div class="matrix-cell medium">3</div>
-                        
-                        <!-- Eje X: Consecuencia -->
-                        <div class="matrix-label"></div>
-                        <div class="matrix-label">Insignificante</div>
-                        <div class="matrix-label">Menor</div>
-                        <div class="matrix-label">Moderado</div>
-                        <div class="matrix-label">Mayor</div>
-                        <div class="matrix-label">Catastrófico</div>
-                    </div>
-                    
-                    <!-- Stats del dashboard -->
-                    <div class="dashboard-stats">
-                        <div class="stat-card">
-                            <div class="stat-value" style="color: var(--risk-critical);">2</div>
-                            <div class="stat-label">Riesgos Críticos</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-value" style="color: var(--risk-high);">5</div>
-                            <div class="stat-label">Riesgos Altos</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-value" style="color: var(--risk-medium);">8</div>
-                            <div class="stat-label">Riesgos Medios</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-value" style="color: var(--risk-low);">10</div>
-                            <div class="stat-label">Riesgos Bajos</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================
-             BENEFICIOS CON ICONOS
+             BENEFICIOS
              ============================================ -->
         <section class="section" aria-labelledby="beneficios-title">
             <div class="container">
@@ -1856,7 +1524,7 @@
                     </p>
                 </div>
                 
-                <div class="feature-grid">
+                <div class="intro-grid">
                     <div class="card animate-on-scroll">
                         <div class="card-icon">
                             <svg viewBox="0 0 24 24">
@@ -1871,8 +1539,8 @@
                     <div class="card animate-on-scroll">
                         <div class="card-icon">
                             <svg viewBox="0 0 24 24">
-                                <circle cx="12" cy="12" r="10"/>
-                                <polyline points="12 6 12 12 16 14"/>
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                                <polyline points="17 6 23 6 23 12"/>
                             </svg>
                         </div>
                         <h3>Reducción de Accidentes</h3>
@@ -1919,9 +1587,10 @@
                     <div class="card animate-on-scroll">
                         <div class="card-icon">
                             <svg viewBox="0 0 24 24">
-                                <circle cx="12" cy="12" r="10"/>
-                                <circle cx="12" cy="12" r="6"/>
-                                <circle cx="12" cy="12" r="2"/>
+                                <circle cx="11" cy="11" r="8"/>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                <line x1="11" y1="8" x2="11" y2="14"/>
+                                <line x1="8" y1="11" x2="14" y2="11"/>
                             </svg>
                         </div>
                         <h3>Enfoque Práctico</h3>
@@ -1932,7 +1601,7 @@
         </section>
 
         <!-- ============================================
-             GALERÍA DE IMÁGENES ALUSIVAS
+             GALERÍA
              ============================================ -->
         <section class="section section-alt" aria-labelledby="galeria-title">
             <div class="container">
@@ -1948,42 +1617,42 @@
                 <div class="gallery-grid">
                     <div class="gallery-item animate-on-scroll">
                         <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" 
-                             alt="Trabajadores con casco y chaleco reflectante en obra de construcción"
+                             alt="Construcción e infraestructura"
                              loading="lazy">
                         <div class="gallery-caption">Construcción e infraestructura</div>
                     </div>
                     
                     <div class="gallery-item animate-on-scroll">
                         <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&q=80" 
-                             alt="Técnico revisando equipos de seguridad industrial"
+                             alt="Inspección de seguridad"
                              loading="lazy">
                         <div class="gallery-caption">Inspección de seguridad</div>
                     </div>
                     
                     <div class="gallery-item animate-on-scroll">
                         <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80" 
-                             alt="Capacitación de trabajadores en seguridad ocupacional"
+                             alt="Capacitación en seguridad"
                              loading="lazy">
                         <div class="gallery-caption">Capacitación en seguridad</div>
                     </div>
                     
                     <div class="gallery-item animate-on-scroll">
                         <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80" 
-                             alt="Uso de equipo de protección personal en industria"
+                             alt="EPP y protocolos"
                              loading="lazy">
                         <div class="gallery-caption">EPP y protocolos</div>
                     </div>
                     
                     <div class="gallery-item animate-on-scroll">
                         <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=600&q=80" 
-                             alt="Trabajador con arnés de seguridad en altura"
+                             alt="Trabajo en altura"
                              loading="lazy">
                         <div class="gallery-caption">Trabajo en altura</div>
                     </div>
                     
                     <div class="gallery-item animate-on-scroll">
                         <img src="https://images.unsplash.com/photo-1581092335397-9583eb92d232?w=600&q=80" 
-                             alt="Señalización de seguridad en planta industrial"
+                             alt="Señalización y protocolos"
                              loading="lazy">
                         <div class="gallery-caption">Señalización y protocolos</div>
                     </div>
@@ -2005,45 +1674,45 @@
                     </p>
                 </div>
                 
-                <div class="methodology-grid">
-                    <div class="methodology-card animate-on-scroll">
-                        <div class="methodology-number">1</div>
-                        <h3>Diagnóstico Inicial</h3>
-                        <p>Evaluamos la situación actual de tu empresa en materia de seguridad y salud ocupacional, identificando brechas y prioridades.</p>
-                    </div>
-                    
-                    <div class="methodology-card animate-on-scroll">
-                        <div class="methodology-number">2</div>
-                        <h3>Plan de Trabajo</h3>
-                        <p>Diseñamos un plan personalizado con cronograma, responsables y recursos necesarios para implementar el sistema.</p>
-                    </div>
-                    
-                    <div class="methodology-card animate-on-scroll">
-                        <div class="methodology-number">3</div>
-                        <h3>Implementación</h3>
-                        <p>Ejecutamos el plan elaborando toda la documentación, capacitando al personal e implementando los procedimientos.</p>
-                    </div>
-                    
-                    <div class="methodology-card animate-on-scroll">
-                        <div class="methodology-number">4</div>
-                        <h3>Seguimiento</h3>
-                        <p>Acompañamos la operación del sistema, realizamos auditorías internas y realizamos mejoras continuas.</p>
+                <div class="process-container animate-on-scroll">
+                    <div class="process-line"></div>
+                    <div class="process-grid">
+                        <div class="process-step">
+                            <div class="process-number">1</div>
+                            <h3>Diagnóstico Inicial</h3>
+                            <p>Evaluamos la situación actual de tu empresa en materia de seguridad y salud ocupacional, identificando brechas y prioridades.</p>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="process-number">2</div>
+                            <h3>Plan de Trabajo</h3>
+                            <p>Diseñamos un plan personalizado con cronograma, responsables y recursos necesarios para implementar el sistema.</p>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="process-number">3</div>
+                            <h3>Implementación</h3>
+                            <p>Ejecutamos el plan elaborando toda la documentación, capacitando al personal e implementando los procedimientos.</p>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="process-number">4</div>
+                            <h3>Seguimiento</h3>
+                            <p>Acompañamos la operación del sistema, realizamos auditorías internas y realizamos mejoras continuas.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ============================================
-             CTA FINAL CON IMAGEN DE FONDO
+             CTA FINAL
              ============================================ -->
-        <section class="cta-section" aria-labelledby="cta-title">
-            <div class="cta-background" role="img" aria-label="Equipo de trabajo en planta industrial"></div>
-            <div class="cta-overlay"></div>
-            
-            <div class="container">
-                <div class="cta-content animate-on-scroll">
+        <section class="trust-section" aria-labelledby="cta-title">
+            <div class="container trust-content">
+                <div class="text-center animate-on-scroll">
                     <h2 id="cta-title">¿Listo para mejorar la seguridad de tu empresa?</h2>
-                    <p>
+                    <p class="subtitle">
                         Contáctanos hoy mismo y descubre cómo podemos ayudarte a crear 
                         un ambiente de trabajo más seguro y cumplir con toda la normativa vigente.
                     </p>
@@ -2106,9 +1775,9 @@
                 <nav aria-label="Navegación legal">
                     <h4 class="footer-title">Legal</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Política de privacidad</a></li>
-                        <li><a href="#">Términos de servicio</a></li>
-                        <li><a href="#">Política de cookies</a></li>
+                        <li><a href="privacidad.html">Política de privacidad</a></li>
+                        <li><a href="terminos.html">Términos de servicio</a></li>
+                        <li><a href="cookies.html">Política de cookies</a></li>
                     </ul>
                 </nav>
             </div>

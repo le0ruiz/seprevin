@@ -1,70 +1,159 @@
 <!DOCTYPE html>
 <html lang="es-CL" dir="ltr">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZD3EGCHJ3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LZD3EGCHJ3');
+    </script>
+    
     <!-- ============================================
          METADATOS ESENCIALES
          ============================================ -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="SEPREVIN - Sistemas de Gestión y Documentación: Diseño e implementación de ISO 9001, 14001, 45001, reglamentos internos, manuales, procedimientos y carpetas de arranque. Cumplimiento DS 44 y normativa chilena.">
-    <meta name="keywords" content="ISO 9001, ISO 14001, ISO 45001, sistemas de gestión, gestión documental, reglamento interno, manual de procedimientos, carpetas de arranque, DS 44, auditoría, certificación, SEPREVIN, Chile">
-    <meta name="author" content="SEPREVIN">
-    <meta name="robots" content="index, follow">
     
-    <!-- ============================================
-         SEGURIDAD
-         ============================================ -->
+    <!-- SEO Primario -->
+    <title>SEPREVIN | Sistemas de Gestión y Documentación</title>
+    <meta name="description" content="Diseño e implementación de sistemas ISO 9001, 14001 y 45001. Gestión documental completa, reglamentos internos, procedimientos y cumplimiento DS 44, DS 594 y Ley 16.744.">
+    <meta name="keywords" content="ISO 9001, ISO 14001, ISO 45001, sistemas de gestión, gestión documental, DS 44, DS 594, Ley 16.744, certificación ISO, reglamento interno, SEPREVIN, Chile">
+    <meta name="author" content="SEPREVIN">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://seprevin.cl/sistemas-gestion-documentacion.html">
+    
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="puL0XaQAuyK7Tl33-eYJeZk2u1gHNrTtRlHpkpVcNiM" />
+    
+    <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seprevin.cl/sistemas-gestion-documentacion.html">
+    <meta property="og:title" content="SEPREVIN | Sistemas de Gestión y Documentación">
+    <meta property="og:description" content="Sistemas ISO 9001, 14001, 45001 y gestión documental completa. Cumplimiento DS 44, DS 594 y Ley 16.744 con documentación prolija y auditada.">
+    <meta property="og:image" content="https://seprevin.cl/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="SEPREVIN - Sistemas de Gestión y Documentación ISO">
+    <meta property="og:site_name" content="SEPREVIN">
+    <meta property="og:locale" content="es_CL">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://seprevin.cl/sistemas-gestion-documentacion.html">
+    <meta name="twitter:title" content="SEPREVIN | Sistemas de Gestión y Documentación">
+    <meta name="twitter:description" content="Sistemas ISO 9001, 14001, 45001 y gestión documental con más de 20 años de experiencia.">
+    <meta name="twitter:image" content="https://seprevin.cl/og-image.jpg">
+    
+    <!-- Seguridad HTTP Headers -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     
+    <!-- Content Security Policy - CORREGIDO PARA GOOGLE ANALYTICS -->
     <meta http-equiv="Content-Security-Policy" 
           content="default-src 'self'; 
-                   script-src 'self' 'unsafe-inline'; 
+                   script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; 
                    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
                    font-src 'self' https://fonts.gstatic.com data:; 
                    img-src 'self' data: https: blob: https://images.unsplash.com; 
-                   connect-src 'self' https://api.whatsapp.com https://formspree.io; 
+                   connect-src 'self' https://api.whatsapp.com https://formspree.io https://www.google-analytics.com; 
                    frame-ancestors 'none'; 
                    base-uri 'self'; 
                    form-action 'self' https://formspree.io; 
-                   upgrade-insecure-requests;">
+                   upgrade-insecure-requests; 
+                   block-all-mixed-content;">
     
+    <!-- Permissions Policy -->
     <meta http-equiv="Permissions-Policy" 
-          content="geolocation=(), microphone=(), camera=(), payment=(), usb=()">
+          content="geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()">
     
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.seprevin.cl/sistemas-gestion-documentacion.html">
-    <meta property="og:title" content="SEPREVIN | Sistemas de Gestión y Documentación">
-    <meta property="og:description" content="Diseño e implementación de ISO 9001, 14001, 45001, reglamentos internos, manuales y procedimientos. Cumplimiento DS 44.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200">
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="SEPREVIN | Sistemas de Gestión y Documentación">
-    <meta name="twitter:description" content="Sistemas de gestión ISO y documentación técnica para tu empresa en Chile.">
-    
-    <meta name="theme-color" content="#012D90">
+    <!-- Tema y colores -->
+    <meta name="theme-color" content="#012D90" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#001a3d" media="(prefers-color-scheme: dark)">
+    <meta name="color-scheme" content="light dark">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="SEPREVIN">
     
-    <!-- Favicon -->
+    <!-- Favicon y PWA -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
     
-    <!-- Preconnect -->
+    <!-- Preconnect y DNS Prefetch -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://api.whatsapp.com" crossorigin>
+    <link rel="preconnect" href="https://formspree.io" crossorigin>
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://api.whatsapp.com">
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Schema.org -->
+    <!-- Schema.org - Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://seprevin.cl/#organization",
+        "name": "SEPREVIN",
+        "alternateName": "Seguridad y Prevención Integral",
+        "url": "https://seprevin.cl",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://seprevin.cl/logo_azul.jpeg",
+            "width": 512,
+            "height": 512
+        },
+        "description": "Consultora técnica integral en gestión de riesgos, prevención, seguridad, salud ocupacional y gestión ambiental",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Santiago",
+            "addressRegion": "Región Metropolitana",
+            "addressCountry": "CL"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -33.4489,
+            "longitude": -70.6693
+        },
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+56-9-5402-5756",
+                "contactType": "ventas",
+                "availableLanguage": ["Spanish"],
+                "areaServed": "CL"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+56-9-8430-9798",
+                "contactType": "soporte técnico",
+                "availableLanguage": ["Spanish"],
+                "areaServed": "CL"
+            }
+        ],
+        "sameAs": [],
+        "foundingDate": "2006",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Chile"
+        }
+    }
+    </script>
+    
+    <!-- Schema.org - Service -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -73,23 +162,72 @@
         "provider": {
             "@type": "Organization",
             "name": "SEPREVIN",
-            "url": "https://www.seprevin.cl"
+            "url": "https://seprevin.cl"
         },
-        "description": "Diseño e implementación de sistemas ISO 9001, 14001 y 45001; gestión documental completa incluyendo reglamentos internos, manuales, procedimientos, registros y carpetas de arranque.",
+        "description": "Diseño e implementación de sistemas ISO 9001, 14001 y 45001. Gestión documental completa, reglamentos internos, procedimientos y cumplimiento DS 44, DS 594 y Ley 16.744",
         "areaServed": {
             "@type": "Country",
             "name": "Chile"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servicios de Sistemas de Gestión",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "ISO 9001:2015",
+                        "description": "Sistema de Gestión de Calidad"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "ISO 14001:2015",
+                        "description": "Sistema de Gestión Ambiental"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "ISO 45001:2018",
+                        "description": "Sistema de Gestión de Seguridad y Salud en el Trabajo"
+                    }
+                }
+            ]
         }
     }
     </script>
     
-    <title>SEPREVIN | Sistemas de Gestión y Documentación</title>
+    <!-- Schema.org - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Inicio",
+                "item": "https://seprevin.cl/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Sistemas de Gestión y Documentación",
+                "item": "https://seprevin.cl/sistemas-gestion-documentacion.html"
+            }
+        ]
+    }
+    </script>
     
-    <!-- ============================================
-         CSS COMPLETO
-         ============================================ -->
     <style>
-        /* Variables CSS */
+        /* ============================================
+           VARIABLES Y CONFIGURACIÓN GLOBAL
+           ============================================ */
         :root {
             --primary: #012D90;
             --primary-dark: #001a5c;
@@ -97,11 +235,11 @@
             --primary-rgb: 1, 45, 144;
             --accent: #00D4FF;
             
-            /* Colores para ISO/Gestión */
-            --iso-blue: #3B82F6;
-            --iso-green: #10B981;
-            --iso-orange: #F59E0B;
-            --iso-purple: #8B5CF6;
+            /* Colores para ISO/Documentación */
+            --iso-blue: #0066CC;
+            --iso-green: #009933;
+            --iso-orange: #FF6600;
+            --iso-gray: #666666;
             
             --bg: #FEFEFE;
             --bg-alt: #F8FAFC;
@@ -120,12 +258,10 @@
             --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
             --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
             --shadow-primary: 0 10px 40px -10px rgba(1, 45, 144, 0.4);
-            --shadow-glow: 0 0 60px rgba(1, 45, 144, 0.15);
             
             --gradient-primary: linear-gradient(135deg, #012D90 0%, #0047AB 100%);
             --gradient-hero: linear-gradient(135deg, #012D90 0%, #001a5c 50%, #000d33 100%);
-            --gradient-overlay: linear-gradient(135deg, rgba(1, 45, 144, 0.95) 0%, rgba(0, 26, 92, 0.85) 100%);
-            --gradient-iso: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+            --gradient-iso: linear-gradient(135deg, #0066CC 0%, #009933 100%);
             
             --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
             --font-display: 'Space Grotesk', 'Inter', sans-serif;
@@ -381,18 +517,6 @@
             transform: translateY(-3px);
         }
 
-        .btn-whatsapp {
-            background: var(--whatsapp);
-            color: white;
-            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
-        }
-
-        .btn-whatsapp:hover {
-            background: var(--whatsapp-dark);
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
-        }
-
         .btn:focus-visible {
             outline: 3px solid var(--accent);
             outline-offset: 3px;
@@ -527,73 +651,39 @@
             transform: translateY(-7px) rotate(-45deg);
         }
 
-        /* ============================================
-           HERO CON IMAGEN DE FONDO
-           ============================================ */
+        /* Hero Section */
         .hero {
             position: relative;
-            min-height: 90vh;
+            min-height: 100vh;
             display: flex;
             align-items: center;
+            background: var(--gradient-hero);
             overflow: hidden;
             padding: calc(var(--header-height) + var(--space-3xl)) 0 var(--space-3xl);
         }
 
-        .hero-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1920&q=80');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            z-index: 0;
-        }
-
-        .hero-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: var(--gradient-overlay);
-            z-index: 1;
-        }
-
-        .hero-pattern {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-            z-index: 2;
-        }
-
-        .hero-blob-1 {
+        .hero::before {
+            content: '';
             position: absolute;
             top: -50%;
             right: -20%;
             width: 80vw;
             height: 80vw;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.2) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(0, 102, 204, 0.2) 0%, transparent 70%);
             border-radius: 50%;
             animation: float-blob 20s ease-in-out infinite;
-            z-index: 2;
         }
 
-        .hero-blob-2 {
+        .hero::after {
+            content: '';
             position: absolute;
             bottom: -30%;
             left: -10%;
             width: 60vw;
             height: 60vw;
-            background: radial-gradient(circle, rgba(1, 45, 144, 0.4) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(0, 153, 51, 0.3) 0%, transparent 70%);
             border-radius: 50%;
             animation: float-blob 25s ease-in-out infinite reverse;
-            z-index: 2;
         }
 
         @keyframes float-blob {
@@ -607,7 +697,7 @@
             grid-template-columns: 1fr;
             gap: var(--space-2xl);
             position: relative;
-            z-index: 3;
+            z-index: 2;
         }
 
         .hero-content { max-width: 1000px; }
@@ -617,9 +707,9 @@
             align-items: center;
             gap: 0.75rem;
             padding: 0.75rem 1.5rem;
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: var(--radius-full);
             color: white;
             font-size: clamp(0.875rem, 1.2vw, 1rem);
@@ -646,7 +736,7 @@
         }
 
         .hero p {
-            color: rgba(255, 255, 255, 0.95);
+            color: rgba(255, 255, 255, 0.9);
             font-size: clamp(1rem, 1.5vw + 0.25rem, 1.25rem);
             margin-bottom: var(--space-xl);
             max-width: 700px;
@@ -661,137 +751,7 @@
             animation: fadeInUp 0.8s ease-out 0.6s both;
         }
 
-        /* Stats en Hero */
-        .hero-stats {
-            margin-top: var(--space-2xl);
-            padding-top: var(--space-xl);
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
-            animation: fadeInUp 0.8s ease-out 0.8s both;
-        }
-
-        .hero-stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-            gap: var(--space-lg);
-        }
-
-        .hero-stat {
-            color: white;
-            padding: var(--space-lg);
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: var(--radius-lg);
-            transition: all var(--transition-base);
-        }
-
-        .hero-stat:hover {
-            background: rgba(255, 255, 255, 0.15);
-            transform: translateY(-5px);
-        }
-
-        .hero-stat-number {
-            font-family: var(--font-display);
-            font-size: clamp(2.5rem, 4vw, 3rem);
-            font-weight: 800;
-            display: block;
-            background: linear-gradient(135deg, #fff 0%, #00D4FF 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 0.25rem;
-        }
-
-        .hero-stat-label {
-            font-size: clamp(0.75rem, 1vw, 0.9rem);
-            color: rgba(255, 255, 255, 0.9);
-            line-height: 1.4;
-        }
-
-        /* ============================================
-           SECCIÓN CON IMAGEN LATERAL
-           ============================================ */
-        .split-section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--space-3xl);
-            align-items: center;
-            margin-top: var(--space-2xl);
-        }
-
-        .split-image {
-            position: relative;
-            border-radius: var(--radius-2xl);
-            overflow: hidden;
-            box-shadow: var(--shadow-2xl);
-            aspect-ratio: 4/3;
-        }
-
-        .split-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .split-image:hover img {
-            transform: scale(1.05);
-        }
-
-        .split-image::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, transparent 100%);
-            pointer-events: none;
-        }
-
-        .split-content h2 {
-            margin-bottom: var(--space-lg);
-        }
-
-        .split-content p {
-            font-size: 1.0625rem;
-            margin-bottom: var(--space-lg);
-        }
-
-        .feature-list {
-            list-style: none;
-            padding: 0;
-            margin-top: var(--space-lg);
-        }
-
-        .feature-list li {
-            padding: var(--space-sm) 0;
-            padding-left: var(--space-xl);
-            position: relative;
-            color: var(--text-muted);
-            font-size: 1rem;
-        }
-
-        .feature-list li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            top: var(--space-sm);
-            width: 24px;
-            height: 24px;
-            background: var(--gradient-iso);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.75rem;
-            font-weight: 700;
-        }
-
-        /* ============================================
-           CARDS CON ICONOS SVG
-           ============================================ */
+        /* Cards */
         .card {
             background: var(--surface);
             border-radius: var(--radius-2xl);
@@ -833,12 +793,12 @@
             justify-content: center;
             margin-bottom: var(--space-lg);
             transition: all var(--transition-base);
-            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
         }
 
         .card:hover .card-icon {
             transform: scale(1.1) rotate(-5deg);
-            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+            box-shadow: 0 6px 20px rgba(0, 102, 204, 0.4);
         }
 
         .card-icon svg {
@@ -851,19 +811,209 @@
             stroke-linejoin: round;
         }
 
-        /* ============================================
-           GRID DE FEATURES
-           ============================================ */
-        .feature-grid {
+        /* Grids */
+        .intro-grid,
+        .value-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: var(--space-lg);
             margin-top: var(--space-2xl);
         }
 
-        /* ============================================
-           GALERÍA DE IMÁGENES
-           ============================================ */
+        /* Process Timeline */
+        .process-container {
+            position: relative;
+            margin-top: var(--space-2xl);
+        }
+
+        .process-line {
+            position: absolute;
+            top: 40px;
+            left: 10%;
+            right: 10%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--iso-blue) 0%, var(--iso-green) 100%);
+            border-radius: var(--radius-full);
+            z-index: 0;
+            opacity: 0.3;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: var(--space-lg);
+            position: relative;
+            z-index: 1;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: var(--space-lg);
+            background: var(--surface);
+            border-radius: var(--radius-2xl);
+            border: 1px solid var(--border);
+            transition: all var(--transition-base);
+        }
+
+        .process-step:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--iso-blue);
+        }
+
+        .process-number {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-iso);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 800;
+            margin: 0 auto var(--space-lg);
+            box-shadow: 0 10px 30px -5px rgba(0, 102, 204, 0.4);
+            position: relative;
+            transition: all var(--transition-bounce);
+        }
+
+        .process-number::after {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border: 2px solid var(--iso-blue);
+            border-radius: 50%;
+            opacity: 0.3;
+        }
+
+        .process-step:hover .process-number {
+            transform: scale(1.15) rotate(10deg);
+        }
+
+        /* Trust Section */
+        .trust-section {
+            background: var(--gradient-hero);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .trust-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 80vw;
+            height: 80vw;
+            background: radial-gradient(circle, rgba(0, 102, 204, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float-blob 20s ease-in-out infinite;
+        }
+
+        .trust-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .trust-section h2 { color: white; }
+        .trust-section .subtitle { color: rgba(255, 255, 255, 0.85); }
+
+        .trust-section .section-label {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .trust-section .section-label::before { background: white; }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-2xl);
+        }
+
+        .trust-item {
+            text-align: center;
+            padding: var(--space-xl);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-xl);
+            transition: all var(--transition-base);
+        }
+
+        .trust-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .trust-number {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 800;
+            display: block;
+            margin-bottom: var(--space-sm);
+            background: linear-gradient(135deg, #fff 0%, #00D4FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .trust-label {
+            font-size: clamp(0.875rem, 1vw, 1rem);
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        /* Normativa Grid */
+        .normativa-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-2xl);
+        }
+
+        .normativa-card {
+            background: var(--surface);
+            border-radius: var(--radius-xl);
+            padding: var(--space-xl);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--iso-blue);
+            transition: all var(--transition-base);
+        }
+
+        .normativa-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .normativa-code {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--iso-blue);
+            margin-bottom: var(--space-sm);
+        }
+
+        .normativa-title {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: var(--space-sm);
+        }
+
+        .normativa-desc {
+            font-size: 0.9375rem;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* Gallery */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -927,395 +1077,7 @@
             opacity: 1;
         }
 
-        /* ============================================
-           DASHBOARD DE MADUREZ ISO
-           ============================================ */
-        .dashboard-section {
-            background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
-            padding: var(--space-4xl) 0;
-        }
-
-        .dashboard-container {
-            background: var(--surface);
-            border-radius: var(--radius-2xl);
-            padding: var(--space-2xl);
-            box-shadow: var(--shadow-xl);
-            border: 1px solid var(--border);
-        }
-
-        .dashboard-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: var(--space-xl);
-            flex-wrap: wrap;
-            gap: var(--space-md);
-        }
-
-        .dashboard-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--text);
-        }
-
-        .dashboard-subtitle {
-            font-size: 0.9375rem;
-            color: var(--text-muted);
-            margin-top: 0.25rem;
-        }
-
-        /* Niveles de madurez */
-        .maturity-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: var(--space-lg);
-            margin-bottom: var(--space-xl);
-        }
-
-        .maturity-card {
-            background: var(--bg-alt);
-            border-radius: var(--radius-lg);
-            padding: var(--space-lg);
-            border: 2px solid var(--border);
-            transition: all var(--transition-base);
-            text-align: center;
-        }
-
-        .maturity-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .maturity-card.certified {
-            border-color: var(--iso-green);
-            background: linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 100%);
-        }
-
-        .maturity-card.progress {
-            border-color: var(--iso-blue);
-            background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
-        }
-
-        .maturity-card.planning {
-            border-color: var(--iso-orange);
-            background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);
-        }
-
-        .maturity-level {
-            font-size: 0.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            margin-bottom: var(--space-sm);
-        }
-
-        .maturity-card.certified .maturity-level { color: var(--iso-green); }
-        .maturity-card.progress .maturity-level { color: var(--iso-blue); }
-        .maturity-card.planning .maturity-level { color: var(--iso-orange); }
-
-        .maturity-standard {
-            font-family: var(--font-display);
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--text);
-            margin-bottom: var(--space-sm);
-        }
-
-        .maturity-name {
-            font-size: 0.875rem;
-            color: var(--text-muted);
-            margin-bottom: var(--space-md);
-        }
-
-        .maturity-bar {
-            height: 6px;
-            background: var(--border);
-            border-radius: var(--radius-full);
-            overflow: hidden;
-        }
-
-        .maturity-fill {
-            height: 100%;
-            border-radius: var(--radius-full);
-            transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
-            width: 0;
-        }
-
-        .maturity-card.certified .maturity-fill { background: var(--iso-green); }
-        .maturity-card.progress .maturity-fill { background: var(--iso-blue); }
-        .maturity-card.planning .maturity-fill { background: var(--iso-orange); }
-
-        .maturity-fill.animated {
-            width: var(--target-width);
-        }
-
-        /* Stats del dashboard */
-        .dashboard-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: var(--space-lg);
-            margin-top: var(--space-xl);
-            padding-top: var(--space-xl);
-            border-top: 1px solid var(--border);
-        }
-
-        .stat-card {
-            background: var(--bg-alt);
-            border-radius: var(--radius-lg);
-            padding: var(--space-lg);
-            text-align: center;
-            border: 1px solid var(--border);
-            transition: all var(--transition-base);
-        }
-
-        .stat-card:hover {
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-md);
-        }
-
-        .stat-value {
-            font-size: 2rem;
-            font-weight: 800;
-            color: var(--primary);
-            margin-bottom: 0.25rem;
-        }
-
-        .stat-label {
-            font-size: 0.875rem;
-            color: var(--text-muted);
-        }
-
-        /* ============================================
-           NORMATIVA ISO Y CHILENA
-           ============================================ */
-        .normativa-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--space-lg);
-            margin-top: var(--space-2xl);
-        }
-
-        .normativa-card {
-            background: var(--surface);
-            border-radius: var(--radius-xl);
-            padding: var(--space-xl);
-            border: 1px solid var(--border);
-            border-left: 4px solid var(--iso-blue);
-            transition: all var(--transition-base);
-        }
-
-        .normativa-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .normativa-code {
-            font-family: var(--font-display);
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--iso-blue);
-            margin-bottom: var(--space-sm);
-        }
-
-        .normativa-title {
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--text);
-            margin-bottom: var(--space-sm);
-        }
-
-        .normativa-desc {
-            font-size: 0.9375rem;
-            color: var(--text-muted);
-            line-height: 1.6;
-        }
-
-        /* ============================================
-           DOCUMENTACIÓN ENTREGABLE
-           ============================================ */
-        .docs-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: var(--space-lg);
-            margin-top: var(--space-2xl);
-        }
-
-        .doc-card {
-            background: var(--surface);
-            border-radius: var(--radius-xl);
-            padding: var(--space-lg);
-            border: 1px solid var(--border);
-            display: flex;
-            align-items: flex-start;
-            gap: var(--space-md);
-            transition: all var(--transition-base);
-        }
-
-        .doc-card:hover {
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-md);
-            border-color: var(--primary);
-        }
-
-        .doc-icon {
-            width: 48px;
-            height: 48px;
-            background: rgba(59, 130, 246, 0.1);
-            border-radius: var(--radius-lg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-
-        .doc-icon svg {
-            width: 24px;
-            height: 24px;
-            stroke: var(--iso-blue);
-            stroke-width: 2;
-            fill: none;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-        }
-
-        .doc-content h4 {
-            font-size: 1rem;
-            font-weight: 600;
-            color: var(--text);
-            margin-bottom: 0.25rem;
-        }
-
-        .doc-content p {
-            font-size: 0.875rem;
-            color: var(--text-muted);
-            margin: 0;
-            line-height: 1.5;
-        }
-
-        /* ============================================
-           METODOLOGÍA CON NÚMEROS
-           ============================================ */
-        .methodology-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: var(--space-lg);
-            margin-top: var(--space-2xl);
-        }
-
-        .methodology-card {
-            background: var(--surface);
-            border-radius: var(--radius-2xl);
-            padding: var(--space-xl);
-            border: 1px solid var(--border);
-            transition: all var(--transition-base);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .methodology-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 120px;
-            background: var(--gradient-iso);
-            opacity: 0.05;
-        }
-
-        .methodology-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-2xl);
-            border-color: var(--iso-blue);
-        }
-
-        .methodology-number {
-            width: 70px;
-            height: 70px;
-            background: var(--gradient-iso);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: var(--font-display);
-            font-size: 1.75rem;
-            font-weight: 800;
-            margin-bottom: var(--space-lg);
-            box-shadow: 0 10px 30px -5px rgba(59, 130, 246, 0.4);
-            position: relative;
-            z-index: 1;
-            transition: all var(--transition-bounce);
-        }
-
-        .methodology-card:hover .methodology-number {
-            transform: scale(1.1) rotate(-5deg);
-        }
-
-        .methodology-card h3 {
-            position: relative;
-            z-index: 1;
-        }
-
-        .methodology-card p {
-            position: relative;
-            z-index: 1;
-        }
-
-        /* ============================================
-           CTA SECTION
-           ============================================ */
-        .cta-section {
-            position: relative;
-            padding: var(--space-4xl) 0;
-            overflow: hidden;
-        }
-
-        .cta-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&q=80');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
-
-        .cta-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: var(--gradient-overlay);
-        }
-
-        .cta-content {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-            color: white;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .cta-content h2 {
-            color: white;
-            margin-bottom: var(--space-lg);
-        }
-
-        .cta-content p {
-            color: rgba(255, 255, 255, 0.95);
-            font-size: clamp(1.125rem, 2vw, 1.375rem);
-            max-width: 700px;
-            margin: 0 auto var(--space-xl);
-        }
-
-        /* ============================================
-           WHATSAPP FLOTANTE
-           ============================================ */
+        /* WhatsApp Float */
         .whatsapp-float {
             position: fixed;
             bottom: clamp(1.5rem, 3vw, 2rem);
@@ -1368,9 +1130,7 @@
             50% { box-shadow: 0 10px 40px -5px rgba(37, 211, 102, 0.6), 0 0 0 10px rgba(37, 211, 102, 0.1); }
         }
 
-        /* ============================================
-           FOOTER
-           ============================================ */
+        /* Footer */
         footer {
             background: var(--gradient-hero);
             color: white;
@@ -1455,9 +1215,7 @@
             z-index: 1;
         }
 
-        /* ============================================
-           ANIMACIONES
-           ============================================ */
+        /* Animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -1491,14 +1249,8 @@
             transform: translateY(0);
         }
 
-        /* ============================================
-           RESPONSIVE
-           ============================================ */
+        /* Responsive */
         @media (max-width: 1024px) {
-            .split-section {
-                grid-template-columns: 1fr;
-            }
-            
             .footer-grid {
                 grid-template-columns: 1fr 1fr;
             }
@@ -1534,10 +1286,6 @@
                 min-height: auto;
             }
             
-            .hero-background {
-                background-attachment: scroll;
-            }
-            
             .hero-buttons {
                 flex-direction: column;
                 width: 100%;
@@ -1545,24 +1293,18 @@
             
             .hero-buttons .btn { width: 100%; }
             
-            .hero-stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .hero-stat { text-align: center; }
-            
-            .feature-grid,
+            .intro-grid,
+            .value-grid,
             .gallery-grid,
-            .methodology-grid,
             .footer-grid {
                 grid-template-columns: 1fr;
             }
             
-            .section { padding: var(--space-3xl) 0; }
+            .process-line { display: none; }
             
-            .cta-background {
-                background-attachment: scroll;
-            }
+            .process-grid { grid-template-columns: 1fr; }
+            
+            .section { padding: var(--space-3xl) 0; }
             
             .whatsapp-float {
                 bottom: 1.5rem;
@@ -1570,20 +1312,10 @@
             }
             
             .whatsapp-tooltip { display: none; }
-
-            .dashboard-header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
         }
 
         @media (max-width: 480px) {
-            .hero-stats-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: var(--space-sm);
-            }
-            
-            .hero-stat { padding: var(--space-sm); }
+            .trust-grid { grid-template-columns: 1fr 1fr; }
         }
 
         @media (prefers-reduced-motion: reduce) {
@@ -1594,16 +1326,11 @@
             }
             
             html { scroll-behavior: auto; }
-            
-            .hero-background,
-            .cta-background {
-                background-attachment: scroll;
-            }
         }
 
         @media (prefers-contrast: high) {
             .btn-primary { border: 2px solid white; }
-            .card, .methodology-card { border-width: 2px; }
+            .card, .normativa-card { border-width: 2px; }
         }
     </style>
 </head>
@@ -1647,15 +1374,9 @@
 
     <main id="main-content" role="main">
         <!-- ============================================
-             HERO CON IMAGEN DE FONDO
+             HERO
              ============================================ -->
         <section class="hero" aria-labelledby="page-title">
-            <div class="hero-background" role="img" aria-label="Reunión de equipo revisando documentación corporativa"></div>
-            <div class="hero-overlay"></div>
-            <div class="hero-pattern"></div>
-            <div class="hero-blob-1"></div>
-            <div class="hero-blob-2"></div>
-            
             <div class="container">
                 <div class="hero-grid">
                     <div class="hero-content">
@@ -1686,7 +1407,7 @@
                                rel="noopener noreferrer" 
                                class="btn btn-outline-white"
                                aria-label="Consultar por WhatsApp">
-                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true">💬</span>
                                 <span>Consultar ahora</span>
                             </a>
                         </div>
@@ -1696,7 +1417,7 @@
         </section>
 
         <!-- ============================================
-             DESCRIPCIÓN CON IMAGEN LATERAL
+             SOBRE EL SERVICIO
              ============================================ -->
         <section class="section" aria-labelledby="descripcion-title">
             <div class="container">
@@ -1709,14 +1430,17 @@
                     </p>
                 </div>
                 
-                <div class="split-section">
-                    <div class="split-image animate-on-scroll">
-                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" 
-                             alt="Equipo de trabajo revisando documentación corporativa en reunión"
-                             loading="lazy">
-                    </div>
-                    
-                    <div class="split-content animate-on-scroll">
+                <div class="intro-grid">
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10 9 9 10 8 9"/>
+                            </svg>
+                        </div>
                         <h3>¿Qué incluye nuestro servicio?</h3>
                         <p>
                             Ofrecemos un servicio integral que abarca desde el diagnóstico de la documentación 
@@ -1724,18 +1448,18 @@
                             adaptados a la realidad de tu empresa y a los requisitos normativos chilenos.
                         </p>
                         
-                        <ul class="feature-list">
-                            <li>Diseño e implementación de Sistemas de Gestión ISO 9001, 14001 y 45001</li>
-                            <li>Reglamento Interno de Orden, Higiene y Seguridad (RIOHS) actualizado</li>
-                            <li>Manuales de procedimientos operativos y administrativos</li>
-                            <li>Procedimientos de Trabajo Seguro (PTS) y Análisis de Trabajo Seguro (ATS)</li>
-                            <li>Registros de gestión, actas y formularios estandarizados</li>
-                            <li>Carpetas de arranque para faenas y proyectos</li>
-                            <li>Matrices de identificación de peligros y evaluación de riesgos (IPER)</li>
-                            <li>Planes de emergencia y protocolos de actuación</li>
-                            <li>Programas anuales de seguridad y salud ocupacional</li>
-                            <li>Actualización conforme a DS 44, DS 594 y Ley 16.744</li>
-                            <li>Preparación para auditorías de certificación y fiscalización</li>
+                        <ul style="list-style: none; padding: 0; margin: var(--space-lg) 0 0 0;">
+                            <li style="margin-bottom: 0.5rem;">✓ Diseño e implementación de Sistemas de Gestión ISO 9001, 14001 y 45001</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Reglamento Interno de Orden, Higiene y Seguridad (RIOHS) actualizado</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Manuales de procedimientos operativos y administrativos</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Procedimientos de Trabajo Seguro (PTS) y Análisis de Trabajo Seguro (ATS)</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Registros de gestión, actas y formularios estandarizados</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Carpetas de arranque para faenas y proyectos</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Matrices de identificación de peligros y evaluación de riesgos (IPER)</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Planes de emergencia y protocolos de actuación</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Programas anuales de seguridad y salud ocupacional</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Actualización conforme a DS 44, DS 594 y Ley 16.744</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Preparación para auditorías de certificación y fiscalización</li>
                         </ul>
                     </div>
                 </div>
@@ -1743,7 +1467,7 @@
         </section>
 
         <!-- ============================================
-             NORMATIVA ISO Y CHILENA
+             MARCO NORMATIVO
              ============================================ -->
         <section class="section section-alt" aria-labelledby="normativa-title">
             <div class="container">
@@ -1797,222 +1521,9 @@
         </section>
 
         <!-- ============================================
-             DASHBOARD DE MADUREZ ISO
+             BENEFICIOS
              ============================================ -->
-        <section class="dashboard-section" aria-labelledby="dashboard-title">
-            <div class="container">
-                <div class="text-center animate-on-scroll">
-                    <span class="section-label">Evaluación de Madurez</span>
-                    <h2 id="dashboard-title" class="text-gradient">Dashboard de Madurez del Sistema de Gestión</h2>
-                    <p class="subtitle">
-                        Evaluamos el nivel de madurez de tu sistema de gestión y te acompañamos 
-                        en el camino hacia la certificación ISO.
-                    </p>
-                </div>
-                
-                <div class="dashboard-container animate-on-scroll">
-                    <div class="dashboard-header">
-                        <div>
-                            <div class="dashboard-title">Niveles de Madurez por Estándar</div>
-                            <div class="dashboard-subtitle">Evaluación típica de clientes al iniciar el acompañamiento</div>
-                        </div>
-                    </div>
-                    
-                    <!-- Niveles de madurez -->
-                    <div class="maturity-grid">
-                        <div class="maturity-card certified">
-                            <div class="maturity-level">Certificado</div>
-                            <div class="maturity-standard">ISO 9001</div>
-                            <div class="maturity-name">Gestión de Calidad</div>
-                            <div class="maturity-bar">
-                                <div class="maturity-fill" style="--target-width: 100%;"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="maturity-card progress">
-                            <div class="maturity-level">En Implementación</div>
-                            <div class="maturity-standard">ISO 45001</div>
-                            <div class="maturity-name">Seguridad y Salud</div>
-                            <div class="maturity-bar">
-                                <div class="maturity-fill" style="--target-width: 75%;"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="maturity-card planning">
-                            <div class="maturity-level">En Planificación</div>
-                            <div class="maturity-standard">ISO 14001</div>
-                            <div class="maturity-name">Gestión Ambiental</div>
-                            <div class="maturity-bar">
-                                <div class="maturity-fill" style="--target-width: 40%;"></div>
-                            </div>
-                        </div>
-                        
-                        <div class="maturity-card progress">
-                            <div class="maturity-level">En Implementación</div>
-                            <div class="maturity-standard">DS 44</div>
-                            <div class="maturity-name">Reglamento Chileno SST</div>
-                            <div class="maturity-bar">
-                                <div class="maturity-fill" style="--target-width: 80%;"></div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Stats del dashboard -->
-                    <div class="dashboard-stats">
-                        <div class="stat-card">
-                            <div class="stat-value" style="color: var(--iso-green);">156</div>
-                            <div class="stat-label">Documentos Elaborados</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-value" style="color: var(--iso-blue);">48</div>
-                            <div class="stat-label">Procedimientos</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-value" style="color: var(--iso-orange);">24</div>
-                            <div class="stat-label">Registros Activos</div>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-value" style="color: var(--iso-purple);">12</div>
-                            <div class="stat-label">Auditorías Superadas</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================
-             DOCUMENTACIÓN ENTREGABLE
-             ============================================ -->
-        <section class="section" aria-labelledby="docs-title">
-            <div class="container">
-                <div class="text-center animate-on-scroll">
-                    <span class="section-label">Entregables</span>
-                    <h2 id="docs-title" class="text-gradient">Documentación que Entregamos</h2>
-                    <p class="subtitle">
-                        Cada documento está diseñado para ser práctico, auditable y alineado 
-                        con los requisitos normativos y operativos de tu organización.
-                    </p>
-                </div>
-                
-                <div class="docs-grid">
-                    <div class="doc-card animate-on-scroll">
-                        <div class="doc-icon">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                                <polyline points="14 2 14 8 20 8"/>
-                                <line x1="16" y1="13" x2="8" y2="13"/>
-                                <line x1="16" y1="17" x2="8" y2="17"/>
-                                <polyline points="10 9 9 10 8 9"/>
-                            </svg>
-                        </div>
-                        <div class="doc-content">
-                            <h4>Reglamento Interno (RIOHS)</h4>
-                            <p>Actualizado según DS 44 y Ley 16.744, con cláusulas específicas para tu operación.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="doc-card animate-on-scroll">
-                        <div class="doc-icon">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
-                            </svg>
-                        </div>
-                        <div class="doc-content">
-                            <h4>Manual de Procedimientos</h4>
-                            <p>Documentación detallada de procesos operativos, administrativos y de gestión.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="doc-card animate-on-scroll">
-                        <div class="doc-icon">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                                <polyline points="9 12 11 14 15 10"/>
-                            </svg>
-                        </div>
-                        <div class="doc-content">
-                            <h4>Procedimientos de Trabajo Seguro</h4>
-                            <p>PTS y ATS para cada tarea crítica, con controles y EPP específicos.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="doc-card animate-on-scroll">
-                        <div class="doc-icon">
-                            <svg viewBox="0 0 24 24">
-                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-                                <line x1="16" y1="2" x2="16" y2="6"/>
-                                <line x1="8" y1="2" x2="8" y2="6"/>
-                                <line x1="3" y1="10" x2="21" y2="10"/>
-                            </svg>
-                        </div>
-                        <div class="doc-content">
-                            <h4>Registros y Formularios</h4>
-                            <p>Formatos estandarizados para el control documental y trazabilidad.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="doc-card animate-on-scroll">
-                        <div class="doc-icon">
-                            <svg viewBox="0 0 24 24">
-                                <circle cx="12" cy="12" r="10"/>
-                                <polyline points="12 6 12 12 16 14"/>
-                            </svg>
-                        </div>
-                        <div class="doc-content">
-                            <h4>Planes de Emergencia</h4>
-                            <p>Protocolos de actuación ante emergencias, incluyendo evacuación y primeros auxilios.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="doc-card animate-on-scroll">
-                        <div class="doc-icon">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                                <polyline points="22 4 12 14.01 9 11.01"/>
-                            </svg>
-                        </div>
-                        <div class="doc-content">
-                            <h4>Carpetas de Arranque</h4>
-                            <p>Documentación completa para inicio de faenas y proyectos, lista para fiscalización.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="doc-card animate-on-scroll">
-                        <div class="doc-icon">
-                            <svg viewBox="0 0 24 24">
-                                <line x1="12" y1="1" x2="12" y2="23"/>
-                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-                            </svg>
-                        </div>
-                        <div class="doc-content">
-                            <h4>Matriz IPER</h4>
-                            <p>Identificación de peligros y evaluación de riesgos con controles jerarquizados.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="doc-card animate-on-scroll">
-                        <div class="doc-icon">
-                            <svg viewBox="0 0 24 24">
-                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                                <circle cx="9" cy="7" r="4"/>
-                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-                            </svg>
-                        </div>
-                        <div class="doc-content">
-                            <h4>Programas Anuales</h4>
-                            <p>Planificación anual de actividades de SST con cronograma y responsables.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================
-             BENEFICIOS CON ICONOS
-             ============================================ -->
-        <section class="section section-alt" aria-labelledby="beneficios-title">
+        <section class="section" aria-labelledby="beneficios-title">
             <div class="container">
                 <div class="text-center animate-on-scroll">
                     <span class="section-label">Beneficios</span>
@@ -2023,7 +1534,7 @@
                     </p>
                 </div>
                 
-                <div class="feature-grid">
+                <div class="intro-grid">
                     <div class="card animate-on-scroll">
                         <div class="card-icon">
                             <svg viewBox="0 0 24 24">
@@ -2051,8 +1562,7 @@
                     <div class="card animate-on-scroll">
                         <div class="card-icon">
                             <svg viewBox="0 0 24 24">
-                                <circle cx="12" cy="12" r="10"/>
-                                <polyline points="12 6 12 12 16 14"/>
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
                             </svg>
                         </div>
                         <h3>Implementación Rápida</h3>
@@ -2062,8 +1572,8 @@
                     <div class="card animate-on-scroll">
                         <div class="card-icon">
                             <svg viewBox="0 0 24 24">
-                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                                <polyline points="22 4 12 14.01 9 11.01"/>
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
                             </svg>
                         </div>
                         <h3>Certificación ISO</h3>
@@ -2073,10 +1583,8 @@
                     <div class="card animate-on-scroll">
                         <div class="card-icon">
                             <svg viewBox="0 0 24 24">
-                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                                <circle cx="9" cy="7" r="4"/>
-                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
                             </svg>
                         </div>
                         <h3>Capacitación Incluida</h3>
@@ -2086,9 +1594,8 @@
                     <div class="card animate-on-scroll">
                         <div class="card-icon">
                             <svg viewBox="0 0 24 24">
-                                <circle cx="12" cy="12" r="10"/>
-                                <circle cx="12" cy="12" r="6"/>
-                                <circle cx="12" cy="12" r="2"/>
+                                <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+                                <polyline points="17 6 23 6 23 12"/>
                             </svg>
                         </div>
                         <h3>Mejora Continua</h3>
@@ -2099,9 +1606,9 @@
         </section>
 
         <!-- ============================================
-             GALERÍA DE IMÁGENES ALUSIVAS
+             GALERÍA
              ============================================ -->
-        <section class="section" aria-labelledby="galeria-title">
+        <section class="section section-alt" aria-labelledby="galeria-title">
             <div class="container">
                 <div class="text-center animate-on-scroll">
                     <span class="section-label">Contexto del Servicio</span>
@@ -2115,42 +1622,42 @@
                 <div class="gallery-grid">
                     <div class="gallery-item animate-on-scroll">
                         <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80" 
-                             alt="Reunión de equipo revisando documentación corporativa"
+                             alt="Revisión documental en oficina"
                              loading="lazy">
                         <div class="gallery-caption">Revisión documental</div>
                     </div>
                     
                     <div class="gallery-item animate-on-scroll">
                         <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80" 
-                             alt="Equipo de trabajo en reunión de planificación estratégica"
+                             alt="Planificación estratégica de sistemas de gestión"
                              loading="lazy">
                         <div class="gallery-caption">Planificación estratégica</div>
                     </div>
                     
                     <div class="gallery-item animate-on-scroll">
                         <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=600&q=80" 
-                             alt="Auditoría de calidad en oficina corporativa"
+                             alt="Auditoría de calidad en empresa"
                              loading="lazy">
                         <div class="gallery-caption">Auditoría de calidad</div>
                     </div>
                     
                     <div class="gallery-item animate-on-scroll">
                         <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&q=80" 
-                             alt="Presentación de resultados de gestión"
+                             alt="Revisión por la dirección"
                              loading="lazy">
                         <div class="gallery-caption">Revisión por la dirección</div>
                     </div>
                     
                     <div class="gallery-item animate-on-scroll">
                         <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&q=80" 
-                             alt="Capacitación de personal en sistemas de gestión"
+                             alt="Capacitación del personal en sistemas de gestión"
                              loading="lazy">
                         <div class="gallery-caption">Capacitación del personal</div>
                     </div>
                     
                     <div class="gallery-item animate-on-scroll">
                         <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&q=80" 
-                             alt="Documentación organizada en archivo corporativo"
+                             alt="Control documental y registros"
                              loading="lazy">
                         <div class="gallery-caption">Control documental</div>
                     </div>
@@ -2161,7 +1668,7 @@
         <!-- ============================================
              METODOLOGÍA
              ============================================ -->
-        <section class="section section-alt" aria-labelledby="metodologia-title">
+        <section class="section" aria-labelledby="metodologia-title">
             <div class="container">
                 <div class="text-center animate-on-scroll">
                     <span class="section-label">Metodología</span>
@@ -2172,45 +1679,45 @@
                     </p>
                 </div>
                 
-                <div class="methodology-grid">
-                    <div class="methodology-card animate-on-scroll">
-                        <div class="methodology-number">1</div>
-                        <h3>Diagnóstico Documental</h3>
-                        <p>Evaluamos la documentación existente, identificamos brechas y definimos el alcance del sistema de gestión.</p>
-                    </div>
-                    
-                    <div class="methodology-card animate-on-scroll">
-                        <div class="methodology-number">2</div>
-                        <h3>Diseño del Sistema</h3>
-                        <p>Diseñamos la estructura documental, procedimientos y registros necesarios según ISO y normativa chilena.</p>
-                    </div>
-                    
-                    <div class="methodology-card animate-on-scroll">
-                        <div class="methodology-number">3</div>
-                        <h3>Implementación</h3>
-                        <p>Elaboramos toda la documentación, capacitamos al personal y ponemos en marcha el sistema de gestión.</p>
-                    </div>
-                    
-                    <div class="methodology-card animate-on-scroll">
-                        <div class="methodology-number">4</div>
-                        <h3>Auditoría y Mejora</h3>
-                        <p>Realizamos auditorías internas, identificamos oportunidades de mejora y preparamos la certificación.</p>
+                <div class="process-container animate-on-scroll">
+                    <div class="process-line"></div>
+                    <div class="process-grid">
+                        <div class="process-step">
+                            <div class="process-number">1</div>
+                            <h3>Diagnóstico Documental</h3>
+                            <p>Evaluamos la documentación existente, identificamos brechas y definimos el alcance del sistema de gestión.</p>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="process-number">2</div>
+                            <h3>Diseño del Sistema</h3>
+                            <p>Diseñamos la estructura documental, procedimientos y registros necesarios según ISO y normativa chilena.</p>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="process-number">3</div>
+                            <h3>Implementación</h3>
+                            <p>Elaboramos toda la documentación, capacitamos al personal y ponemos en marcha el sistema de gestión.</p>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="process-number">4</div>
+                            <h3>Auditoría y Mejora</h3>
+                            <p>Realizamos auditorías internas, identificamos oportunidades de mejora y preparamos la certificación.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ============================================
-             CTA FINAL CON IMAGEN DE FONDO
+             CTA FINAL
              ============================================ -->
-        <section class="cta-section" aria-labelledby="cta-title">
-            <div class="cta-background" role="img" aria-label="Equipo de trabajo colaborando en oficina moderna"></div>
-            <div class="cta-overlay"></div>
-            
-            <div class="container">
-                <div class="cta-content animate-on-scroll">
+        <section class="trust-section" aria-labelledby="cta-title">
+            <div class="container trust-content">
+                <div class="text-center animate-on-scroll">
                     <h2 id="cta-title">¿Listo para implementar tu sistema de gestión?</h2>
-                    <p>
+                    <p class="subtitle">
                         Contáctanos hoy mismo y descubre cómo podemos ayudarte a tener 
                         una documentación prolija, auditada y alineada con ISO y la normativa chilena.
                     </p>
@@ -2273,9 +1780,9 @@
                 <nav aria-label="Navegación legal">
                     <h4 class="footer-title">Legal</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Política de privacidad</a></li>
-                        <li><a href="#">Términos de servicio</a></li>
-                        <li><a href="#">Política de cookies</a></li>
+                        <li><a href="privacidad.html">Política de privacidad</a></li>
+                        <li><a href="terminos.html">Términos de servicio</a></li>
+                        <li><a href="cookies.html">Política de cookies</a></li>
                     </ul>
                 </nav>
             </div>
@@ -2334,15 +1841,6 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('animated');
-                    
-                    // Animar barras de madurez cuando son visibles
-                    const maturityFills = entry.target.querySelectorAll('.maturity-fill');
-                    maturityFills.forEach(fill => {
-                        setTimeout(() => {
-                            fill.classList.add('animated');
-                        }, 300);
-                    });
-                    
                     observer.unobserve(entry.target);
                 }
             });

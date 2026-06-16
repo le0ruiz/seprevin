@@ -1,70 +1,159 @@
 <!DOCTYPE html>
 <html lang="es-CL" dir="ltr">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZD3EGCHJ3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LZD3EGCHJ3');
+    </script>
+    
     <!-- ============================================
          METADATOS ESENCIALES
          ============================================ -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="SEPREVIN - Capacitación y Transferencia: Programas de capacitación para equipos de prevención, operación y gestión ambiental, con foco en aplicación práctica y actualización normativa.">
+    
+    <!-- SEO Primario -->
+    <title>SEPREVIN | Capacitación y Transferencia</title>
+    <meta name="description" content="Programas de capacitación para equipos de prevención, operación y gestión ambiental. Formación práctica con enfoque en aplicación real y actualización normativa DS 44, Ley 16.744 e ISO.">
     <meta name="keywords" content="capacitación, formación, entrenamiento, prevención de riesgos, seguridad ocupacional, gestión ambiental, DS 44, Ley 16.744, ISO 45001, SEPREVIN, Chile">
     <meta name="author" content="SEPREVIN">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://seprevin.cl/capacitacion.html">
     
-    <!-- ============================================
-         SEGURIDAD
-         ============================================ -->
+    <!-- Google Site Verification -->
+    <meta name="google-site-verification" content="puL0XaQAuyK7Tl33-eYJeZk2u1gHNrTtRlHpkpVcNiM" />
+    
+    <!-- Open Graph / Facebook / WhatsApp / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seprevin.cl/capacitacion.html">
+    <meta property="og:title" content="SEPREVIN | Capacitación y Transferencia">
+    <meta property="og:description" content="Programas de capacitación técnica para equipos de prevención, operación y gestión ambiental con más de 20 años de experiencia.">
+    <meta property="og:image" content="https://seprevin.cl/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="SEPREVIN - Capacitación y Transferencia Técnica">
+    <meta property="og:site_name" content="SEPREVIN">
+    <meta property="og:locale" content="es_CL">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://seprevin.cl/capacitacion.html">
+    <meta name="twitter:title" content="SEPREVIN | Capacitación y Transferencia">
+    <meta name="twitter:description" content="Programas de capacitación técnica en seguridad, salud ocupacional y gestión ambiental.">
+    <meta name="twitter:image" content="https://seprevin.cl/og-image.jpg">
+    
+    <!-- Seguridad HTTP Headers -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="X-Frame-Options" content="DENY">
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     
+    <!-- Content Security Policy - CORREGIDO PARA GOOGLE ANALYTICS -->
     <meta http-equiv="Content-Security-Policy" 
           content="default-src 'self'; 
-                   script-src 'self' 'unsafe-inline'; 
+                   script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; 
                    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; 
                    font-src 'self' https://fonts.gstatic.com data:; 
                    img-src 'self' data: https: blob: https://images.unsplash.com; 
-                   connect-src 'self' https://api.whatsapp.com https://formspree.io; 
+                   connect-src 'self' https://api.whatsapp.com https://formspree.io https://www.google-analytics.com; 
                    frame-ancestors 'none'; 
                    base-uri 'self'; 
                    form-action 'self' https://formspree.io; 
-                   upgrade-insecure-requests;">
+                   upgrade-insecure-requests; 
+                   block-all-mixed-content;">
     
+    <!-- Permissions Policy -->
     <meta http-equiv="Permissions-Policy" 
-          content="geolocation=(), microphone=(), camera=(), payment=(), usb=()">
+          content="geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()">
     
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.seprevin.cl/capacitacion.html">
-    <meta property="og:title" content="SEPREVIN | Capacitación y Transferencia">
-    <meta property="og:description" content="Programas de capacitación para equipos de prevención, operación y gestión ambiental, con foco en aplicación práctica y actualización normativa.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1200">
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="SEPREVIN | Capacitación y Transferencia">
-    <meta name="twitter:description" content="Programas de capacitación técnica en seguridad, salud ocupacional y gestión ambiental.">
-    
-    <meta name="theme-color" content="#012D90">
+    <!-- Tema y colores -->
+    <meta name="theme-color" content="#012D90" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#001a3d" media="(prefers-color-scheme: dark)">
+    <meta name="color-scheme" content="light dark">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="SEPREVIN">
     
-    <!-- Favicon -->
+    <!-- Favicon y PWA -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
     
-    <!-- Preconnect -->
+    <!-- Preconnect y DNS Prefetch -->
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://api.whatsapp.com" crossorigin>
+    <link rel="preconnect" href="https://formspree.io" crossorigin>
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://api.whatsapp.com">
     
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Schema.org -->
+    <!-- Schema.org - Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": "https://seprevin.cl/#organization",
+        "name": "SEPREVIN",
+        "alternateName": "Seguridad y Prevención Integral",
+        "url": "https://seprevin.cl",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://seprevin.cl/logo_azul.jpeg",
+            "width": 512,
+            "height": 512
+        },
+        "description": "Consultora técnica integral en gestión de riesgos, prevención, seguridad, salud ocupacional y gestión ambiental",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Santiago",
+            "addressRegion": "Región Metropolitana",
+            "addressCountry": "CL"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -33.4489,
+            "longitude": -70.6693
+        },
+        "contactPoint": [
+            {
+                "@type": "ContactPoint",
+                "telephone": "+56-9-5402-5756",
+                "contactType": "ventas",
+                "availableLanguage": ["Spanish"],
+                "areaServed": "CL"
+            },
+            {
+                "@type": "ContactPoint",
+                "telephone": "+56-9-8430-9798",
+                "contactType": "soporte técnico",
+                "availableLanguage": ["Spanish"],
+                "areaServed": "CL"
+            }
+        ],
+        "sameAs": [],
+        "foundingDate": "2006",
+        "areaServed": {
+            "@type": "Country",
+            "name": "Chile"
+        }
+    }
+    </script>
+    
+    <!-- Schema.org - Service -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -73,35 +162,78 @@
         "provider": {
             "@type": "Organization",
             "name": "SEPREVIN",
-            "url": "https://www.seprevin.cl"
+            "url": "https://seprevin.cl"
         },
-        "description": "Programas de capacitación para equipos de prevención, operación y gestión ambiental, con foco en aplicación práctica y actualización normativa.",
+        "description": "Programas de capacitación para equipos de prevención, operación y gestión ambiental, con foco en aplicación práctica y actualización normativa",
         "areaServed": {
             "@type": "Country",
             "name": "Chile"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Programas de Capacitación",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Prevención de Riesgos Básico",
+                        "description": "Formación fundamental en identificación de peligros y evaluación de riesgos"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Comité Paritario (CPHS)",
+                        "description": "Capacitación especializada para miembros CPHS según DS 54"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Trabajo en Altura",
+                        "description": "Capacitación teórica y práctica según Ley 20.001"
+                    }
+                }
+            ]
         }
     }
     </script>
     
-    <title>SEPREVIN | Capacitación y Transferencia</title>
+    <!-- Schema.org - BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Inicio",
+                "item": "https://seprevin.cl/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Capacitación y Transferencia",
+                "item": "https://seprevin.cl/capacitacion.html"
+            }
+        ]
+    }
+    </script>
     
-    <!-- ============================================
-         CSS COMPLETO
-         ============================================ -->
     <style>
-        /* Variables CSS */
+        /* ============================================
+           VARIABLES Y CONFIGURACIÓN GLOBAL
+           ============================================ */
         :root {
             --primary: #012D90;
             --primary-dark: #001a5c;
             --primary-light: #0047AB;
             --primary-rgb: 1, 45, 144;
             --accent: #00D4FF;
-            
-            /* Colores para Capacitación */
-            --training-cyan: #06B6D4;
-            --training-blue: #3B82F6;
-            --training-purple: #8B5CF6;
-            --training-indigo: #6366F1;
             
             --bg: #FEFEFE;
             --bg-alt: #F8FAFC;
@@ -120,13 +252,9 @@
             --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
             --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
             --shadow-primary: 0 10px 40px -10px rgba(1, 45, 144, 0.4);
-            --shadow-glow: 0 0 60px rgba(1, 45, 144, 0.15);
             
             --gradient-primary: linear-gradient(135deg, #012D90 0%, #0047AB 100%);
             --gradient-hero: linear-gradient(135deg, #012D90 0%, #001a5c 50%, #000d33 100%);
-            --gradient-overlay: linear-gradient(135deg, rgba(1, 45, 144, 0.95) 0%, rgba(0, 26, 92, 0.85) 100%);
-            --gradient-training: linear-gradient(135deg, #06B6D4 0%, #3B82F6 100%);
-            --gradient-training-alt: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
             
             --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
             --font-display: 'Space Grotesk', 'Inter', sans-serif;
@@ -382,18 +510,6 @@
             transform: translateY(-3px);
         }
 
-        .btn-whatsapp {
-            background: var(--whatsapp);
-            color: white;
-            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
-        }
-
-        .btn-whatsapp:hover {
-            background: var(--whatsapp-dark);
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
-        }
-
         .btn:focus-visible {
             outline: 3px solid var(--accent);
             outline-offset: 3px;
@@ -528,73 +644,39 @@
             transform: translateY(-7px) rotate(-45deg);
         }
 
-        /* ============================================
-           HERO CON IMAGEN DE FONDO
-           ============================================ */
+        /* Hero Section */
         .hero {
             position: relative;
-            min-height: 90vh;
+            min-height: 100vh;
             display: flex;
             align-items: center;
+            background: var(--gradient-hero);
             overflow: hidden;
             padding: calc(var(--header-height) + var(--space-3xl)) 0 var(--space-3xl);
         }
 
-        .hero-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1920&q=80');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            z-index: 0;
-        }
-
-        .hero-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: var(--gradient-overlay);
-            z-index: 1;
-        }
-
-        .hero-pattern {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-            z-index: 2;
-        }
-
-        .hero-blob-1 {
+        .hero::before {
+            content: '';
             position: absolute;
             top: -50%;
             right: -20%;
             width: 80vw;
             height: 80vw;
-            background: radial-gradient(circle, rgba(6, 182, 212, 0.2) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(0, 212, 255, 0.15) 0%, transparent 70%);
             border-radius: 50%;
             animation: float-blob 20s ease-in-out infinite;
-            z-index: 2;
         }
 
-        .hero-blob-2 {
+        .hero::after {
+            content: '';
             position: absolute;
             bottom: -30%;
             left: -10%;
             width: 60vw;
             height: 60vw;
-            background: radial-gradient(circle, rgba(1, 45, 144, 0.4) 0%, transparent 70%);
+            background: radial-gradient(circle, rgba(1, 45, 144, 0.3) 0%, transparent 70%);
             border-radius: 50%;
             animation: float-blob 25s ease-in-out infinite reverse;
-            z-index: 2;
         }
 
         @keyframes float-blob {
@@ -608,7 +690,7 @@
             grid-template-columns: 1fr;
             gap: var(--space-2xl);
             position: relative;
-            z-index: 3;
+            z-index: 2;
         }
 
         .hero-content { max-width: 1000px; }
@@ -618,9 +700,9 @@
             align-items: center;
             gap: 0.75rem;
             padding: 0.75rem 1.5rem;
-            background: rgba(255, 255, 255, 0.15);
+            background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(20px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             border-radius: var(--radius-full);
             color: white;
             font-size: clamp(0.875rem, 1.2vw, 1rem);
@@ -639,7 +721,7 @@
 
         .hero h1 .highlight {
             display: block;
-            background: linear-gradient(135deg, #fff 0%, #06B6D4 100%);
+            background: linear-gradient(135deg, #fff 0%, #00D4FF 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -647,7 +729,7 @@
         }
 
         .hero p {
-            color: rgba(255, 255, 255, 0.95);
+            color: rgba(255, 255, 255, 0.9);
             font-size: clamp(1rem, 1.5vw + 0.25rem, 1.25rem);
             margin-bottom: var(--space-xl);
             max-width: 700px;
@@ -662,137 +744,7 @@
             animation: fadeInUp 0.8s ease-out 0.6s both;
         }
 
-        /* Stats en Hero */
-        .hero-stats {
-            margin-top: var(--space-2xl);
-            padding-top: var(--space-xl);
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
-            animation: fadeInUp 0.8s ease-out 0.8s both;
-        }
-
-        .hero-stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-            gap: var(--space-lg);
-        }
-
-        .hero-stat {
-            color: white;
-            padding: var(--space-lg);
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: var(--radius-lg);
-            transition: all var(--transition-base);
-        }
-
-        .hero-stat:hover {
-            background: rgba(255, 255, 255, 0.15);
-            transform: translateY(-5px);
-        }
-
-        .hero-stat-number {
-            font-family: var(--font-display);
-            font-size: clamp(2.5rem, 4vw, 3rem);
-            font-weight: 800;
-            display: block;
-            background: linear-gradient(135deg, #fff 0%, #06B6D4 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 0.25rem;
-        }
-
-        .hero-stat-label {
-            font-size: clamp(0.75rem, 1vw, 0.9rem);
-            color: rgba(255, 255, 255, 0.9);
-            line-height: 1.4;
-        }
-
-        /* ============================================
-           SECCIÓN CON IMAGEN LATERAL
-           ============================================ */
-        .split-section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--space-3xl);
-            align-items: center;
-            margin-top: var(--space-2xl);
-        }
-
-        .split-image {
-            position: relative;
-            border-radius: var(--radius-2xl);
-            overflow: hidden;
-            box-shadow: var(--shadow-2xl);
-            aspect-ratio: 4/3;
-        }
-
-        .split-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .split-image:hover img {
-            transform: scale(1.05);
-        }
-
-        .split-image::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(6, 182, 212, 0.2) 0%, transparent 100%);
-            pointer-events: none;
-        }
-
-        .split-content h2 {
-            margin-bottom: var(--space-lg);
-        }
-
-        .split-content p {
-            font-size: 1.0625rem;
-            margin-bottom: var(--space-lg);
-        }
-
-        .feature-list {
-            list-style: none;
-            padding: 0;
-            margin-top: var(--space-lg);
-        }
-
-        .feature-list li {
-            padding: var(--space-sm) 0;
-            padding-left: var(--space-xl);
-            position: relative;
-            color: var(--text-muted);
-            font-size: 1rem;
-        }
-
-        .feature-list li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            top: var(--space-sm);
-            width: 24px;
-            height: 24px;
-            background: var(--gradient-training);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.75rem;
-            font-weight: 700;
-        }
-
-        /* ============================================
-           CARDS CON ICONOS SVG
-           ============================================ */
+        /* Cards */
         .card {
             background: var(--surface);
             border-radius: var(--radius-2xl);
@@ -810,7 +762,7 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: var(--gradient-training);
+            background: var(--gradient-primary);
             transform: scaleX(0);
             transition: transform var(--transition-base);
             transform-origin: left;
@@ -827,19 +779,19 @@
         .card-icon {
             width: 64px;
             height: 64px;
-            background: var(--gradient-training);
+            background: var(--gradient-primary);
             border-radius: var(--radius-xl);
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: var(--space-lg);
             transition: all var(--transition-base);
-            box-shadow: 0 4px 12px rgba(6, 182, 212, 0.3);
+            box-shadow: 0 4px 12px rgba(1, 45, 144, 0.2);
         }
 
         .card:hover .card-icon {
             transform: scale(1.1) rotate(-5deg);
-            box-shadow: 0 6px 20px rgba(6, 182, 212, 0.4);
+            box-shadow: 0 6px 20px rgba(1, 45, 144, 0.3);
         }
 
         .card-icon svg {
@@ -852,19 +804,166 @@
             stroke-linejoin: round;
         }
 
-        /* ============================================
-           GRID DE FEATURES
-           ============================================ */
-        .feature-grid {
+        /* Grids */
+        .intro-grid,
+        .value-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: var(--space-lg);
             margin-top: var(--space-2xl);
         }
 
-        /* ============================================
-           GALERÍA DE IMÁGENES
-           ============================================ */
+        /* Process Timeline */
+        .process-container {
+            position: relative;
+            margin-top: var(--space-2xl);
+        }
+
+        .process-line {
+            position: absolute;
+            top: 40px;
+            left: 10%;
+            right: 10%;
+            height: 3px;
+            background: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+            border-radius: var(--radius-full);
+            z-index: 0;
+            opacity: 0.3;
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: var(--space-lg);
+            position: relative;
+            z-index: 1;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: var(--space-lg);
+            background: var(--surface);
+            border-radius: var(--radius-2xl);
+            border: 1px solid var(--border);
+            transition: all var(--transition-base);
+        }
+
+        .process-step:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary);
+        }
+
+        .process-number {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-size: 2rem;
+            font-weight: 800;
+            margin: 0 auto var(--space-lg);
+            box-shadow: var(--shadow-primary);
+            position: relative;
+            transition: all var(--transition-bounce);
+        }
+
+        .process-number::after {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border: 2px solid var(--primary);
+            border-radius: 50%;
+            opacity: 0.3;
+        }
+
+        .process-step:hover .process-number {
+            transform: scale(1.15) rotate(10deg);
+        }
+
+        /* Trust Section */
+        .trust-section {
+            background: var(--gradient-hero);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .trust-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 80vw;
+            height: 80vw;
+            background: radial-gradient(circle, rgba(0, 212, 255, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float-blob 20s ease-in-out infinite;
+        }
+
+        .trust-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .trust-section h2 { color: white; }
+        .trust-section .subtitle { color: rgba(255, 255, 255, 0.85); }
+
+        .trust-section .section-label {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .trust-section .section-label::before { background: white; }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--space-lg);
+            margin-top: var(--space-2xl);
+        }
+
+        .trust-item {
+            text-align: center;
+            padding: var(--space-xl);
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: var(--radius-xl);
+            transition: all var(--transition-base);
+        }
+
+        .trust-item:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .trust-number {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 800;
+            display: block;
+            margin-bottom: var(--space-sm);
+            background: linear-gradient(135deg, #fff 0%, #00D4FF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .trust-label {
+            font-size: clamp(0.875rem, 1vw, 1rem);
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        /* Gallery */
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -928,214 +1027,7 @@
             opacity: 1;
         }
 
-        /* ============================================
-           PROGRAMAS DE CAPACITACIÓN
-           ============================================ */
-        .programs-section {
-            background: linear-gradient(135deg, #ECFEFF 0%, #F0F9FF 100%);
-            padding: var(--space-4xl) 0;
-        }
-
-        .programs-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: var(--space-lg);
-            margin-top: var(--space-2xl);
-        }
-
-        .program-card {
-            background: var(--surface);
-            border-radius: var(--radius-2xl);
-            padding: var(--space-xl);
-            border: 1px solid var(--border);
-            transition: all var(--transition-base);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .program-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 4px;
-            height: 100%;
-            background: var(--gradient-training);
-        }
-
-        .program-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-xl);
-            border-color: var(--training-cyan);
-        }
-
-        .program-icon {
-            width: 56px;
-            height: 56px;
-            background: var(--gradient-training);
-            border-radius: var(--radius-lg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: var(--space-md);
-        }
-
-        .program-icon svg {
-            width: 28px;
-            height: 28px;
-            stroke: white;
-            stroke-width: 2;
-            fill: none;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-        }
-
-        .program-title {
-            font-family: var(--font-display);
-            font-size: 1.125rem;
-            font-weight: 700;
-            color: var(--text);
-            margin-bottom: var(--space-xs);
-        }
-
-        .program-duration {
-            font-size: 0.875rem;
-            font-weight: 600;
-            color: var(--training-cyan);
-            margin-bottom: var(--space-sm);
-        }
-
-        .program-desc {
-            font-size: 0.9375rem;
-            color: var(--text-muted);
-            line-height: 1.6;
-            margin: 0;
-        }
-
-        /* ============================================
-           METODOLOGÍA CON NÚMEROS
-           ============================================ */
-        .methodology-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: var(--space-lg);
-            margin-top: var(--space-2xl);
-        }
-
-        .methodology-card {
-            background: var(--surface);
-            border-radius: var(--radius-2xl);
-            padding: var(--space-xl);
-            border: 1px solid var(--border);
-            transition: all var(--transition-base);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .methodology-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 120px;
-            background: var(--gradient-training);
-            opacity: 0.05;
-        }
-
-        .methodology-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-2xl);
-            border-color: var(--training-cyan);
-        }
-
-        .methodology-number {
-            width: 70px;
-            height: 70px;
-            background: var(--gradient-training);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: var(--font-display);
-            font-size: 1.75rem;
-            font-weight: 800;
-            margin-bottom: var(--space-lg);
-            box-shadow: 0 10px 30px -5px rgba(6, 182, 212, 0.4);
-            position: relative;
-            z-index: 1;
-            transition: all var(--transition-bounce);
-        }
-
-        .methodology-card:hover .methodology-number {
-            transform: scale(1.1) rotate(-5deg);
-        }
-
-        .methodology-card h3 {
-            position: relative;
-            z-index: 1;
-        }
-
-        .methodology-card p {
-            position: relative;
-            z-index: 1;
-        }
-
-        /* ============================================
-           CTA SECTION
-           ============================================ */
-        .cta-section {
-            position: relative;
-            padding: var(--space-4xl) 0;
-            overflow: hidden;
-        }
-
-        .cta-background {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1920&q=80');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-        }
-
-        .cta-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: var(--gradient-overlay);
-        }
-
-        .cta-content {
-            position: relative;
-            z-index: 2;
-            text-align: center;
-            color: white;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .cta-content h2 {
-            color: white;
-            margin-bottom: var(--space-lg);
-        }
-
-        .cta-content p {
-            color: rgba(255, 255, 255, 0.95);
-            font-size: clamp(1.125rem, 2vw, 1.375rem);
-            max-width: 700px;
-            margin: 0 auto var(--space-xl);
-        }
-
-        /* ============================================
-           WHATSAPP FLOTANTE
-           ============================================ */
+        /* WhatsApp Float */
         .whatsapp-float {
             position: fixed;
             bottom: clamp(1.5rem, 3vw, 2rem);
@@ -1188,9 +1080,7 @@
             50% { box-shadow: 0 10px 40px -5px rgba(37, 211, 102, 0.6), 0 0 0 10px rgba(37, 211, 102, 0.1); }
         }
 
-        /* ============================================
-           FOOTER
-           ============================================ */
+        /* Footer */
         footer {
             background: var(--gradient-hero);
             color: white;
@@ -1275,9 +1165,7 @@
             z-index: 1;
         }
 
-        /* ============================================
-           ANIMACIONES
-           ============================================ */
+        /* Animations */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -1311,14 +1199,8 @@
             transform: translateY(0);
         }
 
-        /* ============================================
-           RESPONSIVE
-           ============================================ */
+        /* Responsive */
         @media (max-width: 1024px) {
-            .split-section {
-                grid-template-columns: 1fr;
-            }
-            
             .footer-grid {
                 grid-template-columns: 1fr 1fr;
             }
@@ -1354,10 +1236,6 @@
                 min-height: auto;
             }
             
-            .hero-background {
-                background-attachment: scroll;
-            }
-            
             .hero-buttons {
                 flex-direction: column;
                 width: 100%;
@@ -1365,26 +1243,18 @@
             
             .hero-buttons .btn { width: 100%; }
             
-            .hero-stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .hero-stat { text-align: center; }
-            
-            .feature-grid,
+            .intro-grid,
+            .value-grid,
             .gallery-grid,
-            .methodology-grid,
-            .programs-grid,
             .footer-grid {
                 grid-template-columns: 1fr;
             }
             
-            .section { padding: var(--space-3xl) 0; }
-            .programs-section { padding: var(--space-3xl) 0; }
+            .process-line { display: none; }
             
-            .cta-background {
-                background-attachment: scroll;
-            }
+            .process-grid { grid-template-columns: 1fr; }
+            
+            .section { padding: var(--space-3xl) 0; }
             
             .whatsapp-float {
                 bottom: 1.5rem;
@@ -1395,12 +1265,7 @@
         }
 
         @media (max-width: 480px) {
-            .hero-stats-grid {
-                grid-template-columns: 1fr 1fr;
-                gap: var(--space-sm);
-            }
-            
-            .hero-stat { padding: var(--space-sm); }
+            .trust-grid { grid-template-columns: 1fr 1fr; }
         }
 
         @media (prefers-reduced-motion: reduce) {
@@ -1411,16 +1276,11 @@
             }
             
             html { scroll-behavior: auto; }
-            
-            .hero-background,
-            .cta-background {
-                background-attachment: scroll;
-            }
         }
 
         @media (prefers-contrast: high) {
             .btn-primary { border: 2px solid white; }
-            .card, .methodology-card, .program-card { border-width: 2px; }
+            .card { border-width: 2px; }
         }
     </style>
 </head>
@@ -1464,15 +1324,9 @@
 
     <main id="main-content" role="main">
         <!-- ============================================
-             HERO CON IMAGEN DE FONDO
+             HERO
              ============================================ -->
         <section class="hero" aria-labelledby="page-title">
-            <div class="hero-background" role="img" aria-label="Equipo en sesión de capacitación y formación"></div>
-            <div class="hero-overlay"></div>
-            <div class="hero-pattern"></div>
-            <div class="hero-blob-1"></div>
-            <div class="hero-blob-2"></div>
-            
             <div class="container">
                 <div class="hero-grid">
                     <div class="hero-content">
@@ -1513,7 +1367,7 @@
         </section>
 
         <!-- ============================================
-             DESCRIPCIÓN CON IMAGEN LATERAL
+             SOBRE EL SERVICIO
              ============================================ -->
         <section class="section" aria-labelledby="descripcion-title">
             <div class="container">
@@ -1527,14 +1381,14 @@
                     </p>
                 </div>
                 
-                <div class="split-section">
-                    <div class="split-image animate-on-scroll">
-                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&q=80" 
-                             alt="Capacitación de personal en sala de reuniones con instructor"
-                             loading="lazy">
-                    </div>
-                    
-                    <div class="split-content animate-on-scroll">
+                <div class="intro-grid">
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                            </svg>
+                        </div>
                         <h3>¿Qué incluye nuestro servicio?</h3>
                         <p>
                             Ofrecemos un portafolio completo de programas de capacitación técnica, 
@@ -1542,18 +1396,18 @@
                             profesionales con amplia experiencia en terreno y dominio normativo.
                         </p>
                         
-                        <ul class="feature-list">
-                            <li>Capacitación en seguridad y salud ocupacional para todos los niveles</li>
-                            <li>Formación en gestión ambiental y cumplimiento normativo</li>
-                            <li>Entrenamiento en sistemas de gestión ISO 9001, 14001 y 45001</li>
-                            <li>Programas de inducción y reinducción para trabajadores</li>
-                            <li>Capacitación en uso de EPP y procedimientos de trabajo seguro</li>
-                            <li>Formación en investigación de accidentes e incidentes</li>
-                            <li>Talleres de prevención de riesgos específicos por oficio</li>
-                            <li>Capacitación en manejo de emergencias y primeros auxilios</li>
-                            <li>Formación en SIG y herramientas de análisis geoespacial</li>
-                            <li>Actualización normativa continua para equipos de prevención</li>
-                            <li>Transferencia de metodologías y mejores prácticas</li>
+                        <ul style="list-style: none; padding: 0; margin: var(--space-lg) 0 0 0;">
+                            <li style="margin-bottom: 0.5rem;">✓ Capacitación en seguridad y salud ocupacional para todos los niveles</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Formación en gestión ambiental y cumplimiento normativo</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Entrenamiento en sistemas de gestión ISO 9001, 14001 y 45001</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Programas de inducción y reinducción para trabajadores</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Capacitación en uso de EPP y procedimientos de trabajo seguro</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Formación en investigación de accidentes e incidentes</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Talleres de prevención de riesgos específicos por oficio</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Capacitación en manejo de emergencias y primeros auxilios</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Formación en SIG y herramientas de análisis geoespacial</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Actualización normativa continua para equipos de prevención</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Transferencia de metodologías y mejores prácticas</li>
                         </ul>
                     </div>
                 </div>
@@ -1563,7 +1417,7 @@
         <!-- ============================================
              PROGRAMAS DE CAPACITACIÓN
              ============================================ -->
-        <section class="programs-section" aria-labelledby="programas-title">
+        <section class="section section-alt" aria-labelledby="programas-title">
             <div class="container">
                 <div class="text-center animate-on-scroll">
                     <span class="section-label">Programas</span>
@@ -1574,21 +1428,21 @@
                     </p>
                 </div>
                 
-                <div class="programs-grid">
-                    <div class="program-card animate-on-scroll">
-                        <div class="program-icon">
+                <div class="intro-grid">
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">
                             <svg viewBox="0 0 24 24">
                                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                                 <polyline points="9 12 11 14 15 10"/>
                             </svg>
                         </div>
-                        <div class="program-title">Prevención de Riesgos Básico</div>
-                        <div class="program-duration">8-16 horas | Todos los niveles</div>
-                        <p class="program-desc">Formación fundamental en identificación de peligros, evaluación de riesgos y medidas de control para trabajadores y supervisores.</p>
+                        <h3>Prevención de Riesgos Básico</h3>
+                        <p style="color: var(--primary); font-weight: 600; margin-bottom: 0.5rem;">8-16 horas | Todos los niveles</p>
+                        <p>Formación fundamental en identificación de peligros, evaluación de riesgos y medidas de control para trabajadores y supervisores.</p>
                     </div>
                     
-                    <div class="program-card animate-on-scroll">
-                        <div class="program-icon">
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">
                             <svg viewBox="0 0 24 24">
                                 <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
                                 <circle cx="9" cy="7" r="4"/>
@@ -1596,25 +1450,25 @@
                                 <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
                             </svg>
                         </div>
-                        <div class="program-title">Comité Paritario (CPHS)</div>
-                        <div class="program-duration">16-24 horas | Miembros CPHS</div>
-                        <p class="program-desc">Capacitación especializada para miembros de Comité Paritario en funciones, atribuciones y gestión preventiva según DS 54.</p>
+                        <h3>Comité Paritario (CPHS)</h3>
+                        <p style="color: var(--primary); font-weight: 600; margin-bottom: 0.5rem;">16-24 horas | Miembros CPHS</p>
+                        <p>Capacitación especializada para miembros de Comité Paritario en funciones, atribuciones y gestión preventiva según DS 54.</p>
                     </div>
                     
-                    <div class="program-card animate-on-scroll">
-                        <div class="program-icon">
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">
                             <svg viewBox="0 0 24 24">
                                 <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/>
                                 <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
                             </svg>
                         </div>
-                        <div class="program-title">Gestión Ambiental Operativa</div>
-                        <div class="program-duration">12-20 horas | Equipos operativos</div>
-                        <p class="program-desc">Formación en aspectos ambientales significativos, cumplimiento de RCA y buenas prácticas ambientales en operaciones.</p>
+                        <h3>Gestión Ambiental Operativa</h3>
+                        <p style="color: var(--primary); font-weight: 600; margin-bottom: 0.5rem;">12-20 horas | Equipos operativos</p>
+                        <p>Formación en aspectos ambientales significativos, cumplimiento de RCA y buenas prácticas ambientales en operaciones.</p>
                     </div>
                     
-                    <div class="program-card animate-on-scroll">
-                        <div class="program-icon">
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">
                             <svg viewBox="0 0 24 24">
                                 <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
                                 <polyline points="14 2 14 8 20 8"/>
@@ -1622,66 +1476,66 @@
                                 <line x1="16" y1="17" x2="8" y2="17"/>
                             </svg>
                         </div>
-                        <div class="program-title">Sistemas de Gestión ISO</div>
-                        <div class="program-duration">16-32 horas | Auditores internos</div>
-                        <p class="program-desc">Capacitación en implementación, mantenimiento y auditoría interna de sistemas ISO 9001, 14001 y 45001.</p>
+                        <h3>Sistemas de Gestión ISO</h3>
+                        <p style="color: var(--primary); font-weight: 600; margin-bottom: 0.5rem;">16-32 horas | Auditores internos</p>
+                        <p>Capacitación en implementación, mantenimiento y auditoría interna de sistemas ISO 9001, 14001 y 45001.</p>
                     </div>
                     
-                    <div class="program-card animate-on-scroll">
-                        <div class="program-icon">
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">
                             <svg viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="10"/>
                                 <polyline points="12 6 12 12 16 14"/>
                             </svg>
                         </div>
-                        <div class="program-title">Investigación de Accidentes</div>
-                        <div class="program-duration">8-12 horas | Supervisores</div>
-                        <p class="program-desc">Metodologías de investigación de accidentes e incidentes, análisis de causa raíz y elaboración de planes de acción correctiva.</p>
+                        <h3>Investigación de Accidentes</h3>
+                        <p style="color: var(--primary); font-weight: 600; margin-bottom: 0.5rem;">8-12 horas | Supervisores</p>
+                        <p>Metodologías de investigación de accidentes e incidentes, análisis de causa raíz y elaboración de planes de acción correctiva.</p>
                     </div>
                     
-                    <div class="program-card animate-on-scroll">
-                        <div class="program-icon">
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">
                             <svg viewBox="0 0 24 24">
                                 <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/>
                                 <line x1="8" y1="2" x2="8" y2="18"/>
                                 <line x1="16" y1="6" x2="16" y2="22"/>
                             </svg>
                         </div>
-                        <div class="program-title">Trabajo en Altura</div>
-                        <div class="program-duration">8-16 horas | Trabajadores en altura</div>
-                        <p class="program-desc">Capacitación teórica y práctica en trabajo seguro en altura según Ley 20.001, uso de EPP y sistemas de protección contra caídas.</p>
+                        <h3>Trabajo en Altura</h3>
+                        <p style="color: var(--primary); font-weight: 600; margin-bottom: 0.5rem;">8-16 horas | Trabajadores en altura</p>
+                        <p>Capacitación teórica y práctica en trabajo seguro en altura según Ley 20.001, uso de EPP y sistemas de protección contra caídas.</p>
                     </div>
                     
-                    <div class="program-card animate-on-scroll">
-                        <div class="program-icon">
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">
                             <svg viewBox="0 0 24 24">
                                 <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
                                 <path d="M6 12v5c3 3 9 3 12 0v-5"/>
                             </svg>
                         </div>
-                        <div class="program-title">Manejo de Emergencias</div>
-                        <div class="program-duration">8-24 horas | Brigadistas</div>
-                        <p class="program-desc">Formación de brigadas de emergencia en evacuación, combate de incendios, primeros auxilios y respuesta ante emergencias.</p>
+                        <h3>Manejo de Emergencias</h3>
+                        <p style="color: var(--primary); font-weight: 600; margin-bottom: 0.5rem;">8-24 horas | Brigadistas</p>
+                        <p>Formación de brigadas de emergencia en evacuación, combate de incendios, primeros auxilios y respuesta ante emergencias.</p>
                     </div>
                     
-                    <div class="program-card animate-on-scroll">
-                        <div class="program-icon">
+                    <div class="card animate-on-scroll">
+                        <div class="card-icon">
                             <svg viewBox="0 0 24 24">
                                 <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
                                 <line x1="3" y1="9" x2="21" y2="9"/>
                                 <line x1="9" y1="21" x2="9" y2="9"/>
                             </svg>
                         </div>
-                        <div class="program-title">SIG y Cartografía Ambiental</div>
-                        <div class="program-duration">16-40 horas | Técnicos ambientales</div>
-                        <p class="program-desc">Capacitación en QGIS, ArcGIS y Google Earth Engine para análisis territorial, generación de mapas y monitoreo ambiental.</p>
+                        <h3>SIG y Cartografía Ambiental</h3>
+                        <p style="color: var(--primary); font-weight: 600; margin-bottom: 0.5rem;">16-40 horas | Técnicos ambientales</p>
+                        <p>Capacitación en QGIS, ArcGIS y Google Earth Engine para análisis territorial, generación de mapas y monitoreo ambiental.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ============================================
-             BENEFICIOS CON ICONOS
+             BENEFICIOS
              ============================================ -->
         <section class="section" aria-labelledby="beneficios-title">
             <div class="container">
@@ -1694,7 +1548,7 @@
                     </p>
                 </div>
                 
-                <div class="feature-grid">
+                <div class="intro-grid">
                     <div class="card animate-on-scroll">
                         <div class="card-icon">
                             <svg viewBox="0 0 24 24">
@@ -1712,7 +1566,8 @@
                         <div class="card-icon">
                             <svg viewBox="0 0 24 24">
                                 <circle cx="12" cy="12" r="10"/>
-                                <polyline points="12 6 12 12 16 14"/>
+                                <circle cx="12" cy="12" r="6"/>
+                                <circle cx="12" cy="12" r="2"/>
                             </svg>
                         </div>
                         <h3>Enfoque Práctico</h3>
@@ -1722,8 +1577,8 @@
                     <div class="card animate-on-scroll">
                         <div class="card-icon">
                             <svg viewBox="0 0 24 24">
-                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                                <polyline points="9 12 11 14 15 10"/>
+                                <circle cx="12" cy="12" r="10"/>
+                                <polyline points="12 6 12 12 16 14"/>
                             </svg>
                         </div>
                         <h3>Contenido Actualizado</h3>
@@ -1733,9 +1588,8 @@
                     <div class="card animate-on-scroll">
                         <div class="card-icon">
                             <svg viewBox="0 0 24 24">
-                                <circle cx="12" cy="12" r="10"/>
-                                <circle cx="12" cy="12" r="6"/>
-                                <circle cx="12" cy="12" r="2"/>
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                <polyline points="9 12 11 14 15 10"/>
                             </svg>
                         </div>
                         <h3>Modalidades Flexibles</h3>
@@ -1745,8 +1599,8 @@
                     <div class="card animate-on-scroll">
                         <div class="card-icon">
                             <svg viewBox="0 0 24 24">
-                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                                <polyline points="22 4 12 14.01 9 11.01"/>
+                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
                             </svg>
                         </div>
                         <h3>Evaluación de Impacto</h3>
@@ -1770,7 +1624,7 @@
         </section>
 
         <!-- ============================================
-             GALERÍA DE IMÁGENES ALUSIVAS
+             GALERÍA
              ============================================ -->
         <section class="section section-alt" aria-labelledby="galeria-title">
             <div class="container">
@@ -1843,45 +1697,45 @@
                     </p>
                 </div>
                 
-                <div class="methodology-grid">
-                    <div class="methodology-card animate-on-scroll">
-                        <div class="methodology-number">1</div>
-                        <h3>Detección de Necesidades</h3>
-                        <p>Analizamos las brechas de competencias de tu organización y definimos objetivos de aprendizaje alineados a tus necesidades operativas y normativas.</p>
-                    </div>
-                    
-                    <div class="methodology-card animate-on-scroll">
-                        <div class="methodology-number">2</div>
-                        <h3>Diseño del Programa</h3>
-                        <p>Desarrollamos contenidos personalizados, materiales didácticos y metodologías activas de aprendizaje adaptadas a tu audiencia y contexto.</p>
-                    </div>
-                    
-                    <div class="methodology-card animate-on-scroll">
-                        <div class="methodology-number">3</div>
-                        <h3>Impartición</h3>
-                        <p>Ejecutamos la capacitación con instructores expertos, utilizando metodologías participativas, casos prácticos y ejemplos de la industria.</p>
-                    </div>
-                    
-                    <div class="methodology-card animate-on-scroll">
-                        <div class="methodology-number">4</div>
-                        <h3>Evaluación y Seguimiento</h3>
-                        <p>Evaluamos reacción, aprendizaje y transferencia. Realizamos seguimiento post-capacitación para asegurar aplicación en el puesto de trabajo.</p>
+                <div class="process-container animate-on-scroll">
+                    <div class="process-line"></div>
+                    <div class="process-grid">
+                        <div class="process-step">
+                            <div class="process-number">1</div>
+                            <h3>Detección de Necesidades</h3>
+                            <p>Analizamos las brechas de competencias de tu organización y definimos objetivos de aprendizaje alineados a tus necesidades operativas y normativas.</p>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="process-number">2</div>
+                            <h3>Diseño del Programa</h3>
+                            <p>Desarrollamos contenidos personalizados, materiales didácticos y metodologías activas de aprendizaje adaptadas a tu audiencia y contexto.</p>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="process-number">3</div>
+                            <h3>Impartición</h3>
+                            <p>Ejecutamos la capacitación con instructores expertos, utilizando metodologías participativas, casos prácticos y ejemplos de la industria.</p>
+                        </div>
+                        
+                        <div class="process-step">
+                            <div class="process-number">4</div>
+                            <h3>Evaluación y Seguimiento</h3>
+                            <p>Evaluamos reacción, aprendizaje y transferencia. Realizamos seguimiento post-capacitación para asegurar aplicación en el puesto de trabajo.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ============================================
-             CTA FINAL CON IMAGEN DE FONDO
+             CTA FINAL
              ============================================ -->
-        <section class="cta-section" aria-labelledby="cta-title">
-            <div class="cta-background" role="img" aria-label="Equipo de trabajo en sesión de capacitación"></div>
-            <div class="cta-overlay"></div>
-            
-            <div class="container">
-                <div class="cta-content animate-on-scroll">
+        <section class="trust-section" aria-labelledby="cta-title">
+            <div class="container trust-content">
+                <div class="text-center animate-on-scroll">
                     <h2 id="cta-title">¿Necesitas capacitar a tu equipo?</h2>
-                    <p>
+                    <p class="subtitle">
                         Contáctanos hoy mismo y descubre cómo podemos ayudarte a desarrollar 
                         las competencias técnicas de tu organización en seguridad, salud 
                         ocupacional y gestión ambiental.
@@ -1945,9 +1799,9 @@
                 <nav aria-label="Navegación legal">
                     <h4 class="footer-title">Legal</h4>
                     <ul class="footer-links">
-                        <li><a href="#">Política de privacidad</a></li>
-                        <li><a href="#">Términos de servicio</a></li>
-                        <li><a href="#">Política de cookies</a></li>
+                        <li><a href="privacidad.html">Política de privacidad</a></li>
+                        <li><a href="terminos.html">Términos de servicio</a></li>
+                        <li><a href="cookies.html">Política de cookies</a></li>
                     </ul>
                 </nav>
             </div>
